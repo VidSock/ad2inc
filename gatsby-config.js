@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/hytron-man.png`,
+        icon: `src/img/ad2inc-logo-round.svg`,
       },
     },
     {
