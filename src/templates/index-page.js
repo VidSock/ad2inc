@@ -127,7 +127,7 @@ export const IndexPageTemplate = ({
     <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute',  textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
         <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
-<ScrollAnimation animateIn="bounceInRight"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', right:'20%', top:'40%', zIndex:'1',}}>
+<ScrollAnimation animateIn="bounceInRight"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', right:'20%', top:'40%', zIndex:'1',}}>
 <label style={{display:'flex', justifyContent:'center',}} htmlFor="modal-toggle">
 <div className="special txtshadow" style={{padding:'.5rem 2rem', backgroundColor:'#DB2600', color:'#fff', borderRadius:'6px', cursor:'pointer',}}>Contact Us</div>
 </label>
@@ -135,7 +135,7 @@ export const IndexPageTemplate = ({
     
     
     
- <ScrollAnimation animateIn="bounceInDown"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+ <ScrollAnimation animateIn="bounceInDown"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -157,7 +157,7 @@ export const IndexPageTemplate = ({
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+         <ScrollAnimation animateIn="bounceInLeft"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -177,7 +177,7 @@ export const IndexPageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInUp"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <ScrollAnimation animateIn="bounceInUp"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
