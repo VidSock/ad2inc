@@ -5,10 +5,10 @@ image: /img/Ad2Grid_Logo.jpg
 heading: Full Service
 subheading: Marketing Agency
 subsubheading: Add marketing HERE
-image2: /img/pexels-photo-2182863.jpg
-i2Heading: Semiconductors
-i2Subheading: Unique solutions on demand
-i2Subsubheading: Great options available
+image2: /img/ad2-social-bg.png
+i2Heading: We'll Help You
+i2Subheading: Navigate the social divide
+i2Subsubheading: Obtain proven results!
 i2Subsubheading2: Fits in your pocket!
 image3: /img/brain-digital-illustration.jpg
 i3Heading: Medical Suppliers
