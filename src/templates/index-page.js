@@ -246,7 +246,7 @@ export const IndexPageTemplate = ({
 
 
 
-<h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of the industries we serve:</h2>
+<h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our clients:</h2>
     
         <div
       className="full-width-image margin-top-0"
