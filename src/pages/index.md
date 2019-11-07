@@ -4,7 +4,7 @@ title: Precision Parts
 image: /img/Ad2Grid_Logo.jpg
 heading: Full Service
 subheading: Marketing Agency
-subsubheading: Add BS HERE
+subsubheading: Add marketing HERE
 image2: /img/pexels-photo-2182863.jpg
 i2Heading: Semiconductors
 i2Subheading: Unique solutions on demand
