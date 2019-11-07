@@ -2,9 +2,9 @@
 templateKey: index-page
 title: Precision Parts
 image: /img/Ad2Grid_Logo.jpg
-heading: Full Service
-subheading: Marketing Agency
-subsubheading: Add marketing HERE
+heading: Award Winning Marketing and Design
+subheading: Dedicated to the ART of marketing
+subsubheading: Accelerate Your Results
 image2: /img/workspace-2517759_1280.png
 i2Heading: We'll Help You
 i2Subheading: Navigate the social divide

@@ -35,7 +35,7 @@ const CustomBox = styled.div`
 const Install = () => (
 <CustomBox style={{}} className="installer">
 
-<div id="installer" className="" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'60px', width:'100%', zIndex:'1', }}>
+<div id="installer" className="" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'60px', width:'100%', zIndex:'1', borderRadius:'8px', }}>
 
 <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
@@ -55,7 +55,7 @@ const Install = () => (
 
 	<img src="" alt="placeholder" style={{justifyContent:'center', maxWidth:'100%', width:'100%', margin:'0 auto', display:'none',}} />
 	
-	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install as Web App</h4>
+	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install our web app</h4>
 	<br />
 	<span style={{fontSize:'100%',}}>This website has app functionality. Add it to your home screen to get added features on-the-go, like exclusive content, fullscreen and offline capability.</span>
 	<br /><br />

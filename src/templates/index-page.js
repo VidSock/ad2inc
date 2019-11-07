@@ -61,6 +61,19 @@ const CustomBox = styled.div`
   }
 }
 
+@media (min-width: 58rem) {
+
+  .full-width-image h1{font-size:500% !important;}
+  .full-width-image h2{font-size:300% !important;}
+  .full-width-image h3{font-size:200% !important;}
+  
+  #hero h1{font-size:500% !important;}
+  #hero h3{font-size:380% !important; color:red !important;}
+  .special{font-size:200% !important;}
+}
+
+
+
 `
 
 
@@ -101,13 +114,13 @@ export const IndexPageTemplate = ({
   
   
   
-    <div
+    <div id="hero"
       className="full-width-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `center left`,
+        backgroundPosition: `center center`,
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
@@ -127,9 +140,9 @@ export const IndexPageTemplate = ({
     <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute',  textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
         <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
-<ScrollAnimation animateIn="bounceInRight"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', right:'20%', top:'40%', zIndex:'1',}}>
+<ScrollAnimation animateIn="bounceInRight"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'10%', bottom:'25%', zIndex:'1',}}>
 <label style={{display:'flex', justifyContent:'center',}} htmlFor="modal-toggle">
-<div className="special txtshadow" style={{padding:'.5rem 2rem', backgroundColor:'#DB2600', color:'#fff', borderRadius:'6px', cursor:'pointer',}}>Contact Us</div>
+<div className="special txtshadow" style={{padding:'.5rem 2rem', backgroundColor:'#DB2600', color:'#fff', borderRadius:'6px', cursor:'pointer',}}>Get Started</div>
 </label>
 </ScrollAnimation>
     
@@ -139,8 +152,10 @@ export const IndexPageTemplate = ({
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
-            color: '#fff',
+/*
             fontSize: '3.5rem',
+*/
+            color: '#fff',
            position: 'relative',
 //            top: '100px',
 //         left: '5%',
@@ -178,7 +193,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         <ScrollAnimation animateIn="bounceInUp"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
+        <h3
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
@@ -194,7 +209,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {subsubheading}
-        </h2>
+        </h3>
         </ScrollAnimation>
         
         
