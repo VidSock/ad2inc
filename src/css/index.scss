@@ -95,7 +95,7 @@ select {
 
 
 html::-webkit-scrollbar {
-    width: .8rem;
+    width: 1.2rem;
 }
 html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -103,8 +103,8 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-image:-webkit-linear-gradient(#222 0%, #000 100%);
-  outline: 2px dashed #fff;
+  background-image:linear-gradient(#333 20%, #000 90%);
+  outline: 8px dotted #fff;
   border:1px solid #666;
 }
 
