@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
+import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 import Install from '../components/Install'
@@ -124,7 +125,7 @@ export const IndexPageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
-        paddingTop: '95px',
+        paddingTop: '125px',
         position: 'relative',
 //         overflowX: 'scroll',
       }}

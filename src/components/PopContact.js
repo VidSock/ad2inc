@@ -132,7 +132,7 @@ const CustomBox = styled.div`
 	   }
 	  }
 	    
-	     #popcontact-form{padding-left:1rem;}
+	     
 	     
 	     .modal-close{top:10px !important; right: 20px !important; color: #999 !important;}
 	     

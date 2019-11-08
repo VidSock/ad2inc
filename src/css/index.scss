@@ -702,8 +702,8 @@ padding:0 0;
 
 border-top: 1px solid #fff !important;
 border-bottom: 1px solid #fff !important;
-position:absolute;
- top:20px;
+// position:absolute;
+//  top:20px;
 }
 
 
@@ -739,7 +739,7 @@ position:absolute;
   max-height: 100px !important;
   position: absolute;
   height:150px;
-  top:-20px;
+  top:0;
 //   box-shadow: 1px 1px 14px 0 rgba(0,0,0,.1);
 }
 
@@ -906,8 +906,13 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 .headroom--unpinned {
   transform: translateY(100%);
   top: inherit !important;
-  bottom:-140px !important;
+  bottom:-120px !important;
 }
+
+
+.headroom--pinned .header .logo{top:-20px !important;}
+.header .logo{top:0px !important;}
+
 .header .menu{height:100vh !important;}
 
 
@@ -917,8 +922,8 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 	.header .menu {
   margin-top:0;
 }
-
-
+.headroom--pinned {top:20px !important;}
+.headroom--pinned .logo {top:-20px !important;}
 
 	.header {display: flex; justify-content: space-around;}
 	.header ul{display: flex; justify-content: space-around !important;}
@@ -1162,7 +1167,7 @@ body.dark * {
   will-change: transform;
   position: fixed;
   transition: opacity .5s linear;
-
+//  top:50px;
 }
 .headroom--pinned {
   transform: translateY(0%);
@@ -1175,6 +1180,8 @@ body.dark * {
 .headroom--pinned .back-to-top{ top:0; right:25%; background:transparent;}
 .headroom--pinned .back-to-top:after{content: ('Back to top'); font-size: 12px; top:0; position:absolute; height:20px;}
 .headroom--unfixed .back-to-top{display: none;}
+
+.headroom--pinned .themer{top:40px;}
 
 
 
@@ -1213,8 +1220,11 @@ body.dark * {
 .headroom--unpinned .themer, .headroom--unpinned, .headroom--scrolled {display: none;}
 
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
-// .headroom-wrapper{height:58px !important;}
+.headroom-wrapper{height:0 !important;}
 
+.headroom--unfixed{top:0 !important;}
+.headroom--unfixed .header{margin-top:20px !important;}
+.headroom--unpinned .logo{display: none;}
 .back-to-top{display: block; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
 z-index:1;
 color: #fff !important;
