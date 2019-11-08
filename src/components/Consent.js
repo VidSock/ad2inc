@@ -11,7 +11,7 @@ const Consent = () => (
 <CookieConsent
 	debug={true}
 	location="bottom"
-	style={{ background: "#222", zIndex:'0', padding:'0% 3% 0% 3%', }}
+	style={{ background: "#222", zIndex:'0', padding:'0% 3% 0% 3%', opacity:'.8', }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
     declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
