@@ -97,7 +97,7 @@ const CustomBox = styled.div`
     &:checked ~ .modal-content {
       opacity: 1;
       background-color: transparent;
-    max-width: 700px;
+    max-width: 800px;
     width: 100vw;
       height: auto;
       padding: 0;
@@ -107,8 +107,8 @@ const CustomBox = styled.div`
     justify-content:center;
 	margin:0 auto;
       top: 20px;
-      left:7%;
-      right:7%;
+      left:1%;
+      right:1%;
    
       border-radius: 4px;
       z-index: 4;
