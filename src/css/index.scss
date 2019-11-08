@@ -421,7 +421,7 @@ input[type="submit"],
 
 .header {
   background-color: #ED1B2D;
-  background-image: -webkit-linear-gradient(#ED1B2D 0%, #d22f3d 100%);
+  background-image: linear-gradient(#222 0%, #ED1B2D 6%);
   box-shadow: 1px 1px 8px 0 rgba(0,0,0,.9);
   width: 100vw;
   height:60px;
@@ -452,6 +452,7 @@ border-bottom: 1px solid #fff !important;
   padding: 10px 30px;
   text-decoration: none;
   color:#fff;
+  text-shadow: 1px 2px 0px black;
 }
 
 .header li a:hover,
@@ -950,12 +951,15 @@ body.dark * {
 .headroom--unpinned .themer, .headroom--unpinned, .headroom--scrolled {display: none;}
 
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
+
 .headroom-wrapper{height:0 !important;}
 
 .headroom--unfixed{top:0 !important;}
 .headroom--unfixed .header{margin-top:20px !important;}
 .headroom--unpinned .logo{display: none;}
-.back-to-top{display: none; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
+
+
+.back-to-top{display: none; position:fixed; bottom:25vh; right:45%;  padding:0; height:70px; width:70px; 
 z-index:1;
 color: #fff !important;
 font-size:440%;
@@ -969,7 +973,7 @@ text-shadow: 1px 1px 1px black;
 
 .back-to-top svg, .back-to-top svg:visited{color:#fff;}
 body.light .back-to-top svg, body.light .back-to-top svg:visited {color:#fff;}
-body.light .back-to-top svg:hover, .back-to-top svg:hover{color:#fff;}
+body.light .back-to-top svg:hover, .back-to-top svg:hover{color:#000;}
 
 
 @media print {
