@@ -400,7 +400,7 @@ input.special {
 
 
 
-h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: normal;}
 
 #menu{font-size:1rem;}
 
@@ -683,7 +683,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
     padding: 14px 0;
     display: block;
     padding:1rem;
-    border-right:1px solid #fff;
+    border-right:1px solid #222;
   }
   .header li:last-child a{border-right:0;}
   .header .menu {
