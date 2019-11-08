@@ -50,6 +50,17 @@ module.exports = {
         TrackingId: '',
       }
     },
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
+         //ignore: ['index.css'], // Ignore files/folders
+         purgeOnly : ['/animate.css'], // Purge only these files/folders
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-dark-mode',
