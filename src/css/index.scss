@@ -942,7 +942,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 //    border-left:1px solid #666;
   }
 
-.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh);}
+.back-to-top{display: block !important; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh);}
 
 
 // .intro:after, .intro:before{font-size:380%}
@@ -1184,9 +1184,9 @@ body.dark * {
 .headroom--unpinned {
   transform: translateY(-100%);
 }
-.headroom--pinned .back-to-top{ top:0; right:25%; background:transparent;}
+.headroom--pinned .back-to-top{ top:0; right:25%; background:transparent; display: block !important;}
 .headroom--pinned .back-to-top:after{content: ('Back to top'); font-size: 12px; top:0; position:absolute; height:20px;}
-.headroom--unfixed .back-to-top{display: none;}
+.headroom--unfixed .back-to-top, .headroom--unfixed .back-to-top:after {display: none;}
 
 .headroom--pinned .themer{top:40px;}
 
@@ -1232,7 +1232,7 @@ body.dark * {
 .headroom--unfixed{top:0 !important;}
 .headroom--unfixed .header{margin-top:20px !important;}
 .headroom--unpinned .logo{display: none;}
-.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
+.back-to-top{display: none; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
 z-index:1;
 color: #fff !important;
 font-size:440%;
