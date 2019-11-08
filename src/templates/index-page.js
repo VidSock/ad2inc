@@ -67,7 +67,7 @@ const CustomBox = styled.div`
   .full-width-image h2{font-size:300% !important;}
   .full-width-image h3{font-size:200% !important;}
   
-  #hero h1{font-size:500% !important;}
+  #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:380% !important; color:red !important;}
   .special{font-size:200% !important;}
 }

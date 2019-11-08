@@ -773,7 +773,7 @@ position:absolute;
 
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: transparent;
   display: block;
   height: 2px;
   position: relative;
@@ -921,7 +921,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 
 	.header {display: flex; justify-content: space-around;}
-	.header ul{display: flex; justify-content: space-around !important;  box-shadow: 1px 1px 14px 0 rgba(0,0,0,.1);}
+	.header ul{display: flex; justify-content: space-around !important;}
    [aria-current].logolink {
    background:none;
   }
