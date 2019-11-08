@@ -53,7 +53,7 @@ const Install = () => (
 
 <div className="container" style={{padding:'2rem 1rem', border:'1px solid #000', borderRadius:'8px',}}>
 
-	<img src="" alt="placeholder" style={{justifyContent:'center', maxWidth:'100%', width:'100%', margin:'0 auto', display:'none',}} />
+// 	<img alt="placeholder" style={{justifyContent:'center', maxWidth:'100%', width:'100%', margin:'0 auto', display:'none',}} />
 	
 	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install App</h4>
 	<br />
