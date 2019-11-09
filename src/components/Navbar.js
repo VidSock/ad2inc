@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
               </li> */}
               
               <li>
-              <Link className="navbar-item" to="/example">
+              <Link className="navbar-item" to="/gallery1">
                Portfolio
               </Link>
               </li>
@@ -55,6 +55,11 @@ const Navbar = class extends React.Component {
               </Link>
               </li>
               
+              <li>
+              <Link className="navbar-item" to="/example">
+                Test
+              </Link>
+              </li>
               
               
 
