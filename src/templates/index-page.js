@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
+import Image from '../components/Image';
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
@@ -113,7 +114,7 @@ export const IndexPageTemplate = ({
 	
   <div className="outer intro" style={{}}>
   
-  
+  <a href="https://toddlambert.com/"><Image alt="Todd Lambert Web development for photographers" filename="Ad2Grid_Logo.jpg" /></a>
   
     <div id="hero"
       className="full-width-image"
