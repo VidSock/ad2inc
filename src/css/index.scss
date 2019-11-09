@@ -153,6 +153,8 @@ position:absolute; bottom:10px; right:10px; color:#fff;
 	.gatsby-image-wrapper:after{content: ('+ click to zoom'); position:absolute; bottom:10px; right:10px; color:#fff;}
 }
 
+.react-images__frame img{margin: 0 auto 0 auto !important;}
+
 
 .modal-btn {
     display: block;

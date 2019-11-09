@@ -36,7 +36,7 @@ const Gal1Page = () => {
   const data = useStaticQuery(gal1Query)
   return (
     <Layout>
-    <div className=" " style={{padding:'120px 6% 0 6%',}}>
+    <div className="container" style={{padding:'120px 6% 0 6%',}}>
       <h1>Browse Our Work:</h1>
       </div>
       <Gallery
