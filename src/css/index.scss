@@ -439,8 +439,14 @@ input[type="submit"],
 /* header */
 
 .header {
+/*
   background-color: #ED1B2D;
   background-image: linear-gradient(#222 0%, #ED1B2D 6%);
+*/
+
+background-image: linear-gradient(#222 0%, #1b1213 6%);
+
+
   box-shadow: 1px 1px 8px 0 rgba(0,0,0,.9);
   width: 100vw;
   height:60px;
