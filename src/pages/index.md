@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Precision Parts
-image: /img/banner-pnb.jpg
+image: /img/Ad2Grid_Logo.jpg
 heading: Award Winning Marketing and Design
 subheading: Dedicated to the ART of marketing
 subsubheading: Accelerate Your Results
