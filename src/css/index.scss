@@ -453,8 +453,11 @@ background-image: linear-gradient(#222 0%, #1b1213 6%);
 //   z-index: 2;
 padding:0 0;
 
-border-top: 2px solid #ff0000 !important;
-border-bottom: 2px solid #ff0000 !important;
+border-top: 0px solid #ff0000 !important;
+border-bottom: 0px solid #ff0000 !important;
+
+  outline-style: solid;
+  outline-color: #ff0000;
 // position:absolute;
 //  top:20px;
 }
@@ -1031,7 +1034,7 @@ z-index: -1;
 .headroom-wrapper{height:0 !important;}
 
 .headroom--unfixed{top:0 !important;}
-.headroom--unfixed .header{margin-top:20px !important;}
+.headroom--unfixed .header{margin-top:24px !important;}
 .headroom--unpinned .logo{display: none;}
 
 
