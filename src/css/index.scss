@@ -689,7 +689,7 @@ background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%
 .headroom--pinned {top:20px !important;}
 .headroom--pinned .logo {top:-20px !important;}
 
-	.header {display: flex; justify-content: space-between;}
+	.header {display: flex; justify-content: space-around;}
 	.header ul{display: flex; justify-content: space-around !important;}
    [aria-current].logolink {
    background:none;
@@ -818,7 +818,9 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/a
 .media h2{font-size:3rem;}
 .media h3{font-size:2.8rem;}
 .header {display: flex; justify-content: space-around !important;}
-
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
 }
 
 

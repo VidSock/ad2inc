@@ -31,23 +31,13 @@ const Navbar = class extends React.Component {
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
             <ul id="menu" className="menu">
-               <li>
-              <Link className="navbar-item" to="/capabilities">
-                About Ad2
-              </Link>
-              </li>
-              
-              {/* <li>
-              <Link className="navbar-item" to="/products">
-                How We Do It
-              </Link>
-              </li> */}
-              
-              <li>
+            
+            <li>
               <Link className="navbar-item" to="/gallery1">
                Portfolio
               </Link>
               </li>
+              
               
               <li>
               <Link className="navbar-item" to="/about">
@@ -55,9 +45,25 @@ const Navbar = class extends React.Component {
               </Link>
               </li>
               
+              
+              
+              {/* <li>
+              <Link className="navbar-item" to="/products">
+                How We Do It
+              </Link>
+              </li> */}
+              
+              
               <li>
               <Link className="navbar-item" to="/example">
-                Test
+                Case Studies
+              </Link>
+              </li>
+              
+              
+               <li>
+              <Link className="navbar-item" to="/capabilities">
+                About Us
               </Link>
               </li>
               
