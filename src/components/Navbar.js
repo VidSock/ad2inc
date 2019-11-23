@@ -32,20 +32,22 @@ const Navbar = class extends React.Component {
 
             <ul id="menu" className="menu">
             
+            
+            
+            <li>
+              <Link className="navbar-item" to="/about">
+                Services
+              </Link>
+              </li>
+            
+            
+            
             <li>
               <Link className="navbar-item" to="/gallery1">
                Portfolio
               </Link>
               </li>
-              
-              
-              <li>
-              <Link className="navbar-item" to="/about">
-                Services
-              </Link>
-              </li>
-              
-              
+
               
               {/* <li>
               <Link className="navbar-item" to="/products">

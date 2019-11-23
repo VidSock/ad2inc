@@ -105,7 +105,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background-image:linear-gradient(#333 20%, #000 90%);
-  outline: 8px dotted #fff;
+//   outline: 8px dotted #fff;
   border:1px solid #666;
 }
 
@@ -202,6 +202,10 @@ main{min-height: 60vh;}//force v-scroll
 .media h2{font-size:2rem;}
 .media h3{font-size:1.8rem;}
 .mediacta{ position:relative; margin-left:0; z-index: 0; }
+
+
+
+
 
 /*
 .intro:before{

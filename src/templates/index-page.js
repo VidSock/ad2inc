@@ -11,10 +11,12 @@ import Install from '../components/Install'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
+import { MdPlayArrow } from 'react-icons/md'
+
 import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
 // import PopMedical from '../components/PopMedical'
-import PopSemi from '../components/PopSemi'
+// import PopSemi from '../components/PopSemi'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -267,7 +269,7 @@ export const IndexPageTemplate = ({
 
 
 
-<h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our clients:</h2>
+<h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our recent work:</h2>
     
         <div
       className="full-width-image margin-top-0"
@@ -289,26 +291,29 @@ export const IndexPageTemplate = ({
 
      <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '3rem',
+            color: '#333',
+            fontSize: '1.4rem',
            position: 'relative',
+           textTransform:'uppercase',
            top: '20%',
 //         right: '5%',
 //         left: '5%',
         margin: '0 auto',
-        padding: '0 1rem',
+        padding: '0 0',
+/*
             backgroundImage: 'linear-gradient(#372d26 15.89%, #160e0e 80.13%)',
             border: '0px solid red',
             borderRadius: '8px',
+*/
             float: 'none',
 //             width: '90vw',
-            textAlign: 'center',
+//             textAlign: 'center',
             
           }}
         >
-          {i2Heading} 
+           Jackson County Economic <br />Development Foundation
         </h2>
         </ScrollAnimation>
         
@@ -318,15 +323,16 @@ export const IndexPageTemplate = ({
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '1.4rem',
+            color: '#333',
+            fontSize: '.8rem',
            position: 'relative',
+           width:'50%',
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
-        margin: '1rem  auto 0 auto',
+        marginTop: '1rem',
 //            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
@@ -334,7 +340,7 @@ export const IndexPageTemplate = ({
             
           }}
         >
-          {i2Subheading}. We create custom plans for your processes. 
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
         </h2>
         </ScrollAnimation>
         
@@ -342,11 +348,15 @@ export const IndexPageTemplate = ({
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal spotlink mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '1.4rem',
+            color: '#333',
+            fontSize: '1rem',
            position: 'relative',
+           textTransform:'uppercase',
+           textDecoration:'none',
+
+           
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
@@ -358,7 +368,7 @@ export const IndexPageTemplate = ({
             
           }}
         >
-          {i2Subsubheading} that are tailored to your business. 
+          <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
         </h2>
         </ScrollAnimation>
         
@@ -368,6 +378,7 @@ export const IndexPageTemplate = ({
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
+	          display:'none',
             color: '#fff',
             fontSize: '1.6rem',
            position: 'relative',
@@ -387,7 +398,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
 
         
-        <PopSemi />
+        
 
     </div>
 
@@ -479,7 +490,7 @@ export const IndexPageTemplate = ({
         
 
         
-       <PopSemi />
+     
        
        
     </div>
