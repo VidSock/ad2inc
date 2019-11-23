@@ -13,7 +13,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
 
-import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
+// import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
 // import PopMedical from '../components/PopMedical'
 // import PopSemi from '../components/PopSemi'
@@ -427,64 +427,112 @@ export const IndexPageTemplate = ({
         overflowX: 'scroll',
       }}
     >
-    <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '3rem',
+            color: '#333',
+            fontSize: '1.4rem',
            position: 'relative',
-//            top: '100px',
+           textTransform:'uppercase',
+           top: '20%',
+//         right: '5%',
 //         left: '5%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'left',
+        margin: '0 auto',
+        padding: '0 0',
+/*
+            backgroundImage: 'linear-gradient(#372d26 15.89%, #160e0e 80.13%)',
             border: '0px solid red',
+            borderRadius: '8px',
+*/
             float: 'none',
+//             width: '90vw',
+//             textAlign: 'center',
             
           }}
         >
-          {i3Heading}
+           Pav &amp; Broome Fine Jewelry
         </h2>
         </ScrollAnimation>
         
         
-        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '1.6rem',
+            color: '#333',
+            fontSize: '.8rem',
            position: 'relative',
-		   margin: '1rem 0 0 0',
+           width:'50%',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        marginTop: '1rem',
+//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
-          }}><FaAccessibleIcon />{i3Subheading} Wheel Chairs</h2>
+//             width: '100vw',
+            
+          }}
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
+        </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
-          className="normal txtshadow-header mobile-txt"
+          className="normal spotlink mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '1.6rem',
+            color: '#333',
+            fontSize: '1rem',
            position: 'relative',
-		   margin: '1rem 0 0 0',
+           textTransform:'uppercase',
+           textDecoration:'none',
+
+           
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '1rem auto',
+//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
-          }}><FaOdnoklassniki />{i3Subsubheading} Good Helmets</h2>
+//             width: '100vw',
+            
+          }}
+        >
+          <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+        </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
+	          display:'none',
             color: '#fff',
             fontSize: '1.6rem',
            position: 'relative',
-		   margin: '1rem 0 0 0',
-            textAlign: 'left',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '2rem auto 0 auto',
+//            backgroundColor: '#ff0000',
+            textAlign: 'center',
             border: '0px solid red',
-          }}><FaBlind />{i3Subsubheading2} Canes - keeping the blind upright</h2>
+//             width: '100vw',
+            
+          }}
+        >
+          {i2Subsubheading2}
+        </h2>
         </ScrollAnimation>
         
         

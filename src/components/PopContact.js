@@ -134,7 +134,7 @@ const CustomBox = styled.div`
 	    
 	     
 	     
-	     .modal-close{top:10px !important; right: 20px !important; color: #999 !important;}
+.modal-close{top:10px !important; right: 20px !important; color: #999 !important;}
 	     
 .modal-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
 	    

@@ -100,7 +100,7 @@ html::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: $primary;
+    background-color: #222;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -111,6 +111,7 @@ html::-webkit-scrollbar-thumb {
 
 	
 html::-webkit-scrollbar-thumb:before {
+	content:"Todd ";
 position:absolute; bottom:10px; right:10px; color:#fff;
 }
 
@@ -175,7 +176,7 @@ position:absolute; bottom:10px; right:10px; color:#fff;
     text-align: center;
     box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
-    &:hover { background: #333; cursor:pointer; 
+    &:hover { background: #ED1B2D; cursor:pointer; 
     }
   }
 
@@ -461,7 +462,7 @@ border-top: 0px solid #ff0000 !important;
 border-bottom: 0px solid #ff0000 !important;
 
   outline-style: solid;
-  outline-color: #ff0000;
+  outline-color: #ED1B2D;
 // position:absolute;
 //  top:20px;
 }
