@@ -19,7 +19,7 @@ export const ExamplePageTemplate = ({
   intro,
 }) => (
   
-  <div className="outer intro" style={{paddingTop:'80px',}}>
+  <div className="outer intro" style={{paddingTop:'0',}}>
   
   
   
@@ -34,7 +34,7 @@ export const ExamplePageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '70vh',
-        paddingTop: '60px',
+        paddingTop: '100px',
       }}
     >
     
@@ -56,7 +56,7 @@ export const ExamplePageTemplate = ({
         className="media"
       >
       
-        <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
+        <ScrollAnimation animateIn="bounceInLeft"  delay={0}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -72,11 +72,11 @@ export const ExamplePageTemplate = ({
             
           }}
         >
-          Precision Parts
+          Case Studies
         </h1>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInRight" delay={1000}>
+        <ScrollAnimation animateIn="bounceInRight" delay={0}>
         <h3
           className="narrow txtshadow mobile-txt"
           style={{
@@ -89,12 +89,12 @@ export const ExamplePageTemplate = ({
             border: '0px solid red',
           }}
         >
-          Quality Manufacturing
+          
         </h3>
         </ScrollAnimation>
         
         
-        <ScrollAnimation animateIn="bounceInUp" delay={1000}>
+        <ScrollAnimation animateIn="bounceInUp" delay={0}>
         <h3
           className="black txtshadow mobile-txt"
           style={{
@@ -107,14 +107,14 @@ export const ExamplePageTemplate = ({
            border: '0px solid red',
           }}
         >
-          Done right AND on time
+          
         </h3>
         </ScrollAnimation>
         
         
         
        
-		<div style={{position:'absolute', right:'0', top:'40%',}}><PopNewsletter /></div>
+		<div style={{display:'none', position:'absolute', right:'0', top:'40%',}}><PopNewsletter /></div>
         
         
         

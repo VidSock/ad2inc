@@ -107,7 +107,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 //   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="about outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
+    <section className="about outer intro section" style={{paddingTop:'85px', overflow:'hidden',}}>
     
     <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={1000}>
       <div className="container" style={{display:'none',}}>

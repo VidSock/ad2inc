@@ -250,7 +250,7 @@ export const IndexPageTemplate = ({
 With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.
 Let Ad2 assist you with bringing your vision to a reality.</p>
 <br />
-<Link className="interest grad-dark" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Learn More <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
+<Link className="interest grad-dark" to="/portfolio" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>See For Yourself <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
 
 
 </div>
