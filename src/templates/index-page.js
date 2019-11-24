@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
-// import Image from '../components/Image';
+import Image from '../components/Image'
+import { Link } from 'gatsby'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
@@ -21,6 +22,8 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
+
+.spotimg{border-radius:12px;}
 
 .fullscreen-bg {
   position: fixed;
@@ -228,42 +231,82 @@ export const IndexPageTemplate = ({
     </div>
     
     
-    
-
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
+<Image className="spotimg" alt="Ad2 Inc Marketing and PR" filename="aboutpic.jpg" /><br />
+<h2>The Ad2 Difference</h2>
+<p>
+With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.
+Let Ad2 assist you with bringing your vision to a reality.</p>
+
+<Link className="interest grad" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>Learn More</Link>
+
+
+</div>
+</div>
+</ScrollAnimation>
+
+
+
+
+
+
+<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div id="desc" className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div style={{width:'60%',}}>
 <h2>Main Spotlight</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </div>
+
+<div style={{width:'40%', margin:'0 0 0 1rem', }}>
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} /></div>
+
+</div>
+<Link className="interest grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>More Info</Link>
 </div>
 </ScrollAnimation>
+
+
+
+
+
+
 
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" alt="Placeholder" width="220" height="220" style={{float: 'left', margin:'0 1rem 1rem 0',}} />
-<h2>Supporting Spotlight</h2>
-<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
 
-<p> It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-</div>
-</div>
-</ScrollAnimation>
-
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div style={{width:'40%', margin:'0 1rem 0 0', }}>
 <img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
-<h2>The Ad2 Difference</h2>
-<p>With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.</p>
-<p>Let Ad2 assist you with bringing your vision to a reality.</p>
 </div>
+
+<div style={{width:'60%',}}>
+<h2>Secondary Spotlight</h2>
+<p>In the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+</p>
+</div>
+
+</div>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todds Gear</Link>
 </div>
 </ScrollAnimation>
+
+
+  
+
 
 
 
