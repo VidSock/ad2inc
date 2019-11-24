@@ -33,6 +33,22 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
 
+.zoomer{animation: zoomer 1.5s forwards;
+    animation-delay: 4.4s;}
+    
+@keyframes zoomer {
+0% {
+	display: none;
+	}
+	
+100% {
+	height:0;
+    filter: blur(60px);
+    opacity: 0;   	
+	}
+}
+
+
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
@@ -79,8 +95,8 @@ const Gal1Page = () => {
 
 
       
-      <div style={{paddingTop:'85px', display:'flex',alignItems:'center', justifyContent:'center',}}>
-      <h4 style={{ color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'absolute', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
+      <div className="zoomer" style={{paddingTop:'85px', display:'flex',alignItems:'center', justifyContent:'center',}}>
+      <h4 style={{display:'flex', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
       </div>
       <GalleryMenu />
   
