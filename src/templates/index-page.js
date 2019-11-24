@@ -249,8 +249,8 @@ export const IndexPageTemplate = ({
 <p>
 With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.
 Let Ad2 assist you with bringing your vision to a reality.</p>
-
-<Link className="interest grad" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>Learn More</Link>
+<br />
+<Link className="interest grad-dark" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Learn More <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
 
 
 </div>
@@ -275,7 +275,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 <img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} /></div>
 
 </div>
-<Link className="interest grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>More Info</Link>
+<Link className="interest grad-dark" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>More Info <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
 </div>
 </ScrollAnimation>
 
@@ -301,7 +301,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>Do it Now!</Link>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Do it Now! <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#fff',}}><MdPlayArrow /></span></Link>
 </div>
 </ScrollAnimation>
 
@@ -413,7 +413,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
             
           }}
         >
-          <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+          <a href="https://google.com" style={{color:'#333', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
         </h3>
         </ScrollAnimation>
         
@@ -552,7 +552,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
             
           }}
         >
-          <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+          <a href="https://google.com" style={{color:'#333', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
         </h3>
         </ScrollAnimation>
         

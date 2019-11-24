@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa'
+// import { MdPlayArrow } from 'react-icons/md'
 
 
 // const Contact = class extends React.Component {
@@ -143,8 +144,15 @@ export default class Contact extends React.Component {
                 
                 <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
-                <div className="actionable" style={{ marginBottom: '2rem',}}><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
+                <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
+                <input type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
+                <FaEnvelope style={{position: 'relative', top: '5px', right: '-5px', color: '#fff', fontSize: '120%',}} />
+                
+                </div>
+                
+                
+                <br />
                 <div style={{fontSize: '70%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy Policy</a>
                 </div>
                 
