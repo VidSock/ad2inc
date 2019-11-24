@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaYoutubeSquare } from 'react-icons/fa'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 /*
@@ -16,6 +17,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
+<ScrollAnimation animateIn="fadeIn" duration={3} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
@@ -48,6 +50,7 @@ const Footer = class extends React.Component {
 <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Ad2Inc.</div>
         </div>
       </footer>
+      </ScrollAnimation>
     )
   }
 }

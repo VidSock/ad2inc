@@ -241,7 +241,7 @@ export const IndexPageTemplate = ({
   
   
   
-  <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+  <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image className="spotimg" alt="Ad2 Inc Marketing and PR" filename="aboutpic.jpg" /><br />
@@ -262,7 +262,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
@@ -285,7 +285,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
@@ -312,7 +312,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our recent work:</h2>
     
         <div
@@ -446,7 +446,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
         
 
     </div>
-
+</ScrollAnimation>
     
     
     
@@ -455,7 +455,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
     
     
 
-    
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <div
       className="full-width-image margin-top-0"
       style={{display: 'block',
@@ -588,14 +588,14 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
        
        
     </div>
+    </ScrollAnimation>
     
     
     
     
-    
-    
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <Contact />
-
+</ScrollAnimation>
 
 
 
