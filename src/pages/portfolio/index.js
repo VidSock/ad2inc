@@ -15,15 +15,22 @@ import Gallery from '../../components/Gallery'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
-#galleries {
-	position:relative;
-background: rgb(126,209,234);
-background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
-background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
-background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+#portfolio {
+background: #0c0203;
+background: -moz-linear-gradient(top, #0c0203 0%, #de0004 17%, #96000c 76%, #0c0203 100%);
+background: -webkit-linear-gradient(top, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
+background: linear-gradient(to bottom, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
 }
 
-
+.intro:before{
+	content: "Portfolio";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
 
 
 @media (hover: hover) {

@@ -13,6 +13,7 @@ import styled from 'styled-components'
 
 const CustomBox = styled.div`
 
+/*
 .intro:before{
 	content: "About Twilightscapes";
 position:absolute;
@@ -21,6 +22,7 @@ align-items: center;
 justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
+*/
 
 
 .speech:after {

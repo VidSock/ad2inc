@@ -25,7 +25,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', end
 }
 
 .intro:before{
-	content: "Identity";
+	content: "Web";
 
 position:absolute;
 display: flex;
@@ -51,8 +51,8 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 `
 
 
-const gal2Query = graphql`
-  query gal2Query {
+const gal7Query = graphql`
+  query gal7Query {
     allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
       edges {
         node {
@@ -74,7 +74,7 @@ const gal2Query = graphql`
 `
 
 const Gal1Page = () => {
-  const data = useStaticQuery(gal2Query)
+  const data = useStaticQuery(gal7Query)
   return (
 	  <CustomBox>
     <Layout>
