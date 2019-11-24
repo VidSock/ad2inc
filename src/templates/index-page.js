@@ -301,7 +301,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Do it Now!</Link>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'40%', margin:'0 auto',}}>Do it Now!</Link>
 </div>
 </ScrollAnimation>
 

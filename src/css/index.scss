@@ -475,8 +475,8 @@ background-image: linear-gradient(#222 0%, #1b1213 6%);
 //   z-index: 2;
 padding:0 0;
 
-border-top: 0px solid #ff0000 !important;
-border-bottom: 0px solid #ff0000 !important;
+border-top: 1px solid #666 !important;
+border-bottom: 1px solid #666 !important;
 
   outline-style: solid;
   outline-color: #ED1B2D;
@@ -861,7 +861,11 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/a
 .themeSlide {
   width: 80px;
   height: 20px;
-  background: #333;
+background: #352a33;
+background: -moz-linear-gradient(left, #352a33 0%, #352a33 49%, #ffffff 50%, #ffffff 50%, #e2e2e2 100%);
+background: -webkit-linear-gradient(left, #352a33 0%,#352a33 49%,#ffffff 50%,#ffffff 50%,#e2e2e2 100%);
+background: linear-gradient(to right, #352a33 0%,#352a33 49%,#ffffff 50%,#ffffff 50%,#e2e2e2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352a33', endColorstr='#e2e2e2',GradientType=1 );
   position: relative;
 //   top:20px;
   border-radius: 50px;
@@ -869,7 +873,7 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/a
 
 .themeSlide:after {
   content: 'Light';
-  color: #fff;
+  color: #222;
   position: absolute;
   right: 8px;
   top:4px;
