@@ -70,13 +70,14 @@ const CustomBox = styled.div`
 
 @media (min-width: 58rem) {
 
-  .full-width-image h1{font-size:500% !important;}
-  .full-width-image h2{font-size:300% !important;}
-  .full-width-image h3{font-size:200% !important;}
+  .full-width-image h1{font-size:200% !important;}
+  .full-width-image h2{font-size:200% !important;}
+  .full-width-image h3{font-size:100% !important;}
+   .full-width-image p{font-size:102% !important;}
   
   #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:380% !important; color:red !important;}
-  .special{font-size:200% !important;}
+  .special{font-size:100% !important;}
 }
 
 
@@ -300,7 +301,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todds Gear</Link>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Do it Now!</Link>
 </div>
 </ScrollAnimation>
 
@@ -327,6 +328,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
         backgroundRepeat: 'none',
         height:'100vh',
         paddingTop: '55px',
+        paddingLeft:'30px',
         overflowX: 'scroll',
       }}
     >
@@ -365,7 +367,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
         
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
+        <p
           className="normal mobile-txt"
           style={{
             color: '#333',
@@ -384,13 +386,13 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
           }}
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
-        </h2>
+        </p>
         </ScrollAnimation>
         
         
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
+        <h3
           className="normal spotlink mobile-txt"
           style={{
             color: '#333',
@@ -412,7 +414,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
           }}
         >
           <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
-        </h2>
+        </h3>
         </ScrollAnimation>
         
         
@@ -467,6 +469,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
         backgroundRepeat: 'none',
         height:'100vh',
         paddingTop: '55px',
+        paddingLeft: '30px',
         overflowX: 'scroll',
       }}
     >
@@ -503,7 +506,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
         
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
+        <p
           className="normal mobile-txt"
           style={{
             color: '#333',
@@ -522,13 +525,13 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
           }}
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
-        </h2>
+        </p>
         </ScrollAnimation>
         
         
         
          <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
+        <h3
           className="normal spotlink mobile-txt"
           style={{
             color: '#333',
@@ -550,7 +553,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
           }}
         >
           <a href="https://google.com" style={{color:'#ff0000', textDecoration:'none',}}>See The Work <span style={{fontSize:'150%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
-        </h2>
+        </h3>
         </ScrollAnimation>
         
         

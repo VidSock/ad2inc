@@ -698,10 +698,11 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 .header .menu{height:100vh !important;}
 
 [aria-current] {
-background: rgb(3,73,127); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(3,73,127,1) 0%, rgba(65,145,186,1) 60%, rgba(126,209,234,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #0c0203;
+background: -moz-linear-gradient(top, #0c0203 0%, #de0004 9%, #96000c 92%, #96000c 92%, #0c0203 100%);
+background: -webkit-linear-gradient(top, #0c0203 0%,#de0004 9%,#96000c 92%,#96000c 92%,#0c0203 100%);
+background: linear-gradient(to bottom, #0c0203 0%,#de0004 9%,#96000c 92%,#96000c 92%,#0c0203 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
 
 }
 
