@@ -34,20 +34,6 @@ justify-content: center;
 font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
-.zoomer{animation: zoomer 1.5s forwards;
-    animation-delay: 4.4s;}
-    
-@keyframes zoomer {
-0% {
-	display: none;
-	}
-	
-100% {
-	height:0;
-    filter: blur(60px);
-    opacity: 0;   	
-	}
-}
 
 
 
