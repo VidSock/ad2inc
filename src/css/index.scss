@@ -344,11 +344,25 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     line-height:1.35}
     
     
-    .full-width-image{background-size: cover; background-size: 100vmax 100vmax; position:relative; padding:55px 10% 0 10%}
+    .full-width-image{background-size: cover; background-size: 100vmax 100vmax; position:relative; padding:55px 10% 0 5%}
     
 //     .full-width-image:after{content: "[SCROLL - MORE]"; position: absolute; bottom:13%; right:3%; color:#fff; font-weight: normal; font-size:100%; text-shadow: 0px 1px 0px black;}
 
-.scrolldown{}
+// .scrolldown{position:absolute;  text-align: left; bottom:0; left:0; color: red;   z-index:1; font-size:200%;}
+
+// .scrolldown:before {
+// 	content: '';
+// position: absolute;
+// bottom: 0;
+// left:0;
+// width: 0;
+// height: 0;
+// 	border: 60px solid transparent;
+// 	border-left-color: inherit;
+// 	border-right: 0;
+// 	border-bottom: 0;
+// 	 z-index:0;
+// }
     
     .has-text-weight-bold{
 	color:#fff;

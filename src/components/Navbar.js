@@ -83,7 +83,7 @@ const Navbar = class extends React.Component {
       
    </header>
    
-    <div className="themer"><ThemeToggler>
+    <div className="themer" style={{display:'none'}}><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">
             <input
