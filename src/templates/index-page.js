@@ -71,12 +71,12 @@ const CustomBox = styled.div`
 @media (min-width: 58rem) {
 
   .full-width-image h1{font-size:200% !important;}
-  .full-width-image h2{font-size:200% !important;}
+  .full-width-image h2{font-size:100% !important;}
   .full-width-image h3{font-size:100% !important;}
    .full-width-image p{font-size:102% !important;}
   
   #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
-  #hero h3{font-size:380% !important; color:red !important;}
+  #hero h3{font-size:100% !important; color:red !important;}
   .special{font-size:100% !important;}
 }
 
@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({
 
     
     <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{position:'absolute', bottom:'0', left:'0', zIndex: '0',}}>
-        <div className="scrolldown txtshadow-header" style={{ textAlign: 'left', fontSize: '50px', color: 'red', zIndex: '1'}}> <IoIosArrowDropdownCircle style={{position:'absolute', left:'-0px', bottom:'5px',  zIndex:'1'}} /> </div>
+        <div className="scrolldown txtshadow-header" style={{ textAlign: 'left', fontSize: '50px', color: 'black', zIndex: '1'}}> <IoIosArrowDropdownCircle style={{position:'absolute', left:'-0px', bottom:'5px',  zIndex:'1'}} /> </div>
    </ScrollAnimation>
         
         
@@ -159,19 +159,13 @@ export const IndexPageTemplate = ({
 </ScrollAnimation>
     
     
-    
+    {/*  
  <ScrollAnimation animateIn="bounceInDown"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
-/*
-            fontSize: '3.5rem',
-*/
             color: '#fff',
            position: 'relative',
-//            top: '100px',
-//         left: '5%',
-//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
             float: 'none',
@@ -181,19 +175,16 @@ export const IndexPageTemplate = ({
           {heading}
         </h1>
         </ScrollAnimation>
+        */}
         
         
-        
-         <ScrollAnimation animateIn="bounceInLeft"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+         {/* <ScrollAnimation animateIn="bounceInLeft"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
             fontSize: '2rem',
            position: 'relative',
-//            top: '100px',
-//         left: '5%',
-//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
             float: 'none',
@@ -202,18 +193,15 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h2>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         
-        <ScrollAnimation animateIn="bounceInUp"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        {/* <ScrollAnimation animateIn="bounceInUp"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h3
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
             fontSize: '2rem',
            position: 'relative',
-//            top: '100px',
-//         left: '5%',
-//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
             float: 'none',
@@ -222,10 +210,86 @@ export const IndexPageTemplate = ({
         >
           {subsubheading}
         </h3>
+        </ScrollAnimation> */}
+        
+        
+        
+
+        <ScrollAnimation animateIn="bounceInDown1" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false}>
+        <h2
+          className="normal mobile-txt"
+          style={{
+            color: '#333',
+            fontSize: '1rem',
+           position: 'relative',
+           textTransform:'uppercase',
+           top: '20%',
+        margin: '0 auto',
+        padding: '0 0',
+            float: 'none',
+            fontWeight:'bold',
+
+            
+          }}
+        >
+           Pav &amp; Broome Fine Jewelry
+        </h2>
         </ScrollAnimation>
         
         
         
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <p
+          className="normal mobile-txt"
+          style={{
+            color: '#333',
+            fontSize: '.8rem',
+           position: 'relative',
+           width:'50%',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        marginTop: '1rem',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+//             width: '100vw',
+            
+          }}
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
+        </p>
+        </ScrollAnimation>
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h3
+          className="normal spotlink mobile-txt"
+          style={{
+            color: '#333',
+            fontSize: '1rem',
+           position: 'relative',
+           textTransform:'uppercase',
+           textDecoration:'none',
+
+           
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '1rem auto',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+//             width: '100vw',
+            
+          }}
+        >
+          <a href="/" style={{color:'#333', fontSize:'', textDecoration:'none',}}>See The Work <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+        </h3>
+        </ScrollAnimation>
         
         
        
@@ -250,7 +314,7 @@ export const IndexPageTemplate = ({
 With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.
 Let Ad2 assist you with bringing your vision to a reality.</p>
 <br />
-<Link className="interest grad-dark" to="/portfolio" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>See For Yourself <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
+<Link className="interest grad-dark" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>See For Yourself <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
 
 
 </div>
@@ -275,7 +339,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 <img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} /></div>
 
 </div>
-<Link className="interest grad-dark" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>More Info <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
+<Link className="interest grad-dark" to="/" style={{color:'#fff', textDecoration:'none', display:'none', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>More Info <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
 </div>
 </ScrollAnimation>
 
@@ -301,7 +365,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Do it Now! <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#fff',}}><MdPlayArrow /></span></Link>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'none',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Do it Now! <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#fff',}}><MdPlayArrow /></span></Link>
 </div>
 </ScrollAnimation>
 
@@ -312,7 +376,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation style={{display:'none'}} animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our recent work:</h2>
     
         <div
@@ -455,7 +519,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
     
     
 
-    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+    <ScrollAnimation style={{display:'none'}} animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <div
       className="full-width-image margin-top-0"
       style={{display: 'block',
