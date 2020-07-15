@@ -215,7 +215,7 @@ export const IndexPageTemplate = ({
         
         
 
-        <ScrollAnimation animateIn="bounceInDown1" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false}>
+        <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} offset={0}>
         <h2
           className="normal mobile-txt"
           style={{
