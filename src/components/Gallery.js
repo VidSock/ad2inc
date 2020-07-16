@@ -67,8 +67,8 @@ const KnifeGallery = ({ photos, ...rest }) => {
           photos={images}
           onClick={imageClick}
           renderImage={GatsbyImage}
-          targetRowHeight={450}
-          margin={30}
+          targetRowHeight={350}
+          margin={12}
           {...rest}
         />
       )}
