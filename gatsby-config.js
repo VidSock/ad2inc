@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `hytron.com`,
-        short_name: `Hytron`,
+        name: `ad2inc.net`,
+        short_name: `Ad2Inc`,
         start_url: `/`,
         background_color: `#FFF`,
         theme_color: `#FAE042`,

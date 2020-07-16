@@ -20,7 +20,7 @@ const Consent = () => (
 	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 10px auto', top:'10px',  position:'relative', }}
 
     expires={30}
-    cookieName="Hytron.com-site-pref-cookie"
+    cookieName="Ad2inc.net-site-pref-cookie"
 >
 
     <div style={{padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.{" "}<br />

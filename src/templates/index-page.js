@@ -145,7 +145,7 @@ export const IndexPageTemplate = ({
     
 
     
-    <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{position:'absolute', bottom:'0', left:'0', zIndex: '0',}}>
+    <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{display:'none', position:'absolute', bottom:'0', left:'0', zIndex: '0',}}>
         <div className="scrolldown txtshadow-header" style={{ textAlign: 'left', fontSize: '50px', color: 'black', zIndex: '1'}}> <IoIosArrowDropdownCircle style={{position:'absolute', left:'-0px', bottom:'5px',  zIndex:'1'}} /> </div>
    </ScrollAnimation>
         
