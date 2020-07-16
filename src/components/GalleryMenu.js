@@ -15,7 +15,7 @@ padding:4px 4px;
 border-radius:10px;
 border-top:1px solid #444;
 width:auto;
-box-shadow: 1px 2px 3px 0px #554f4f;
+// box-shadow: 1px 2px 3px 0px #554f4f;
 text-shadow: 0px 1px 0px black;
 }
 .galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
