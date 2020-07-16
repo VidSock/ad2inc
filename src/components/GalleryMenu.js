@@ -10,32 +10,34 @@ const CustomBox = styled.div`
 
 .galmenu{
 display: flex; justify-content: space-around; align-items: center; margin:0 3%;
-background:#111;
+background:#222;
 padding:4px 4px;
 border-radius:10px;
-border:1px solid #444;
+border-top:1px solid #444;
 width:auto;
+box-shadow: 1px 2px 3px 0px #554f4f;
+text-shadow: 0px 1px 0px black;
 }
 .galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
 
 
 
-.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
+.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:0px solid #444; font-weight: bold; text-decoration: none; text-shadow: 0px 0px 0px black; height:100%;}
 
 .galmenu .galgrad{
-background: #3a3a3a;
-background: -moz-linear-gradient(top, #3a3a3a 8%, #1b1b1b 12%, #0a0a0a 47%, #010101 50%, #0d0d0d 74%, #3a3a3a 86%, #050505 88%, #3a3a3a 93%, #3a3a3a 96%, #0c0c0c 99%);
-background: -webkit-linear-gradient(top, #3a3a3a 8%,#1b1b1b 12%,#0a0a0a 47%,#010101 50%,#0d0d0d 74%,#3a3a3a 86%,#050505 88%,#3a3a3a 93%,#3a3a3a 96%,#0c0c0c 99%);
-background: linear-gradient(to bottom, #3a3a3a 8%,#1b1b1b 12%,#0a0a0a 47%,#010101 50%,#0d0d0d 74%,#3a3a3a 86%,#050505 88%,#3a3a3a 93%,#3a3a3a 96%,#0c0c0c 99%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#0c0c0c',GradientType=0 );
+// background: #3a3a3a;
+// background: -moz-linear-gradient(top, #3a3a3a 8%, #1b1b1b 12%, #0a0a0a 47%, #010101 50%, #0d0d0d 74%, #3a3a3a 86%, #050505 88%, #3a3a3a 93%, #3a3a3a 96%, #0c0c0c 99%);
+// background: -webkit-linear-gradient(top, #3a3a3a 8%,#1b1b1b 12%,#0a0a0a 47%,#010101 50%,#0d0d0d 74%,#3a3a3a 86%,#050505 88%,#3a3a3a 93%,#3a3a3a 96%,#0c0c0c 99%);
+// background: linear-gradient(to bottom, #3a3a3a 8%,#1b1b1b 12%,#0a0a0a 47%,#010101 50%,#0d0d0d 74%,#3a3a3a 86%,#050505 88%,#3a3a3a 93%,#3a3a3a 96%,#0c0c0c 99%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#0c0c0c',GradientType=0 );
 }
 
 .galmenu [aria-current] {
 background: #0c0203;
-background: -moz-linear-gradient(top, #0c0203 0%, #de0004 17%, #96000c 76%, #0c0203 100%);
-background: -webkit-linear-gradient(top, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
-background: linear-gradient(to bottom, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
+// background: -moz-linear-gradient(top, #0c0203 0%, #de0004 17%, #96000c 76%, #0c0203 100%);
+// background: -webkit-linear-gradient(top, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
+// background: linear-gradient(to bottom, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
 }
 
 
@@ -58,7 +60,7 @@ const GalleryMenu = () => (
 
 <CustomBox style={{}}>
 
-<div className="outer intro container" style={{ borderTop:'1px solid #000',}}>
+<div className="outer intro container" style={{ borderTop:'0px solid #000',}}>
       <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
     
 <h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0',}}>Browse Portfolio</h2>

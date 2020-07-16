@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
-// import GalleryMenu from '../../components/GalleryMenu'
+import GalleryMenu from '../../components/GalleryMenu'
 import { FiZoomIn } from 'react-icons/fi'
 
 
@@ -84,7 +84,7 @@ const Gal1Page = () => {
 
       
      
-      {/* <GalleryMenu /> */}
+      <GalleryMenu />
   
 
 
@@ -104,7 +104,7 @@ const Gal1Page = () => {
     
 
       
-       {/* <GalleryMenu /> */}
+       <GalleryMenu />
 
       
       

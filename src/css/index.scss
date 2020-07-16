@@ -469,18 +469,19 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
     }
     
     .interest {
-    color: white; 
+    color:#fff; 
     font-weight: bold;
-    background: #222;
+    background: transparent;
     cursor: pointer;
-    border-top:2px solid $primary !important;
-    border-bottom:2px solid $primary !important;
+    border:0;
+    // border-top:2px solid $primary !important;
+    // border-bottom:2px solid $primary !important;
     outline:0px solid $primary;
     padding: 0 1rem 0rem 1rem;
-    border-radius:6px;
+    border-radius:0px;
     width:auto;
-     box-shadow: 1px 2px 3px 0px #554f4f;
-     text-shadow: 0px 1px 0px black;
+    //  box-shadow: 1px 2px 3px 0px #554f4f;
+    //  text-shadow: 0px 1px 0px black;
      position:relative;
     }
 
