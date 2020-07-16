@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
-import GalleryMenu from '../../components/GalleryMenu'
+// import GalleryMenu from '../../components/GalleryMenu'
 import { FiZoomIn } from 'react-icons/fi'
 
 
@@ -76,14 +76,15 @@ const Gal1Page = () => {
   return (
 	  <CustomBox>
     <Layout>
-    
 
+
+    <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
+      <h4 style={{display:'', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'15vh', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
+      </div>
 
       
-      <div className="zoomer" style={{paddingTop:'85px', display:'flex',alignItems:'center', justifyContent:'center',}}>
-      <h4 style={{display:'flex', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
-      </div>
-      <GalleryMenu />
+     
+      {/* <GalleryMenu /> */}
   
 
 
@@ -91,18 +92,19 @@ const Gal1Page = () => {
 
  
       
-      <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>
-      <div className="container" style={{ padding:'0', margin:'0',}}>
+ 
+      
+      <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
       <Gallery
         photos={data.allFile.edges}
       />
       </div>
-      </ScrollAnimation>
+
 
     
 
       
-       <GalleryMenu />
+       {/* <GalleryMenu /> */}
 
       
       
