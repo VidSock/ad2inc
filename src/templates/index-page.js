@@ -63,6 +63,8 @@ const CustomBox = styled.div`
     background: url('../img/videoframe.jpg') center center / cover no-repeat;
   }
 
+  .full-width-image{background-position: 60% center !important; border:0px solid red !important;}
+
   .fullscreen-bg__video {
     display: none;
   }
@@ -74,6 +76,8 @@ const CustomBox = styled.div`
   .full-width-image h2{font-size:100% !important;}
   .full-width-image h3{font-size:100% !important;}
    .full-width-image p{font-size:102% !important;}
+
+   .full-width-image{background-position: bottom right;}
   
   #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:100% !important; color:red !important;}
@@ -128,7 +132,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `center center`,
+        
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',

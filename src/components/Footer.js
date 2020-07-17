@@ -30,13 +30,13 @@ const Footer = class extends React.Component {
 
 <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
   <li><h3 className="socialtext">We&apos;re<br />Social:</h3></li>
-<li><a className="social"  href="https://facebook.com" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
-<li style={{display: 'none',}}><a className="social" href="https://linkedin.com" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
-<li><a className="social" href="https://twitter.com" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
-<li><a className="social" href="https://instagram.com" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li>
-<li><a className="social" href="https://linkedin.com" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
+<li><a className="social"  href="http://www.facebook.com/Ad2Inc" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
+{/* <li><a className="social" href="https://linkedin.com" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li> */}
+<li><a className="social" href="https://twitter.com/Ad2Inc" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
+{/* <li><a className="social" href="https://instagram.com" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li> */}
 
-<li><a className="social" href="https://youtube.com" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
+
+<li><a className="social" href="https://www.youtube.com/channel/UCxvvY1iCEHnjQnl1ejKwcwQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
 </ul>
 
 
