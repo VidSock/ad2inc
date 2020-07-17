@@ -25,8 +25,15 @@ const CustomBox = styled.div`
 
 .spotimg{border-radius:12px;}
 
-#banner-vid:hover{transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;}
+// #banner-vid:hover{transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;}
 
+#banner-vid{
+  display: block;
+  &:hover,
+  &:focus {
+    transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
+  }
+}
 
 
 
