@@ -34,7 +34,7 @@ const CustomBox = styled.div`
 }
 
 @media (max-width: 400px) {
-  .full-width-image{background-position: 55% center !important; border:0px solid red !important;}
+  .full-width-image{background-position: top center !important; border:0px solid red !important; padding-top:100px !important}
 }
 
 @media (min-width: 58rem) {
