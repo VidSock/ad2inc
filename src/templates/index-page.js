@@ -14,6 +14,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
 import { FaTimesCircle } from 'react-icons/fa'
+// import Intro2 from '../Intro2'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
