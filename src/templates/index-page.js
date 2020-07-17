@@ -25,49 +25,16 @@ const CustomBox = styled.div`
 
 .spotimg{border-radius:12px;}
 
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-//   border:20px solid red !important;
-}
 
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
 
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
-}
 
 @media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
-  }
+  .full-width-image{background-position: center center !important; border:0px solid red !important;}
+}
 
-  .full-width-image{background-position: 60% center !important; border:0px solid red !important;}
-
-  .fullscreen-bg__video {
-    display: none;
-  }
+@media (max-width: 400px) {
+  .full-width-image{background-position: 55% center !important; border:0px solid red !important;}
 }
 
 @media (min-width: 58rem) {
