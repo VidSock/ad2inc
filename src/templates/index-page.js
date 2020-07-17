@@ -25,7 +25,7 @@ const CustomBox = styled.div`
 
 .spotimg{border-radius:12px;}
 
-#banner-vid:hover{transform:rotate(0) !important;}
+#banner-vid:hover{transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;}
 
 
 
@@ -273,7 +273,7 @@ overflow:'hidden',
 
 <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={200} style={{width:'15vw', padding:'0',}}>    
 
-<div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'24px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(10deg)',}}><Image alt="Todd Lambert Web development for photographers" filename="home-banner-phone.jpg" style={{}}  />
+<div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'24px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(10deg)',}}><Image alt="Ad2" filename="home-banner-phone.jpg" style={{}}  />
 <div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Mobile websites</div>
 </div>
 </ScrollAnimation>
