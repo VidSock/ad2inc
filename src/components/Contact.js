@@ -57,8 +57,8 @@ export default class Contact extends React.Component {
   render() {
     return (
       
-        <section className="outer section">
-          <div className="container innerpanel" style={{padding: '0',}}>
+        <section className="section">
+          <div className="container innerpanel" style={{padding: '0 1rem',}}>
             <div className="content" style={{padding: '0 0 15px 0'}}>
 
               
@@ -66,9 +66,9 @@ export default class Contact extends React.Component {
               
 
               <form
-                name="file-upload"
+                name="menu-contact"
                 method="post"
-                action="/contact/thanks/"
+                action="/contact/success/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -82,7 +82,7 @@ export default class Contact extends React.Component {
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="file-upload" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="menu-contact" />
                 </div>
 
                 <div className="form">
@@ -97,7 +97,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Phone or Email:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -105,9 +105,9 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
-                      placeholder="555-555-1212 / your@email.com"
+                      placeholder="your@email.com"
                     />
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload File:</label>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
                     <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
@@ -125,7 +125,7 @@ export default class Contact extends React.Component {
 
                 <div className="field half right">
 <label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
-                    Your Message
+                    Your message
                   </label>
                     <textarea
                       className="textarea"
@@ -141,16 +141,16 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
-                <div className="special"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
+<div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
                 <input type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
                 <FaEnvelope style={{position: 'relative', top: '5px', right: '-5px', color: '#fff', fontSize: '120%',}} />
                 
                 </div>
                 
-                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'10px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy Policy</a>
+                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'20px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline', color:'inherit',}} href="/privacy">Privacy Policy</a>
                 </div>
                 
                 

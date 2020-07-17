@@ -54,7 +54,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
+        develop: false, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
          //ignore: ['index.css'], // Ignore files/folders
