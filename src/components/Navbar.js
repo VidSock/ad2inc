@@ -26,7 +26,7 @@ const Navbar = class extends React.Component {
    </Link>
   </ScrollAnimation>
   
-<input className="menu-btn" type="checkbox" id="menu-btn" />
+<input className="menu-btn" name="menu-btn" type="checkbox" id="menu-btn" />
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
             <ul id="menu" className="menu">
@@ -83,7 +83,7 @@ const Navbar = class extends React.Component {
       
    </header>
    
-    <div className="themer" style={{display:'none'}}><ThemeToggler>
+    <div className="themer" style={{display:'block'}}><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">
             <input

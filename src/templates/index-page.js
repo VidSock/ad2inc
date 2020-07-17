@@ -186,7 +186,7 @@ export const IndexPageTemplate = ({
         
         
 
-        <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} offset={0}>
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} offset={0}>
         <h2
           className="normal mobile-txt"
           style={{
@@ -211,7 +211,7 @@ export const IndexPageTemplate = ({
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={400}>
         <p
           className="normal mobile-txt"
           style={{
@@ -236,7 +236,7 @@ export const IndexPageTemplate = ({
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={800}>
         <h3
           className="normal spotlink mobile-txt"
           style={{
