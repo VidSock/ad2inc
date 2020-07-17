@@ -106,6 +106,7 @@ export const IndexPageTemplate = ({
         paddingTop: '125px',
         position: 'relative',
 //         overflowX: 'scroll',
+overflow:'hidden',
       }}
     >
     
@@ -262,7 +263,37 @@ export const IndexPageTemplate = ({
         </h3>
         </ScrollAnimation>
         
-        
+
+
+
+       
+
+        <div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', width:'60vw', margin:'-5vh 0 0 30vw', padding:'0', overflow:'',}}>
+
+<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={200} style={{width:'15vw', padding:'0',}}>    
+
+<div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'24px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(10deg)',}}><Image alt="Todd Lambert Web development for photographers" filename="home-banner-phone.jpg" style={{}}  />
+<div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Premiere wewelry website on mobile</div>
+</div>
+</ScrollAnimation>
+
+
+
+ <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={500} style={{width:'40vw', padding:'0',}}>    
+
+<div className="imgbox shadow-3d" style={{bborder:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#fff', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}><Image alt="Todd Lambert Web development for photographers" filename="home-banner-web.jpg" style={{}}  />
+<div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>PavandBroome.com</div>
+</div>
+</ScrollAnimation>
+
+ </div>
+
+
+
+
+
+
+
        
     </div>
     
