@@ -293,9 +293,9 @@ left:0;
 z-index: 1;
 width: 100%;
 height: 100vh;
-background-repeat: no-repeat;
-background-position: left top;
-background-image: linear-gradient(#111212 40%, #232325  100%);
+// background-repeat: no-repeat;
+// background-position: left top;
+// background-image: linear-gradient(#111212 40%, #232325  100%);
 	
     animation: poof 1.5s forwards;
     animation-delay: .8s;
@@ -902,8 +902,16 @@ footer1 {
 
 .back-to-top{bottom:25vh !important; right:3% !important; display:none;}
 
-// body.light{
-// background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+body.light{
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+
+body.light{
+  background-image: url('../img/ad2-bg.jpg');
+  background-size: cover;
+  background-position: center center ;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
 
 // body.light, body.dark{background-image: url('../img/graph-paper.svg'); background-attachment: fixed; background-size: 20%; animation: fadeIn 3s;}
 
@@ -912,7 +920,7 @@ footer1 {
 //  body.dark{
 // background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
 
-body.dark:after, body.light:after{content: (''); background-image: url('../img/ad2inc-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
+// body.dark:after, body.light:after{content: (''); background-image: url('../img/ad2inc-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
 
 
 

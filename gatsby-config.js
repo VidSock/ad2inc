@@ -54,11 +54,11 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false, // Print removed selectors and processed file names
-        develop: false, // Enable while using `gatsby develop`
+        develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
          //ignore: ['index.css'], // Ignore files/folders
-         purgeOnly : ['/animate.css', '/animate.compat.css'], // Purge only these files/folders
+         purgeOnly : ['/animate.compat.css'], // Purge only these files/folders
       }
     },
     'gatsby-plugin-sharp',

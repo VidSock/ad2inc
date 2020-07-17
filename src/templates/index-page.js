@@ -22,20 +22,46 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
-
+.container, .outer{background:transparent;}
 .spotimg{border-radius:12px;}
 .imgbox{animation: zoomIn;
 animation-duration: 2s;}
 
+#vidpop {
+  display: block;
+  text-align:center;
+}
+
+label + input[type=checkbox]{
+display:none !important;
+} 
+ 
+input[type=checkbox]:checked + label div{
+  transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
+  z-index:7;
+} 
+
+
+#vid-toggle:checked + #vidpop .sub{display:none !important;}
+
+#vid-open{
+  position:absolute; bottom:0; display:block; width:100%; height:100vh;  z-index:5; cursor:pointer;
+}
+
+
+
+
+
+
 // #banner-vid:hover{transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;}
 
-#banner-vid{
-  display: block;
-  &:hover,
-  &:focus {
-    transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
-  }
-}
+// #banner-vid{
+//   display: block;
+//   &:hover,
+//   &:focus {
+//     transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
+//   }
+// }
 
 
 
@@ -287,17 +313,27 @@ overflow:'hidden',
 </div>
 </ScrollAnimation>
 
+{/* <iframe width="100%" height="300px" src="https://pavandbroome.com"></iframe> */}
 
+ <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0', position:'relative'}}>  
 
- <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0',}}>    
+<label id="vid-open" for="vid-toggle">Open</label>
+ <input type="checkbox" id="vid-toggle" style={{width:'100%', display:'flex', justifyItems:'center', justifyContent:'center', textAlign:'center', alignItems:'center'}}/>
+ 
 
-<div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}><iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/7fyqJT8QDBY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#fff', textAlign:'center', width:'100%',}}>PavandBroome.com</div>
+<label id="vidpop" for="vid-toggle">
+<div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}><iframe width="100%" height="280" src="https://www.youtube-nocookie.com/embed/7fyqJT8QDBY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div className="sub" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#fff', textAlign:'center', width:'100%',}}>PavandBroome.com</div>
 </div>
+{/* close (x) */}
+</label>
+
 </ScrollAnimation>
 
- </div>
 
+
+ </div>
+{/* end split */}
 
 
 
