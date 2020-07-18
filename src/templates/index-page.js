@@ -14,7 +14,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
 import { FaTimesCircle } from 'react-icons/fa'
-// import Intro2 from '../Intro2'
+// import Intro3 from '../components/Intro2'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
@@ -130,13 +130,16 @@ export const IndexPageTemplate = ({
     
 	<CustomBox>
 	
-  <div className="outer intro" style={{}}>
   
 
+
+  <div className="outer intro" style={{}}>
+  
+  {/* <Intro3 /> */}
   
     <div id="hero"
       className="full-width-image"
-      style={{
+      style={{display:'',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
@@ -322,12 +325,17 @@ overflow:'hidden',
 
  <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0', position:'relative'}}>  
 
-<label id="vid-open" for="vid-toggle"></label>
+<label id="vid-open" htmlFor="vid-toggle"></label>
  <input type="checkbox" id="vid-toggle" style={{width:'100%', display:'flex', justifyItems:'center', justifyContent:'center', textAlign:'center', alignItems:'center'}}/>
  
 
-<label id="vidpop" for="vid-toggle">
-<div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}><iframe width="100%" height="280" src="https://www.youtube-nocookie.com/embed/7fyqJT8QDBY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<label id="vidpop" htmlFor="vid-toggle">
+<div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}>
+  
+  
+
+<iframe width="100%" height="280" src="https://www.youtube.com/embed/7fyqJT8QDBY" frameBorder="0" allowFullScreen></iframe>
+
 <div className="sub" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#fff', textAlign:'center', width:'100%',}}>Television spot for PavandBroome.com</div>
 <label className="news-close1" htmlFor="vid-toggle" style={{display:'none', fontSize:'24px', color:'#fff', position:'relative', right:'0'}}><FaTimesCircle /></label>
 </div>

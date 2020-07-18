@@ -58,7 +58,8 @@ module.exports = {
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
          //ignore: ['index.css'], // Ignore files/folders
-         purgeOnly : ['/animate.compat.css'], // Purge only these files/folders
+
+         purgeOnly : ['/index.css', '/animate.compat.css', '/custom.css', '/noscript.css'], // Purge only these 
       }
     },
     'gatsby-plugin-sharp',
