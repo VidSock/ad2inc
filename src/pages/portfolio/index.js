@@ -24,12 +24,20 @@ const CustomBox = styled.div`
 // }
 
 .intro:before{
-	content: "Portfolio";
+	content: "Ad2 Portfolio";
 position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
+}
+
+.intro:after{
+  content: "logo";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 

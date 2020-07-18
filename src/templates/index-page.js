@@ -40,7 +40,7 @@ display:none !important;
  
 input[type=checkbox]:checked + label div{
   transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
-  z-index:7;
+  z-index:1;
 } 
 
 input[type=checkbox]:checked + label div label{display:block !important; cursor:pointer;}
@@ -49,7 +49,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 #vid-toggle:checked + #vidpop .sub{display:none !important;}
 
 #vid-open{
-  position:absolute; bottom:0; display:block; width:100%; height:100%;  z-index:5; cursor:pointer;
+  position:absolute; bottom:0; display:block; width:100%; height:100%;  z-index:1; cursor:pointer;
   // background:#fff;
 }
 
@@ -359,7 +359,7 @@ overflow:'hidden',
   
   
   
-  <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image className="spotimg" alt="Ad2 Inc Marketing and PR" filename="aboutpic.jpg" /><br />
@@ -380,7 +380,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
@@ -403,7 +403,7 @@ Let Ad2 assist you with bringing your vision to a reality.</p>
 
 
 
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
