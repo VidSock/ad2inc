@@ -63,7 +63,7 @@ const CaseMenu = () => (
 <div className="outer intro container" style={{ borderTop:'0px solid #000',}}>
       <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
     
-<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0',}}>Browse Our Case Studies:</h2>
+<h2 style={{textAlign:'center', fontSize:'80%', margin:'1rem 0', padding:'0 0 5px 0',}}>Browse Our Case Studies:</h2>
 
 <ul id="galmenu" className="galmenu custom-gal" style={{}}>
       

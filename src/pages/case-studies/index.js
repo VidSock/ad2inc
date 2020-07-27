@@ -45,14 +45,14 @@ const CustomBox = styled.div`
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height:100vh;
+  // height:100vh;
 }
 
 section {
 	scroll-snap-align: start;
   border-bottom:0px solid red !important;
  
-  height:100vh;
+  // height:100vh;
 }
 
 .slider1{
@@ -68,15 +68,15 @@ section {
 
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
-}
+
 .gatsby-image-wrapper{transform: scale(1.25);}
-/*
+
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
 	position:absolute; bottom:10px; right:10px;
 	color:#fff;
 	}
-*/
+}
 
 `
 
@@ -138,9 +138,10 @@ const CaseStudy = () => {
 	
     <div style={{marginTop:'80px'}}><CaseMenu /></div>
 
+
 <section className="child" style={{position:'', height:'100vh', overflow:'hiden'}}>
 
-<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Studies</h1>
+<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - The Pediatric Center</h1>
 
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
@@ -160,6 +161,7 @@ const CaseStudy = () => {
 </div>{/* END SPLIT */}
 
 
+
 <div style={{maxHeight:'30vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
@@ -168,7 +170,7 @@ const CaseStudy = () => {
   <div className="container">
 
 
-      
+  
  
 
 
@@ -188,6 +190,12 @@ const CaseStudy = () => {
 <p>After only one week of the campaign launch, The Pediatric Center began receiving new appointments, and the new pediatrician was booked for a month solid prior to her employment.</p>
 
 </div>
+
+<div className="outer">
+<div className="container" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
+  <h3>Ad2 Spotlight</h3>
+  <iframe width="100%" height="300" src="https://www.youtube.com/embed/xw8y72VH_LA?controls=0" frameorder="0" allowfullscreen style={{border:'2px solid red', padding:'4px', borderRadius:'12px'}}></iframe>
+  </div></div>
 </div>
 
 
@@ -231,7 +239,11 @@ const CaseStudy = () => {
 
 
 
-<div className="spacer33"></div>
+<div className="spacer99"></div>
+
+
+
+
 <CaseMenu />
 
 <Footer />
