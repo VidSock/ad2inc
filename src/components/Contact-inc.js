@@ -87,9 +87,9 @@ Contact Us
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
+                    <input id="bot-field" name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="contact" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Bottom" />
                 </div>
 
                 <div className="form" id="form">

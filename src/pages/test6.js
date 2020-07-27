@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout-noc'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../components/Image'
 import styled from "styled-components"
@@ -80,12 +80,24 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 
 
-body {
+// main {
+// 	max-height: 100vh;
+// 	overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height:100%;
+//   min-height:100%;
+// }
+
+.container2 {
 	max-height: 100vh;
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
   height:100%;
   min-height:100%;
+  scroll-snap-align: start;
+  min-height:100vh;
+  height:100vh;
+  border-bottom:0px solid red !important;
 }
 
 section {
@@ -93,8 +105,7 @@ section {
   min-height:100vh;
   height:100vh;
   border-bottom:0px solid red !important;
-  position:relative;
-  top:0;
+
 }
 
 section img{
@@ -108,7 +119,7 @@ section img{
 }
 
 
-.footer{display:none !important;}
+footer{display:none !important;}
 `
 
 
@@ -138,11 +149,11 @@ const Test6 = () => (
 
 	
     
-<section className="child" style={{position:'relative', height:'100vh'}}>
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={300} offset={0}  style={{zIndex:'-5'}}>
+<section className="child" style={{position:'', height:''}}>
+<ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={true} delay={300} offset={0}  style={{zIndex:'-5'}}>
 
 <Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
-
+<p>Ut diam urna, sollicitudin in eros quis, cursus sodales quam. Mauris nulla lorem, fringilla sit amet lacus in, sollicitudin posuere nisl. Praesent et molestie nulla. Phasellus scelerisque urna purus, ac porttitor ex maximus sed. Suspendisse dignissim felis quis felis hendrerit, et egestas dolor placerat. Sed auctor elit at ligula accumsan, ac sollicitudin tortor tempor. Pellentesque cursus tellus arcu, eu convallis tortor feugiat eu. Quisque scelerisque justo vitae ornare feugiat. Quisque ultricies nisi eu interdum aliquet. Praesent sagittis commodo rhoncus. Nulla bibendum erat vitae pulvinar consectetur. Sed eget sem vitae erat faucibus interdum a quis urna. Aenean quis imperdiet enim. In nec lacinia urna. Pellentesque finibus lorem ac cursus faucibus.</p>
 </ScrollAnimation>
   </section>
 
@@ -151,9 +162,9 @@ const Test6 = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'100vh'}}>
+  <section className="child" style={{position:'', height:''}}>
 
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4'}}>
+  <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4'}}>
 <Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
 
 </ScrollAnimation>
@@ -163,9 +174,9 @@ const Test6 = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'100vh'}}>
+  <section className="child" style={{position:'', height:''}}>
 
- <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3'}}>
+ <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3'}}>
   
 <Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg" />
 
@@ -183,7 +194,7 @@ const Test6 = () => (
 {/* END CONTACT PANEL */}
 {/* <div className="spacer33"></div> */}
 </div>
-<div className="spacer99"></div>
+{/* <div className="spacer99"></div> */}
 </CustomBox>
   </Layout>
 )

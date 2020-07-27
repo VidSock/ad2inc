@@ -23,14 +23,14 @@ const CustomBox = styled.div`
 // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
 // }
 
-.intro:before{
-	content: "Ad2 Portfolio";
-position:absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
-}
+// .intro:before{
+// 	content: "Ad2 Portfolio";
+// position:absolute;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
+// }
 
 // .intro:after{
 //   content: "logo";

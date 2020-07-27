@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Contact from '../components/Contact-inc'
+// import Contact from '../components/Contact-inc'
 import Image from '../components/Image'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
@@ -14,6 +14,7 @@ import Install from '../components/Install'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
+import { FiCornerRightDown } from 'react-icons/fi'
 // import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
 
@@ -21,66 +22,41 @@ import { MdPlayArrow } from 'react-icons/md'
 
 // import PopMedical from '../components/PopMedical'
 // import PopSemi from '../components/PopSemi'
+import PopNewsletter from '../components/PopNewsletter'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
 
 
-// .slide {
-//     position:absolute;
-// }
-
-// .slide:nth-child(1) {
-//     -webkit-animation: fade 24s 0s infinite;
-//     z-index:40;
-// }
-
-// .slide:nth-child(2) {
-//     -webkit-animation: fade 24s 6s infinite;
-//     z-index:30;
-// }
-
-// /*
-// .slide:nth-child(3) {
-//     -webkit-animation: fade 24s 12s infinite;
-//     z-index:20;
-// }
-
-// .slide:nth-child(4) {
-//     -webkit-animation: fade 24s 18s infinite; 
-//     z-index:10;
-// }
-// */
-
-// @-webkit-keyframes fade {
-//     0%{
-//       opacity: 1;
-//    }
-//    15% {
-//       opacity:1;
-//    }
-//    25%{
-//       opacity: 0;
-//    }
-//    90% {
-//       opacity:0;
-//    }
-//    100% {
-//       opacity:1;
-//    }
-// }
+.spacer33{height:33vh; display:block;}
+.spacer66{height:66vh; display:block;}
+.spacer99{height:99vh; display:block;}
 
 
+.progress{position:absolute; top:80vh; left:100px; border:1px solid yellow; z-index:1;}
+
+.slide:nth-child(1) {
+  -webkit-animation: fade 24s 0s infinite;
+  z-index:2;
+}
+
+.slide:nth-child(2) {
+  -webkit-animation: fade 24s 6s infinite;
+  z-index:1;
+}
+
+.slide:nth-child(3) {
+  -webkit-animation: fade 0s 0s infinite;
+  z-index:0;
+}
 
 
+.slider{z-index:-1;}
 
 
+//  SLIDE
 
-*, *:before, *:after { box-sizing: border-box; }
-.container, .outer{background:transparent;}
-.spotimg{border-radius:12px;}
-.imgbox{animation: zoomIn;
-animation-duration: 2s;}
+
 
 #vidpop {
   display: block;
@@ -106,45 +82,73 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
   // background:#fff;
 }
 
+// .container2 {
+//   scroll-snap-type: y mandatory;
+// }
 
-
-
-
-
-// #banner-vid:hover{transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;}
-
-// #banner-vid{
-//   display: block;
-//   &:hover,
-//   &:focus {
-//     transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
-//   }
+// .child {
+//   scroll-snap-align: start;
 // }
 
 
 
-@media (max-width: 767px) {
-  .full-width-image{background-position: center center !important; border:0px solid red !important;}
+.wrapper {
+	display: flex;
 }
 
-@media (max-width: 400px) {
-  .full-width-image{background-position: top center !important; border:0px solid red !important; padding-top:100px !important}
-}
 
-@media (min-width: 58rem) {
 
-  .full-width-image h1{font-size:200% !important;}
-  .full-width-image h2{font-size:100% !important;}
-  .full-width-image h3{font-size:100% !important;}
-   .full-width-image p{font-size:102% !important;}
+// .container {
+// 	flex-basis: 100%;
+// 	max-height: 100vh;
+// 	overflow-y: scroll;
+// 	border: 0px solid gray;
+// 	scroll-snap-type: y mandatory;
+// 	&.proximity {
+// 			scroll-snap-type: y proximity;
+// 	}
+// }
 
-   .full-width-image{background-position: bottom right;}
+
+
+// .container2 {
+//   scroll-snap-type: y mandatory;
+//   scroll-padding-top: 0;
+//   overflow-y: scroll;
+// }
+
+// section {
+// 	scroll-snap-align: start;
+// 	display: flex;
+// 	flex-flow: column;
+//   // justify-content: center;
+//   min-height:100vh;
+//   border-bottom:0px solid red !important;
+// }
+
+
+// .container2 {
+// 	max-height: 100vh;
+// 	overflow-y: scroll;
+// 	scroll-snap-type: y mandatory;
+// }
+
+section {
+	scroll-snap-align: start;
+  min-height:100vh;
+  border-bottom:0px solid red !important;
   
-  #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
-  #hero h3{font-size:100% !important; color:red !important;}
-  .special{font-size:100% !important;}
 }
 
+// section img{
+//   display:block;
+//   height:100vh;
+//   width:100vw;
+//   background-size:cover;
+//   position:fixed;
+//   top:0;
+//   z-index:-1;
+// }
 
 
 `
@@ -181,257 +185,207 @@ export const IndexPageTemplate = ({
 	<>
      
     
-	<CustomBox>
-	
+     <CustomBox>
   
-
-
+  <div className="container2">
   
   
-<div className="intro outer">
-
-
-
-
-{/* --------------------------------- */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="image-wrap" style={{height:'100vh', position:'relative', paddingTop:'0', borderBottom:'0px solid #222', borderRight:'0rem solid #dd4400', borderLeft:'0rem solid #dd4400',display:'block',border:'0px solid red', }}>
-
-
-
-
-
-<div className="bob" style={{position:'absolute', top:'0', height:'100vh', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
-
-<ScrollAnimation animateIn="fadeIn" animationOut="fadeOut" offset={0}>
-<div id="slideshow">
-  <div className="slide-wrapper"  style={{position:'relative', zIndex:'0',}}>
+ 
   
-    <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Stars" filename="home-banner.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
-    
-    {/* <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Camp" filename="3136.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
-    
-    <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Mushroom" filename="todd-friends.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div> */}
-
+    <ScrollAnimation animateIn="" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} delay={0} offset={0} style={{width:'',}} >
+      
+  <section className="child" style={{padding:'0'}}>
+  
+  <div style={{maxWidth:'50vw', padding:'120px 0 0 3rem'}}>
+  <h2 className="normal mobile-txt"
+    style={{color: '#333',fontSize: '1rem',textTransform:'uppercase',fontWeight:'bold'}}>
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0}>Welcome to Ad2</ScrollAnimation>
+  </h2>
+  <div className="normal mobile-txt" style={{color: '#333',fontSize: '.8rem', maxWidth:'48vw',margin: '2rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. 
+    </ScrollAnimation>
   </div>
-</div>
-</ScrollAnimation>
-
-</div>
-
-
-
-<div style={{position:'relative', padding:'0 0 0 2rem'}}>
-<h2
-  className="normal mobile-txt"
-  style={{
-    color: '#333',
-    fontSize: '1rem',
-   position: 'relative',
-   textTransform:'uppercase',
-   top: '18vh',
-margin: '0 auto',
-padding: '0 0',
-    float: 'none',
-    fontWeight:'bold',
-  }}
->
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={400}>
-   Pav &amp; Broome Fine Jewelry
-   </ScrollAnimation>
-</h2>
-
-<div
-  className="normal mobile-txt"
-  style={{
-    color: '#333',
-    fontSize: '.8rem',
-   position: 'relative',
-   width:'48vw',
-   top:'22vh',
-  margin: '0 ',
-    textAlign: 'left',
-    border: '0px solid red',
-  }}
->
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={400}>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
+  <h3
+    className="normal spotlink mobile-txt"
+    style={{color: '#333',fontSize: '1rem',textTransform:'uppercase',textDecoration:'none', textAlign: 'left',border: '0px solid red',}}>
+    <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} delay={800}>
+    <a href="/" style={{color:'#333', fontSize:'', textDecoration:'underline',}}>Scroll Down <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><FiCornerRightDown /></span></a>
+    </ScrollAnimation>
+  </h3>
+ 
+  </div>
+  
+  
+  <div style={{position:'fixed', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg"  /></div>
+  
+  
+    </section>
   </ScrollAnimation>
-</div>
-
-
-<h3
-  className="normal spotlink mobile-txt"
-  style={{
-    color: '#333',
-    fontSize: '1rem',
-   position: 'relative',
-   textTransform:'uppercase',
-   textDecoration:'none',
-   top:'25vh',
-    margin: '0',
-    textAlign: 'left',
-    border: '0px solid red',
-  }}
->
-  <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={800}>
-  <a href="/" style={{color:'#333', fontSize:'', textDecoration:'none',}}>See The Work <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+  {/* END Panel 1 */}
+  
+  
+  
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0}>
+    <section className="child" style={{}}>
+  
+    <div style={{maxWidth:'50vw', padding:'0 0 0 3rem', position:'relative', zIndex:'1', border:'0px solid red'}}>
+    <h2 className="normal mobile-txt"
+    style={{color: '#333',fontSize: '1rem', textTransform:'uppercase',fontWeight:'bold',border:'0px solid blue',}}>
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>Pav &amp; Broome Fine Jewelry</ScrollAnimation>
+  </h2>
+  <div className="normal mobile-txt" style={{color: '#333',fontSize: '.8rem',margin: '2rem 0',textAlign: 'left',border: '0px solid red', lineHeight:'1.6rem',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. 
+    </ScrollAnimation>
+  </div>
+  <h3
+    className="normal spotlink mobile-txt"
+    style={{color: '#333',fontSize: '1rem',textTransform:'uppercase',textDecoration:'none',textAlign: 'left',border: '0px solid red',}}>
+    <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} delay={800}>
+    <a href="/" style={{color:'#333', fontSize:'', textDecoration:'underline',}}>View the Work <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+    </ScrollAnimation>
+  </h3>
+  </div>
+  {/* <div className="split" style={{display:'block', width:'', height:'100vh', margin:'0 0 0 0', padding:'0 0 0 0', border:'1px solid blue', overflow:'hidden'}}> */}
+  
+  <ScrollAnimation animateIn="bounceInRight" animateOnce={true} animatePreScroll={false} delay={200} style={{padding:'0', zIndex:'-1'}}>    
+  <div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'24px', overflow:'hidden', position:'absolute', margin:'-30vh 0', width:'180px', height:'', transform:'rotate(10deg)', right:'100px',}}><Image alt="Ad2" filename="home-banner-phone.jpg" style={{}}  />
+  <div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Mobile websites</div>
+  </div>
   </ScrollAnimation>
-</h3>
+  
+  
+  <ScrollAnimation animateIn="bounceInRight" animateOnce={true} animatePreScroll={false} delay={500} style={{zIndex:'-1'}}>  
+  <div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'18px', overflow:'hidden', position:'absolute', margin:'0 0', width:'300px', right:'30vw', transform:'rotate(4deg)',}}>
+  <Image alt="Ad2" filename="home-banner-web.jpg" style={{}}  />
+  </div>
+  </ScrollAnimation>
+  
+  
+  
+  {/* </div>
+     */}
+  <div style={{position:'fixed', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-4', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  /></div>
+  
+  
+  </section>
+  </ScrollAnimation>
+  {/* END Panel 2 */}
+  
+  
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0}>
+    <section className="child" style={{}}>
+  
+    <div style={{maxWidth:'50vw', padding:'0 0 0 3rem', position:'relative', zIndex:'1',}}>
+    <h2 className="normal mobile-txt"
+    style={{color: '#333',fontSize: '1rem',position: 'relative',textTransform:'uppercase',fontWeight:'bold',border:'0px solid blue',}}>
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>JCEDF</ScrollAnimation>
+  </h2>
+  <div className="normal mobile-txt" style={{color: '#333',fontSize: '.8rem',maxWidth:'48vw', margin: '2rem 0',textAlign: 'left',border: '0px solid red', lineHeight:'1.6rem',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. 
+    </ScrollAnimation>
+  </div>
+  <h3
+    className="normal spotlink mobile-txt"
+    style={{color: '#333',fontSize: '1rem',textTransform:'uppercase',textDecoration:'none',textAlign: 'left',border: '0px solid red',}}>
+    <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} delay={800}>
+    <a href="/" style={{color:'#333', fontSize:'', textDecoration:'underline',}}>View The Work <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><MdPlayArrow /></span></a>
+    </ScrollAnimation>
+  </h3>
+  </div>
+  <div style={{position:'fixed', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-3', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg"  /></div>
+  
+  
+  </section>
+  </ScrollAnimation>
+  {/* END Panel 3 */}
+  
+  
+
+
+
+
+<div className="container outer content">
+  
+  <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+<Image className="spotimg" alt="Ad2 Inc Marketing and PR" filename="aboutpic.jpg" /><br />
+<h2>The Ad2 Difference</h2>
+<p>
+With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.
+Let Ad2 assist you with bringing your vision to a reality.</p>
+<br />
+<Link className="interest grad-dark" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', width:'200px', padding:'3px .5rem 0 1rem', margin:'0 auto',}}>See For Yourself <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#ff0000',}}><MdPlayArrow /></span></Link>
+
+
 </div>
-
-
-<div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', width:'100vw', margin:'0 0 0 0', padding:'0 0 0 10vw', overflow:'',}}>
-
-<ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={200} style={{width:'18vw', padding:'0', position:'absolute', top:'15vh', right:'5vw'}}>    
-<div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'24px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(10deg)',}}><Image alt="Ad2" filename="home-banner-phone.jpg" style={{}}  />
-<div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Mobile websites</div>
 </div>
 </ScrollAnimation>
 
 
-<ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'34vw', padding:'0', position:'absolute', top:'34vh', left:'10vw',}}>  
-<div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'18px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(4deg)',}}>
 
-<Image alt="Ad2" filename="home-banner-web.jpg" style={{}}  />
+
+
+{/* <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div id="desc" className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div style={{width:'60%',}}>
+<h2>Main Spotlight</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 </div>
-</ScrollAnimation>
 
+<div style={{width:'40%', margin:'0 0 0 1rem', }}>
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} /></div>
 
-
-{/* <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0', position:'absolute', top:'20vh', right:'20vw'}}>  
-<label id="vid-open" htmlFor="vid-toggle"></label>
-<input type="checkbox" id="vid-toggle" name="vid-toggle" style={{width:'100%', display:'flex', justifyItems:'center', justifyContent:'center', textAlign:'center', alignItems:'center'}}/>
-
-<label id="vidpop" htmlFor="vid-toggle">
-<div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}>
-
-<iframe title="Video file" width="100%" height="280" src="https://www.youtube.com/embed/7fyqJT8QDBY" frameBorder="0" allowFullScreen></iframe>
-
-<div className="sub" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#fff', textAlign:'center', width:'100%',}}>Television spot for PavandBroome.com</div>
-<label className="news-close1" htmlFor="vid-toggle" style={{display:'none', fontSize:'24px', color:'#fff', position:'relative', right:'0'}}><FaTimesCircle /></label>
 </div>
-</label>
+
+
+</div>
 </ScrollAnimation> */}
 
 
 
+
+
+
+
+{/* <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div style={{width:'40%', margin:'0 1rem 0 0', }}>
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
 </div>
 
+<div style={{width:'60%',}}>
+<h2>Secondary Spotlight</h2>
+<p>In the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+</p>
+</div>
 
+</div>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'none',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Do it Now! <span style={{fontSize:'120%', position:'relative', right:'0', top:'0', color:'#fff',}}><MdPlayArrow /></span></Link>
+</div>
+</ScrollAnimation> */}
 
-
-
-
-        
-        
-
-
-
-        
-        
-
-
-
-
-
-        
- </div>       
-    
-{/* ABOVE IS FIRST SECTION */}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <div style={{
-  display:'block',
-  height:'100vh',
-  border:'1px solid red',
-}}></div> */}
-    
-    
+</div>
 
   
+  {/* <div className="spacer66"></div> */}
   
- 
-
-
   
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-{/* CONTACT PANEL  */}
-
-
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-
-
-
-    <Contact />
-
-
-</ScrollAnimation>
-
-{/* END CONTACT PANEL */}
-    
-       
-
+  {/* <div className="spacer33"></div> */}
   </div>
+    
+    {/* CONTACT PANEL  */}
+    {/* <div className="outer" style={{margin:' 0'}}> <Contact /></div> */}
+  {/* END CONTACT PANEL */}
+
   </CustomBox>
   <Install />
 </>

@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="menu-contact" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Menu" />
                 </div>
 
                 <div className="form">
