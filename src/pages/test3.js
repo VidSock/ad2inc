@@ -71,6 +71,7 @@ const Test3 = () => (
   <Layout>
    <CustomBox>
   
+  
 <div id="panel" style={{position:'relative', height:'100vh', width:'', overflow:'hidden'}}>
 
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} delay={0} offset={0}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/ad2inc-logo-round.svg'
+// import logo from '../img/ad2inc-logo-round.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
