@@ -97,6 +97,18 @@ section {
 `
 
 
+// const gra = function(min, max) {
+// 	return Math.random() * (max - min) + min;
+// };
+// const init = function() {
+// 	let items = document.querySelectorAll("section");
+// 	for (let i = 0; i < items.length; i++) {
+// 		items[i].style.minHeight = gra(120, 205) + "vh";
+// 	}
+
+
+// };
+// init();
 
 
 
@@ -104,39 +116,38 @@ const Test6 = () => (
   <Layout>
    <CustomBox>
   
-<div className="container2" style={{position:'', top:'', height:'', display:'', overflowY:'scroll'}}>
+<div className="container2" style={{position:'', top:'', height:'', display:''}}>
 
 
 
 
 	
-{/*  Panel 1 */}
-<section className="child" style={{position:'relative', height:'100vh', overflow:''}}>
-
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:'0'}}> 
-<Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg"  />
+    <div style={{}}></div>
+<section className="child" style={{position:'', height:'100vh', overflow:'hiden'}}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:'0'}}>    
+<Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
 </ScrollAnimation>
   </section>
-{/*  Panel 1 */}
+{/* END Panel 1 */}
 
 
 
-{/*  Panel 2 */}
-<section className="child" style={{position:'relative', height:'100vh'}}>
+
+  <section className="child" style={{position:'', height:'100vh'}}>
   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4', position:'', top:'0'}}>
 <Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
 </ScrollAnimation>
 </section>
-{/*  Panel 2 */}
+{/* END Panel 2 */}
 
 
-{/*  Panel 3 */}
-<section className="child" style={{position:'relative', height:'100vh'}}>
+
+  <section className="child" style={{position:'', height:'100vh'}}>
  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3', position:'', top:'0'}}>
 <Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg" />
 </ScrollAnimation>
 </section>
-{/* Panel 3 */}
+{/* END Panel 3 */}
 
 
 

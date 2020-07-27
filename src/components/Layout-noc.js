@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 // import Footer from '../components/Footer'
-// import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar'
 // import Contact from '../components/Contact'
 import 'typeface-pt-sans';
 import "../css/index.scss";
@@ -18,7 +18,7 @@ if (typeof window !== "undefined") {
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -31,14 +31,12 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       
       
-     
+    
       <main>{children}</main>
       
 
-      <ScrollAnimation animateIn="fadeIn">
-      
-      </ScrollAnimation>
-    </div>
+</>
+    
   )
 }
 

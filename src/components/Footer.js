@@ -12,7 +12,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const Footer = class extends React.Component {
   render() {
     return (
-<ScrollAnimation animateIn="fadeIn" duration={3} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+
       <footer className="footer">
         <div className="content">
           
@@ -45,7 +45,7 @@ const Footer = class extends React.Component {
 <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Ad2Inc.</div>
         </div>
       </footer>
-      </ScrollAnimation>
+      
     )
   }
 }
