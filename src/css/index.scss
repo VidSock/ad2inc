@@ -3,9 +3,76 @@
 // 
 
 @import url("animate.compat.css");
+@import url("custom.css");
 
 $primary: #ED1B2D;
 $red: #ff0000;
+
+#slideshow {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+.slide{background: !important;  height: 100vh; width: 100vw;}
+.slide {
+    position:absolute;
+}
+
+
+
+@keyframes fade {
+0%{
+      opacity: 1;
+   }
+   15% {
+      opacity:1;
+   }
+   25%{
+      opacity: 0;
+   }
+   90% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+
+}
+
+@-webkit-keyframes fade {
+    0%{
+      opacity: 1;
+   }
+   15% {
+      opacity:1;
+   }
+   25%{
+      opacity: 0;
+   }
+   90% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Box sizing rules */
@@ -126,40 +193,16 @@ position:absolute; bottom:10px; right:10px; color:#fff;
 
 
 
-/*
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    background:$primary; 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
-}
-*/
 
 
-/*
-@media (hover: hover) {
-.gatsby-image-wrapper img:active{
-    box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.3);
-      transform: scale(1.45);
-	}
-	
-	.gatsby-image-wrapper:after{content: ('+ click to zoom'); position:absolute; bottom:10px; right:10px; color:#fff;}
-}
-*/
-// .react-photo-gallery--gallery {opacity:.7; border-bottom:40px solid red !important;}
+
+
 
 .react-images__frame img{margin: 0 auto 0 auto !important;}
 .react-images__header, .react-images__footer{background:none !important;}
+
+
+
 
 
 //  modal overflow fix
@@ -213,86 +256,6 @@ main{min-height: 60vh;}//force v-scroll
 
 
 
-
-
-
-
-
-/*
-.intro:before{
-position:absolute;
-top:0;
-left:0;
-z-index: 1;
-width: 100%;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-background-repeat: no-repeat;
-background-position: left top;
-
--webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-
-background-image: linear-gradient(#111212 40%, #232325  100%);
-    animation: poof 1.5s forwards;
-    animation-delay: .8s;
-    overflow: hidden;
-    
-    content: ('ISO9001:2015');
-font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-}
-
-@keyframes poof {
-0% {
-	transform: translateY(0);
-	display: none;
-	}
-	
-100% {
-	transform: translateY(1200px) scaleY(1.35) scaleX(2.5);
-	height:0;
-    filter: blur(60px);
-    opacity: 0;   	
-	}
-}
-
-/*
-.intro:after{
-position:absolute;
-top:0;
-right:0;
-z-index: 1;
-width: 57%;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-
--webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-
-background-image: linear-gradient(#3a3a3b 40%,#111212  100%);
-    animation: slide 0.6s forwards;
-    animation-delay: .8s;
-    overflow: hidden;
-    
-    content: ('Certified');
-font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-}
-*/
-
-
-
-@-webkit-keyframes slide {
-    100% { width:0; }
-}
-
-
-@keyframes slide {
-    100% { width:0; }
-}
 
 
 
@@ -1247,6 +1210,143 @@ body.light .back-to-top svg:hover, .back-to-top svg:hover{color:#999;}
 #left, #right, .headroom-wrapper, main picture{display: none !important; height: 0px;}
 
 }
+
+
+
+
+
+
+// 
+// 
+// 
+
+
+
+// Todo
+// 1. Titles for each image
+
+// $arrow-svg: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%206%2016%22%20width%3D%226%22%20height%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m5%201-4%207%204%207%22%20fill%3D%22none%22%20stroke-width%3D%22.8%22%20opacity%3D%22.3%22%20stroke%3D%22%23000%22%20stroke-linecap%3D%22square%22%2F%3E%3Cpath%20d%3D%22m5%201-4%207%204%207%22%20fill%3D%22none%22%20stroke-width%3D%22.5%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E%0A');
+
+// $w10: darken(white, 10);
+// $b1s: 1px solid $w10;
+
+
+
+
+
+
+
+
+
+// .slideshow {
+//   position: relative;
+//   &-item {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     opacity: 0;
+//     transition: all 0.2s ease-in-out;
+//     img {
+//       display: block;
+//       margin: auto;
+//       z-index:-1;
+//       width:100vw;
+//       height:100vh;
+//       background-size:cover;
+//     }
+//   }
+// }
+
+
+
+// .arrow {
+//   position: absolute;
+//   top: 0;
+//   display: block;
+//   width: 50px;
+//   height: 100%;
+//   background: $arrow-svg no-repeat center/30px;
+//   z-index:1;
+
+//   &-next {
+//     right: 0;
+//     transform: rotate(180deg);
+//   }
+// }
+
+
+
+// [id^="target"]:target ~ .play {
+//   transition: all 750ms ease;
+//   opacity: 1;
+//   cursor: pointer;
+//   box-shadow: 0 2px 4px rgba(black, .7);
+// }
+
+// [id^="target"] { display: none; }
+
+// .item-1 {
+//   // z-index: 0;
+//   opacity: 1;
+// }
+
+// *:target ~ .item-1 {
+//   opacity: 0;
+// }
+
+
+// #target-1:target ~ .item-1 { opacity: 1; }
+
+// #target-2:target ~ .item-2,
+// #target-3:target ~ .item-3,
+// #target-4:target ~ .item-4 {
+//   z-index: 3;
+//   opacity: 1;
+// }
+
+// .item {
+//   &-1 { animation: slideshow 16s ease 0s infinite; }
+//   &-2 { animation: slideshow 16s ease 4s infinite; }
+//   &-3 { animation: slideshow 16s ease 8s infinite; }
+//   &-4 { animation: slideshow 16s ease 12s infinite; }
+// }
+
+// @mixin wkn { animation: none; }
+
+// #target-1:target ~ {
+//   .item-1 { opacity: 1 !important; @include wkn; }
+//   .item-2, .item-3, .item-4 { opacity: 0; @include wkn; }
+// }
+
+// #target-2:target ~ {
+//   .item-2 { opacity: 1 !important; @include wkn; }
+//   .item-1, .item-3, .item-4 { opacity: 0; @include wkn; }
+// }
+
+// #target-3:target ~ {
+//   .item-3 { opacity: 1 !important; @include wkn; }
+//   .item-1, .item-2, .item-4 { opacity: 0; @include wkn; }
+// }
+
+// #target-4:target ~ {
+//   .item-4 { opacity: 1 !important; @include wkn; }
+//   .item-1, .item-2, .item-3 { opacity: 0; @include wkn; }
+// }
+
+// @keyframes slideshow {
+//   0%, 30%, 100% { opacity: 0; }  
+//   5%, 25% { opacity: 1; }
+// }
+
+
+
+
+
+
+
+
 
 
 

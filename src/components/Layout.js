@@ -56,8 +56,7 @@ const TemplateWrapper = ({ children }) => {
 <link href="{splash}" sizes="750x1334" rel="apple-touch-startup-image" />
 <link href="{splash}" sizes="640x1136" rel="apple-touch-startup-image" />
       </Helmet>
-      
-      
+
       <Navbar />
       <PopContact />
   

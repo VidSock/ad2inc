@@ -18,6 +18,7 @@ module.exports = {
         name: 'uploads',
       },
     },
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -32,6 +33,16 @@ module.exports = {
         name: 'images',
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/bg`, 
+      },
+    },
+
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

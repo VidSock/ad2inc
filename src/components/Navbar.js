@@ -25,7 +25,9 @@ const Navbar = class extends React.Component {
     <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s'}} />
    </Link>
  
+ 
   
+
 <input className="menu-btn" name="menu-btn" type="checkbox" id="menu-btn" />
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
