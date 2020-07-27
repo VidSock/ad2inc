@@ -256,7 +256,7 @@ padding: '0 0',
    </ScrollAnimation>
 </h2>
 
-<p
+<div
   className="normal mobile-txt"
   style={{
     color: '#333',
@@ -272,7 +272,7 @@ padding: '0 0',
   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={400}>
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.  
   </ScrollAnimation>
-</p>
+</div>
 
 
 <h3
