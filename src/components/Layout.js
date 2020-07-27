@@ -19,7 +19,7 @@ import { withPrefix } from "gatsby"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
+  // require("smooth-scroll")('a[href*="#"]')
 }
 
 

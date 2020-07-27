@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 
 
 
-const IndexPage = () => (
+const TestPage = () => (
   <Layout>  
      
     
@@ -42,4 +42,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default TestPage

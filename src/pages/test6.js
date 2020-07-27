@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout-noc'
+import Layout from '../components/Layout'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../components/Image'
 import styled from "styled-components"

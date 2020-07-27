@@ -75,7 +75,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 `
 
-const Test3 = () => (
+const Test4 = () => (
   <Layout>
    <CustomBox>
   
@@ -207,7 +207,7 @@ const Test3 = () => (
   </Layout>
 )
 
-export default Test3
+export default Test4
 
 
 
