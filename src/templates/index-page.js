@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
 import Image from '../components/Image'
-import { Link } from 'gatsby'
-import logo from '../img/ad2inc-logo-round.svg'
+// import { Link } from 'gatsby'
+// import logo from '../img/ad2inc-logo-round.svg'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
@@ -12,7 +12,7 @@ import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { IoIosArrowDropdownCircle } from 'react-icons/io'
+// import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
 import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
@@ -210,9 +210,7 @@ export const IndexPageTemplate = ({
 
 
 
-<div className="image-wrap" style={{height:'100vh', position:'relative', paddingTop:'0', borderBottom:'0px solid #222', borderRight:'0rem solid #dd4400', borderLeft:'0rem solid #dd4400',display:'block',
-  height:'100vh',
-  border:'0px solid red', }}>
+<div className="image-wrap" style={{height:'100vh', position:'relative', paddingTop:'0', borderBottom:'0px solid #222', borderRight:'0rem solid #dd4400', borderLeft:'0rem solid #dd4400',display:'block',border:'0px solid red', }}>
 
 
 
@@ -309,7 +307,7 @@ padding: '0 0',
 
 <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'34vw', padding:'0', position:'absolute', top:'34vh', left:'10vw',}}>  
 <div className="imgbox shadow-3d" style={{border:'1px solid #000', borderRadius:'18px', overflow:'hidden', position:'relative', margin:'0 0', transform:'rotate(4deg)',}}>
-{/* <iframe width="100%" height="300px" src="https://pavandbroome.com"></iframe> */}
+
 <Image alt="Ad2" filename="home-banner-web.jpg" style={{}}  />
 </div>
 </ScrollAnimation>
@@ -323,7 +321,7 @@ padding: '0 0',
 <label id="vidpop" htmlFor="vid-toggle">
 <div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}>
 
-<iframe width="100%" height="280" src="https://www.youtube.com/embed/7fyqJT8QDBY" frameBorder="0" allowFullScreen></iframe>
+<iframe title="Video file" width="100%" height="280" src="https://www.youtube.com/embed/7fyqJT8QDBY" frameBorder="0" allowFullScreen></iframe>
 
 <div className="sub" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#fff', textAlign:'center', width:'100%',}}>Television spot for PavandBroome.com</div>
 <label className="news-close1" htmlFor="vid-toggle" style={{display:'none', fontSize:'24px', color:'#fff', position:'relative', right:'0'}}><FaTimesCircle /></label>

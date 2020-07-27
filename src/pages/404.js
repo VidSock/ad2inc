@@ -16,7 +16,9 @@ const NotFoundPage = () => (
           
           
         </div>
-        <Contact />
+        {/* CONTACT PANEL  */}
+   <div className="outer"> <Contact /></div>
+{/* END CONTACT PANEL */}
   </Layout>
 )
 
