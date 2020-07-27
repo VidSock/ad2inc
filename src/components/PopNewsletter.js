@@ -159,7 +159,7 @@ const Popup = () => (
 
 <CustomBox className="newsletterbox" style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
 <div className="news-container" style={{position: 'relative',}}>
-  <input id="news-toggle" type="checkbox" style={{position: 'relative',}} />
+  <input id="news-toggle" name="news-toggle" type="checkbox" style={{position: 'relative',}} />
   <label className="news-btn txtshadow shadow" htmlFor="news-toggle">Join Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label> 
   

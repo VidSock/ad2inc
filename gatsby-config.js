@@ -35,15 +35,6 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `backgrounds`,
-        path: `${__dirname}/src/bg`, 
-      },
-    },
-
-
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ad2inc.net`,
@@ -52,7 +43,7 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/ad2inc-logo-round.svg`,
+        icon: `src/img/ad2inc-logo-round.png`,
       },
     },
     {
