@@ -14,7 +14,7 @@ import Install from '../components/Install'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
-import { FaTimesCircle } from 'react-icons/fa'
+// import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
@@ -314,9 +314,9 @@ padding: '0 0',
 
 
 
-<ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0', position:'absolute', top:'20vh', right:'20vw'}}>  
+{/* <ScrollAnimation animateIn="rotateIn" animateOnce={false} delay={500} style={{width:'40vw', padding:'0', position:'absolute', top:'20vh', right:'20vw'}}>  
 <label id="vid-open" htmlFor="vid-toggle"></label>
-<input type="checkbox" id="vid-toggle" style={{width:'100%', display:'flex', justifyItems:'center', justifyContent:'center', textAlign:'center', alignItems:'center'}}/>
+<input type="checkbox" id="vid-toggle" name="vid-toggle" style={{width:'100%', display:'flex', justifyItems:'center', justifyContent:'center', textAlign:'center', alignItems:'center'}}/>
 
 <label id="vidpop" htmlFor="vid-toggle">
 <div className="imgbox shadow-3d" id="banner-vid" style={{border:'1px solid #000', borderRadius:'10px', overflow:'hidden', padding:'0', background:'#000', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}>
@@ -327,7 +327,7 @@ padding: '0 0',
 <label className="news-close1" htmlFor="vid-toggle" style={{display:'none', fontSize:'24px', color:'#fff', position:'relative', right:'0'}}><FaTimesCircle /></label>
 </div>
 </label>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
 

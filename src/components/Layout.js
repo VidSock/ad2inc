@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
 
-import PopContact from '../components/PopContact'
+// import PopContact from '../components/PopContact'
 import 'typeface-pt-sans'
 import "../css/index.scss"
 import Consent from '../components/Consent'
@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
 
       <Navbar />
-      <PopContact />
+      {/* <PopContact /> */}
   
       <main>{children}</main>
 

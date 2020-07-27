@@ -4,6 +4,7 @@ import { FaTimesCircle } from 'react-icons/fa';
 import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
+/* eslint-disable */
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 

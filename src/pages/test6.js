@@ -3,10 +3,10 @@ import Layout from '../components/Layout'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../components/Image'
 import styled from "styled-components"
-import { MdPlayArrow } from 'react-icons/md'
-import { FiCornerRightDown } from 'react-icons/fi'
+// import { MdPlayArrow } from 'react-icons/md'
+// import { FiCornerRightDown } from 'react-icons/fi'
 
-import Contact from '../components/Contact-inc'
+// import Contact from '../components/Contact-inc'
 
 const CustomBox = styled.div`
 
@@ -80,17 +80,21 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 
 
-.container2 {
+body {
 	max-height: 100vh;
 	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  height:100%;
+  min-height:100%;
 }
 
 section {
 	scroll-snap-align: start;
   min-height:100vh;
-  border-bottom:3px solid red !important;
-  
+  height:100vh;
+  border-bottom:0px solid red !important;
+  position:relative;
+  top:0;
 }
 
 section img{
@@ -127,14 +131,14 @@ const Test6 = () => (
   <Layout>
    <CustomBox>
   
-<div class="container2" style={{position:'', top:'0', height:'100vh', display:'block'}}>
+<div class="container2" style={{position:'', top:'0', height:'', display:'block'}}>
 
 
 
 
 	
     
-<section className="child" style={{position:'relative',}}>
+<section className="child" style={{position:'relative', height:'100vh'}}>
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={300} offset={0}  style={{zIndex:'-5'}}>
 
 <Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
@@ -147,7 +151,7 @@ const Test6 = () => (
 
 
 
-  <section className="child" style={{position:'relative',}}>
+  <section className="child" style={{position:'relative', height:'100vh'}}>
 
   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4'}}>
 <Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
@@ -159,7 +163,7 @@ const Test6 = () => (
 
 
 
-  <section className="child" style={{position:'relative',}}>
+  <section className="child" style={{position:'relative', height:'100vh'}}>
 
  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3'}}>
   
@@ -172,14 +176,14 @@ const Test6 = () => (
 
 
 
-{/* <div className="spacer66"></div> */}
+
 
 {/* CONTACT PANEL  */}
    {/* <div className="outer"> <Contact /></div> */}
 {/* END CONTACT PANEL */}
 {/* <div className="spacer33"></div> */}
 </div>
-  
+<div className="spacer99"></div>
 </CustomBox>
   </Layout>
 )
