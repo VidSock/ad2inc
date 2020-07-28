@@ -67,13 +67,13 @@ const CaseMenu = () => (
 
 <ul id="galmenu" className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item interest"><Link to="/portfolio/identity" className="galgrad" title="Identity">Pav &amp; Broome Fine Jewelry</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-pavandbroome" className="galgrad" title="Pav &amp; Broome Fine Jewelry Gulfport">Pav &amp; Broome Fine Jewelry</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/portfolio/logos" className="galgrad" title="Logos">The Pediatric Center at Garden Park Medical Center</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-pediatric-center/" className="galgrad" title="The Pediatric Center Gulfport">The Pediatric Center at Garden Park Medical Center</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/portfolio/radio" className="galgrad" title="Radio">Gulf Coast Community Federal Credit Union</Link></li>
+      <li className="galmenu-item interest"><Link to="#" className="galgrad" title="Gulf Coast Community Federal Credit Union Biloxi">Gulf Coast Community Federal Credit Union</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/portfolio/tv" className="galgrad" title="TV">Jackson Co. Economic Development Foundation</Link></li>
+      <li className="galmenu-item interest"><Link to="#" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Economic Development Foundation</Link></li>
       
 	  {/* <li className="galmenu-item interest"><Link to="/portfolio/print" className="galgrad" title="Print">Print</Link></li>
 	  

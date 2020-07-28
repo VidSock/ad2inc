@@ -1,24 +1,21 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 // import Contact from '../components/Contact'
 import 'typeface-pt-sans';
 import "../css/index.scss";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
+
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <>
+    <div>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -31,12 +28,14 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       
       
-    
+     <Navbar />
       <main>{children}</main>
       
 
-</>
-    
+      <div className="fadeIn">
+      <Footer />
+      </div>
+    </div>
   )
 }
 
