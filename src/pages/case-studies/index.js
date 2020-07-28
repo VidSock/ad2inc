@@ -211,7 +211,7 @@ const CaseStudyIndex = () => (
 
 
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'120%', height:'50vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">Jackson Co. Economic Development<br /> View the case study</Link></h1>
