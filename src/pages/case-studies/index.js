@@ -198,7 +198,7 @@ const CaseStudyIndex = () => (
         
  
 <ScrollAnimation animateIn="fadeOut" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} offset={0}>
-        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'12vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'0', }}/></div>
+        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'12vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'500%', zIndex:'0', }}/></div>
 </ScrollAnimation>
 
     </div>
