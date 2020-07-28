@@ -63,9 +63,9 @@ section {
 
 
 
-const CaseStudy3 = graphql`
-  query CaseStudy3 {
-    allFile(filter: { relativeDirectory: { eq: "case3" } }) {
+const CaseStudy4 = graphql`
+  query CaseStudy4 {
+    allFile(filter: { relativeDirectory: { eq: "case4" } }) {
       edges {
         node {
           childImageSharp {
@@ -85,8 +85,8 @@ const CaseStudy3 = graphql`
   }
 `
 
-const CaseStudy_3 = () => {
-  const data = useStaticQuery(CaseStudy3)
+const CaseStudy_4 = () => {
+  const data = useStaticQuery(CaseStudy4)
   return (
 	  <CustomBox>
     <Layout>
@@ -236,4 +236,4 @@ const CaseStudy_3 = () => {
     )
 }
 
-export default CaseStudy_3
+export default CaseStudy_4

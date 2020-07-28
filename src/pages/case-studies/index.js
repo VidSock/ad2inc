@@ -7,6 +7,8 @@ import { Link } from 'gatsby'
 import Image from '../../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
+import { GiFingernail } from 'react-icons/gi'
+
 // import { FiCornerRightDown } from 'react-icons/fi'
 
 // import Contact from '../../components/Contact-inc'
@@ -132,22 +134,41 @@ a.button2{
 
 
 
+  .square {
+    height: 100px;
+    width: 100px;
+// position:absolute;
+// top:30vh;
+// left:20vw;
+// z-index:5;
+    color: white;
+    padding: 5px;
+    animation: shimmy 4s infinite;
+    animation-direction: reverse;
+    visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+  }
+  
+  @keyframes shimmy {
+    0% {
+      transform: translate(0, 0); 
+    }
+    100% {
+      transform: translate(1vh, 10vh);
+    }
+  }
+
+
+
+
+
+
 
 `
 
 
-// const gra = function(min, max) {
-// 	return Math.random() * (max - min) + min;
-// };
-// const init = function() {
-// 	let items = document.querySelectorAll("section");
-// 	for (let i = 0; i < items.length; i++) {
-// 		items[i].style.minHeight = gra(120, 205) + "vh";
-// 	}
 
-
-// };
-// init();
 
 
 
@@ -156,15 +177,21 @@ const CaseStudyIndex = () => (
    <CustomBox>
   <Navbar />
 
+  
+
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
 <div className="container2" style={{position:'', height:'', display:'', border:'5px solid ', margin:'5vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 5px 5px -5px #333', transition:'background 0.3s ease-in'}}>
 
 
 
 
-	
+  <div className="thumb"><GiFingernail className="square" style={{position:'absolute', top:'50vh', left:'30vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'5', transform:'rotate(-5deg)', }}/></div>
+
+
     
 <section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
+
+
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'70vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
@@ -223,6 +250,27 @@ const CaseStudyIndex = () => (
 
   
 <Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
+
+  </section>
+
+
+
+
+
+
+  <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50vh', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+      
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-gccfcu/
+">Gulf Coast Community Federal Credit Union<br /> View the case study</Link></h1>
+        
+    </div>
+  </div>
+  
+
+  
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu.jpg" />
 
   </section>
 {/* END Panel 3 */}

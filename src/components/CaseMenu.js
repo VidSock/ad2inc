@@ -71,9 +71,9 @@ const CaseMenu = () => (
       
       <li className="galmenu-item interest"><Link to="/case-studies/casestudy-pediatric-center/" className="galgrad" title="The Pediatric Center Gulfport">The Pediatric Center at Garden Park Medical Center</Link></li>
       
-      <li className="galmenu-item interest"><Link to="#" className="galgrad" title="Gulf Coast Community Federal Credit Union Biloxi">Gulf Coast Community Federal Credit Union</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-gccfcu/" className="galgrad" title="Gulf Coast Community Federal Credit Union Biloxi">Gulf Coast Community Federal Credit Union</Link></li>
       
-      <li className="galmenu-item interest"><Link to="#" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Economic Development Foundation</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-jcedf/" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Economic Development Foundation</Link></li>
       
 	  {/* <li className="galmenu-item interest"><Link to="/portfolio/print" className="galgrad" title="Print">Print</Link></li>
 	  

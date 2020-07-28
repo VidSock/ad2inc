@@ -21,22 +21,7 @@ const CustomBox = styled.div`
   background: #da071c ;
 }
 
-// .intro:before{
-// 	content: "Ad2 Portfolio";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
-// }
 
-// .intro:after{
-//   content: "logo";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// }
 
 .container2 {
 	overflow-y: scroll;
@@ -191,9 +176,10 @@ const CaseStudy_2 = () => {
 <div className="outer">
 <div className="container" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
   <h3>Ad2 Spotlight</h3>
-  <iframe title="Pediatric Center Video" width="100%" height="300" src="https://www.youtube.com/embed/gqR2lzlurKI?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
+  <iframe title="Pediatric Center Video" width="100%" height="300" src="https://www.youtube.com/embed/xw8y72VH_LA?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
   </div></div>
   
+
   
  
 </div>
