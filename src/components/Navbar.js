@@ -77,10 +77,8 @@ const Navbar = class extends React.Component {
              
              <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us</label> 
               </li>
-              <PopContact />
-              
             </ul>
-            
+            <PopContact />
             
       
       
