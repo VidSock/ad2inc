@@ -8,7 +8,7 @@ import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { FiCornerRightDown } from 'react-icons/fi'
 
-import Contact from '../components/Contact-inc'
+// import Contact from '../components/Contact-inc'
 
 const CustomBox = styled.div`
 

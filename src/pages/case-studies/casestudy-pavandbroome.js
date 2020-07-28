@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 // import Footer from '../../components/Footer'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Image from '../../components/Image'
 import styled from "styled-components"
@@ -142,7 +142,7 @@ const CaseStudy_1 = () => {
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'wrap',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
   
-<div className="half" style={{alignContent:'top', width:'', margin:'0', padding:'', order:'1', verticalAlign:'top', alignContent:'top',}}>
+<div className="half" style={{width:'', margin:'0', padding:'', order:'1', verticalAlign:'top', alignContent:'top',}}>
 <h2>Client:</h2><p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}>Pav &amp; Broome Fine Jewelry </p>
 <p><a href="https://pavandbroome.com">https://pavandbroome.com</a></p>
 </div>
@@ -192,9 +192,9 @@ const CaseStudy_1 = () => {
 <div className="outer">
 <div className="container" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
   <h3>Ad2 Spotlight</h3>
-  <iframe width="100%" height="300" src="https://www.youtube.com/embed/gqR2lzlurKI?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
+  <iframe title="Pav &amp; Broome Commercial" width="100%" height="300" src="https://www.youtube.com/embed/gqR2lzlurKI?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
   </div></div>
-  <CaseMenu />
+  
 </div>
 
 
@@ -257,7 +257,7 @@ const CaseStudy_1 = () => {
       
        
 
-      
+<CaseMenu />
       
       
     </Layout>

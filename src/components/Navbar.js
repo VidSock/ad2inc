@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import logo from '../img/ad2inc-logo-round.png'
+import logo from '../img/ad2inc-logo-round.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
@@ -23,7 +23,7 @@ const Navbar = class extends React.Component {
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     
-    <img className="logo rollIn" src="../img/ad2inc-logo-round.svg" alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s'}} />
+    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s'}} />
    </Link>
  
  

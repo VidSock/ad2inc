@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
-// import { Link } from 'gatsby'
+import Navbar from '../../components/Navbar'
+import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
 import styled from "styled-components"
@@ -71,24 +72,28 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height:100vh;
+  height:50vh;
 }
 
 section {
 	scroll-snap-align: start;
-  border-bottom:2px solid red !important;
+  border-bottom:0px solid red !important;
   overflow:hidden;
   height:100vh;
+  background:tranparent !important;
+  // widtH:90%;
+  // margin:0 auto;
 }
 
 .slider1{
   position:fixed; 
   top:0;
   width:100vw;
-  height:100vh;
+  height:60vh;
   display:block;
   background-size:cover;
-  min-height:100vh;
+  min-height:60vh;
+  // z-index:3 !important;
 }
 
 
@@ -115,36 +120,49 @@ section {
 const CaseStudyIndex = () => (
   <Layout>
    <CustomBox>
-  
-<div className="container2" style={{position:'', top:'', height:'', display:''}}>
+  <Navbar />
+
+  <h1 style={{textAlign:'center', marginTop:'100px'}}>Available Case Studies</h1>
+<div className="container2" style={{position:'', height:'', display:'', border:'5px dotted ', margin:'5vh 10vw 0 10vw', borderRadius:'12px'}}>
 
 
 
 
 	
-    <div style={{}}></div>
-<section className="child" style={{position:'', height:'100vh', overflow:'hiden'}}>
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:'0'}}>    
-<Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
+    
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', padding:'1rem', border:'1px solid', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%'}}><Link className="" to="/case-studies/casestudy-pnb/">Pav &amp; Broome<br /> View the case study</Link></h1>
+    </div>
+  </div>
+
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:''}}>    
+<Image style={{zIndex:'-5', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
 </ScrollAnimation>
+
+
+
   </section>
 {/* END Panel 1 */}
 
 
 
 
-  <section className="child" style={{position:'', height:'100vh'}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4', position:'', top:'0'}}>
-<Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
+<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-4', position:'', top:''}}> 
+<Image style={{zIndex:'-4', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
 </ScrollAnimation>
 </section>
 {/* END Panel 2 */}
 
 
 
-  <section className="child" style={{position:'', height:'100vh'}}>
- <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3', position:'', top:'0'}}>
-<Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg" />
+<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-3', position:'', top:''}}> 
+<Image style={{zIndex:'-3', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg" />
 </ScrollAnimation>
 </section>
 {/* END Panel 3 */}

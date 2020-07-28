@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
 import Image from '../components/Image'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
@@ -22,7 +22,7 @@ import { FiCornerRightDown } from 'react-icons/fi'
 
 // import PopMedical from '../components/PopMedical'
 // import PopSemi from '../components/PopSemi'
-import PopNewsletter from '../components/PopNewsletter'
+// import PopNewsletter from '../components/PopNewsletter'
 import styled from "styled-components"
 
 const CustomBox = styled.div`

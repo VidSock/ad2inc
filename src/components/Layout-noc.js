@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+// import Footer from '../components/Footer'
+// import Navbar from '../components/Navbar'
 // import Contact from '../components/Contact'
 import 'typeface-pt-sans';
 import "../css/index.scss";
@@ -28,12 +28,12 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       
       
-     <Navbar />
+     {/* <Navbar /> */}
       <main>{children}</main>
       
 
       <div className="fadeIn">
-      <Footer />
+      {/* <Footer /> */}
       </div>
     </div>
   )
