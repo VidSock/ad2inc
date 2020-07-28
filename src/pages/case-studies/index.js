@@ -79,7 +79,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 section {
 	scroll-snap-align: start;
-  border-bottom:0px solid red !important;
+  border-bottom:10px solid red !important;
   overflow:hidden;
   height:60vh;
   background:tranparent !important;
@@ -178,7 +178,7 @@ const CaseStudyIndex = () => (
   
 
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
-<div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 5px 5px -5px #333', transition:'background 0.3s ease-in'}}>
+<div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
 
 
 
