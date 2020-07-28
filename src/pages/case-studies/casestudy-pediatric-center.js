@@ -45,7 +45,7 @@ const CustomBox = styled.div`
 }
 
 section {
-	scroll-snap-align: start;
+	// scroll-snap-align: start;
   border-bottom:0px solid red !important;
  
   // height:100vh;
@@ -55,10 +55,10 @@ section {
   position:fixed; 
   top:0;
   width:100vw;
-  height:100vh;
+  // height:100vh;
   display:block;
   background-size:cover;
-  min-height:100vh;
+  // min-height:100vh;
 }
 
 
@@ -158,7 +158,7 @@ const CaseStudy_2 = () => {
 
 
 
-<div style={{maxHeight:'30vh', overflow:'hidden'}}><Gallery
+<div style={{maxHeight:'40vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
       

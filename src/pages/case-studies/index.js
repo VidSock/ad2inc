@@ -123,7 +123,7 @@ const CaseStudyIndex = () => (
   <Navbar />
 
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
-<div className="container2" style={{position:'', height:'', display:'', border:'5px dotted ', margin:'5vh 10vw 0 10vw', borderRadius:'12px'}}>
+<div className="container2" style={{position:'', height:'', display:'', border:'5px solid ', margin:'5vh 10vw 0 10vw', borderRadius:'12px'}}>
 
 
 
