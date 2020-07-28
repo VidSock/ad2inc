@@ -98,6 +98,40 @@ section {
 
 
 
+a.button2{
+   display:inline-block;
+   padding:0.5em 3em;
+   border:0.16em solid #FFFFFF;
+   margin:0 0.3em 0.3em 0;
+   box-sizing: border-box;
+   text-decoration:none;
+   text-transform:uppercase;
+   font-weight:400;
+   color:#FFFFFF;
+   text-align:center;
+  background:#444;
+  filter: brightness(120%);
+  opacity:.9;
+   transition: all 0.15s;
+  }
+  a.button2:hover{
+   color:#DDDDDD;
+   border-color:#FF0000;
+  filter: brightness(140%);
+  }
+  a.button2:active{
+   color:#BBBBBB;
+   border-color:#BBBBBB;
+  }
+  @media all and (max-width:30vw){
+   a.button2{
+    display:block;
+    margin:0.4em auto;
+   }
+  }
+
+
+
 
 `
 
@@ -123,7 +157,7 @@ const CaseStudyIndex = () => (
   <Navbar />
 
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
-<div className="container2" style={{position:'', height:'', display:'', border:'5px solid ', margin:'5vh 10vw 0 10vw', borderRadius:'12px'}}>
+<div className="container2" style={{position:'', height:'', display:'', border:'5px solid ', margin:'5vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 5px 5px -5px #333', transition:'background 0.3s ease-in'}}>
 
 
 
@@ -133,14 +167,14 @@ const CaseStudyIndex = () => (
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', padding:'1rem', border:'1px solid', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%'}}><Link className="" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
     </div>
   </div>
-
+  
 
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:''}}>    
-<Image style={{zIndex:'-5', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
+<Image style={{zIndex:'-5', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pnb.jpg" />
 </ScrollAnimation>
 
 
@@ -151,21 +185,47 @@ const CaseStudyIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-4', position:'', top:''}}> 
-<Image style={{zIndex:'-4', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  />
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={10}> 
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
+        </ScrollAnimation>
+    </div>
+  </div>
+  
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-4', position:'', top:''}}>    
+<Image style={{zIndex:'-4', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pediatric-center.jpg" />
 </ScrollAnimation>
-</section>
+
+
+
+  </section>
 {/* END Panel 2 */}
 
 
 
-<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-3', position:'', top:''}}> 
-<Image style={{zIndex:'-3', position:'fixed'}} className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg" />
+
+
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={10}> 
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">Jackson Co. Economic Development<br /> View the case study</Link></h1>
+        </ScrollAnimation>
+    </div>
+  </div>
+  
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-3', position:'', top:''}}>    
+<Image style={{zIndex:'-3', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-jcedf.jpg" />
 </ScrollAnimation>
-</section>
+  </section>
 {/* END Panel 3 */}
+
 
 
 

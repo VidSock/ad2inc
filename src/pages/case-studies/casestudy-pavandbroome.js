@@ -158,7 +158,7 @@ const CaseStudy_1 = () => {
 
 
 
-<div style={{maxHeight:'30vh', overflow:'hidden'}}><Gallery
+<div style={{maxHeight:'40vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
       
