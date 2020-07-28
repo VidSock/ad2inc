@@ -122,13 +122,13 @@ const CaseStudy_4 = () => {
 
 <section className="child" style={{position:'', height:'', overflow:''}}>
 
-<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - JCEDF</h1>
+<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - GCCFCU</h1>
 
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'wrap',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
   
 <div className="half" style={{width:'', margin:'0', padding:'', order:'1', verticalAlign:'top', alignContent:'top',}}>
-<h2>Client:</h2><p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}> Jackson County Economic Development Foundation </p>
+<h2>Client:</h2><p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}> Gulf Coast Community Federal Credit Union </p>
 <p><a href="https://jcedf.org/">https://jcedf.org/</a></p>
 </div>
 
@@ -177,11 +177,7 @@ const CaseStudy_4 = () => {
 
 </div>
 
-{/* <div className="outer">
-<div className="container" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
-  <h3>Ad2 Spotlight</h3>
-  <iframe title="Pav &amp; Broome Commercial" width="100%" height="300" src="https://www.youtube.com/embed/gqR2lzlurKI?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
-  </div></div> */}
+
   
 </div>
 
