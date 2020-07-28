@@ -122,7 +122,7 @@ const CaseStudyIndex = () => (
    <CustomBox>
   <Navbar />
 
-  <h1 style={{textAlign:'center', marginTop:'100px'}}>Available Case Studies</h1>
+  <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
 <div className="container2" style={{position:'', height:'', display:'', border:'5px dotted ', margin:'5vh 10vw 0 10vw', borderRadius:'12px'}}>
 
 
@@ -134,7 +134,7 @@ const CaseStudyIndex = () => (
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', padding:'1rem', border:'1px solid', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%'}}><Link className="" to="/case-studies/casestudy-pnb/">Pav &amp; Broome<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
     </div>
   </div>
 
