@@ -74,16 +74,16 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height:50vh;
+  height:60vh;
 }
 
 section {
 	scroll-snap-align: start;
   border-bottom:0px solid red !important;
   overflow:hidden;
-  height:50vh;
+  height:60vh;
   background:tranparent !important;
-  // widtH:90%;
+  // width:90%;
   // margin:0 auto;
 }
 
@@ -91,10 +91,10 @@ section {
   position:fixed; 
   top:0;
   width:100vw;
-  height:50vh;
+  height:60vh;
   display:block;
   background-size:cover;
-  min-height:50vh;
+  min-height:60vh;
   // z-index:3 !important;
 }
 
@@ -178,7 +178,7 @@ const CaseStudyIndex = () => (
   
 
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
-<div className="container2" style={{position:'', height:'', display:'', border:'5px solid ', margin:'5vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 5px 5px -5px #333', transition:'background 0.3s ease-in'}}>
+<div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 5px 5px -5px #333', transition:'background 0.3s ease-in'}}>
 
 
 
@@ -187,18 +187,18 @@ const CaseStudyIndex = () => (
 
 
     
-<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
 
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'70vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
 
         
  
-<ScrollAnimation animateIn="none" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} delay={4000} offset={300}>
-        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'37vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'0', }}/></div>
+<ScrollAnimation animateIn="fadeOut" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} offset={0}>
+        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'12vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'0', }}/></div>
 </ScrollAnimation>
 
     </div>
@@ -243,7 +243,7 @@ const CaseStudyIndex = () => (
 
 
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-jcedf/
@@ -264,7 +264,7 @@ const CaseStudyIndex = () => (
 
 
   <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-gccfcu/
