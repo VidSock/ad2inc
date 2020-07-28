@@ -3,11 +3,11 @@ import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { Link } from 'gatsby'
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
-import { GiFingernail } from 'react-icons/gi'
+import { IoMdFingerPrint } from 'react-icons/io'
 
 // import { FiCornerRightDown } from 'react-icons/fi'
 
@@ -141,13 +141,11 @@ a.button2{
 // top:30vh;
 // left:20vw;
 // z-index:5;
-    color: white;
+    color: #fff;
     padding: 5px;
-    animation: shimmy 4s infinite;
+    animation: shimmy 2s;
     animation-direction: reverse;
     visibility: visible;
-  opacity: 1;
-  transition: opacity 2s linear;
   }
   
   @keyframes shimmy {
@@ -185,7 +183,7 @@ const CaseStudyIndex = () => (
 
 
 
-  <div className="thumb"><GiFingernail className="square" style={{position:'absolute', top:'50vh', left:'30vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'5', transform:'rotate(-5deg)', }}/></div>
+ 
 
 
     
@@ -196,6 +194,13 @@ const CaseStudyIndex = () => (
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'70vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+
+        
+ 
+<ScrollAnimation animateIn="none" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} delay={4000} offset={300}>
+        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'37vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'700%', zIndex:'0', }}/></div>
+</ScrollAnimation>
+
     </div>
   </div>
   
