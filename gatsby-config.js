@@ -43,9 +43,26 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/ad2inc-logo-round.png`,
+        icons: [
+          {
+            src: `/icons/manifest-icon-192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/icons/manifest-icon-512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+            purpose: `any maskable`,
+          },
+        ],
       },
     },
+
+
+    
+
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
