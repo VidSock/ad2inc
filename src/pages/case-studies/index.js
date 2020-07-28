@@ -3,7 +3,7 @@ import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { Link } from 'gatsby'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
@@ -173,9 +173,9 @@ const CaseStudyIndex = () => (
   </div>
   
 
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:''}}>    
-<Image style={{zIndex:'-5', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pnb.jpg" />
-</ScrollAnimation>
+
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pnb.jpg" />
+
 
 
 
@@ -190,16 +190,16 @@ const CaseStudyIndex = () => (
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
-      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={10}> 
+
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
-        </ScrollAnimation>
+
     </div>
   </div>
   
 
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-4', position:'', top:''}}>    
-<Image style={{zIndex:'-4', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pediatric-center.jpg" />
-</ScrollAnimation>
+  
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pediatric-center.jpg" />
+
 
 
 
@@ -213,16 +213,16 @@ const CaseStudyIndex = () => (
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
-      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} delay={10}> 
+      
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">Jackson Co. Economic Development<br /> View the case study</Link></h1>
-        </ScrollAnimation>
+        
     </div>
   </div>
   
 
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-3', position:'', top:''}}>    
-<Image style={{zIndex:'-3', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-jcedf.jpg" />
-</ScrollAnimation>
+  
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-jcedf.jpg" />
+
   </section>
 {/* END Panel 3 */}
 
