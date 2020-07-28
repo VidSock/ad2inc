@@ -79,7 +79,7 @@ section {
 	scroll-snap-align: start;
   border-bottom:0px solid red !important;
   overflow:hidden;
-  height:100vh;
+  height:50vh;
   background:tranparent !important;
   // widtH:90%;
   // margin:0 auto;
@@ -89,10 +89,10 @@ section {
   position:fixed; 
   top:0;
   width:100vw;
-  height:60vh;
+  height:50vh;
   display:block;
   background-size:cover;
-  min-height:60vh;
+  min-height:50vh;
   // z-index:3 !important;
 }
 
@@ -164,9 +164,9 @@ const CaseStudyIndex = () => (
 
 	
     
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'50vh', overflow:''}}>
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'70vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
     </div>
@@ -174,7 +174,7 @@ const CaseStudyIndex = () => (
   
 
 
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pnb.jpg" />
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
 
 
 
@@ -188,7 +188,7 @@ const CaseStudyIndex = () => (
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'150%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'130%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
@@ -198,7 +198,7 @@ const CaseStudyIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-pediatric-center.jpg" />
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
 
 
 
@@ -211,17 +211,18 @@ const CaseStudyIndex = () => (
 
 
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'120%', height:'50vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">Jackson Co. Economic Development<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-jcedf/
+">Jackson Co. Economic Development<br /> View the case study</Link></h1>
         
     </div>
   </div>
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Todd Stars" filename="case-study-jcedf.jpg" />
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
 
   </section>
 {/* END Panel 3 */}
