@@ -339,30 +339,49 @@ height:0;
 .touchup{animation: touchup 3s forwards;
     animation-delay: 1s;
     position:absolute;
-    bottom:3vh;
+    bottom:8vh;
     right:5vw;
-    opacity:.3;
+    opacity:0;
+    scale: .8;
   }
 
     
 @keyframes touchup {
 0% {
-	height:0;
-  opacity:0;
+	height:8vh;
+  opacity:.8;
+  transform: scale(1);
   }
+  10%{
+    opacity:.8;
+    height:6vh;
+    transform: scale(.8);
+  }
+
+  15%{
+    opacity:1;
+    height:5vh;
+    transform: scale(1);
+  }
+
   20%{
     opacity:.8;
+    height:7vh;
+    transform: scale(1);
   }
   
-  90% {
-    height:70%;
+  85% {
+    height:40vh;
     opacity: 1;
+    transform: scale(1);
     }
 
 100% {
     
     opacity: 0;  
-    height:70%;	
+    height:42vh;
+    transform: scale(1.4);	
+    filter: blur(1px);
 	}
 }
 

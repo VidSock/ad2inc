@@ -343,7 +343,7 @@ const CaseStudyIndex = () => (
 
 
 
-      <IoMdFingerPrint className="touchup" style={{fontSize:'500%', }}/>
+      <IoMdFingerPrint className="touchup" style={{fontSize:'500%', color:'#ff0000 !important' }}/>
    
 
       
