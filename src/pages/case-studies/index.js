@@ -133,7 +133,7 @@ a.button2{
   }
 
 
-
+.touchup{color:#ccc !important}
 
 
 
@@ -343,7 +343,7 @@ const CaseStudyIndex = () => (
 
 
 
-      <IoMdFingerPrint className="touchup" style={{fontSize:'500%', color:'#ff0000 !important' }}/>
+      <IoMdFingerPrint className="touchup"/>
    
 
       
