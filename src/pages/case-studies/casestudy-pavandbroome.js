@@ -135,7 +135,7 @@ const CaseStudy_1 = () => {
     <div style={{marginTop:'80px'}}><CaseMenu /></div>
 
 
-<section className="child" style={{position:'', height:'100vh', overflow:'hiden'}}>
+<section className="child" style={{position:'', height:'', overflow:'hiden'}}>
 
 <h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - Pav &amp; Broome</h1>
 

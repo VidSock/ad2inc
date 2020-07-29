@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Layout from '../../components/Layout-noc'
-import Footer from '../../components/Footer'
+// import Navbar from '../../components/Navbar'
+import Layout from '../../components/Layout'
+// import Footer from '../../components/Footer'
 import { graphql, useStaticQuery } from 'gatsby'
 // import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -21,6 +21,7 @@ const CustomBox = styled.div`
   background: #da071c ;
 }
 
+// footer{position:fixed; bottom:0; width:100vw;}
 
 
 .container2 {
@@ -33,7 +34,7 @@ section {
 	// scroll-snap-align: start;
   border-bottom:0px solid red !important;
  
-  height:100vh;
+  // height:100vh;
 }
 
 .slider1{
@@ -113,7 +114,7 @@ const CaseStudy_4 = () => {
   
 <div className="container2" style={{position:'', top:'', height:'', display:''}}>
 
-<Navbar />
+
 
 
 	
@@ -185,10 +186,10 @@ const CaseStudy_4 = () => {
 
 
 
-<CaseMenu />
+
   </section>
 {/* END Panel 1 */}
-
+<CaseMenu />
 
 
 
@@ -205,14 +206,14 @@ const CaseStudy_4 = () => {
 
 
 
-<div className="spacer99"></div>
+{/* <div className="spacer99"></div> */}
 {/* <div className="spacer66"></div> */}
 
 
 
 
 
-<Footer />
+
 </div>
 
 

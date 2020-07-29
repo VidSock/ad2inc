@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Layout from '../../components/Layout-noc'
-import Footer from '../../components/Footer'
+// import Navbar from '../../components/Navbar'
+import Layout from '../../components/Layout'
+// import Footer from '../../components/Footer'
 import { graphql, useStaticQuery } from 'gatsby'
 // import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -33,7 +33,7 @@ section {
 	// scroll-snap-align: start;
   border-bottom:0px solid red !important;
  
-  height:100vh;
+  // height:100vh;
 }
 
 .slider1{
@@ -113,7 +113,7 @@ const CaseStudy_3 = () => {
   
 <div className="container2" style={{position:'', top:'', height:'', display:''}}>
 
-<Navbar />
+
 
 
 	
@@ -209,14 +209,14 @@ const CaseStudy_3 = () => {
 
 
 
-<div className="spacer99"></div>
+{/* <div className="spacer99"></div> */}
 {/* <div className="spacer66"></div> */}
 
 
 
 
 
-<Footer />
+
 </div>
 
 

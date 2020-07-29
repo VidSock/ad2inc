@@ -79,7 +79,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 section {
 	scroll-snap-align: start;
-  border-bottom:10px solid  !important;
+  border-bottom:10px solid red!important;
   overflow:hidden;
   height:60vh;
   background:tranparent !important;
