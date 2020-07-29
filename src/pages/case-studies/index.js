@@ -3,13 +3,13 @@ import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { Link } from 'gatsby'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 import { IoMdFingerPrint } from 'react-icons/io'
 
-// import { FiCornerRightDown } from 'react-icons/fi'
+// import { FiZoomIn } from 'react-icons/fi'
 
 // import Contact from '../../components/Contact-inc'
 
@@ -79,7 +79,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 
 section {
 	scroll-snap-align: start;
-  border-bottom:10px solid red !important;
+  border-bottom:10px solid  !important;
   overflow:hidden;
   height:60vh;
   background:tranparent !important;
@@ -134,28 +134,7 @@ a.button2{
 
 
 
-  .square {
-    height: 100px;
-    width: 100px;
-// position:absolute;
-// top:30vh;
-// left:20vw;
-// z-index:5;
-    color: #fff;
-    padding: 5px;
-    animation: shimmy 2s;
-    animation-direction: reverse;
-    visibility: visible;
-  }
-  
-  @keyframes shimmy {
-    0% {
-      transform: translate(0, 0); 
-    }
-    100% {
-      transform: translate(1vh, 10vh);
-    }
-  }
+
 
 
 
@@ -178,6 +157,10 @@ const CaseStudyIndex = () => (
   
 
   <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
+
+
+
+      
 <div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
 
 
@@ -191,16 +174,19 @@ const CaseStudyIndex = () => (
 
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
 
         
  
-<ScrollAnimation animateIn="fadeOut" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} offset={0}>
-        <div className="thumb"><IoMdFingerPrint className="square" style={{position:'absolute', bottom:'12vh', right:'15vw', textShadow:'3px 1px 5px black', fontSize:'500%', zIndex:'0', }}/></div>
-</ScrollAnimation>
 
+
+<div className="zoomer" style={{}}>
+      <IoMdFingerPrint className="square" style={{fontSize:'500%', }}/>
+      </div>
+
+      
     </div>
   </div>
   
@@ -220,7 +206,7 @@ const CaseStudyIndex = () => (
 <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'130%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
