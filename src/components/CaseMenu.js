@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 const CustomBox = styled.div`
 
 .galmenu{
-display: flex; justify-content: space-around; align-items: flex-start; margin:0 3%;
+display: flex; justify-content: space-between; align-items: flex-start; margin:0 3%;
 background:#222;
 padding:4px 4px;
 border-radius:10px;
