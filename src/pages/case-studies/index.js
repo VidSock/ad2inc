@@ -182,8 +182,8 @@ const CaseStudyIndex = () => (
  
 
 
-<div className="zoomer" style={{}}>
-      <IoMdFingerPrint className="square" style={{fontSize:'500%', }}/>
+<div className="touchup" style={{}}>
+      <IoMdFingerPrint style={{fontSize:'500%', }}/>
       </div>
 
       
@@ -265,6 +265,100 @@ const CaseStudyIndex = () => (
 
   </section>
 {/* END Panel 3 */}
+
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+
+
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+
+        
+ 
+
+
+<div className="touchup" style={{}}>
+      <IoMdFingerPrint style={{fontSize:'500%', }}/>
+      </div>
+
+      
+    </div>
+  </div>
+  
+
+
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
+
+
+
+
+  </section>
+{/* END Panel 1 */}
+
+
+
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+
+
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+
+        
+ 
+
+
+<div className="touchup" style={{}}>
+      <IoMdFingerPrint style={{fontSize:'500%', }}/>
+      </div>
+
+      
+    </div>
+  </div>
+  
+
+
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
+
+
+
+
+  </section>
+{/* END Panel 1 */}
+
+
+
+<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+
+
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+
+        
+ 
+
+
+
+      <IoMdFingerPrint className="touchup" style={{fontSize:'500%', }}/>
+   
+
+      
+    </div>
+  </div>
+  
+
+
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
+
+
+
+
+  </section>
+{/* END Panel 1 */}
 
 
 

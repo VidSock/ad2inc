@@ -321,19 +321,23 @@ background-image: linear-gradient(#a70e1a 40%, #ED1B2D  100%);
 }
 
 
-.zoomer{animation: zoomer 3s forwards;
+.touchup{animation: touchup 3s forwards;
     animation-delay: 1s;
     position:absolute;
-    bottom:7vh;
+    bottom:3vh;
     right:5vw;
+    opacity:.3;
   }
 
     
-@keyframes zoomer {
+@keyframes touchup {
 0% {
 	height:0;
-  opacity:1;
-	}
+  opacity:0;
+  }
+  20%{
+    opacity:.8;
+  }
   
   90% {
     height:70%;
