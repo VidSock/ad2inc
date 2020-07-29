@@ -102,16 +102,19 @@ section {
 
 a.button2{
    display:inline-block;
-   padding:0.5em 3em;
+   padding:.5em 3vw;
    border:0.16em solid #FFFFFF;
-   margin:0 0.3em 0.3em 0;
+  border-radius:6px;
+   margin:0 auto;
    box-sizing: border-box;
+  box-shadow: 0px 1px 6px 1px black;
    text-decoration:none;
    text-transform:uppercase;
+  text-shadow: 1px 4px 1px black;
    font-weight:400;
    color:#FFFFFF;
    text-align:center;
-  background:#444;
+  background:#333;
   filter: brightness(120%);
   opacity:.9;
    transition: all 0.15s;
@@ -176,8 +179,8 @@ const CaseStudyIndex = () => (
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
-
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+      
         
  
 

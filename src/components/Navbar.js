@@ -23,7 +23,7 @@ const Navbar = class extends React.Component {
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     
-    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s'}} />
+    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s',}} />
    </Link>
  
  

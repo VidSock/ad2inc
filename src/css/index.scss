@@ -22,16 +22,16 @@ $red: #ff0000;
 
 @keyframes fade {
 0%{
-      opacity: 1;
-   }
-   15% {
-      opacity:1;
-   }
-   25%{
       opacity: 0;
    }
+   15% {
+      opacity:.1;
+   }
+   25%{
+      opacity: .3;
+   }
    90% {
-      opacity:0;
+      opacity:.9;
    }
    100% {
       opacity:1;
@@ -39,23 +39,7 @@ $red: #ff0000;
 
 }
 
-@-webkit-keyframes fade {
-    0%{
-      opacity: 1;
-   }
-   15% {
-      opacity:1;
-   }
-   25%{
-      opacity: 0;
-   }
-   90% {
-      opacity:0;
-   }
-   100% {
-      opacity:1;
-   }
-}
+
 
 
 
@@ -337,7 +321,6 @@ height:0;
 
 
 .touchup{animation: touchup 3s forwards;
-    animation-delay: 1s;
     position:absolute;
     bottom:8vh;
     right:5vw;
