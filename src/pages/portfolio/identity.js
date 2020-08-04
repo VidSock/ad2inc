@@ -50,7 +50,7 @@ background: #da071c ;
 
 const gal2Query = graphql`
   query gal2Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
+    allFile(filter: { relativeDirectory: { eq: "identity" } }) {
       edges {
         node {
           childImageSharp {

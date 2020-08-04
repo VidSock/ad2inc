@@ -14,42 +14,28 @@ import { IoMdFingerPrint } from 'react-icons/io'
 // import Contact from '../../components/Contact-inc'
 
 const CustomBox = styled.div`
-
 .spacer33{height:33vh; display:block;}
 .spacer66{height:66vh; display:block;}
 .spacer99{height:99vh; display:block;}
-
-
 .progress{position:absolute; top:80vh; left:100px; border:1px solid yellow; z-index:1;}
-
 .slide:nth-child(1) {
   -webkit-animation: fade 24s 0s infinite;
   z-index:2;
 }
-
 .slide:nth-child(2) {
   -webkit-animation: fade 24s 6s infinite;
   z-index:1;
 }
-
 .slide:nth-child(3) {
   -webkit-animation: fade 0s 0s infinite;
   z-index:0;
 }
-
-
 .slider{z-index:-1;}
-
-
 //  SLIDE
-
-
-
 #vidpop {
   display: block;
   text-align:center;
 }
-
 label + input[type=checkbox]{
 display:none !important;
 } 
@@ -58,25 +44,17 @@ input[type=checkbox]:checked + label div{
   transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
   z-index:1;
 } 
-
 input[type=checkbox]:checked + label div label{display:block !important; cursor:pointer;}
-
-
 #vid-toggle:checked + #vidpop .sub{display:none !important;}
-
 #vid-open{
   position:absolute; bottom:0; display:block; width:100%; height:100%;  z-index:1; cursor:pointer;
   // background:#fff;
 }
-
-
-
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
   height:60vh;
 }
-
 section {
 	scroll-snap-align: start;
   border-bottom:10px solid red!important;
@@ -86,7 +64,6 @@ section {
   // width:90%;
   // margin:0 auto;
 }
-
 .slider1{
   position:fixed; 
   top:0;
@@ -97,9 +74,6 @@ section {
   min-height:60vh;
   // z-index:3 !important;
 }
-
-
-
 a.button2{
    display:inline-block;
    padding:.5em 3vw;
@@ -134,17 +108,7 @@ a.button2{
     margin:0.4em auto;
    }
   }
-
-
 .touchup{color:#ccc !important}
-
-
-
-
-
-
-
-
 `
 
 
@@ -384,9 +348,3 @@ const CaseStudyIndex = () => (
   </Layout>
 )
 export default CaseStudyIndex
-
-
-
-
-
-

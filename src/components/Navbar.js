@@ -46,7 +46,7 @@ const Navbar = class extends React.Component {
             
             <li>
               <Link id="portfolio" className="navbar-item" to="/portfolio">
-               Portfolio
+               Work
               </Link>
               </li>
 
@@ -58,16 +58,16 @@ const Navbar = class extends React.Component {
               </li> */}
               
               
-              <li>
+              {/* <li>
               <Link id="casestudies" className="navbar-item" to="/case-studies">
                 Case Studies
               </Link>
-              </li>
+              </li> */}
               
               
                <li>
               <Link className="navbar-item" to="/capabilities">
-                About Us
+                About
               </Link>
               </li>
               
@@ -75,7 +75,7 @@ const Navbar = class extends React.Component {
 
               <li>
              
-             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us</label> 
+             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
               </li>
             </ul>
             <PopContact />

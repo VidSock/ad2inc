@@ -38,7 +38,7 @@ background: #da071c ;
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
-.gatsby-image-wrapper{transform: scale(1.25);}
+
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -52,7 +52,7 @@ background: #da071c ;
 
 const gal6Query = graphql`
   query gal6Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
+    allFile(filter: { relativeDirectory: { eq: "print" } }) {
       edges {
         node {
           childImageSharp {
