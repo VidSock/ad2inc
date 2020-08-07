@@ -191,11 +191,11 @@ const CaseStudyIndex = () => (
     </div>
 
     <div style={{borderRight:'none'}}>
-    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+    <Image alt="Temp Graphic" filename="Ad2-web-portfolio.jpg" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web Portfolio</Link></h1>
 
     </div>
   </div>
@@ -217,7 +217,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio Portfolio</Link></h1>
 
     </div>
   </div>
