@@ -29,14 +29,14 @@ const CustomBox = styled.div`
 .accordion{
   display:flex;
   flex-wrap:nowrap;
-  overflow:hidden;
+  // overflow:hidden;
   width:100%;
   height:50vh;
   // min-height: calc(~"100vh - 100px");
 }
 
 .accordion > div{
-  width:50%;
+  width:70%;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
@@ -98,21 +98,23 @@ a.button2{
    box-sizing: border-box;
   box-shadow: 0px 1px 6px 1px black;
    text-decoration:none;
-   text-transform:uppercase;
-  text-shadow: 1px 4px 1px black;
+  //  text-transform:uppercase;
+  text-align:left;
+  text-shadow: 1px 2px 1px black;
    font-weight:400;
    color:#FFFFFF;
-   text-align:center;
+  cursor:default;
   background:#333;
   filter: brightness(120%);
   opacity:.9;
    transition: all 0.15s;
   }
-  a.button2:hover{
-   color:#DDDDDD;
-   border-color:#FF0000;
-  filter: brightness(140%);
-  }
+  // a.button2:hover{
+  //  color:#DDDDDD;
+  //  border-color:#FF0000;
+  // filter: brightness(140%);
+  // }
+
   a.button2:active{
    color:#BBBBBB;
    border-color:#BBBBBB;
@@ -161,16 +163,20 @@ const WhatWeDo = () => (
 
   <div style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/800x600" alt="rando" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+  <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'12vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
+        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">
+          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Media Buying</strong><br />
+          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience.</p>
+        
+        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p></Link></div>
         </div></div>
     </div>
 
     <div style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/800x6002" alt="rando" />
+  <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
@@ -180,7 +186,7 @@ const WhatWeDo = () => (
 
     <div style={{borderLeft:'none'}}>
    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-   <img src="https://source.unsplash.com/random/800x6003" alt="rando" />
+   <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
@@ -189,7 +195,7 @@ const WhatWeDo = () => (
 
     <div style={{borderLeft:'none'}}>
    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-   <img src="https://source.unsplash.com/random/800x6004" alt="rando" />
+   <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
