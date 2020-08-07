@@ -133,7 +133,7 @@ a.button2{
 
 
 
-const ServicesIndex = () => (
+const WhatWeDo = () => (
   <Layout>
    <CustomBox>
 
@@ -213,4 +213,4 @@ const ServicesIndex = () => (
 </CustomBox>
   </Layout>
 )
-export default ServicesIndex
+export default WhatWeDo
