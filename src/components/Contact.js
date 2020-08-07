@@ -93,7 +93,7 @@ export default class Contact extends React.Component {
                     <input
                       className="input"
                       type={'text'}
-                      name={'name'}
+                      name={'name1'}
                       onChange={this.handleChange}
                       id={'name1'}
                       required={true}
@@ -104,7 +104,7 @@ export default class Contact extends React.Component {
                     <input
                       className="input"
                       type={'email'}
-                      name={'email'}
+                      name={'email1'}
                       onChange={this.handleChange}
                       id={'email1'}
                       required={true}
@@ -119,7 +119,7 @@ export default class Contact extends React.Component {
                         className="file-input hidden"
                         type="file"
                         id="attachment1"
-                        name="attachment"
+                        name="attachment1"
                         onChange={this.handleAttachment}
                         title="file attachment"
                       />
@@ -134,7 +134,7 @@ export default class Contact extends React.Component {
                   </label>
                     <textarea
                       className="textarea"
-                      name={'message'}
+                      name={'message1'}
                       onChange={this.handleChange}
                       id={'message1'}
                       required={true}
@@ -147,7 +147,7 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent'}><input title="Agree to terms" id="consent" type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent1'}><input title="Agree to terms" id="consent1" type="checkbox"  name={'consent1'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
