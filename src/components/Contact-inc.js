@@ -77,8 +77,8 @@ export default class Contact extends React.Component {
                 id="contact-inc-form"
               >
 
-<h2 className="" style={{textAlign:'center', fontSize:'180%',}}>
-Contact Us
+<h2 className="" style={{textAlign:'center', fontSize:'150%', paddingTop:'.6rem'}}>
+Schedule your free consultation today
 </h2>
 
                

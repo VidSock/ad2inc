@@ -48,7 +48,7 @@ const Navbar = class extends React.Component {
             
             <li>
               <Link id="portfolio" className="navbar-item" to="/portfolio">
-               Our Work
+               Work
               </Link>
               </li>
 
@@ -69,7 +69,7 @@ const Navbar = class extends React.Component {
               
                <li>
               <Link className="navbar-item" to="/capabilities">
-                About Us
+                About
               </Link>
               </li>
               

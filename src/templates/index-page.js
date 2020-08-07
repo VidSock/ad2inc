@@ -129,24 +129,38 @@ const IndexPage1 = () => (
      <Layout>
      <CustomBox>
   
-  <div className="container2">
+     <section className="outer section section--gradient">
+      <div className="container" style={{padding: '100px 2rem 0 2rem',}}>
   
   
- 
+  <h1>We Grow Business!</h1>
+
+<p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
+
+<p>Ad2 understands the importance of relevant data as the foundation for effective campaigns. Your message must connect your brand with your audience and effectively communicate  the differentiating benefits of your products, values, and services.</p>
   
    
+<blockquote>Your customers must know who you are,
 
+what you can do for them and
+
+why they want to choose you.</blockquote>
   
-  <div className="spacer99"></div>
+
+  <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
+  <div className="spacer33"></div>
   
+  <p style={{textAlign:'center'}}><strong>Let’s build your business together.</strong></p>
   
   {/* <div className="spacer33"></div> */}
   </div>
     
     {/* CONTACT PANEL  */}
-    <div className="outer" style={{margin:' 0'}}> <Contact /></div>
+    <div className="outer" style={{margin:' 0'}}><Contact /></div>
   {/* END CONTACT PANEL */}
 
+
+</section>
   </CustomBox>
   <Install />
   </Layout>

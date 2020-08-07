@@ -23,7 +23,7 @@ const Consent = () => (
     cookieName="Ad2inc.net-site-pref-cookie"
 >
 
-    <div style={{padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.{" "}<br />
+    <div style={{padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.<br />
     <span style={{ fontSize: "75%" }}>
    <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
     </span><br /><br /></div>
