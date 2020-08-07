@@ -41,8 +41,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid #fff;
-  border-right:1.5px solid #fff;
+  border-left:1px solid;
+  border-right:1px solid;
   border-radius:0px;
   position:relative;
   align-items: center;
