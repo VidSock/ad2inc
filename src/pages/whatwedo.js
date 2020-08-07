@@ -31,12 +31,12 @@ const CustomBox = styled.div`
   flex-wrap:nowrap;
   // overflow:hidden;
   width:100%;
-  height:50vh;
+  height:80vh;
   // min-height: calc(~"100vh - 100px");
 }
 
 .accordion > div{
-  width:70%;
+  width:60%;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
@@ -166,20 +166,26 @@ const WhatWeDo = () => (
   <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'12vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">
-          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Media Buying</strong><br />
-          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience.</p>
+        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}>
+          <a className="button2">
+          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Consulting</strong><br />
+          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
-        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p></Link></div>
+        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p></a></div>
         </div></div>
     </div>
 
     <div style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+  <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'12vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
+        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}>
+          <a className="button2">
+          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Media Buying</strong><br />
+          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience.</p>
+        
+        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p></a></div>
         </div></div>
     </div>
 
