@@ -37,12 +37,13 @@ const CustomBox = styled.div`
 
 .accordion > div{
   width:50%;
+  // height:100vh;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid #222;
-  border-right:1.5px solid #222;
+  border-left:0px solid ;
+  border-right:0px solid;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -75,13 +76,15 @@ const CustomBox = styled.div`
   z-index:0;
   align-items: center;
   justify-content: center;
-  border:1px solid white !important; 
+  border:10px solid white !important; 
   animation: fadeIn;
+
 }
 
 
 .accordion div:hover a{
   display:block;
+  background:#ff0000;
   }
   .accordion div a{
   display:none;
@@ -124,7 +127,7 @@ a.button2{
    }
   }
 
- .gatsby-image-wrapper{position: initial !important;}
+ .gatsby-image-wrapper{position: initial !important; height:0;}
 
 `
 
@@ -158,56 +161,51 @@ const CaseStudyIndex = () => (
    <div className="acc-wraper" style={{marginTop:''}}>
   <div className="accordion">
 
-  <div style={{borderLeft:'none'}}>
-      {/* <img src="https://image.freepik.com/free-photo/beautiful-green-park_1417-1443.jpg" alt="" /> */}
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
-        </div></div>
-    </div>
 
-    <div>
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{ position:'', textAlign:'center'}}>
-
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
-
-    </div>
-  </div>
-    </div>
 
 
     <div>
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{ position:'', textAlign:'center'}}>
-
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community Federal Credit Union<br /> View the case study</Link></h1>
-
+    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
+    <h1 style={{fontSize:'100%',}}>
+      <Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link>
+    </h1>
     </div>
-  </div>
+      <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pnb1.jpg" />
     </div>
 
-    <div style={{borderRight:'none'}}>
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Jackson County Economic Development Foundation" filename="case-study-jcedf.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{ position:'', textAlign:'center'}}>
-
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
-
-    </div>
-  </div>
-    </div>
-
-    {/* <div>
-      <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" />
-    </div>
+  
 
     <div>
-      <img src="https://image.freepik.com/free-photo/grass-with-sunlight-countryside-suburban_53876-42989.jpg" alt="" />
-    </div> */}
+    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
+    <h1 style={{fontSize:'100%',}}>
+    <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
+    </h1>
+    </div>
+    <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center1.jpg" />
+    </div>
+
+
+    
+    <div>
+    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
+    <h1 style={{fontSize:'100%',}}>
+    <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
+    </h1>
+    </div>
+    <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" />
+    </div>
+
+
+
+    <div>
+    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
+    <h1 style={{fontSize:'100%',}}>
+    <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
+    </h1>
+    </div>
+    <Image alt="Jackson County Economic Development Foundation" filename="case-study-jcedf1.jpg" />
+    </div>
+   
     
   </div>
 </div>
