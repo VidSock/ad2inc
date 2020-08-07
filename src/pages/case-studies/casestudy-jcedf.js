@@ -4,8 +4,8 @@ import Layout from '../../components/Layout'
 // import Footer from '../../components/Footer'
 import { graphql, useStaticQuery } from 'gatsby'
 // import { Link } from 'gatsby'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import Image from '../../components/Image'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Image from '../../components/Image'
 import styled from "styled-components"
 import CaseMenu from '../../components/CaseMenu'
 // import { FiZoomIn } from 'react-icons/fi'
@@ -74,7 +74,7 @@ const CaseStudy3 = graphql`
               height
             }
             fluid {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
               originalName
               originalImg
             }
@@ -117,12 +117,44 @@ const CaseStudy_3 = () => {
 
 
 	
-    <div style={{marginTop:'80px'}}><CaseMenu /></div>
+    {/* <div style={{marginTop:'80px'}}><CaseMenu /></div> */}
+
+
+    <section className="child" style={{padding:'0'}}>
+  
+  <div style={{maxWidth:'50vw', padding:'120px 0 0 3rem'}}>
+
+ 
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:'#222'}}>
+     <h3>Client:</h3>
+     <p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}>Jackson County Economic Development Foundation  </p>
+     </ScrollAnimation>
+
+
+  <div className="normal mobile-txt" style={{color: '#333', maxWidth:'48vw', height:'100vh', margin: '2rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+  <h3>Objective:</h3>
+  <p>Ask yourself: How many of your marketing or promotional pieces have pulled this kind of response for you? Do your customers and/or prospects save your pieces as keepsakes? If you are looking to upgrade your brand, give us a call at 228.822.9890 or email us today. We will be glad to schedule a free, no-obligation, consultationgatsby</p>
+<br /><a href="https://jcedf.org/">https://jcedf.org/</a>
+    </ScrollAnimation>
+  </div>
+
+
+ 
+  </div>
+  
+  
+  <div style={{position:'absolute', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg"  /></div>
+  
+  
+    </section>
+
+
 
 
 <section className="child" style={{position:'', height:'', overflow:''}}>
 
-<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - JCEDF</h1>
+{/* <h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - JCEDF</h1>
 
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'wrap',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
@@ -139,11 +171,11 @@ const CaseStudy_3 = () => {
 </div>
 
 
-</div>{/* END SPLIT */}
+</div>{ */}
 
 
 
-<div style={{maxHeight:'40vh', overflow:'hidden'}}><Gallery
+<div style={{maxHeight:'100vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
       

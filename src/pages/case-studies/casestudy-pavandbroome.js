@@ -4,11 +4,11 @@ import Layout from '../../components/Layout'
 // import Footer from '../../components/Footer'
 import { graphql, useStaticQuery } from 'gatsby'
 // import { Link } from 'gatsby'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import Image from '../../components/Image'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Image from '../../components/Image'
 import styled from "styled-components"
 import CaseMenu from '../../components/CaseMenu'
-// import { FiZoomIn } from 'react-icons/fi'
+import { FiCornerRightDown } from 'react-icons/fi'
 
 
 
@@ -38,41 +38,37 @@ const CustomBox = styled.div`
 // justify-content: center;
 // }
 
-.container2 {
-	overflow-y: scroll;
-  // scroll-snap-type: y mandatory;
-  // height:100vh;
-}
+// .container2 {
+// 	overflow-y: scroll;
+// }
 
-section {
-	scroll-snap-align: start;
-  border-bottom:0px solid red !important;
- 
-  // height:100vh;
-}
+// section {
+// 	scroll-snap-align: start;
+//   border-bottom:0px solid red !important;
+// }
 
 .slider1{
-  position:fixed; 
+  position:absolute; 
   top:0;
   width:100vw;
-  height:100vh;
+  // height:100vh;
   display:block;
   background-size:cover;
-  min-height:100vh;
+  // min-height:100vh;
 }
 
 
-@media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+// @media (hover: hover) {
+// .gatsby-image-wrapper{transform: scale(1.25);}
 
-.gatsby-image-wrapper{transform: scale(1.25);}
+// .gatsby-image-wrapper{transform: scale(1.25);}
 
-	.gatsby-image-wrapper:after{
-	content: "+ click to zoom";
-	position:absolute; bottom:10px; right:10px;
-	color:#fff;
-	}
-}
+// 	.gatsby-image-wrapper:after{
+// 	content: "+ click to zoom";
+// 	position:absolute; bottom:10px; right:10px;
+// 	color:#fff;
+// 	}
+// }
 
 `
 
@@ -89,7 +85,7 @@ const CaseStudy1 = graphql`
               height
             }
             fluid {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
               originalName
               originalImg
             }
@@ -119,7 +115,34 @@ const CaseStudy_1 = () => {
   
 
 
+<section className="child" style={{padding:'0'}}>
+  
+  <div style={{maxWidth:'50vw', padding:'120px 0 0 3rem'}}>
 
+ 
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:'#222'}}>
+     <h3>Client:</h3>
+     <p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}>Pav &amp; Broome Fine Jewelry </p>
+     </ScrollAnimation>
+
+
+  <div className="normal mobile-txt" style={{color: '#333', maxWidth:'48vw', height:'100vh', margin: '2rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+  <h3>Objective:</h3>
+<p>Overcome the perception that Pav &amp; Broome Diamond Jewelers had closed or gone out of business and increase first-quarter sales by 10% with no increase in the current budget.</p> 
+<br /><a href="https://pavandbroome.com">https://pavandbroome.com</a>
+    </ScrollAnimation>
+  </div>
+
+
+ 
+  </div>
+  
+  
+  <div style={{position:'absolute', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  /></div>
+  
+  
+    </section>
 
  
       
@@ -132,12 +155,12 @@ const CaseStudy_1 = () => {
 
 
 	
-    <div style={{marginTop:'80px'}}><CaseMenu /></div>
+    {/* <div style={{marginTop:'80px'}}><CaseMenu /></div> */}
 
 
 <section className="child" style={{position:'', height:'', overflow:'hiden'}}>
 
-<h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - Pav &amp; Broome</h1>
+{/* <h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - Pav &amp; Broome</h1>
 
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'wrap',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
@@ -154,11 +177,11 @@ const CaseStudy_1 = () => {
 </div>
 
 
-</div>{/* END SPLIT */}
+</div> */}
 
 
 
-<div style={{maxHeight:'40vh', overflow:'hidden'}}><Gallery
+<div style={{maxHeight:'100vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
       
