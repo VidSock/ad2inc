@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
@@ -119,7 +120,7 @@ section {
 
 
 
-const IndexPage = () => (
+const IndexPage1 = () => (
   
   
 	
@@ -154,5 +155,5 @@ const IndexPage = () => (
 
 
 
-export default IndexPage
+export default IndexPage1
 

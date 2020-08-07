@@ -4,6 +4,8 @@ import logo from '../img/ad2inc-logo-round.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
+import { WiDaySunny } from 'react-icons/wi';
+
 import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -94,7 +96,7 @@ const Navbar = class extends React.Component {
               checked={theme === 'dark'}
             />{' '}
             
-          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}></label></div>
+          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}><WiDaySunny /></label></div>
         )}
       </ThemeToggler></div>
       
