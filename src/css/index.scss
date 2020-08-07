@@ -851,7 +851,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', end
 .headroom--pinned {top:20px !important;}
 .headroom--pinned .logo {top:-20px !important;}
 
-	.header {display: flex; justify-content: space-around;}
+	.header {display: flex; justify-content: space-between;}
 	.header ul{display: flex; justify-content: space-around !important;}
    [aria-current].logolink {
    background:none;

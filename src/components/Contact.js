@@ -84,12 +84,12 @@ export default class Contact extends React.Component {
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Menu" />
+                  <label title="Upload" htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Menu" />
                 </div>
 
                 <div className="form">
                 <div className="field half left">
-                <label htmlFor="name" style={{padding: '0', margin: '0',}}>Your name:</label>
+                <label title="Your Name" htmlFor="name" style={{padding: '0', margin: '0',}}>Your name:</label>
                     <input
                       className="input"
                       type={'text'}
@@ -99,7 +99,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
+                <label title="Your Email" htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -109,9 +109,9 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="your@email.com"
                     />
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
+                    <label title="Upload File" htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
+                    <label title="Zip preferred" htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
                     <input
                         className="file-input hidden"
@@ -122,11 +122,11 @@ export default class Contact extends React.Component {
                       />
                       </label>
                       
-<label className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
+<label title="upload" className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
                 </div>
 
                 <div className="field half right">
-<label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
+<label title="Your Message" className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
                     Your message
                   </label>
                     <textarea
@@ -143,11 +143,11 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent'}><input type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
-                <input type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
+                <input title="Submit Form" type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
                 <FaEnvelope style={{position: 'relative', top: '5px', right: '-5px', color: '#fff', fontSize: '120%',}} />
                 
                 </div>

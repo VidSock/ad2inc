@@ -84,7 +84,7 @@ const CustomBox = styled.div`
 
 .accordion div:hover a{
   display:block;
-  background:#ff0000;
+ 
   }
   .accordion div a{
   display:none;
