@@ -16,6 +16,38 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 
+.spacer33{height:33vh; display:block;}
+.spacer66{height:66vh; display:block;}
+.spacer99{height:99vh; display:block;}
+
+
+
+// .container2 {
+// 	overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height:100vh;
+// }
+
+// section {
+// 	scroll-snap-align: start;
+//   border-bottom:2px solid red !important;
+//   overflow:hidden;
+//   height:100vh;
+// }
+
+// .slider1{
+//   position:fixed; 
+//   top:0;
+//   width:100vw;
+//   height:100vh;
+//   display:block;
+//   background-size:cover;
+//   min-height:100vh;
+// }
+
+
+
+
 // caras
 
 
@@ -32,24 +64,20 @@ const CustomBox = styled.div`
   overflow:hidden;
   width:100%;
   height:100vh;
-  // min-height: calc(~"100vh - 100px");
 }
 
 .accordion > div{
   width:50%;
-  // height:100vh;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:0px solid ;
-  border-right:0px solid;
+  // border:0px solid aliceblue;
   border-radius:0px;
   position:relative;
   align-items: center;
   justify-content: center;
 }
-
 
 .accordion > div:hover{
   flex-shrink:0
@@ -57,7 +85,7 @@ const CustomBox = styled.div`
 
 .accordion div img{
   width:100vw;
-  height:100vh;
+  height:100%;
   object-fit: cover;
   position:absolute;
   z-index:-1;
@@ -76,15 +104,13 @@ const CustomBox = styled.div`
   z-index:0;
   align-items: center;
   justify-content: center;
-  border:10px solid white !important; 
+  border:1px solid white !important; 
   animation: fadeIn;
-
 }
 
 
 .accordion div:hover a{
   display:block;
- 
   }
   .accordion div a{
   display:none;
@@ -127,7 +153,7 @@ a.button2{
    }
   }
 
- .gatsby-image-wrapper{position: initial !important; height:0;}
+ .gatsby-image-wrapper{position: initial !important;}
 
 `
 
@@ -161,49 +187,52 @@ const CaseStudyIndex = () => (
    <div className="acc-wraper" style={{marginTop:''}}>
   <div className="accordion">
 
+  <div>
+      <Image alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb1.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+        </div></div>
+    </div>
+
+
 
 
 
     <div>
-    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
-    <h1 style={{fontSize:'100%',}}>
-      <Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link>
-    </h1>
-    </div>
-      <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pnb1.jpg" />
-    </div>
-
-  
-
-    <div>
-    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
-    <h1 style={{fontSize:'100%',}}>
-    <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
-    </h1>
-    </div>
     <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center1.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+          <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
+        </h1>
+        </div></div>
     </div>
 
 
     
+
     <div>
-    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
-    <h1 style={{fontSize:'100%',}}>
-    <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
-    </h1>
-    </div>
     <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+        <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
+        </h1>
+        </div></div>
     </div>
 
 
 
+ 
     <div>
-    <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'absolute', zIndex:'1', animation: 'fade 3s forwards', opacity:'0', }}>
-    <h1 style={{fontSize:'100%',}}>
-    <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
-    </h1>
-    </div>
     <Image alt="Jackson County Economic Development Foundation" filename="case-study-jcedf1.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+        <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
+        </h1>
+        </div></div>
     </div>
    
     

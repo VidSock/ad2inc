@@ -36,28 +36,28 @@ section {
   // height:100vh;
 }
 
-.slider1{
-  position:fixed; 
-  top:0;
-  width:100vw;
-  height:100vh;
-  display:block;
-  background-size:cover;
-  min-height:100vh;
-}
+// .slider1{
+//   position:fixed; 
+//   top:0;
+//   width:100vw;
+//   height:100vh;
+//   display:block;
+//   background-size:cover;
+//   min-height:100vh;
+// }
 
 
-@media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+// @media (hover: hover) {
+// .gatsby-image-wrapper{transform: scale(1.25);}
 
-.gatsby-image-wrapper{transform: scale(1.25);}
+// .gatsby-image-wrapper{transform: scale(1.25);}
 
-	.gatsby-image-wrapper:after{
-	content: "+ click to zoom";
-	position:absolute; bottom:10px; right:10px;
-	color:#fff;
-	}
-}
+// 	.gatsby-image-wrapper:after{
+// 	content: "+ click to zoom";
+// 	position:absolute; bottom:10px; right:10px;
+// 	color:#fff;
+// 	}
+// }
 
 `
 
@@ -144,7 +144,7 @@ const CaseStudy_3 = () => {
   </div>
   
   
-  <div style={{position:'absolute', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg"  /></div>
+  <div style={{position:'absolute', backgroundSize:'cover', width:'100%', height:'', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-jcdef.jpg"  /></div>
   
   
     </section>
