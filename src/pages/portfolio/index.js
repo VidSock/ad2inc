@@ -1,124 +1,235 @@
-
-import Layout from '../../components/Layout';
-
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../../components/Layout'
+// import Footer from '../../components/Footer'
+// import Navbar from '../../components/Navbar'
+// import GalleryMenu from '../../components/GalleryMenu'
+import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import GalleryMenu from '../../components/GalleryMenu'
-import { FiZoomIn } from 'react-icons/fi'
-
-
-
-import Gallery from '../../components/Gallery'
-
-
+import Image from '../../components/Image'
 import styled from "styled-components"
+// import { MdPlayArrow } from 'react-icons/md'
+// import { IoMdFingerPrint } from 'react-icons/io'
+
+// import { FiZoomIn } from 'react-icons/fi'
+
+// import Contact from '../../components/Contact-inc'
+
 const CustomBox = styled.div`
 
-// #portfolio {
-// background: #0c0203;
-// background: -moz-linear-gradient(top, #0c0203 0%, #de0004 17%, #96000c 76%, #0c0203 100%);
-// background: -webkit-linear-gradient(top, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
-// background: linear-gradient(to bottom, #0c0203 0%,#de0004 17%,#96000c 76%,#0c0203 100%);
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0203', endColorstr='#0c0203',GradientType=0 );
-// }
-
-// .intro:before{
-// 	content: "Ad2 Portfolio";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
-// }
-
-// .intro:after{
-//   content: "logo";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// }
+// caras
 
 
 
-@media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+.acc-wraper{
+  margin: 0 ;
+  width:100%;
+  
 }
-.gatsby-image-wrapper{transform: scale(1.25);}
-/*
-	.gatsby-image-wrapper:after{
-	content: "+ click to zoom";
-	position:absolute; bottom:10px; right:10px;
-	color:#fff;
-	}
-*/
 
-`
+.accordion{
+  display:flex;
+  flex-wrap:nowrap;
+  overflow:hidden;
+  width:100%;
+  height:100vh;
+  // min-height: calc(~"100vh - 100px");
+}
+
+.accordion > div{
+  width:50%;
+  flex-grow:1;
+  flex-shrink:1;
+  overflow:hidden;
+  transition:all .5s ease;
+  border-left:1.5px solid #222;
+  border-right:1.5px solid #222;
+  border-radius:0px;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+}
 
 
-const gal1Query = graphql`
-  query gal1Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
-      edges {
-        node {
-          childImageSharp {
-            original {
-              width
-              height
-            }
-            fluid {
-              ...GatsbyImageSharpFluid
-              originalName
-              originalImg
-            }
-          }
-        }
-      }
-    }
+.accordion > div:hover{
+  flex-shrink:0
+}
+
+.accordion div img{
+  width:100vw;
+  height:100vh;
+  object-fit: cover;
+  position:absolute;
+  z-index:-1;
+}
+
+// .accordion a:hover::before { 
+//   content: "Before -"; 
+//   background-color: green; 
+//   position:absolute;
+//   z-index:1;
+//   width:200px;
+//   margin:0 auto;
+// } 
+
+.accordian a{
+  z-index:0;
+  align-items: center;
+  justify-content: center;
+  border:1px solid white !important; 
+  animation: fadeIn;
+}
+
+
+.accordion div:hover a{
+  display:block;
   }
+  .accordion div a{
+  display:none;
+  }
+
+
+
+a.button2{
+   display:inline-block;
+   padding:.5em 3vw;
+   border:0.16em solid #FFFFFF;
+  border-radius:6px;
+   margin:0 auto;
+   box-sizing: border-box;
+  box-shadow: 0px 1px 6px 1px black;
+   text-decoration:none;
+   text-transform:uppercase;
+  text-shadow: 1px 4px 1px black;
+   font-weight:400;
+   color:#FFFFFF;
+   text-align:center;
+  background:#333;
+  filter: brightness(120%);
+  opacity:.9;
+   transition: all 0.15s;
+  }
+  a.button2:hover{
+   color:#DDDDDD;
+   border-color:#FF0000;
+  filter: brightness(140%);
+  }
+  a.button2:active{
+   color:#BBBBBB;
+   border-color:#BBBBBB;
+  }
+  @media all and (max-width:30vw){
+   a.button2{
+    display:block;
+    margin:0.4em auto;
+   }
+  }
+
+ .gatsby-image-wrapper{position: initial !important;}
+
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(gal1Query)
-  return (
-	  <CustomBox>
-    <Layout>
 
 
-    <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
-      <h4 style={{display:'', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'5vh', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
-      </div>
 
-      
-     
-      <GalleryMenu />
+
+
+const CaseStudyIndex = () => (
+  <Layout>
+   <CustomBox>
+
+
   
 
+  {/* <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
 
-
-
- 
+  <section className="outer section section--gradient" style={{padding: '60px 2rem 0 2rem'}}>
+   
+      <div className="container">
+      <p>Thank you for taking the time to view a few samples of our work. We are excited to share just a few examples of what we do.</p> 
       
- 
-      
-      <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
-      <Gallery
-        photos={data.allFile.edges}
-      />
-      </div>
+      <p>Choose by type of work below. If you have any questions about the ads or campaigns shown here, please contact us for additional information. You can email us at CustomerService@Ad2Inc.net or call us to schedule a free consultation at 228-822-9890.</p>
+
+        </div>
+        </section> */}
 
 
+
+
+   <div className="acc-wraper" style={{marginTop:''}}>
+  <div className="accordion">
+
+  <div style={{borderLeft:'none'}}>
+      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity</Link></h1>
+        </div></div>
+    </div>
+
+    <div>
+      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">Logos</Link></h1>
+
+    </div>
+  </div>
+    </div>
+
+
+    <div>
+      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu.jpg" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">Print</Link></h1>
+
+    </div>
+  </div>
+    </div>
+
+    <div style={{borderRight:'none'}}>
+      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Jackson County Economic Development Foundation" filename="case-study-jcedf.jpg" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">Radio</Link></h1>
+
+    </div>
+  </div>
+    </div>
+
+    <div>
+      {/* <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">Television</Link></h1>
+
+    </div>
+  </div>
+    </div>
+
+    <div>
+      {/* <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" /> */}
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">Web</Link></h1>
+
+    </div>
+  </div>
+    </div>
     
+  </div>
+</div>
 
       
-       <GalleryMenu />
 
-      
-      
-      
-    </Layout>
-    </CustomBox>  )
-}
 
-export default Gal1Page
+
+</CustomBox>
+  </Layout>
+)
+export default CaseStudyIndex

@@ -58,11 +58,11 @@ const Navbar = class extends React.Component {
               </li> */}
               
               
-              {/* <li>
+              <li>
               <Link id="casestudies" className="navbar-item" to="/case-studies">
                 Case Studies
               </Link>
-              </li> */}
+              </li>
               
               
                <li>

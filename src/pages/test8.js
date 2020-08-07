@@ -1,20 +1,50 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-// import Footer from '../../components/Footer'
-// import Navbar from '../../components/Navbar'
-// import GalleryMenu from '../../components/GalleryMenu'
+import Layout from '../components/Layout'
+// import Footer from '../components/Footer'
 import { Link } from 'gatsby'
+import Image from '../components/Image'
+import GalleryMenu from '../components/GalleryMenu'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import Image from '../../components/Image'
+
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
-// import { IoMdFingerPrint } from 'react-icons/io'
+// import { FiCornerRightDown } from 'react-icons/fi'
 
-// import { FiZoomIn } from 'react-icons/fi'
-
-// import Contact from '../../components/Contact-inc'
+// import Contact from '../components/Contact-inc'
 
 const CustomBox = styled.div`
+
+.spacer33{height:33vh; display:block;}
+.spacer66{height:66vh; display:block;}
+.spacer99{height:99vh; display:block;}
+
+
+
+// .container2 {
+// 	overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height:100vh;
+// }
+
+// section {
+// 	scroll-snap-align: start;
+//   border-bottom:2px solid red !important;
+//   overflow:hidden;
+//   height:100vh;
+// }
+
+// .slider1{
+//   position:fixed; 
+//   top:0;
+//   width:100vw;
+//   height:100vh;
+//   display:block;
+//   background-size:cover;
+//   min-height:100vh;
+// }
+
+
+
 
 // caras
 
@@ -32,7 +62,6 @@ const CustomBox = styled.div`
   overflow:hidden;
   width:100%;
   height:100vh;
-  // min-height: calc(~"100vh - 100px");
 }
 
 .accordion > div{
@@ -41,14 +70,12 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid #222;
-  border-right:1.5px solid #222;
+  // border:0px solid aliceblue;
   border-radius:0px;
   position:relative;
   align-items: center;
   justify-content: center;
 }
-
 
 .accordion > div:hover{
   flex-shrink:0
@@ -56,7 +83,7 @@ const CustomBox = styled.div`
 
 .accordion div img{
   width:100vw;
-  height:100vh;
+  height:100%;
   object-fit: cover;
   position:absolute;
   z-index:-1;
@@ -129,28 +156,36 @@ a.button2{
 `
 
 
+// const gra = function(min, max) {
+// 	return Math.random() * (max - min) + min;
+// };
+// const init = function() {
+// 	let items = document.querySelectorAll("section");
+// 	for (let i = 0; i < items.length; i++) {
+// 		items[i].style.minHeight = gra(120, 205) + "vh";
+// 	}
+
+
+// };
+// init();
 
 
 
-
-const CaseStudyIndex = () => (
+const Test8 = () => (
   <Layout>
    <CustomBox>
-
-
   
 
-  {/* <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
 
-  <section className="outer section section--gradient" style={{padding: '60px 2rem 0 2rem'}}>
-   
+   <section className="outer section section--gradient" style={{padding: '60px 2rem 0 2rem'}}>
+   <GalleryMenu />
       <div className="container">
       <p>Thank you for taking the time to view a few samples of our work. We are excited to share just a few examples of what we do.</p> 
       
       <p>Choose by type of work below. If you have any questions about the ads or campaigns shown here, please contact us for additional information. You can email us at CustomerService@Ad2Inc.net or call us to schedule a free consultation at 228-822-9890.</p>
 
         </div>
-        </section> */}
+        </section>
 
 
 
@@ -158,7 +193,7 @@ const CaseStudyIndex = () => (
    <div className="acc-wraper" style={{marginTop:''}}>
   <div className="accordion">
 
-  <div style={{borderLeft:'none'}}>
+  <div>
       {/* <img src="https://image.freepik.com/free-photo/beautiful-green-park_1417-1443.jpg" alt="" /> */}
       <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
@@ -168,6 +203,7 @@ const CaseStudyIndex = () => (
     </div>
 
     <div>
+      {/* <img src="https://image.freepik.com/free-photo/waterfall-that-is-layer-thailand_1150-15650.jpg" alt="" /> */}
       <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
@@ -180,43 +216,45 @@ const CaseStudyIndex = () => (
 
 
     <div>
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{ position:'', textAlign:'center'}}>
-
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community Federal Credit Union<br /> View the case study</Link></h1>
-
-    </div>
-  </div>
+      <img src="https://image.freepik.com/free-photo/lake-mountains_1204-507.jpg" alt="" />
     </div>
 
-    <div style={{borderRight:'none'}}>
-      <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Jackson County Economic Development Foundation" filename="case-study-jcedf.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{ position:'', textAlign:'center'}}>
-
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
-
-    </div>
-  </div>
+    <div>
+      <img src="https://image.freepik.com/free-photo/sunlight-forest_1004-9.jpg" alt="" />
     </div>
 
-    {/* <div>
+    <div>
       <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" />
     </div>
 
     <div>
       <img src="https://image.freepik.com/free-photo/grass-with-sunlight-countryside-suburban_53876-42989.jpg" alt="" />
-    </div> */}
+    </div>
     
   </div>
 </div>
 
-      
 
 
+{/* CONTACT PANEL  */}
+   {/* <div className="outer"> <Contact /></div> */}
+{/* END CONTACT PANEL */}
+{/* <div className="spacer33"></div> */}
+
+
+
+
+
+
+{/* <Footer /> */}
 
 </CustomBox>
   </Layout>
 )
-export default CaseStudyIndex
+
+export default Test8
+
+
+
+
+
