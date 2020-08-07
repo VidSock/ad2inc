@@ -34,7 +34,7 @@ text-shadow: 0px 1px 0px black;
 
 .galmenu [aria-current] {
 background: #ED1B2D;
-filter: brightness(60%);
+filter: brightness(90%);
 }
 
 

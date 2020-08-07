@@ -746,7 +746,7 @@ div.column{ padding:1rem 0rem;}
 
 [aria-current] {
 background: #da071c;
-filter: brightness(80%);
+filter: brightness(90%);
 
   cursor: default; 
    }
@@ -833,7 +833,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 [aria-current] {
 background: #da071c;
-filter: brightness(80%);
+filter: brightness(90%);
 
 }
 
@@ -854,7 +854,7 @@ filter: brightness(80%);
  
  [aria-current] {
 //    border-left:1px solid #666;
-// filter: brightness(60%);
+filter: brightness(90%);
   }
 
 .back-to-top{display: none; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh);}
