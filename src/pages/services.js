@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import Image from '../../components/Image'
+import Image from '../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -31,7 +31,7 @@ const CustomBox = styled.div`
   flex-wrap:nowrap;
   overflow:hidden;
   width:100%;
-  height:100vh;
+  height:50vh;
   // min-height: calc(~"100vh - 100px");
 }
 
@@ -133,7 +133,7 @@ a.button2{
 
 
 
-const CaseStudyIndex = () => (
+const ServicesIndex = () => (
   <Layout>
    <CustomBox>
 
@@ -142,16 +142,16 @@ const CaseStudyIndex = () => (
 
   
 
-  {/* <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
+  <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
    
       <div className="container">
-      <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Our Work</h1>
-      <p>Thank you for taking the time to view a few samples of our work. We are excited to share just a few examples of what we do.</p> 
+      <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Services</h1>
+      <p>Ad2, Inc. offers creative development and campaign management services, as well as brand consulting and other marketing communications services, such as marketing research, strategic planning, direct and interactive marketing.</p> 
       
-      <p>Choose by type of work below. If you have any questions about the ads or campaigns shown here, please contact us for additional information. You can email us at CustomerService@Ad2Inc.net or call us to schedule a free consultation at 228-822-9890.</p>
+  
 
         </div>
-        </section> */}
+        </section>
 
 
 
@@ -228,9 +228,9 @@ const CaseStudyIndex = () => (
 
       
 
-{/* <br /><br /><br /><br /><br /> */}
+<br /><br /><br /><br /><br /><br /><br />
 
 </CustomBox>
   </Layout>
 )
-export default CaseStudyIndex
+export default ServicesIndex

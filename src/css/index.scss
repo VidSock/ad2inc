@@ -474,7 +474,7 @@ footer{background-color: #000; padding:.1rem 0rem;  animation: fadeIn 3s;}
 
  }
  
- .form label{font-size: 70%; text-align: left;}
+ .form label{ text-align: left;}
  .form input, .form textarea, .upload {
     border:0; outline:0;
     padding: .5em !important;
@@ -577,7 +577,7 @@ body.dark .no-app{display:block !important;}
 
 h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: PT Sans,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: normal;}
 
-#menu{font-size:1rem;}
+#menu{font-size:1.2rem;}
 
 p{line-height: 1.5rem; max-width:998px;}
 // BASE TYPOGRAPHY
@@ -630,7 +630,7 @@ background-image: url('../img/menu-bg.png');
 .header ul li:first-child{border-top:0px solid; margin-top:10px; }
 .header ul li:last-child{margin-bottom:0;}
 
-.header ul li a{ padding-top:20px; padding-bottom: 20px;}
+.header ul li a{ padding-top:18px; padding-bottom: 20px;}
 
 .header li a {
   display: block;
@@ -977,7 +977,7 @@ body.light{
 }
 
 @media (min-width: 1024px) {
-#menu{font-size:1rem;}
+#menu{font-size:1.2rem;}
 .header {height:60px;}
 .header ul li a{border-bottom:0px solid #444 !important;/*  padding-top:15px; padding-bottom: 10px; */}
 
@@ -1145,7 +1145,7 @@ body.dark * {
 */
 
 
-.themer { position:absolute; z-index:0; top:0; right:0; font-size: 60%; vertical-align:center; background-color:transparent;border-radius: 0 0 0 4px; color:#fff;
+.themer { position:absolute; z-index:0; top:0; right:0; vertical-align:center; background-color:transparent;border-radius: 0 0 0 4px; color:#fff;
 	color:#fff;
 	display:block;
 	padding:0px 10px 0 10px;

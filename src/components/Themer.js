@@ -7,15 +7,19 @@ const Themerpop = () => {
 render (){
 
 	  
-<Themer 
-    <div className="themer"><span>Theme:</span><ThemeSwitcher
+<Themer>
+    <div className="themer">
+		<span></span>
+		<ThemeSwitcher
 	cssSelector="body"
 	switcherColor="#fe09f0"
 	darkColor="#282c34"
 	lightColor="#ffffff"
 	lightTextColor="#272b33"
 	darkTextColor="#ffffff"
-/></div><Themer />
+/>
+</div>
+</Themer>
 
 
 

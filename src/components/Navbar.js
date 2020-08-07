@@ -37,7 +37,7 @@ const Navbar = class extends React.Component {
             
             
             <li>
-              <Link className="navbar-item" to="#">
+              <Link className="navbar-item" to="/services">
                 Services
               </Link>
               </li>
@@ -94,7 +94,7 @@ const Navbar = class extends React.Component {
               checked={theme === 'dark'}
             />{' '}
             
-          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}>Theme</label></div>
+          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}></label></div>
         )}
       </ThemeToggler></div>
       
