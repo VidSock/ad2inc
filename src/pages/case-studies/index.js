@@ -155,6 +155,8 @@ a.button2{
 
  .gatsby-image-wrapper{position: initial !important;}
 
+
+
 `
 
 

@@ -41,8 +41,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid #222;
-  border-right:1.5px solid #222;
+  // border-left:1.5px solid #222;
+  // border-right:1.5px solid #222;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -160,19 +160,19 @@ const CaseStudyIndex = () => (
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
-      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity</Link></h1>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">View Identity Portfolio</Link></h1>
         </div></div>
     </div>
 
     <div>
-      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">Logos</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">View Logos Portfolio</Link></h1>
 
     </div>
   </div>
@@ -180,44 +180,44 @@ const CaseStudyIndex = () => (
 
 
     <div>
-      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">Print</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">View Print Portfolio</Link></h1>
 
     </div>
   </div>
     </div>
 
     <div style={{borderRight:'none'}}>
-      {/* <Image style={{zIndex:'-1', position:'fixed'}} className="slider1" alt="Jackson County Economic Development Foundation" filename="case-study-jcedf.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">Radio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio Portfolio</Link></h1>
 
     </div>
   </div>
     </div>
 
     <div>
-      {/* <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">Television</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">View Television Portfolio</Link></h1>
 
     </div>
   </div>
     </div>
 
     <div>
-      {/* <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
+    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">Web</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web Portfolio</Link></h1>
 
     </div>
   </div>

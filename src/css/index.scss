@@ -1071,8 +1071,11 @@ body.dark, body.dark .container {
   background-color: #333;
   color: #f9f9fa; 
   box-shadow: inherit;}
+
+  body.light .transpop .container{ background-color: #f7f1f3;}
   
   // body.light .container{background-image:url(../img/ad2-bg.jpg);}
+  
 body.light .modal-content .container { background-image:none !important;
   background:#f9f9fa !important;}
   

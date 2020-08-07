@@ -21,41 +21,30 @@ const CustomBox = styled.div`
   background: #da071c ;
 }
 
-// .intro:before{
-// 	content: "Ad2 Portfolio";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px  #000 ;
-// }
 
-// .intro:after{
-//   content: "logo";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// }
 
-// .container2 {
-// 	overflow-y: scroll;
-// }
-
-// section {
-// 	scroll-snap-align: start;
-//   border-bottom:0px solid red !important;
-// }
-
-.slider1{
-  position:absolute; 
-  top:0;
-  width:100vw;
+.container2 {
+	// overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
   // height:100vh;
-  display:block;
-  background-size:cover;
-  // min-height:100vh;
 }
+
+section {
+	// scroll-snap-align: start;
+  border-bottom:0px solid red !important;
+ 
+  // height:100vh;
+}
+
+// .slider1{
+//   position:fixed; 
+//   top:0;
+//   width:100vw;
+//   height:100vh;
+//   display:block;
+//   background-size:cover;
+//   min-height:100vh;
+// }
 
 
 // @media (hover: hover) {
@@ -69,6 +58,10 @@ const CustomBox = styled.div`
 // 	color:#fff;
 // 	}
 // }
+
+// body.dark .container{background-color:#ff0000 !important;}
+// body.light .container{background-color:#ddd !important;}
+// body.dark .container{ background-color: #f7f1f3 !important;}
 
 `
 
@@ -115,34 +108,7 @@ const CaseStudy_1 = () => {
   
 
 
-<section className="child" style={{padding:'0'}}>
-  
-  <div style={{maxWidth:'50vw', padding:'120px 0 0 3rem'}}>
 
- 
-     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:'#222'}}>
-     <h3>Client:</h3>
-     <p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}>Pav &amp; Broome Fine Jewelry </p>
-     </ScrollAnimation>
-
-
-  <div className="normal mobile-txt" style={{color: '#333', maxWidth:'48vw', height:'100vh', margin: '2rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
-  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
-  <h3>Objective:</h3>
-<p>Overcome the perception that Pav &amp; Broome Diamond Jewelers had closed or gone out of business and increase first-quarter sales by 10% with no increase in the current budget.</p> 
-<br /><a href="https://pavandbroome.com">https://pavandbroome.com</a>
-    </ScrollAnimation>
-  </div>
-
-
- 
-  </div>
-  
-  
-  <div style={{position:'absolute', backgroundSize:'cover', width:'100%', height:'100vh', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  /></div>
-  
-  
-    </section>
 
  
       
@@ -151,42 +117,85 @@ const CaseStudy_1 = () => {
   
 <div className="container2" style={{position:'', top:'', height:'', display:''}}>
 
-{/* <Navbar /> */}
+
 
 
 	
     {/* <div style={{marginTop:'80px'}}><CaseMenu /></div> */}
 
 
-<section className="child" style={{position:'', height:'', overflow:'hiden'}}>
+    <section className="child" style={{padding:'0'}}>
+  
+  <div style={{maxWidth:'50vw', padding:'110px 0 0 3rem'}}>
 
-{/* <h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - Pav &amp; Broome</h1>
+ 
+     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:'#222'}}>
+    
+     <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />Pav &amp; Broome Fine Jewelry </h1>
+     </ScrollAnimation>
+
+
+  <div className="normal mobile-txt" style={{color: '#333', maxWidth:'48vw', height:'100vh', margin: '1rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
+  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+  <h3>Objective:</h3>
+  <p>Overcome the perception that Pav &amp; Broome Diamond Jewelers had closed or gone out of business and increase first-quarter sales by 10% with no increase in the current budget.</p>
+<br /><a href="https://pavandbroome.com">https://pavandbroome.com</a>
+
+
+    <br /><br /><br />
+    Scroll Down <span style={{fontSize:'140%', position:'relative', right:'5px', top:'5px', color:'#ff0000',}}><FiCornerRightDown /></span>
+   
+  
+    </ScrollAnimation>
+  </div>
+
+
+ 
+  </div>
+  
+  
+  <div style={{position:'fixed', backgroundSize:'cover', width:'100%', height:'', zIndex:'-5', display:'block', top:'0' }}><Image className="slider1" alt="Todd Stars" filename="ad2-banner-pnb.jpg"  /></div>
+  
+  
+    </section>
+
+
+
+
+<section className="child" style={{position:'', height:'', overflow:''}}>
+
+{/* <h1 style={{textAlign:'center', borderBottom:'1px dashed', margin:'1rem 20vw 3rem 20vw'}}>Ad2 Case Study - JCEDF</h1>
 
 <div className="" style={{display:'flex', justifyContent:'space-around', alignItems:'', alignContent:'', verticalAlign:'top', flexWrap:'wrap',  width:'', margin:'0 auto', padding:'0 5vw', borderRadius:'', overflow:'',}}>
 
   
 <div className="half" style={{width:'', margin:'0', padding:'', order:'1', verticalAlign:'top', alignContent:'top',}}>
-<h2>Client:</h2><p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}>Pav &amp; Broome Fine Jewelry </p>
-<p><a href="https://pavandbroome.com">https://pavandbroome.com</a></p>
+<h2>Client:</h2><p style={{margin:'0', padding:'', fontSize:'', fontWeight:'bold'}}> Jackson County Economic Development Foundation </p>
+<p><a href="https://jcedf.org/">https://jcedf.org/</a></p>
 </div>
 
 
 <div className="half" style={{border:'0px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'0', width:'', padding:'0 2rem', overflow:'', order:'2', verticalAlign:'top', alignContent:'top',}}>
 <h2>Objective:</h2>
-<p>Overcome the perception that Pav &amp; Broome Diamond Jewelers had closed or gone out of business and increase first-quarter sales by 10% with no increase in the current budget.</p>
+<p>Ask yourself: How many of your marketing or promotional pieces have pulled this kind of response for you? Do your customers and/or prospects save your pieces as keepsakes? If you are looking to upgrade your brand, give us a call at 228.822.9890 or email us today. We will be glad to schedule a free, no-obligation, consultationgatsby</p>
 </div>
 
 
-</div> */}
+</div>{ */}
 
 
-
+<ScrollAnimation animateIn="zoomIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={10} offset={0} style={{color:'#222'}}>
 <div style={{maxHeight:'100vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
-      
-<div className="outer">
-  <div className="container">
+</ScrollAnimation>
+
+
+
+
+
+<div className="outer transpop">
+  
 
 
   
@@ -195,60 +204,50 @@ const CaseStudy_1 = () => {
 
 
   
-{/* <h2>Objective:</h2>
-<p>Several pediatricians staffed at The Pediatric Center at Garden Park Medical Center left the Center to open their own clinics, taking many of their patients with them. Ad2 was hired to introduce the new pediatricians and replenish the customer base.</p> */}
 
+  <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={10} offset={0} style={{color:'#222'}}>
+  <div className="container">
 <h2>Directive:</h2>
 <p>In order to accurately pinpoint the perception by Pav &amp; Broome’s customer base, Ad2 developed a direct mail survey, which included an offer as an incentive for a high rate of response. The survey was mailed out to more than 3,000 customers with a response rate of more than 3%. This gave us a great sampling of the market and provided us with tons of useful information for the marketing plan.</p>
 
 <p>The first step was to shift the existing advertising budget to minimize costs and maximize results. We budgeted for a :60 television commercial, which would then be spliced into :30’s, :15’s and :10’s and later used for holiday and general marketing spots.</p>
 
 <p>The TV spot was meant to tell the story of Pav &amp; Broome Diamond Jewelers and their 30-year history. It was a warm spot that families could relate to and remember why they trusted the local jewelers.</p>
+</div>
+</ScrollAnimation>
 
-
-
+<ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={10} offset={0} style={{color:'#222'}}>
+<div className="container">
 <h2>Accomplishments:</h2>
 <p>The shift in the existing advertising budget increased the reach of their target market from 47% to 78.4% and increased first-quarter sales by 11.4%.  The television spot created just the kind of emotion we were hoping to stir with people “coming in that hadn’t been in in a while” and some even admitting the commercial “brought a tear to [their] eyes”. We were once again able to maximize their advertising dollars by using the footage shot for this commercial in other later spots.</p>
-
 </div>
+</ScrollAnimation>
 
-<div className="outer">
-<div className="container" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
+
+
+
+  
+  <div className="outer">
+<div className="container1" style={{padding:'2rem 10vw', textAlign:'center', background:'', }}>
   <h3>Ad2 Spotlight</h3>
   <iframe title="Pav &amp; Broome Commercial" width="100%" height="300" src="https://www.youtube.com/embed/gqR2lzlurKI?controls=1" frameorder="0" style={{border:'4px solid red', padding:'6px', borderRadius:'12px'}}></iframe>
   </div></div>
+
   
 </div>
 
 
+<CaseMenu />
 
 
 
-{/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} delay={0} offset={0} style={{zIndex:'-5', position:'', top:'0', backgroundColor:'light pink'}}>    
-
-<Image className="slider1" alt="Todd Stars" filename="ad2-home-banner.jpg" />
-</ScrollAnimation> */}
   </section>
 {/* END Panel 1 */}
 
 
 
 
-  {/* <section className="child" style={{position:'', height:'100vh'}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-4', position:'', top:'0'}}>
-
-</ScrollAnimation>
-</section> */}
-{/* END Panel 2 */}
-
-
-
-  {/* <section className="child" style={{position:'', height:'100vh'}}>
- <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce={false} animatePreScroll={false} delay={0} style={{zIndex:'-3', position:'', top:'0'}}>
-
-</ScrollAnimation>
-</section> */}
-{/* END Panel 3 */}
+  
 
 
 
@@ -261,14 +260,14 @@ const CaseStudy_1 = () => {
 
 
 
-{/* <div className="spacer99"></div>
-<div className="spacer66"></div> */}
+{/* <div className="spacer99"></div> */}
+{/* <div className="spacer66"></div> */}
 
 
 
 
 
-{/* <Footer /> */}
+
 </div>
 
 
@@ -280,7 +279,7 @@ const CaseStudy_1 = () => {
       
        
 
-<CaseMenu />
+
       
       
     </Layout>
