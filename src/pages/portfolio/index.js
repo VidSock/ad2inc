@@ -41,8 +41,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  // border-left:1.5px solid #222;
-  // border-right:1.5px solid #222;
+  border-left:1.5px solid #fff;
+  border-right:1.5px solid #fff;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -160,19 +160,21 @@ const CaseStudyIndex = () => (
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
-  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+  <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">View Identity Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">View Identity</Link></h1>
         </div></div>
     </div>
 
     <div>
-    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+    <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">View Logos Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">View Logos</Link></h1>
 
     </div>
   </div>
@@ -180,11 +182,12 @@ const CaseStudyIndex = () => (
 
 
     <div>
-    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+    <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">View Print Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">View Print</Link></h1>
 
     </div>
   </div>
@@ -195,29 +198,31 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web</Link></h1>
 
     </div>
   </div>
     </div>
 
     <div>
-    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+    <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">View Television Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">View Television</Link></h1>
 
     </div>
   </div>
     </div>
 
     <div>
-    <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+    <img src="https://source.unsplash.com/random/1200x12005" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio Portfolio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio</Link></h1>
 
     </div>
   </div>
