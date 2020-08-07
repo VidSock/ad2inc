@@ -41,8 +41,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  // border-left:1.5px solid #222;
-  // border-right:1.5px solid #222;
+  border-left:1.5px solid ;
+  border-right:1.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -160,16 +160,18 @@ const WhatWeDo = () => (
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
-  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+  <img src="https://source.unsplash.com/random/800x600" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
         </div></div>
     </div>
 
     <div style={{borderLeft:'none'}}>
-  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+  <img src="https://source.unsplash.com/random/800x6002" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
         </div></div>
@@ -177,16 +179,18 @@ const WhatWeDo = () => (
 
 
     <div style={{borderLeft:'none'}}>
-  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+   <img src="https://source.unsplash.com/random/800x6003" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
         </div></div>
     </div>
 
     <div style={{borderLeft:'none'}}>
-  <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
+   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+   <img src="https://source.unsplash.com/random/800x6004" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
         </div></div>

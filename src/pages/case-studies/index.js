@@ -72,7 +72,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  // border:0px solid aliceblue;
+  border-left:1.5px solid ;
+  border-right:1.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
