@@ -185,7 +185,7 @@ const CaseStudy_3 = () => {
 
 
 <ScrollAnimation animateIn="zoomIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={10} offset={0} style={{color:'#222'}}>
-<div style={{maxHeight:'100vh', overflow:'hidden'}}><Gallery
+<div className="np" style={{maxHeight:'100vh', overflow:'hidden'}}><Gallery
         photos={data.allFile.edges}
       /></div>
 </ScrollAnimation>
@@ -239,7 +239,7 @@ const CaseStudy_3 = () => {
 </div>
 
 
-<CaseMenu />
+<CaseMenu className="np" />
 
 
 

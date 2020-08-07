@@ -1243,8 +1243,9 @@ body.light .back-to-top svg:hover, .back-to-top svg:hover{color:#999;}
       background: #fff;
    }
 
-#left, #right, .headroom-wrapper, main picture{display: none !important; height: 0px;}
-
+#left, #right, .headroom-wrapper, main picture, .np, .spacer33, .spacer66, .spacer99, footer, {display: none !important; height:auto !important;}
+* {height:auto !important;}
+.container, .outer {background:inherit !important; position:relative !important; height:auto !important; overflow:hidden !important; }
 }
 
 
