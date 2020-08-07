@@ -98,6 +98,7 @@ export default class Contact extends React.Component {
                       id={'name'}
                       required={true}
                       placeholder="Name"
+                      title="Your Name"
                     />
                 <label title="Your Email" htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
@@ -108,6 +109,7 @@ export default class Contact extends React.Component {
                       id={'email'}
                       required={true}
                       placeholder="your@email.com"
+                      title="Your Email"
                     />
                     <label title="Upload File" htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
@@ -119,6 +121,7 @@ export default class Contact extends React.Component {
                         id="attachment"
                         name="attachment"
                         onChange={this.handleAttachment}
+                        title="file attachment"
                       />
                       </label>
                       
@@ -136,6 +139,7 @@ export default class Contact extends React.Component {
                       id={'message'}
                       required={true}
                       placeholder="Message"
+                      title="Type Your Message Here"
                     />
                     
 
@@ -143,11 +147,11 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent'}><input type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent'}><input title="Agree to terms" type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
-                <input title="Submit Form" type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
+                <input title="Submit" type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
                 <FaEnvelope style={{position: 'relative', top: '5px', right: '-5px', color: '#fff', fontSize: '120%',}} />
                 
                 </div>
