@@ -25,12 +25,12 @@ const DownArrow = () => (
     <CustomBox style={{}}>
 
 
-
+<div id="root"></div>
 
     
 
 <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'absolute', width:'100%', height:'100%', zIndex:'1',}}>
-<RiArrowDownCircleLine style={{fontSize:'350%', position:'fixed', bottom:'1vh', color:'#ccc' }} />
+<RiArrowDownCircleLine style={{fontSize:'350%', position:'fixed', bottom:'1vh', color:'#eee' }} />
 </div>
 
   
