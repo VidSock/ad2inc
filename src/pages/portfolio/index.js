@@ -6,6 +6,8 @@ import Layout from '../../components/Layout'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
+import SlidePanelCase from '../../components/SlidePanelCase'
+import DownArrow from '../../components/DownArrow'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -157,6 +159,7 @@ const CaseStudyIndex = () => (
 
 
    <div className="acc-wraper" style={{marginTop:''}}>
+   <DownArrow />
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
@@ -194,8 +197,9 @@ const CaseStudyIndex = () => (
     </div>
 
     <div style={{borderRight:'none'}}>
-    <Image alt="Temp Graphic" filename="Ad2-web-portfolio.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
+    {/* <Image alt="Temp Graphic" filename="Ad2-web-portfolio.jpg" /> */}
+    <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
         <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web</Link></h1>
@@ -206,7 +210,7 @@ const CaseStudyIndex = () => (
 
     <div>
     {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+    <img src="https://source.unsplash.com/random/1200x12006" alt="rando" />
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -234,6 +238,17 @@ const CaseStudyIndex = () => (
       
 
 {/* <br /><br /><br /><br /><br /> */}
+
+
+<section className="intro outer section section--gradient">
+      <div className="container" style={{padding: '1rem 2rem 2rem 2rem',}}>
+        <h2>Case Studies</h2>
+For a more in-depth look at the work we’ve done and the goals we’ve accomplished while working closely together with our customers, we have provided case studies of some of our clients. If you have specific questions or would like additional information about a particular campaign or project, please contact us.
+</div>
+</section>
+
+
+<SlidePanelCase />
 
 </CustomBox>
   </Layout>

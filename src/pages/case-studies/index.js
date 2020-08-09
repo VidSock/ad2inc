@@ -6,6 +6,7 @@ import Layout from '../../components/Layout'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
+import SlidePanelCase from '../../components/SlidePanelCase'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -172,75 +173,7 @@ const CaseStudyIndex = () => (
 
   
 
-  {/* <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Ad2 Case Studies</h1>
-
-  <section className="outer section section--gradient" style={{padding: '60px 2rem 0 2rem'}}>
-   
-      <div className="container">
-      <p>Thank you for taking the time to view a few samples of our work. We are excited to share just a few examples of what we do.</p> 
-      
-      <p>Choose by type of work below. If you have any questions about the ads or campaigns shown here, please contact us for additional information. You can email us at CustomerService@Ad2Inc.net or call us to schedule a free consultation at 228-822-9890.</p>
-
-        </div>
-        </section> */}
-
-
-
-
-   <div className="acc-wraper" style={{marginTop:''}}>
-  <div className="accordion">
-
-  <div>
-      <Image alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb1.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
-        </div></div>
-    </div>
-
-
-
-
-
-    <div>
-    <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center1.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-          <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
-        </h1>
-        </div></div>
-    </div>
-
-
-    
-
-    <div>
-    <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-        <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
-        </h1>
-        </div></div>
-    </div>
-
-
-
- 
-    <div>
-    <Image alt="Jackson County Economic Development Foundation" filename="case-study-jcedf1.jpg" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-        <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
-        </h1>
-        </div></div>
-    </div>
-   
-    
-  </div>
-</div>
+   <SlidePanelCase />
 
       
 

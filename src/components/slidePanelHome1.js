@@ -9,8 +9,8 @@ import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
-
-// import { FiZoomIn } from 'react-icons/fi'
+import DownArrow from './DownArrow'
+import { RiArrowDownCircleLine } from 'react-icons/ri'
 
 // import Contact from '../../components/Contact-inc'
 
@@ -119,13 +119,14 @@ const CustomBox = styled.div`
      font-weight:400;
      color:#FFFFFF;
     cursor:default;
-    background: rgba(0,0,0,0.75);
-    filter: brightness(120%);
+    background: rgba(0,0,0,0.45);
+    // filter: brightness(120%);
      transition: all 0.15s;
     fontSize:100%;
      animation:fade 2s forwards;
     opacity:0;
     overflow:scroll;
+    backdrop-filter: blur(10px);
     }
 
   
@@ -209,8 +210,12 @@ const slidePanelHome1 = () => (
 
 
 <div className="panel-wrapper" style={{marginTop:'0', overflow:'hidden'}}>
-  <div className="slidepanel">
+    
 
+<DownArrow />
+
+  <div className="slidepanel">
+  
   <div className="outerpanel" style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
