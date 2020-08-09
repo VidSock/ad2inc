@@ -20,23 +20,23 @@ const CustomBox = styled.div`
 
 
 
-.acc-wraper{
+.panel-wrapper{
   margin: 0 ;
   width:100%;
   
 }
 
-.accordion{
+.slidepanel{
   display:flex;
   flex-wrap:nowrap;
-  // overflow:hidden;
-  width:100%;
-  height:80vh;
-  // min-height: calc(~"100vh - 100px");
+  width:100vw;
+  // height:70vh;
+  height: calc(100vh - 78px);
 }
 
-.accordion > div{
-  width:60%;
+.slidepanel > div{
+  min-width:16vw;
+  width:40vw;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
@@ -50,11 +50,11 @@ const CustomBox = styled.div`
 }
 
 
-.accordion > div:hover{
+.slidepanel > div:hover{
   flex-shrink:0
 }
 
-.accordion div img{
+.slidepanel div img{
   width:100vw;
   height:100vh;
   object-fit: cover;
@@ -62,7 +62,7 @@ const CustomBox = styled.div`
   z-index:-1;
 }
 
-// .accordion a:hover::before { 
+// .slidepanel div:hover::before { 
 //   content: "Before -"; 
 //   background-color: green; 
 //   position:absolute;
@@ -71,49 +71,107 @@ const CustomBox = styled.div`
 //   margin:0 auto;
 // } 
 
-.accordian a{
+.slidepanel a{
   z-index:0;
   align-items: center;
   justify-content: center;
-  border:1px solid white !important; 
+  // border:1px solid white !important; 
   animation: fadeIn;
 }
 
 
-.accordion div:hover a{
+.slidepanel div:hover a, .slidepanel div:hover .contentpanel{
   display:block;
   }
-  .accordion div a{
+  .slidepanel div a, .slidepanel div .contentpanel{
   display:none;
   }
 
+  .slidepanel div .headline {display:block; opacity:1;}
+  .slidepanel div:hover .headline{display:none;}
 
+
+  .outerpanel{}
+  
+  .innerpanel{
+    display:flex;
+    alignItems:center;
+    justifyContent:center;
+    width:100%;
+    height:50vh;
+    position:absolute;
+    top:12vh;
+    z-index:1;
+    padding:0 2rem;
+  }
+
+ .contentpanel{
+     display:inline-block;
+     padding:1em;
+     border:0.16em solid #FFFFFF;
+    border-radius:6px;
+     margin:0 auto;
+     box-sizing: border-box;
+    box-shadow: 0px 1px 6px 1px black;
+     text-decoration:none;
+    text-align:left;
+    text-shadow: 1px 2px 1px black;
+     font-weight:400;
+     color:#FFFFFF;
+    cursor:default;
+    background: rgba(0,0,0,0.75);
+    filter: brightness(120%);
+     transition: all 0.15s;
+    fontSize:100%;
+     animation:fade 2s forwards;
+    opacity:0;
+    overflow:scroll;
+    }
+
+  
+
+    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+
+    .headline{
+      padding:1em;
+    //  border:0.16em solid #FFFFFF;
+    // border-radius:6px;
+     margin:0 auto;
+    box-shadow: 0px 1px 6px 1px black;
+    text-shadow: 1px 2px 1px black;
+    background: rgba(237,27,45,0.75);
+    filter: brightness(120%);
+    transition: all 0.15s;
+    fontSize:100%;
+    // height:2.5rem;
+    position:absolute;
+    bottom:1vh;
+    max-width:20vw;
+    color:#fff;
+    }
 
 a.button2{
    display:inline-block;
    padding:.5em 3vw;
    border:0.16em solid #FFFFFF;
   border-radius:6px;
-   margin:0 auto;
+   margin:1rem auto;
    box-sizing: border-box;
   box-shadow: 0px 1px 6px 1px black;
    text-decoration:none;
-  //  text-transform:uppercase;
-  text-align:left;
   text-shadow: 1px 2px 1px black;
    font-weight:400;
    color:#FFFFFF;
-  cursor:default;
   background:#333;
   filter: brightness(120%);
   opacity:.9;
    transition: all 0.15s;
   }
-  // a.button2:hover{
-  //  color:#DDDDDD;
-  //  border-color:#FF0000;
-  // filter: brightness(140%);
-  // }
+  a.button2:hover{
+   color:#DDDDDD;
+   border-color:#FF0000;
+  filter: brightness(140%);
+  }
 
   a.button2:active{
    color:#BBBBBB;
@@ -124,7 +182,18 @@ a.button2{
     display:block;
     margin:0.4em auto;
    }
-  }
+}
+
+@media (max-width: 48rem) {
+.slidepanel > div{width:70%; border:0px solid red;}
+}
+@media (max-width: 70rem) {
+.innerpanel{height:80%; top:5vh;}
+
+}
+
+// .slidepanel > div:last-child{display:; width:50%}
+// .slidepanel > div:nth-last-of-type(-n+2){width:50%}
 
  .gatsby-image-wrapper{position: initial !important;}
 
@@ -144,7 +213,7 @@ const WhatWeDo = () => (
 
   
 
-  <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
+  {/* <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
    
       <div className="container">
       <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>What We Do</h1>
@@ -153,60 +222,107 @@ const WhatWeDo = () => (
   
 
         </div>
-        </section>
+        </section> */}
 
 
 
 
-   <div className="acc-wraper" style={{marginTop:''}}>
-  <div className="accordion">
+   <div className="panel-wrapper" style={{marginTop:'78px', overflow:'hidden'}}>
+  <div className="slidepanel">
 
-  <div style={{borderLeft:'none'}}>
+
+
+  <div className="outerpanel" style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'12vh', zIndex:'1', padding:'0 2rem' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}>
-          <a className="button2">
-          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Consulting</strong><br />
-          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
-        
-        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p></a></div>
-        </div></div>
-    </div>
 
-    <div style={{borderLeft:'none'}}>
+      <div className="innerpanel" style={{}}>
+
+      <span className="headline"><strong style={{textAlign:'center'}}>Marketing</strong></span>
+
+          <div className="contentpanel" style={{}}>
+          
+          
+
+          <strong style={{}}>Marketing</strong><br />
+          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available.  </p>
+        
+        <p style={{}}>We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear! Our goal is achieving your goals, and our job is not done until the job is done!</p>
+       
+
+
+        </div>
+    </div>
+ </div>
+
+ <div className="outerpanel" style={{borderLeft:''}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
-  <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'12vh', zIndex:'1', padding:'0 2rem' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <div style={{fontSize:'100%', testAlign:'left', animation: 'fade 2s forwards', opacity:'0'}}>
-          <a className="button2">
-          <strong style={{ animation: 'fade 3s forwards', opacity:'0'}}>Media Buying</strong><br />
-          <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience.</p>
+
+      <div className="innerpanel" style={{}}>
+      <span className="headline"><strong style={{textAlign:'center'}}>Concept</strong></span>
+          <div className="contentpanel" style={{}}>
+          
+          <strong style={{ }}>Concept / Creative / Design</strong><br />
+          <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
-        <p style={{ animation: 'fade 2s forwards', opacity:'0'}}>We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p></a></div>
-        </div></div>
-    </div>
+        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
+      
 
 
-    <div style={{borderLeft:'none'}}>
-   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-   <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
-        </div></div>
+        </div>
     </div>
+ </div>
 
-    <div style={{borderLeft:'none'}}>
-   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-   <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'50%', position:'absolute', top:'20vh', zIndex:'1', padding:'0 2rem' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">Identity skhsfsh khsf skfhs fsfkhsf sfksh sfhksf sfkhs fskh sfkhs fskhfkshfskfhskfh sfhskfhs fkhsfhs </Link></h1>
-        </div></div>
+
+ <div className="outerpanel" style={{borderLeft:''}}>
+  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+  <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
+
+      <div className="innerpanel" style={{}}>
+      <span className="headline"><strong style={{textAlign:'center'}}>Consulting</strong></span>
+          <div className="contentpanel" style={{}}>
+          
+          <strong style={{ }}>Consulting</strong><br />
+          <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
+        
+        <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1>
+
+
+        </div>
     </div>
+ </div>
+
+
+ <div className="outerpanel" style={{borderRight:'none'}}>
+  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
+  <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+
+      <div className="innerpanel" style={{}}>
+      <span className="headline"><strong style={{textAlign:'center'}}>Media</strong></span>
+          <div className="contentpanel" style={{}}>
+          
+          <strong style={{ }}>Media Buying</strong><br />
+          <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
+        
+        <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
+        {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1> */}
+
+
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+
+    
+
+
+    
 
     
     
