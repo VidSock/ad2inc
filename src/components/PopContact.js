@@ -43,6 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ed1ea', end
     width: 0; 
     opacity: 0;    
     visibility: hidden;
+    backdrop-filter: blur(5px);
     overflow: hidden; 
     cursor: default;
     transition: opacity 0.2s ease-in; 
