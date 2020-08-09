@@ -147,7 +147,7 @@ const CustomBox = styled.div`
     font-weight:0 !important; 
     // height:2.5rem;
     position:absolute;
-    bottom:10vh;
+    bottom:15vh;
     color:#fff;
     width:100%;
     }
