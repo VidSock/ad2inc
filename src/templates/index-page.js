@@ -9,7 +9,7 @@ import Image from '../components/Image'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
-import Install from '../components/Install'
+// import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -18,6 +18,8 @@ import { MdPlayArrow } from 'react-icons/md'
 import { FiCornerRightDown } from 'react-icons/fi'
 // import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
+
+import SlidePanelHome1 from '../components/slidePanelHome1'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
@@ -129,6 +131,7 @@ const IndexPage1 = () => (
      <Layout>
      <CustomBox>
   
+  <SlidePanelHome1 />
      <section className="outer section section--gradient">
       <div className="container" style={{padding: '100px 2rem 0 2rem',}}>
   
@@ -148,7 +151,7 @@ why they want to choose you.</blockquote>
   
 
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
-  <div className="spacer33"></div>
+  {/* <div className="spacer33"></div> */}
   
   <p style={{textAlign:'center'}}><strong>Let’s build your business together.</strong></p>
   
@@ -162,7 +165,7 @@ why they want to choose you.</blockquote>
 
 </section>
   </CustomBox>
-  <Install />
+  {/* <Install /> */}
   </Layout>
 
 )

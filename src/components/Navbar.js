@@ -38,11 +38,11 @@ const Navbar = class extends React.Component {
             
             
             
-            <li>
+            {/* <li>
               <Link className="navbar-item" to="/whatwedo">
                 What We Do
               </Link>
-              </li>
+              </li> */}
             
             
             
@@ -60,11 +60,11 @@ const Navbar = class extends React.Component {
               </li> */}
               
               
-              <li>
+              {/* <li>
               <Link id="casestudies" className="navbar-item" to="/case-studies">
                 Case Studies
               </Link>
-              </li>
+              </li> */}
               
               
                <li>

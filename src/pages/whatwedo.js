@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
+import SlidePanelHome1 from '../components/slidePanelHome1'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -30,8 +31,8 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   width:100vw;
-  // height:70vh;
-  height: calc(100vh - 78px);
+  height:100vh;
+  // height: calc(100vh - 78px);
 }
 
 .slidepanel > div{
@@ -102,12 +103,12 @@ const CustomBox = styled.div`
     position:absolute;
     top:12vh;
     z-index:1;
-    padding:0 2rem;
+    padding:80px 2em 1em 2em;
   }
 
  .contentpanel{
      display:inline-block;
-     padding:1em;
+     padding:1em 1em 1em 1em;
      border:0.16em solid #FFFFFF;
     border-radius:6px;
      margin:0 auto;
@@ -142,7 +143,8 @@ const CustomBox = styled.div`
     background: rgba(237,27,45,0.75);
     filter: brightness(120%);
     transition: all 0.15s;
-    fontSize:100%;
+    font-size:100%;
+    font-weight:0 !important; 
     // height:2.5rem;
     position:absolute;
     bottom:1vh;
@@ -186,6 +188,8 @@ a.button2{
 
 @media (max-width: 48rem) {
 .slidepanel > div{width:70%; border:0px solid red;}
+.slidepanel > div:last-child{display:; width:50%}
+.headline{padding:4px; font-size:70%;}
 }
 @media (max-width: 70rem) {
 .innerpanel{height:80%; top:5vh;}
@@ -209,126 +213,11 @@ const WhatWeDo = () => (
    <CustomBox>
 
 
-  
 
-  
 
-  {/* <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
+
    
-      <div className="container">
-      <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>What We Do</h1>
-      <p>Ad2, Inc. offers creative development and campaign management services, as well as brand consulting and other marketing communications services, such as marketing research, strategic planning, direct and interactive marketing.</p> 
-      
-  
-
-        </div>
-        </section> */}
-
-
-
-
-   <div className="panel-wrapper" style={{marginTop:'78px', overflow:'hidden'}}>
-  <div className="slidepanel">
-
-
-
-  <div className="outerpanel" style={{borderLeft:'none'}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
-
-      <div className="innerpanel" style={{}}>
-
-      <span className="headline"><strong style={{textAlign:'center'}}>Marketing</strong></span>
-
-          <div className="contentpanel" style={{}}>
-          
-          
-
-          <strong style={{}}>Marketing</strong><br />
-          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available.  </p>
-        
-        <p style={{}}>We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear! Our goal is achieving your goals, and our job is not done until the job is done!</p>
-       
-
-
-        </div>
-    </div>
- </div>
-
- <div className="outerpanel" style={{borderLeft:''}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
-
-      <div className="innerpanel" style={{}}>
-      <span className="headline"><strong style={{textAlign:'center'}}>Concept</strong></span>
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{ }}>Concept / Creative / Design</strong><br />
-          <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
-        
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
-      
-
-
-        </div>
-    </div>
- </div>
-
-
- <div className="outerpanel" style={{borderLeft:''}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
-
-      <div className="innerpanel" style={{}}>
-      <span className="headline"><strong style={{textAlign:'center'}}>Consulting</strong></span>
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{ }}>Consulting</strong><br />
-          <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
-        
-        <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1>
-
-
-        </div>
-    </div>
- </div>
-
-
- <div className="outerpanel" style={{borderRight:'none'}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
-
-      <div className="innerpanel" style={{}}>
-      <span className="headline"><strong style={{textAlign:'center'}}>Media</strong></span>
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{ }}>Media Buying</strong><br />
-          <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
-        
-        <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
-        {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1> */}
-
-
-        </div>
-    </div>
- </div>
-
-
-
-
-
-
-    
-
-
-    
-
-    
-    
-  </div>
-</div>
-
+<><SlidePanelHome1 />
 <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
    
    <div className="container">
@@ -339,8 +228,24 @@ const WhatWeDo = () => (
 
      </div>
      </section>
+</>
 
-{/* <br /><br /><br /><br /><br /><br /><br /> */}
+     
+
+
+
+
+
+
+    
+
+
+    
+
+    
+    
+ 
+
 
 </CustomBox>
   </Layout>
