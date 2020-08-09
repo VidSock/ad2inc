@@ -18,7 +18,6 @@ import { MdPlayArrow } from 'react-icons/md'
 import { FiCornerRightDown } from 'react-icons/fi'
 // import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
-
 import SlidePanelHome1 from '../components/slidePanelHome1'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'

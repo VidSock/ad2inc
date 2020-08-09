@@ -11,7 +11,7 @@ import styled from "styled-components"
 // import { IoMdFingerPrint } from 'react-icons/io'
 import DownArrow from './DownArrow'
 import { RiArrowDownCircleLine } from 'react-icons/ri'
-
+import TouchUp from './TouchUp'
 // import Contact from '../../components/Contact-inc'
 
 const CustomBox = styled.div`
@@ -212,8 +212,8 @@ const slidePanelHome1 = () => (
 <div className="panel-wrapper" style={{marginTop:'0', overflow:'hidden'}}>
     
 
-<DownArrow />
-
+{/* <DownArrow /> */}
+<TouchUp />
   <div className="slidepanel">
   
   <div className="outerpanel" style={{borderLeft:'none'}}>

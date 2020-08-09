@@ -8,6 +8,7 @@ import { Link } from 'gatsby'
 import Image from '../../components/Image'
 import SlidePanelCase from '../../components/SlidePanelCase'
 import DownArrow from '../../components/DownArrow'
+import TouchUp from '../../components/TouchUp'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -159,7 +160,8 @@ const CaseStudyIndex = () => (
 
 
    <div className="acc-wraper" style={{marginTop:''}}>
-   <DownArrow />
+   {/* <DownArrow /> */}
+   <TouchUp />
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
@@ -238,6 +240,7 @@ const CaseStudyIndex = () => (
       
 
 {/* <br /><br /><br /><br /><br /> */}
+
 
 
 <section className="intro outer section section--gradient">
