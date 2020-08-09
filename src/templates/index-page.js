@@ -29,6 +29,23 @@ import SlidePanelHome1 from '../components/slidePanelHome1'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
+
+
+
+// .intro:before{
+// 	content: url(../img/ad2inc-logo-round.svg);
+// position:absolute;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+// animation: poof 1s forwards;
+// animation-delay: 1.2s;
+// top:0 !important;
+// }
+
+
+
 .spacer33{height:33vh; display:block;}
 .spacer66{height:66vh; display:block;}
 .spacer99{height:99vh; display:block;}
@@ -132,7 +149,7 @@ const IndexPage1 = () => (
      <CustomBox>
   
   <SlidePanelHome1 />
-     <section className="outer section section--gradient">
+     <section className="intro outer section section--gradient">
       <div className="container" style={{padding: '100px 2rem 0 2rem',}}>
   
   
