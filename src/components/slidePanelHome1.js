@@ -125,7 +125,7 @@ const CustomBox = styled.div`
     fontSize:100%;
      animation:fade 2s forwards;
     opacity:0;
-    overflow:scroll;
+    overflow-y:scroll;
     backdrop-filter: blur(10px);
     }
 
