@@ -38,7 +38,7 @@ const CustomBox = styled.div`
 
 
 
-const IndexPage1 = () => (
+const IndexPage = () => (
   
   
 	
@@ -87,5 +87,5 @@ why they want to choose you.</blockquote>
 
 
 
-export default IndexPage1
+export default IndexPage
 

@@ -4,7 +4,7 @@ import ThemeSwitcher from "react-theme-switcher";
 
 
 const Themerpop = () => {
-render (){
+render ()(
 
 	  
 <Themer>
@@ -23,7 +23,7 @@ render (){
 
 
 
-  }
+)
 }
 
 export default Themerpop

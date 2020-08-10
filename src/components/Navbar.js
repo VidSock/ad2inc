@@ -5,7 +5,7 @@ import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
 import { WiDaySunny } from 'react-icons/wi';
-
+import Image from './Image'
 import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -26,7 +26,12 @@ const Navbar = class extends React.Component {
     <Link to="/" className="logolink" title="Logo - Back To Home">
     
     <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s',}} />
+    {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
+
    </Link>
+
+
+  
  
  
   
