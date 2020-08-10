@@ -4,7 +4,7 @@ import React from 'react'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
@@ -36,7 +36,7 @@ const CustomBox = styled.div`
 
 .slidepanel > div{
   min-width:16vw;
-  width:40vw;
+  width:50vw;
   flex-grow:1;
   flex-shrink:1;
   overflow:hidden;
@@ -102,7 +102,7 @@ const CustomBox = styled.div`
     position:absolute;
     top:12vh;
     z-index:1;
-    padding:80px 2em 1em 2em;
+    padding:80px 2em 0 2em;
   }
 
  .contentpanel{
@@ -201,6 +201,12 @@ a.button2{
 
  .gatsby-image-wrapper{position: initial !important;}
 
+
+ 
+
+
+ .slidingVertical1 span{height:100vh;}
+
 `
 
 const slidePanelHome1 = () => (
@@ -214,6 +220,21 @@ const slidePanelHome1 = () => (
 
 {/* <DownArrow /> */}
 <TouchUp />
+
+
+<div className="letter-changer" style={{position:'absolute', top:'10vh', fontSize:'30vw', border:'0px solid blue', zIndex:'0', overflow:'hidden', height:'100vh'}}>
+
+<div class="slidingVertical1" style={{overflow:'hidden', width:'98vw', display:'flex', flexDirection:'column'}}>
+      <span style={{height:'100vh'}}>Agency</span>
+      <span>Beautiful.</span>
+      <span>Cute.</span>
+      <span>Delightful.</span>
+      <span>Emotional.</span>
+    </div>
+
+</div>
+
+
   <div className="slidepanel">
   
   <div className="outerpanel" style={{borderLeft:'none'}}>
