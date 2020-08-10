@@ -41,8 +41,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid ;
-  border-right:1.5px solid ;
+  // border-left:1.5px solid ;
+  // border-right:1.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -108,7 +108,7 @@ const CustomBox = styled.div`
  .contentpanel{
      display:inline-block;
      padding:1em 1em 1em 1em;
-     border:0.16em solid #FFFFFF;
+     border:1px solid #333;
     border-radius:6px;
      margin:0 auto;
      box-sizing: border-box;
@@ -202,10 +202,58 @@ a.button2{
  .gatsby-image-wrapper{position: initial !important;}
 
 
- 
 
 
- .slidingVertical1 span{height:100vh;}
+
+ .shout{width:100%; height:100vh; overflow:hidden;}
+ .shout span:first-child{height:100vh;}
+ .shout span{
+    width:100vw;
+     overflow:hidden;
+    // animation: poptop 7s forwards;
+    animation-name: poptop;
+    animation-duration: 4.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+    }
+
+    transform: translate()
+
+
+    @keyframes poptop {
+      0%{
+            opacity: 0;
+            transform: translateY(-100vh)
+         }
+         15% {
+            opacity:.1;
+         }
+         25%{
+            opacity: .3;
+         }
+         90% {
+            opacity:.9;
+         }
+         100% {
+            opacity:1;
+            transform: translateY(100vh)
+         }
+      
+      }
+
+    @keyframes tooltop{
+        0% { opacity: 0; }
+        5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
+        10% { opacity: 1; -webkit-transform: translateX(0px); }
+        25% { opacity: 1; -webkit-transform: translateX(0px); }
+        30% { opacity: 0; -webkit-transform: translateX(0px); }
+        80% { opacity: 0; }
+        100% { opacity: 0; }
+    }
 
 `
 
@@ -222,17 +270,17 @@ const slidePanelHome1 = () => (
 <TouchUp />
 
 
-<div className="letter-changer" style={{position:'absolute', top:'10vh', fontSize:'30vw', border:'0px solid blue', zIndex:'0', overflow:'hidden', height:'100vh'}}>
 
-<div class="slidingVertical1" style={{overflow:'hidden', width:'98vw', display:'flex', flexDirection:'column'}}>
-      <span style={{height:'100vh'}}>Agency</span>
+
+<div class="shout" style={{position:'absolute', top:'10vh', fontSize:'30vw',}}>
+      <span>Agency</span>
       <span>Beautiful.</span>
       <span>Cute.</span>
       <span>Delightful.</span>
       <span>Emotional.</span>
     </div>
 
-</div>
+
 
 
   <div className="slidepanel">
