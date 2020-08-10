@@ -101,7 +101,7 @@ const CustomBox = styled.div`
     height:50vh;
     position:absolute;
     top:12vh;
-    z-index:1;
+    z-index:0;
     padding:80px 2em 0 2em;
   }
 

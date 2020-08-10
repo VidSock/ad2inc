@@ -17,7 +17,7 @@ const Consent = () => (
     declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
     
     buttonText="Accept"
-	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 10px auto', top:'10px',  position:'relative', }}
+    buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 10px auto', top:'10px',  position:'relative', zIndex:'2'}}
 
     expires={30}
     cookieName="Ad2inc.net-site-pref-cookie"
