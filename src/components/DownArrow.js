@@ -29,7 +29,7 @@ const DownArrow = () => (
 
     
 
-<div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'absolute', width:'100%', height:'100%', zIndex:'1',}}>
+<div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'absolute', width:'100%', height:'100%', zIndex:'0',}}>
 <RiArrowDownCircleLine style={{fontSize:'350%', position:'fixed', bottom:'1vh', color:'#eee' }} />
 </div>
 
