@@ -112,7 +112,7 @@ const CustomBox = styled.div`
      border:1px solid #333;
     border-radius:6px;
      margin:0 auto;
-     padding:1rem;
+     padding:2rem 1rem;
      text-decoration:none;
     text-align:left;
     text-shadow: 1px 2px 1px black;
@@ -127,7 +127,6 @@ const CustomBox = styled.div`
     overflow-y:auto;
     backdrop-filter: blur(10px);
     width:90%;
-    // max-height:50vh;
     }
 
   
@@ -136,21 +135,18 @@ const CustomBox = styled.div`
 
     .headline{
       padding:1em;
-    //  border:0.16em solid #FFFFFF;
-    // border-radius:6px;
      margin:0 auto;
     box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
     background: rgba(237,27,45,1);
     // filter: brightness(120%);
-    transition: all 0.15s;
     font-size:100%;
     font-weight:0 !important; 
-    // height:2.5rem;
     position:absolute;
     bottom:15vh;
     color:#fff;
     width:100%;
+    transition: all .6s ease-out;
     }
 
 a.button2{
@@ -207,20 +203,33 @@ a.button2{
 
 
  .shout{width:100%; height:100vh; overflow:; display:flex; flex-direction:column;}
-//  .shout span:first-child{height:100vh;}
+//  .shout span:first-child{}
  .shout span{
     width:100vw;
-    height:100vh;
-     overflow:hidden;
-    animation: poptop 7s forwards;
-    animation-name: poptop;
-    animation-timing-function: ease-out; 
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: ;
+    height:20vh;
+    //  overflow:hidden;
+    // animation: poptop 12s forwards;
+    // animation-name: poptop;
+    // animation-timing-function: ease-out; 
+    // animation-delay: 3s;
+    // animation-direction: alternate;
+    animation-iteration-count: 1;
     animation-fill-mode: none;
     animation-play-state: running; 
-    opacity:0;
+  opacity:0;
+  // border:1px solid blue;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
     }
 
 
@@ -231,9 +240,14 @@ a.button2{
             opacity: 0;
             // transform: translateY(-100vh)
          }
+         50%{
+          opacity: .8;
+          transform: translateY(0)
+       }
+
          100% {
-            opacity:1;
-            // transform: translateY(100vh)
+            opacity:0;
+            transform: translateY(0)
 
          }
       
@@ -266,9 +280,18 @@ const slidePanelHome1 = () => (
 
 
 
-<div className="shout" style={{position:'absolute', top:'10vh',}}>
-      <span style={{ fontSize:'30vw',}}>Agency</span>
-      <span style={{ fontSize:'26vw',}}>Beautiful</span>
+<div className="shout" style={{position:'absolute', top:'0vh',}}>
+
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 6s forwards', animationDelay:'0s'}}>Knowledge</span>
+
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Data</span>
+
+  <span style={{position:'absolute', top:'25vh', textAlign:'left', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'8s'}}>Insight</span>
+
+  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'12s'}}>Research</span>
+
+      <span style={{ fontSize:'31vw', height:''}}>agency</span>
+      
       {/* <span style={{ fontSize:'24vw',}}>Cute</span>
       <span>Delightful</span>
       <span>Emotional</span> */}
