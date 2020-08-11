@@ -253,6 +253,25 @@ a.button2{
       
       }
 
+
+      @keyframes tagline {
+        0%{
+          opacity: 0;
+          // transform: translateY(-100vh)
+       }
+       50%{
+        opacity: .8;
+        transform: translateY(0)
+     }
+
+       100% {
+          opacity:.8;
+          transform: translateY(0)
+
+       }
+          }
+
+
     @keyframes tooltop{
         0% { opacity: 0; }
         5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
@@ -282,15 +301,17 @@ const slidePanelHome1 = () => (
 
 <div className="shout" style={{position:'absolute', top:'0vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 6s forwards', animationDelay:'0s'}}>Knowledge</span>
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Knowledge</span>
 
-  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Data</span>
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 6s forwards', animationDelay:'4s'}}>Data</span>
 
-  <span style={{position:'absolute', top:'25vh', textAlign:'left', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'8s'}}>Insight</span>
+  <span style={{position:'absolute', top:'25vh', textAlign:'left', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
 
-  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'12s'}}>Research</span>
+  <span style={{position:'absolute', top:'42vh', textAlign:'center', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
 
-      <span style={{ fontSize:'31vw', height:''}}>agency</span>
+  <span style={{position:'absolute', top:'12vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>we are</span>
+  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>your agency</span>
+
       
       {/* <span style={{ fontSize:'24vw',}}>Cute</span>
       <span>Delightful</span>
