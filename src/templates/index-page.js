@@ -69,7 +69,7 @@ why they want to choose you.</blockquote>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
   {/* <div className="spacer33"></div> */}
   
-  <p style={{textAlign:'center'}}><strong>Let’s build your business together.</strong></p>
+  <p style={{textAlign:'center', fontSize:'120%', background:'#333', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
   
   {/* <div className="spacer33"></div> */}
   </div>
