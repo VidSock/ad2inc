@@ -95,38 +95,37 @@ const CustomBox = styled.div`
   
   .innerpanel{
     display:flex;
-    alignItems:center;
-    justifyContent:center;
+    // alignItems:center;
+    // justifyContent:center;
     width:100%;
-    height:50vh;
+    height:100%;
     position:absolute;
-    top:12vh;
+    // top:25vh;
     z-index:0;
-    padding:80px 2em 0 2em;
+    margin:80px 0 0 0;
+    padding:0 0 0 0;
   }
 
  .contentpanel{
-     display:inline-block;
-     padding:1em 1em 1em 1em;
+     display:block;
      border:1px solid #333;
     border-radius:6px;
      margin:0 auto;
-     box-sizing: border-box;
-    box-shadow: 0px 1px 6px 1px black;
+     padding:1rem;
      text-decoration:none;
     text-align:left;
     text-shadow: 1px 2px 1px black;
      font-weight:400;
      color:#FFFFFF;
     cursor:default;
-    background: rgba(0,0,0,0.45);
-    // filter: brightness(120%);
+    background: rgba(0,0,0,0.50);
      transition: all 0.15s;
     fontSize:100%;
      animation:fade 2s forwards;
     opacity:0;
     overflow-y:auto;
     backdrop-filter: blur(10px);
+    width:90%;
     }
 
   
@@ -293,7 +292,8 @@ const slidePanelHome1 = () => (
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{ }}>Concept / Creative / Design</strong><br />
+          
+          <strong style={{}}>Concept / Creative / Design</strong><br />
           <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
         <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
