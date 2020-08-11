@@ -122,11 +122,12 @@ const CustomBox = styled.div`
     background: rgba(0,0,0,0.50);
      transition: all 0.15s;
     fontSize:100%;
-     animation:fade 2s forwards;
     opacity:0;
     overflow-y:auto;
     backdrop-filter: blur(10px);
     width:90%;
+    height:84vh;
+    animation:fade 2s forwards;
     }
 
   
@@ -184,12 +185,12 @@ a.button2{
 }
 
 @media (max-width: 48rem) {
-.slidepanel > div{width:70%; border:0px solid red;}
-.slidepanel > div:last-child{display:; width:50%}
+// .slidepanel > div{width:70%; border:0px solid red;}
+// .slidepanel > div:last-child{display:; width:50%}
 .headline{padding:4px; font-size:70%;}
 }
 @media (max-width: 70rem) {
-.innerpanel{height:80%; top:5vh;}
+// .innerpanel{height:80%; top:5vh;}
 
 }
 
@@ -305,9 +306,9 @@ const slidePanelHome1 = () => (
 
   <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 6s forwards', animationDelay:'4s'}}>Data</span>
 
-  <span style={{position:'absolute', top:'25vh', textAlign:'left', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
+  <span style={{position:'absolute', top:'12vh', textAlign:'left', fontSize:'25vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
 
-  <span style={{position:'absolute', top:'42vh', textAlign:'center', fontSize:'20vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
+  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'17vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
 
   <span style={{position:'absolute', top:'12vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>we are</span>
   <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>your agency</span>

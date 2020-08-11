@@ -1105,9 +1105,17 @@ body.dark, body.dark .container {
 
 body.dark .homecontent {
   background-color: #333;
-  color: #f9f9fa; 
+  color: #f9f9fa !important; 
   box-shadow: inherit;
   margin-bottom:0 !important;
+}
+
+body.dark .shout span {
+  color: #f9f9fa !important; 
+  filter: brightness(70%);
+}
+body.light .shout span{
+  filter: brightness(90%);
 }
 
 
