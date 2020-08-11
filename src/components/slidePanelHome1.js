@@ -284,7 +284,7 @@ a.button2{
     }
 
     @media (hover: hover) {
-      // .touchindicator{display: none !important;}
+      .touchindicator{display: none !important;}
       }
 
 `
