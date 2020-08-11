@@ -139,8 +139,8 @@ const CustomBox = styled.div`
      margin:0 auto;
     box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,1);
-    // filter: brightness(120%);
+    background: rgba(237,27,45,.7);
+    filter: brightness(120%);
     font-size:100%;
     font-weight:0 !important; 
     position:absolute;
