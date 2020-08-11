@@ -151,7 +151,7 @@ const CustomBox = styled.div`
     transition: all .6s ease-out;
     }
 
-a.button2{
+.button2{
    display:inline-block;
    padding:.5em 3vw;
    border:0.16em solid #FFFFFF;
@@ -168,18 +168,18 @@ a.button2{
   opacity:.9;
    transition: all 0.15s;
   }
-  a.button2:hover{
+  .button2:hover{
    color:#DDDDDD;
    border-color:#FF0000;
   filter: brightness(140%);
   }
 
-  a.button2:active{
+  .button2:active{
    color:#BBBBBB;
    border-color:#BBBBBB;
   }
   @media all and (max-width:30vw){
-   a.button2{
+   .button2{
     display:block;
     margin:0.4em auto;
    }
@@ -391,8 +391,8 @@ const slidePanelHome1 = () => (
           <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
         <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'2rem auto 0 auto'}}><label className="modal-btn0 grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black', padding:'.8rem 3rem', textAlign:'center', border:'1px solid white', cursor:'pointer', borderRadius:'3px', }}>Get Started!</label> </h1>
-        
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1>
+
 
 
         </div>
