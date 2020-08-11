@@ -29,13 +29,14 @@ const CustomBox = styled.div`
 .slidepanel{
   display:flex;
   flex-wrap:nowrap;
-  width:100vw;
+  // width:100vw;
   height:100vh;
   // height: calc(100vh - 78px);
+  overflow:hidden;
 }
 
 .slidepanel > div{
-  min-width:16vw;
+  // min-width:16vw;
   width:50vw;
   flex-grow:1;
   flex-shrink:1;
@@ -58,7 +59,7 @@ const CustomBox = styled.div`
   width:100vw;
   height:100vh;
   object-fit: cover;
-  position:absolute;
+  position:fixed;
   z-index:-1;
 }
 
@@ -98,11 +99,11 @@ const CustomBox = styled.div`
     // alignItems:center;
     // justifyContent:center;
     width:100%;
-    height:100%;
+    height:auto;
     position:absolute;
     // top:25vh;
     z-index:0;
-    margin:80px 0 0 0;
+    margin:15vh 0 0 0;
     padding:0 0 0 0;
   }
 
@@ -126,6 +127,7 @@ const CustomBox = styled.div`
     overflow-y:auto;
     backdrop-filter: blur(10px);
     width:90%;
+    // max-height:50vh;
     }
 
   
@@ -139,7 +141,7 @@ const CustomBox = styled.div`
      margin:0 auto;
     box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,.8);
+    background: rgba(237,27,45,1);
     // filter: brightness(120%);
     transition: all 0.15s;
     font-size:100%;
@@ -204,42 +206,35 @@ a.button2{
 
 
 
- .shout{width:100%; height:100vh; overflow:hidden;}
- .shout span:first-child{height:100vh;}
+ .shout{width:100%; height:100vh; overflow:; display:flex; flex-direction:column;}
+//  .shout span:first-child{height:100vh;}
  .shout span{
     width:100vw;
+    height:100vh;
      overflow:hidden;
-    // animation: poptop 7s forwards;
+    animation: poptop 7s forwards;
     animation-name: poptop;
-    animation-duration: 4.5s; 
     animation-timing-function: ease-out; 
-    animation-delay: 0s;
+    animation-delay: 2s;
     animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation-iteration-count: ;
     animation-fill-mode: none;
     animation-play-state: running; 
+    opacity:0;
     }
 
-    transform: translate()
+
 
 
     @keyframes poptop {
       0%{
             opacity: 0;
-            transform: translateY(-100vh)
-         }
-         15% {
-            opacity:.1;
-         }
-         25%{
-            opacity: .3;
-         }
-         90% {
-            opacity:.9;
+            // transform: translateY(-100vh)
          }
          100% {
             opacity:1;
-            transform: translateY(100vh)
+            // transform: translateY(100vh)
+
          }
       
       }
@@ -271,12 +266,12 @@ const slidePanelHome1 = () => (
 
 
 
-<div class="shout" style={{position:'absolute', top:'10vh', fontSize:'30vw',}}>
-      <span>Agency</span>
-      <span>Beautiful.</span>
-      <span>Cute.</span>
-      <span>Delightful.</span>
-      <span>Emotional.</span>
+<div className="shout" style={{position:'absolute', top:'10vh',}}>
+      <span style={{ fontSize:'30vw',}}>Agency</span>
+      <span style={{ fontSize:'26vw',}}>Beautiful</span>
+      {/* <span style={{ fontSize:'24vw',}}>Cute</span>
+      <span>Delightful</span>
+      <span>Emotional</span> */}
     </div>
 
 

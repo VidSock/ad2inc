@@ -390,6 +390,8 @@ body.dark .slidepanel > div{border-color:#333 !important;}
 
 
 
+
+
 .outer .container{padding:1rem;}
 
 
@@ -1099,6 +1101,22 @@ body.dark, body.dark .container {
   background-color: #333;
   color: #f9f9fa; 
   box-shadow: inherit;}
+
+
+body.dark .homecontent {
+  background-color: #333;
+  color: #f9f9fa; 
+  box-shadow: inherit;
+  margin-bottom:0 !important;
+}
+
+
+body.light .homecontent {
+  background-color: #f7f1f3;
+  color: #333333; 
+  box-shadow: inherit;
+  margin-bottom:0 !important;
+}
 
   body.light .transpop .container, body.light #installer .container{ background-color: #f7f1f3;}
   

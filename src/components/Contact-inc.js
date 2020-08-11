@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
       
         <section className="section np">
           <div className="container innerpanel" style={{padding: '0',}}>
-            <div className="content" style={{padding: '0 0 15px 0'}}>
+            <div className="content" style={{padding: '0 0 15px 0', marginBottom:'0'}}>
 
               
 

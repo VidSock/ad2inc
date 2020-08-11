@@ -30,7 +30,7 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 
 
-
+.outer .container{margin-bottom:0 !important;}
 
 
 `
@@ -48,8 +48,8 @@ const IndexPage = () => (
      <CustomBox>
   
   <SlidePanelHome1 />
-     <section className="outer section section--gradient">
-      <div className="container" style={{padding: '100px 2rem 0 2rem',}}>
+     <section className="outer section homecontent" style={{background:'', marginTop:'auto', marginBottom:'0 !important'}}>
+      <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important'}}>
   
   
   <h1>We Grow Business!</h1>
@@ -75,9 +75,9 @@ why they want to choose you.</blockquote>
   </div>
     
     {/* CONTACT PANEL  */}
-    <div className="outer" style={{margin:' 0'}}><Contact /></div>
+   <Contact />
   {/* END CONTACT PANEL */}
-
+<br />
 
 </section>
   </CustomBox>
