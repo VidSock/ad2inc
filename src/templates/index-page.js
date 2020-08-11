@@ -52,7 +52,7 @@ const IndexPage = () => (
       <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important'}}>
   
   
-  <h1>We Grow Business!</h1>
+  <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
 
 <p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
 

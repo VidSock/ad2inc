@@ -314,8 +314,8 @@ const slidePanelHome1 = () => (
 
   <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'17vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
 
-  <span style={{position:'absolute', top:'12vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>we are</span>
-  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'18vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>your agency</span>
+  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Redefining</span>
+  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Agency</span>
 
       
       {/* <span style={{ fontSize:'24vw',}}>Cute</span>
