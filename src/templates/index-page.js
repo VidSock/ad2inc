@@ -48,8 +48,8 @@ const IndexPage = () => (
      <CustomBox>
   
   <SlidePanelHome1 />
-     <section className="outer section homecontent" style={{background:'', marginTop:'auto', marginBottom:'0 !important'}}>
-      <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important'}}>
+     <section className="outer section homecontent" style={{background:'', marginTop:'auto', marginBottom:'0 !important',}}>
+      <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important', maxWidth:'1000px'}}>
   
   
   <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>

@@ -12,6 +12,7 @@ import { IoMdFingerPrint } from 'react-icons/io'
 import DownArrow from './DownArrow'
 import { RiArrowDownCircleLine } from 'react-icons/ri'
 import TouchUp from './TouchUp'
+// import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
 
 const CustomBox = styled.div`
@@ -340,7 +341,8 @@ const slidePanelHome1 = () => (
           <strong style={{}}>Concept / Creative / Design</strong><br />
           <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
+        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
       
 
 
@@ -365,8 +367,9 @@ const slidePanelHome1 = () => (
           <strong style={{}}>Marketing</strong><br />
           <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available.  </p>
         
-        <p style={{}}>We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear! Our goal is achieving your goals, and our job is not done until the job is done!</p>
+        <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
        
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">Learn More </Link></h1>
 
 
         </div>
@@ -388,7 +391,8 @@ const slidePanelHome1 = () => (
           <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
         <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'2rem auto 0 auto'}}><label className="modal-btn0 grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black', padding:'.8rem 3rem', textAlign:'center', border:'1px solid white', cursor:'pointer', borderRadius:'3px', }}>Get Started!</label> </h1>
+        
 
 
         </div>
@@ -407,8 +411,8 @@ const slidePanelHome1 = () => (
           <strong style={{ }}>Media Buying</strong><br />
           <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
         
-        <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
-        {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">Get Started Now! </Link></h1> */}
+        <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar.</p>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/tv/">View Our Work </Link></h1>
 
 
         </div>

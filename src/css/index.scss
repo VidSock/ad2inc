@@ -860,7 +860,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 }
 
 
-.headroom--pinned .header .logo{top:-20px !important;}
+// .headroom--pinned .header .logo{top:-20px !important;}
 .header .logo{top:0px !important;}
 
 .header .menu{height:100vh !important;}
@@ -878,7 +878,7 @@ filter: brightness(90%);
   margin-top:0;
 }
 .headroom--pinned {top:20px !important;}
-.headroom--pinned .logo {top:-20px !important;}
+// .headroom--pinned .logo {top:-0 !important;}
 
 	.header {display: flex; justify-content: space-between;}
 	.header ul{display: flex; justify-content: space-around !important;}
