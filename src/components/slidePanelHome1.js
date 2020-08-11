@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
-// import { IoMdFingerPrint } from 'react-icons/io'
+import { IoMdFingerPrint } from 'react-icons/io'
 import DownArrow from './DownArrow'
 import { RiArrowDownCircleLine } from 'react-icons/ri'
 import TouchUp from './TouchUp'
@@ -274,14 +274,18 @@ a.button2{
 
 
     @keyframes tooltop{
-        0% { opacity: 0; }
-        5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
-        10% { opacity: 1; -webkit-transform: translateX(0px); }
-        25% { opacity: 1; -webkit-transform: translateX(0px); }
-        30% { opacity: 0; -webkit-transform: translateX(0px); }
-        80% { opacity: 0; }
+        0% { opacity: 0; transform: scale(1.3) }
+        5% { opacity: 0;}
+        10% { opacity: .3; -webkit-transform: translateX(0px); }
+        25% { opacity: .4; -webkit-transform: translateX(0px); }
+        30% { opacity: .5;  transform: scale(.9) translate(1px); }
+        80% { opacity: 1; transform: scale(1) translate(0px); }
         100% { opacity: 0; }
     }
+
+    @media (hover: hover) {
+      // .touchindicator{display: none !important;}
+      }
 
 `
 
@@ -327,7 +331,7 @@ const slidePanelHome1 = () => (
   <div className="outerpanel" style={{borderLeft:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
-<span className="headline">Concept</span>
+<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
@@ -349,7 +353,7 @@ const slidePanelHome1 = () => (
   <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
- <span className="headline">Marketing</span>
+ <span className="headline">Marketing <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
       <div className="innerpanel" style={{}}>
 
      
@@ -375,7 +379,7 @@ const slidePanelHome1 = () => (
  <div className="outerpanel" style={{borderLeft:''}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
-<span className="headline">Consulting</span>
+<span className="headline">Consulting <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
       <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
@@ -395,7 +399,7 @@ const slidePanelHome1 = () => (
  <div className="outerpanel" style={{borderRight:'none'}}>
   {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
   <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
-<span className="headline">Media</span>
+<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
       <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
