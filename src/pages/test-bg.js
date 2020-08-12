@@ -1,22 +1,25 @@
 import React from 'react'
-// import Layout from '../components/Layout'
+import Layout from '../components/Layout'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
+// import SlidePanelHome1 from '../components/slidePanelHome1'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import Image from './Image'
+import Image from '../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
 
 // import { FiZoomIn } from 'react-icons/fi'
 
+import Img1 from '../components/Img1'
+import Img2 from '../components/Img2'
+import Img3 from '../components/Img3'
+import Img4 from '../components/Img4'
+
 // import Contact from '../../components/Contact-inc'
-import Img1 from './Img1'
-import Img2 from './Img2'
-import Img3 from './Img3'
-import Img4 from './Img4'
+
 const CustomBox = styled.div`
 
 // caras
@@ -142,16 +145,16 @@ const CustomBox = styled.div`
      margin:0 auto;
     box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,.8);
-    // filter: brightness(120%);
+    background: rgba(237,27,45,0.75);
+    filter: brightness(120%);
     transition: all 0.15s;
     font-size:100%;
     font-weight:0 !important; 
     // height:2.5rem;
     position:absolute;
-    bottom:10vh;
+    bottom:1vh;
+    max-width:20vw;
     color:#fff;
-    width:100%;
     }
 
 a.button2{
@@ -205,75 +208,58 @@ a.button2{
 
 `
 
-const SlidePanelCase = () => (
-
-    <CustomBox style={{}}>
-
-
-
-<div className="acc-wraper" style={{marginTop:''}}>
-  <div className="accordion">
-
-  <div>
-      
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
-        </div></div>
-        <Img1 />
-    </div>
 
 
 
 
 
-    <div>
-    {/* <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center1.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-          <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
-        </h1>
-        </div></div>
-        <Img2 />
-    </div>
-
-
-    
-
-    <div>
-    {/* <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-        <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
-        </h1>
-        </div></div>
-        <Img3 />
-    </div>
+const TestBg = () => (
+  <Layout>
+   <CustomBox>
+<>
 
 
 
- 
-    <div>
-    {/* <Image alt="Jackson County Economic Development Foundation" filename="case-study-jcedf1.jpg" /> */}
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
-      <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
-        <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
-        </h1>
-        </div></div>
-        <Img4 />
-    </div>
+
+
+
+
+<Img1 />
+<Img2 />
+<Img3 />
+<Img4 />
+
+{/* <SlidePanelHome1 /> */}
+<section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>
    
-    
-  </div>
-</div>
+   <div className="container">
+   <h1 style={{textAlign:'center', marginTop:'10px', fontSize:'140%'}}>More Services</h1>
+   <p>Ad2, Inc. offers creative development and campaign management services, as well as brand consulting and other marketing communications services, such as marketing research, strategic planning, direct and interactive marketing.</p> 
+   
 
+
+     </div>
+     </section>
+</>
+
+     
+
+
+
+
+
+
+    
+
+
+    
+
+    
+    
+ 
 
 
 </CustomBox>
-  
-  )
-  
-  export default SlidePanelCase
+  </Layout>
+)
+export default TestBg

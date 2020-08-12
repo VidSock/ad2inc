@@ -86,6 +86,7 @@ module.exports = {
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    'gatsby-background-image',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

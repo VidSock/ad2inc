@@ -14,6 +14,13 @@ import { RiArrowDownCircleLine } from 'react-icons/ri'
 import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
+import BgImage from './BgImage'
+
+import Img1 from './Img1'
+import Img2 from './Img2'
+import Img3 from './Img3'
+import Img4 from './Img4'
+
 
 const CustomBox = styled.div`
 
@@ -32,7 +39,7 @@ const CustomBox = styled.div`
   flex-wrap:nowrap;
   // width:100vw;
   height:100vh;
-  height: calc(100vh - 88px);
+  // height: calc(100vh - 88px);
   overflow:hidden;
 }
 
@@ -41,7 +48,8 @@ const CustomBox = styled.div`
   width:50vw;
   flex-grow:1;
   flex-shrink:1;
-  overflow:hidden;
+  height:100%;
+  // overflow:hidden;
   transition:all .5s ease;
   // border-left:1.5px solid ;
   // border-right:1.5px solid ;
@@ -56,13 +64,25 @@ const CustomBox = styled.div`
   flex-shrink:0
 }
 
-.slidepanel div img{
-  width:100vw;
-  height:100vh;
+.slidepanel div img, .slidepanel div .gatsby-image-wrapper {
+  width:100%;
+  height:100vh ;
   object-fit: cover;
   position:fixed;
   z-index:-1;
+  padding:0;
+  margin:0;
+  border:0px solid yellow;
+  // background-position:bottom bottom;
+  // object-position: 100% 100%;
+
 }
+// .slidepanel div  div  img{border:3px solid yellow;}
+.slidepanel div .gatsby-image-wrapper *{
+  border:3px solid yellow; width:100% !important;
+  // position:fixed;
+}
+
 
 // .slidepanel div:hover::before { 
 //   content: "Before -"; 
@@ -204,7 +224,7 @@ const CustomBox = styled.div`
 
 
 
- .shout{width:100%; height:100vh; overflow:; display:flex; flex-direction:column;}
+ .shout{width:100%; height:100vh; display:flex; display:none; flex-direction:column;}
 //  .shout span:first-child{}
  .shout span{
     width:100vw;
@@ -300,7 +320,7 @@ const slidePanelHome1 = () => (
     
 
 {/* <DownArrow /> */}
-<TouchUp />
+{/* <TouchUp /> */}
 
 
 
@@ -330,10 +350,10 @@ const slidePanelHome1 = () => (
   <div className="slidepanel">
   
   <div className="outerpanel" style={{borderLeft:'none'}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
+    
+  {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
 <span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
-      <div className="innerpanel" style={{}}>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
           <div className="contentpanel" style={{}}>
           
@@ -348,15 +368,19 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
+    {/* <Img1 /> */}
+    <BgImage filename="homebanner-pb.jpg" />
+    {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
+    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
+    {/* <BackgroundImg /> */}
  </div>
 
 
 
   <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
+  {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
  <span className="headline">Marketing <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-      <div className="innerpanel" style={{}}>
+ <div className="innerpanel" style={{}}>
 
      
 
@@ -374,16 +398,19 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
+    <BgImage filename="Market-Photo.jpg" />
+    {/* <Img2 /> */}
+    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
+    {/* <BackgroundImg /> */}
  </div>
 
  
 
 
  <div className="outerpanel" style={{borderLeft:''}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
+  {/* <img src="https://source.unsplash.com/random/1200x12003" alt="rando" /> */}
 <span className="headline">Consulting <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-      <div className="innerpanel" style={{}}>
+<div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
           
@@ -397,14 +424,18 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
+    <Img3 />
+    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
+    {/* <BackgroundImg /> */}
  </div>
 
 
+
  <div className="outerpanel" style={{borderRight:'none'}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+
+  {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
 <span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-      <div className="innerpanel" style={{}}>
+<div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
           
@@ -417,6 +448,11 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
+    
+    <BgImage filename="photo-1596047795961-69357dee9c3c.jpg" />
+    {/* <Img4 /> */}
+    {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
+    {/* <BackgroundImg /> */}
  </div>
 
 

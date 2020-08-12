@@ -1,32 +1,26 @@
-/* eslint-disable */
 import React from 'react'
-// import PropTypes from 'prop-types'
-// import { graphql } from 'gatsby'
-import Contact from '../components/Contact-inc'
-// import Image from '../components/Image'
-// import { Link } from 'gatsby'
-// import logo from '../img/ad2inc-logo-round.svg'
-// import Intro from '../components/intro-home'
-//  import Gallery1 from '../components/Gallery1'
-import Layout from '../components/Layout'
-// import Install from '../components/Install'
-// import Features from '../components/Features'
-// import BlogRoll from '../components/BlogRoll'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import { IoIosArrowDropdownCircle } from 'react-icons/io'
-// import { MdPlayArrow } from 'react-icons/md'
-// import { FiCornerRightDown } from 'react-icons/fi'
-// import { FaTimesCircle } from 'react-icons/fa'
-// import Intro3 from '../components/Intro3'
-import HomeAnimation from '../components/HomeAnimation'
-import BgImage from '../components/BgImage'
-// import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
-// import Img1 from '../components/Img1'
-
-// import PopMedical from '../components/PopMedical'
-// import PopSemi from '../components/PopSemi'
-// import PopNewsletter from '../components/PopNewsletter't
+// import Layout from '../components/Layout'
+// import Footer from '../../components/Footer'
+// import Navbar from '../../components/Navbar'
+// import GalleryMenu from '../../components/GalleryMenu'
+import { Link } from 'gatsby'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Image from './Image'
 import styled from "styled-components"
+// import { MdPlayArrow } from 'react-icons/md'
+import { IoMdFingerPrint } from 'react-icons/io'
+import DownArrow from './DownArrow'
+import { RiArrowDownCircleLine } from 'react-icons/ri'
+import TouchUp from './TouchUp'
+// import PopContact from './PopContact'
+// import Contact from '../../components/Contact-inc'
+import BgImage from './BgImage'
+
+import Img1 from './Img1'
+import Img2 from './Img2'
+import Img3 from './Img3'
+import Img4 from './Img4'
+
 
 const CustomBox = styled.div`
 
@@ -109,13 +103,13 @@ const CustomBox = styled.div`
 
 
 .slidepanel div:hover a, .slidepanel div:hover .contentpanel{
-  display:none;
+  display:block;
   }
   .slidepanel div a, .slidepanel div .contentpanel{
   display:none;
   }
 
-  .slidepanel div .headline {display:none; opacity:1;}
+  .slidepanel div .headline {display:block; opacity:1;}
   .slidepanel div:hover .headline{display:none;}
 
 
@@ -132,11 +126,10 @@ const CustomBox = styled.div`
     z-index:0;
     margin:15vh 0 0 0;
     padding:0 0 0 0;
-    display:none
   }
 
  .contentpanel{
-     display:none;
+     display:block;
      border:1px solid #333;
     border-radius:6px;
      margin:0 auto;
@@ -160,7 +153,7 @@ const CustomBox = styled.div`
 
   
 
-    // .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
 
     .headline{
       padding:1em;
@@ -213,9 +206,17 @@ const CustomBox = styled.div`
 }
 
 @media (max-width: 48rem) {
+// .slidepanel > div{width:70%; border:0px solid red;}
+// .slidepanel > div:last-child{display:; width:50%}
 .headline{padding:4px; font-size:70%;}
 }
+@media (max-width: 70rem) {
+// .innerpanel{height:80%; top:5vh;}
 
+}
+
+// .slidepanel > div:last-child{display:; width:50%}
+// .slidepanel > div:nth-last-of-type(-n+2){width:50%}
 
  .gatsby-image-wrapper{position: initial !important;}
 
@@ -223,7 +224,7 @@ const CustomBox = styled.div`
 
 
 
- .shout{width:100%; height:100vh; display:flex; flex-direction:column;}
+ .shout{width:100%; height:100vh; display:flex; display:none; flex-direction:column;}
 //  .shout span:first-child{}
  .shout span{
     width:100vw;
@@ -309,65 +310,90 @@ const CustomBox = styled.div`
 
 `
 
+const HomeAnimation = () => (
+
+    <CustomBox style={{}}>
 
 
 
-const IndexPage = () => (
-  
-  
-	
-
-     
-     <Layout>
-     <CustomBox>
-
-
-<HomeAnimation />
-
-
-
-     <section className="outer section homecontent" style={{background:'', marginTop:'-15px', marginBottom:'0 !important',}}>
-      <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important', maxWidth:'1000px'}}>
-  
-  
-  <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
-
-<p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
-
-<p>Ad2 understands the importance of relevant data as the foundation for effective campaigns. Your message must connect your brand with your audience and effectively communicate  the differentiating benefits of your products, values, and services.</p>
-  
-   
-<blockquote>Your customers must know who you are,
-
-what you can do for them and
-
-why they want to choose you.</blockquote>
-  
-
-  <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
-
-  
-  <p style={{textAlign:'center', fontSize:'120%', background:'#333', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
-  
-
-  </div>
+<div className="panel-wrapper" style={{marginTop:'0', overflow:'hidden'}}>
     
 
-   <Contact />
-
-<br />
-
-
-
-</section>
-
-
-  </CustomBox>
-  </Layout>
-
-)
+{/* <DownArrow /> */}
+<TouchUp />
 
 
 
-export default IndexPage
 
+<div className="shout" style={{position:'absolute', top:'0vh',}}>
+
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Knowledge</span>
+
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 6s forwards', animationDelay:'4s'}}>Data</span>
+
+  <span style={{position:'absolute', top:'12vh', textAlign:'left', fontSize:'25vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
+
+  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'17vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
+
+  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Redefining</span>
+  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Agency</span>
+
+      
+      {/* <span style={{ fontSize:'24vw',}}>Cute</span>
+      <span>Delightful</span>
+      <span>Emotional</span> */}
+    </div>
+
+
+
+
+  <div className="slidepanel">
+  
+  <div className="outerpanel" style={{borderLeft:'none'}}>
+    
+  {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
+<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
+      
+          <div className="contentpanel" style={{}}>
+          
+          
+          <strong style={{}}>Concept / Creative / Design</strong><br />
+          <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
+        
+        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
+      
+
+
+        </div>
+    </div>
+    <BgImage filename="homebanner-pb.jpg" />
+ </div>
+
+
+
+  
+
+
+
+
+
+
+    
+
+
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+</CustomBox>
+  
+  )
+  
+  export default HomeAnimation
