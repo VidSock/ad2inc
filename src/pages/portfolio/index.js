@@ -27,7 +27,7 @@ const CustomBox = styled.div`
 .acc-wraper{
   margin: 0 ;
   width:100%;
-  
+
 }
 
 .accordion{
@@ -35,7 +35,7 @@ const CustomBox = styled.div`
   flex-wrap:nowrap;
   overflow:hidden;
   width:100%;
-  height:100vh;
+  // height:100vh;
   // min-height: calc(~"100vh - 100px");
 }
 
@@ -45,8 +45,8 @@ const CustomBox = styled.div`
   flex-shrink:1;
   overflow:hidden;
   transition:all .5s ease;
-  border-left:1px solid;
-  border-right:1px solid;
+  // border-left:1px solid;
+  border-right:1px solid #eee;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -160,10 +160,10 @@ const CaseStudyIndex = () => (
 
 
 
-   <div className="acc-wraper" style={{marginTop:''}}>
+   <div className="acc-wraper" style={{height:'70vh'}}>
    {/* <DownArrow /> */}
    <TouchUp />
-  <div className="accordion">
+  <div className="accordion" style={{height:'70vh'}}> 
 
   <div style={{borderLeft:'none'}}>
   {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
@@ -199,7 +199,7 @@ const CaseStudyIndex = () => (
   <BgImage filename="portfolio-print.png" />
     </div>
 
-    <div style={{borderRight:'none'}}>
+    <div style={{borderRight:''}}>
     
     {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
