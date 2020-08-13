@@ -4,19 +4,19 @@ import Layout from '../components/Layout'
 // import Navbar from '../../components/Navbar'
 // import SlidePanelHome1 from '../components/slidePanelHome1'
 // import GalleryMenu from '../../components/GalleryMenu'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import Image from '../components/Image'
+// import Image from '../components/Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
 
 // import { FiZoomIn } from 'react-icons/fi'
 
-import Img1 from '../components/Img1'
-import Img2 from '../components/Img2'
-import Img3 from '../components/Img3'
-import Img4 from '../components/Img4'
+// import Img1 from '../components/Img1'
+// import Img2 from '../components/Img2'
+// import Img3 from '../components/Img3'
+// import Img4 from '../components/Img4'
 
 // import Contact from '../../components/Contact-inc'
 
@@ -224,10 +224,10 @@ const TestBg = () => (
 
 
 
-<Img1 />
+{/* <Img1 />
 <Img2 />
 <Img3 />
-<Img4 />
+<Img4 /> */}
 
 {/* <SlidePanelHome1 /> */}
 <section className="outer section section--gradient" style={{padding: '0px 2rem 0 2rem'}}>

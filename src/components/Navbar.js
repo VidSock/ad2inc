@@ -5,7 +5,7 @@ import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
 import { WiDaySunny } from 'react-icons/wi';
-import Image from './Image'
+// import Image from './Image'
 import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 

@@ -2,7 +2,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
-import Contact from '../../components/Contact-inc'
+// import Contact from '../../components/Contact-inc'
 // import Image from '../components/Image'
 // import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'
@@ -18,7 +18,7 @@ import Layout from '../../components/Layout'
 // import { FiCornerRightDown } from 'react-icons/fi'
 // import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
-import SlidePanelHome1 from '../../components/slidePanelHome1'
+// import SlidePanelHome1 from '../../components/slidePanelHome1'
 
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 

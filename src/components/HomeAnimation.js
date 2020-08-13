@@ -3,14 +3,14 @@ import React from 'react'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
-import { Link } from 'gatsby'
-import ScrollAnimation from 'react-animate-on-scroll'
-import Image from './Image'
+// import { Link } from 'gatsby'
+// import ScrollAnimation from 'react-animate-on-scroll'
+// import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
-import { IoMdFingerPrint } from 'react-icons/io'
-import DownArrow from './DownArrow'
-import { RiArrowDownCircleLine } from 'react-icons/ri'
+// import { IoMdFingerPrint } from 'react-icons/io'
+// import DownArrow from './DownArrow'
+// import { RiArrowDownCircleLine } from 'react-icons/ri'
 import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
@@ -340,6 +340,12 @@ const HomeAnimation = () => (
     {/* <Image filename="ad2inc-logo-round.png" alt="Ad2 Logo" style={{}} /> */}
   
   <img className="logo" src="../img/ad2logo-script.svg" alt="Ad2Inc Logo" style={{position:'', height:'600px', animation:'poptop 14s forwards', animationDelay:'18s', opacity:'0', margin:'0 auto'}} />
+
+
+
+
+
+
 </div>
 
     </div>

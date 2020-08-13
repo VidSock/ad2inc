@@ -5,10 +5,10 @@ import Layout from '../../components/Layout'
 import { graphql, useStaticQuery } from 'gatsby'
 // import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
-import Image from '../../components/Image'
+// import Image from '../../components/Image'
 import styled from "styled-components"
 import CaseMenu from '../../components/CaseMenu'
-import { FiCornerRightDown } from 'react-icons/fi'
+// import { FiCornerRightDown } from 'react-icons/fi'
 import BgImage from '../../components/BgImage-ll'
 import TouchUp from '../../components/TouchUp'
 

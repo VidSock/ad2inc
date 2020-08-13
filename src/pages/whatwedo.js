@@ -2,7 +2,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
-import Contact from '../components/Contact-inc'
+// import Contact from '../components/Contact-inc'
 // import Image from '../components/Image'
 // import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'

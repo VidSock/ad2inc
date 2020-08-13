@@ -5,7 +5,7 @@ import React from 'react'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import Image from './Image'
+// import Image from './Image'
 import BgImage from './BgImage'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'

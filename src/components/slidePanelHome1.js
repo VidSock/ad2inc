@@ -4,22 +4,22 @@ import React from 'react'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
 import { Link } from 'gatsby'
-import ScrollAnimation from 'react-animate-on-scroll'
-import Image from './Image'
+// import ScrollAnimation from 'react-animate-on-scroll'
+// import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 import { IoMdFingerPrint } from 'react-icons/io'
-import DownArrow from './DownArrow'
-import { RiArrowDownCircleLine } from 'react-icons/ri'
-import TouchUp from './TouchUp'
+// import DownArrow from './DownArrow'
+// import { RiArrowDownCircleLine } from 'react-icons/ri'
+// import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
 import BgImage from './BgImage'
 
-import Img1 from './Img1'
-import Img2 from './Img2'
-import Img3 from './Img3'
-import Img4 from './Img4'
+// import Img1 from './Img1'
+// import Img2 from './Img2'
+// import Img3 from './Img3'
+// import Img4 from './Img4'
 
 
 const CustomBox = styled.div`
@@ -432,7 +432,8 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <Img3 />
+    <BgImage filename="case-study-pnb.jpg" />
+    {/* <Img3 /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
  </div>

@@ -19,7 +19,7 @@ import Layout from '../components/Layout'
 // import { FaTimesCircle } from 'react-icons/fa'
 // import Intro3 from '../components/Intro3'
 import HomeAnimation from '../components/HomeAnimation'
-import BgImage from '../components/BgImage'
+// import BgImage from '../components/BgImage'
 // import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 // import Img1 from '../components/Img1'
 
