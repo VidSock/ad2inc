@@ -361,7 +361,7 @@ const slidePanelHome1 = () => (
           <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
         <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
       
 
 
@@ -392,7 +392,7 @@ const slidePanelHome1 = () => (
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
        
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">More About Us </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/about">More About Us </Link></h1>
 
 
         </div>

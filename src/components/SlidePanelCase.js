@@ -219,7 +219,7 @@ const SlidePanelCase = () => (
       
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%',}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%',}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
         </div></div>
         {/* <Img1 /> */}
         <BgImage filename="case-study-pnb1.jpg" />
@@ -234,7 +234,7 @@ const SlidePanelCase = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', }}>
-          <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
+          <Link className="button2" to="/case-study/pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
         </h1>
         </div></div>
         <BgImage filename="case-study-pediatric-center1.jpg" />
@@ -244,14 +244,14 @@ const SlidePanelCase = () => (
     
 
     <div>
-    {/* <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" /> */}
+
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', }}>
-        <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
+        <Link className="button2" to="/case-study/hssm/">Humane Society of South Mississippi<br /> View the case study</Link>
         </h1>
         </div></div>
-        <BgImage filename="casestory-gccgfcu1.jpg" />
+        <BgImage filename="case-study-hssm.png" />
     </div>
 
 
@@ -262,7 +262,7 @@ const SlidePanelCase = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%',}}>
-        <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
+        <Link className="button2" to="/case-study/jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
         </h1>
         </div></div>
         <BgImage filename="case-study-jcedf1.jpg" />

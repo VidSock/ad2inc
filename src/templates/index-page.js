@@ -248,7 +248,7 @@ why they want to choose you.</blockquote>
 </section>
 
 <div className="container">
-<div className="content" style={{padding:'0 8%', maxWidth:'1000px', margin:'auto'}}>
+<div className="content" style={{width:'90vw', padding:'0 0', maxWidth:'1000px', margin:'auto'}}>
 <Contact className="container contactform" />
 </div>
 </div>

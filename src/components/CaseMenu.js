@@ -64,13 +64,13 @@ const CaseMenu = () => (
 
 <ul id="galmenu" className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-pavandbroome" className="galgrad" title="Pav &amp; Broome Fine Jewelry Gulfport">Pav &amp; Broome Fine Jewelry</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-study/pavandbroome" className="galgrad" title="Pav &amp; Broome Fine Jewelry Gulfport">Pav &amp; Broome Fine Jewelry</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-pediatric-center/" className="galgrad" title="The Pediatric Center Gulfport">The Pediatric Center at Garden Park Medical Center</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-study/pediatric-center/" className="galgrad" title="The Pediatric Center Gulfport">The Pediatric Center at Garden Park</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-gccfcu/" className="galgrad" title="Gulf Coast Community Federal Credit Union Biloxi">Gulf Coast Community Federal Credit Union</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-study/hssm/" className="galgrad" title="Humane Society of South Mississippi">Humane Society of South Mississippi</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/case-studies/casestudy-jcedf/" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Economic Development Foundation</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-study/jcedf/" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Eco. Dev. Foundation</Link></li>
       
 	  {/* <li className="galmenu-item interest"><Link to="/portfolio/print" className="galgrad" title="Print">Print</Link></li>
 	  
