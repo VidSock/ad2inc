@@ -71,9 +71,9 @@ const GalleryMenu = () => (
       
       <li className="galmenu-item interest"><Link to="/portfolio/logos" className="galgrad" title="Logos">Logos</Link></li>
       
-      <li className="galmenu-item interest"><Link to="/portfolio/radio" className="galgrad" title="Radio">Radio</Link></li>
+      {/* <li className="galmenu-item interest"><Link to="/portfolio/radio" className="galgrad" title="Radio">Radio</Link></li> */}
       
-      <li className="galmenu-item interest"><Link to="/portfolio/tv" className="galgrad" title="TV">TV</Link></li>
+      <li className="galmenu-item interest"><Link to="/portfolio/tv" className="galgrad" title="TV">Media</Link></li>
       
 	  <li className="galmenu-item interest"><Link to="/portfolio/print" className="galgrad" title="Print">Print</Link></li>
 	  

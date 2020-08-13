@@ -218,11 +218,11 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv">View Television</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv">View Media</Link></h1>
 
     </div>
   </div>
-  <BgImage filename="portfolio-tv.png" />
+  <BgImage filename="portfolio-media.png" />
     </div>
 
     {/* <div>
