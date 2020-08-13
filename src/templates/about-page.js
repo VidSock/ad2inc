@@ -1,9 +1,10 @@
- /* eslint-disable */
+
  import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 // import Image from '../components/Image'
+ /* eslint-disable */
 import Content, { HTMLContent } from '../components/Content'
 // import { GiPlainArrow } from 'react-icons/gi'
 // import { GoQuote } from 'react-icons/go'

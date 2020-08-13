@@ -407,7 +407,7 @@ IndexPage.propTypes = {
 }
 
 export default IndexPage
-
+ /* eslint-disable */
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
