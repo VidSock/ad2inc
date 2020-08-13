@@ -225,9 +225,8 @@ const CaseStudyIndex = () => (
   <BgImage filename="portfolio-tv.png" />
     </div>
 
-    <div>
-    
-    {/* <img src="https://source.unsplash.com/random/1200x12005" alt="rando" /> */}
+    {/* <div>
+
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -236,9 +235,12 @@ const CaseStudyIndex = () => (
     </div>
   </div>
   <BgImage filename="portfolio-radio.png" />
-    </div>
+    </div> */}
     
   </div>
+
+
+  
 </div>
 
       

@@ -241,7 +241,7 @@ why they want to choose you.</blockquote>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
 
   
-  <p style={{textAlign:'center', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
+  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
   
 
 

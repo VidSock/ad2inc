@@ -358,9 +358,11 @@ const slidePanelHome1 = () => (
           
           
           <strong style={{fontSize:'130%'}}>Concept / Creative / Design</strong><br />
-          <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
+          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
+
+          <p>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience.</p>
         
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
+        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
         <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
       
 
@@ -388,11 +390,14 @@ const slidePanelHome1 = () => (
           
 
           <strong style={{fontSize:'130%'}}>Marketing</strong><br />
-          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available.  </p>
+          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available. We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear!</p>
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
        
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/about">More About Us </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1>
+
+
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/about">More About Us </Link></h1> */}
 
 
         </div>
@@ -417,7 +422,11 @@ const slidePanelHome1 = () => (
           <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
         <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1>
+
+<p>For a more in-depth look at the work we’ve done and the goals that we’ve accomplished while working closely together with our customers, we have provided case studies of some of our clients.</p>
+
+
+         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/case-study">View Case Studies </Link></h1>
 
 
 
@@ -439,11 +448,13 @@ const slidePanelHome1 = () => (
           <div className="contentpanel" style={{}}>
           
           <strong style={{fontSize:'130%'}}>Media Buying</strong><br />
-          <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
+          <p style={{ }}>Ad2, Inc. recognizes that traditional media ain’t so traditional anymore. With the expansion of online and interactive marketing and the introduction of social media and SMS and MMS media, there are a variety of media plans available for one budget and the strategy varies with each customer and that customer’s target market.</p>
         
-        <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar.</p>
-        {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/tv/">View Our Work </Link></h1> */}
+        <p style={{}}>Ad2, Inc. is committed to researching new mediums and avenues to offer innovative ways for you to reach your audience in the most cost effective ways through the use of integrated marketing strategies, incorporating traditional advertising, such as outdoor, television and print with nontraditional, grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
 
+        <p>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
+       
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1> */}
 
         </div>
     </div>
