@@ -222,7 +222,7 @@ const SlidePanelCase = () => (
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
         </div></div>
         {/* <Img1 /> */}
-        <BgImage filename="Market-Photo.jpg" />
+        <BgImage filename="case-study-pnb1.jpg" />
     </div>
 
 
@@ -237,7 +237,7 @@ const SlidePanelCase = () => (
           <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
         </h1>
         </div></div>
-        <BgImage filename="Market-Photo.jpg" />
+        <BgImage filename="case-study-pediatric-center1.jpg" />
     </div>
 
 
@@ -251,7 +251,7 @@ const SlidePanelCase = () => (
         <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
         </h1>
         </div></div>
-        <BgImage filename="Market-Photo.jpg" />
+        <BgImage filename="casestory-gccgfcu1.jpg" />
     </div>
 
 
@@ -265,7 +265,7 @@ const SlidePanelCase = () => (
         <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
         </h1>
         </div></div>
-        <BgImage filename="Market-Photo.jpg" />
+        <BgImage filename="case-study-jcedf1.jpg" />
     </div>
    
     

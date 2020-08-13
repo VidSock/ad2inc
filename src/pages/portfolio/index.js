@@ -6,6 +6,7 @@ import Layout from '../../components/Layout'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Image from '../../components/Image'
+import BgImage from '../../components/BgImage'
 import SlidePanelCase from '../../components/SlidePanelCase'
 import DownArrow from '../../components/DownArrow'
 import TouchUp from '../../components/TouchUp'
@@ -165,17 +166,16 @@ const CaseStudyIndex = () => (
   <div className="accordion">
 
   <div style={{borderLeft:'none'}}>
-  {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-  <img src="https://source.unsplash.com/random/1200x12001" alt="rando" />
+  {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/portfolio/identity/">View Identity</Link></h1>
         </div></div>
+        <BgImage filename="portfolio-identity.png" />
     </div>
 
     <div>
-    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12002" alt="rando" />
+    {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -183,12 +183,12 @@ const CaseStudyIndex = () => (
 
     </div>
   </div>
+  <BgImage filename="portfolio-logos.png" />
     </div>
 
 
     <div>
-    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12003" alt="rando" />
+    {/* <img src="https://source.unsplash.com/random/1200x12003" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -196,11 +196,12 @@ const CaseStudyIndex = () => (
 
     </div>
   </div>
+  <BgImage filename="portfolio-print.png" />
     </div>
 
     <div style={{borderRight:'none'}}>
-    {/* <Image alt="Temp Graphic" filename="Ad2-web-portfolio.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12004" alt="rando" />
+    
+    {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -208,11 +209,12 @@ const CaseStudyIndex = () => (
 
     </div>
   </div>
+  <BgImage filename="portfolio-web.png" />
     </div>
 
     <div>
-    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12006" alt="rando" />
+    
+    {/* <img src="https://source.unsplash.com/random/1200x12006" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -220,11 +222,12 @@ const CaseStudyIndex = () => (
 
     </div>
   </div>
+  <BgImage filename="portfolio-tv.png" />
     </div>
 
     <div>
-    {/* <Image alt="Temp Graphic" filename="Ad2-web-temp.jpg" /> */}
-    <img src="https://source.unsplash.com/random/1200x12005" alt="rando" />
+    
+    {/* <img src="https://source.unsplash.com/random/1200x12005" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
@@ -232,6 +235,7 @@ const CaseStudyIndex = () => (
 
     </div>
   </div>
+  <BgImage filename="portfolio-radio.png" />
     </div>
     
   </div>
