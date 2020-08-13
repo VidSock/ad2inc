@@ -78,10 +78,9 @@ const CustomBox = styled.div`
 
 }
 // .slidepanel div  div  img{border:3px solid yellow;}
-.slidepanel div .gatsby-image-wrapper *{
-  border:3px solid yellow; width:100% !important;
-  // position:fixed;
-}
+// .slidepanel div .gatsby-image-wrapper *{
+//   border:3px solid yellow; width:100% !important;
+// }
 
 
 // .slidepanel div:hover::before { 
@@ -98,7 +97,7 @@ const CustomBox = styled.div`
   align-items: center;
   justify-content: center;
   // border:1px solid white !important; 
-  animation: fadeIn;
+  // animation: fadeIn;
 }
 
 
@@ -148,12 +147,12 @@ const CustomBox = styled.div`
     backdrop-filter: blur(10px);
     width:90%;
     height:84vh;
-    animation:fade 2s forwards;
+    animation:fade 3s forwards;
     }
 
   
 
-    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+    // .contentpanel > *{opacity:0; animation:fade 3s forwards;}
 
     .headline{
       padding:1em;
@@ -362,7 +361,7 @@ const slidePanelHome1 = () => (
           <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
         <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
       
 
 
@@ -393,7 +392,7 @@ const slidePanelHome1 = () => (
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
        
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">More About Us </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">More About Us </Link></h1>
 
 
         </div>
@@ -418,7 +417,7 @@ const slidePanelHome1 = () => (
           <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
         <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1>
 
 
 

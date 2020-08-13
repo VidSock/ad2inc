@@ -80,7 +80,7 @@ const CustomBox = styled.div`
   align-items: center;
   justify-content: center;
   // border:1px solid white !important; 
-  animation: fadeIn;
+  // animation: fadeIn;
 }
 
 
@@ -127,14 +127,14 @@ const CustomBox = styled.div`
     filter: brightness(120%);
      transition: all 0.15s;
     fontSize:100%;
-     animation:fade 2s forwards;
+     animation:fade 3s forwards;
     opacity:0;
     overflow:scroll;
     }
 
   
 
-    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+    // .contentpanel > *{opacity:0; animation:fade 3s forwards;}
 
     .headline{
       padding:1em;
@@ -219,7 +219,7 @@ const SlidePanelCase = () => (
       
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%',}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
         </div></div>
         {/* <Img1 /> */}
         <BgImage filename="case-study-pnb1.jpg" />
@@ -233,7 +233,7 @@ const SlidePanelCase = () => (
     {/* <Image alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center1.jpg" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+        <h1 style={{fontSize:'100%', }}>
           <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
         </h1>
         </div></div>
@@ -247,7 +247,7 @@ const SlidePanelCase = () => (
     {/* <Image alt="Gulf Coast Community Federal Credit Union" filename="casestory-gccgfcu1.jpg" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+        <h1 style={{fontSize:'100%', }}>
         <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
         </h1>
         </div></div>
@@ -261,7 +261,7 @@ const SlidePanelCase = () => (
     {/* <Image alt="Jackson County Economic Development Foundation" filename="case-study-jcedf1.jpg" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>
+        <h1 style={{fontSize:'100%',}}>
         <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
         </h1>
         </div></div>
