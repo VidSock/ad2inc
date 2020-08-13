@@ -218,8 +218,10 @@ const IndexPage = () => (
 
 
 
-     <section className="outer section content" style={{background:'', marginTop:'-15px', marginBottom:'0 !important',}}>
-      <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important', maxWidth:'1000px'}}>
+
+
+     <div className="container">
+<div className="content" style={{width:'90vw', padding:'2rem 0', maxWidth:'1000px', margin:'auto'}}>
   
   
   <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
@@ -239,13 +241,13 @@ why they want to choose you.</blockquote>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
 
   
-  <p style={{textAlign:'center', fontSize:'120%', background:'#333', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
+  <p style={{textAlign:'center', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
   
 
 
   </div>
 
-</section>
+</div>
 
 <div className="container">
 <div className="content" style={{width:'90vw', padding:'0 0', maxWidth:'1000px', margin:'auto'}}>
