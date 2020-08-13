@@ -147,7 +147,7 @@ const CustomBox = styled.div`
     backdrop-filter: blur(10px);
     width:90%;
     height:84vh;
-    animation:fade 3s forwards;
+    animation:fade 1.7s forwards;
     }
 
   
@@ -357,7 +357,7 @@ const slidePanelHome1 = () => (
           <div className="contentpanel" style={{}}>
           
           
-          <strong style={{}}>Concept / Creative / Design</strong><br />
+          <strong style={{fontSize:'130%'}}>Concept / Creative / Design</strong><br />
           <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
         
         <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
@@ -387,7 +387,7 @@ const slidePanelHome1 = () => (
           
           
 
-          <strong style={{}}>Marketing</strong><br />
+          <strong style={{fontSize:'130%'}}>Marketing</strong><br />
           <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available.  </p>
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
@@ -413,7 +413,7 @@ const slidePanelHome1 = () => (
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{ }}>Consulting</strong><br />
+          <strong style={{fontSize:'130%'}}>Consulting</strong><br />
           <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
         
         <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
@@ -438,7 +438,7 @@ const slidePanelHome1 = () => (
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{ }}>Media Buying</strong><br />
+          <strong style={{fontSize:'130%'}}>Media Buying</strong><br />
           <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
         
         <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar.</p>
