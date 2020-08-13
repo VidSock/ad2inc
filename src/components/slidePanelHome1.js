@@ -393,7 +393,7 @@ const slidePanelHome1 = () => (
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
        
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">Learn More </Link></h1>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/capabilities/">More About Us </Link></h1>
 
 
         </div>
@@ -443,7 +443,7 @@ const slidePanelHome1 = () => (
           <p style={{ }}>We're committed to researching new mediums and avenues to offer innovative ways for you to reach your audience. We use grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
         
         <p style={{}}>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/tv/">View Our Work </Link></h1>
+        {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/tv/">View Our Work </Link></h1> */}
 
 
         </div>

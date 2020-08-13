@@ -16,11 +16,6 @@ import TouchUp from './TouchUp'
 // import Contact from '../../components/Contact-inc'
 import BgImage from './BgImage'
 
-import Img1 from './Img1'
-import Img2 from './Img2'
-import Img3 from './Img3'
-import Img4 from './Img4'
-
 
 const CustomBox = styled.div`
 
@@ -64,7 +59,7 @@ const CustomBox = styled.div`
   flex-shrink:0
 }
 
-.slidepanel div img, .slidepanel div .gatsby-image-wrapper {
+.slidepanel div img {
   width:100%;
   height:100vh ;
   object-fit: cover;
@@ -78,10 +73,9 @@ const CustomBox = styled.div`
 
 }
 // .slidepanel div  div  img{border:3px solid yellow;}
-.slidepanel div .gatsby-image-wrapper *{
-  border:3px solid yellow; width:100% !important;
-  // position:fixed;
-}
+// .slidepanel div .gatsby-image-wrapper *{
+//   border:3px solid yellow; width:100% !important;
+// }
 
 
 // .slidepanel div:hover::before { 
@@ -218,7 +212,7 @@ const CustomBox = styled.div`
 // .slidepanel > div:last-child{display:; width:50%}
 // .slidepanel > div:nth-last-of-type(-n+2){width:50%}
 
- .gatsby-image-wrapper{position: initial !important;}
+//  .gatsby-image-wrapper{position: initial !important;}
 
 
 
@@ -287,7 +281,7 @@ const CustomBox = styled.div`
      }
 
        100% {
-          opacity:.8;
+          opacity:1;
           transform: translateY(0)
 
        }
@@ -325,23 +319,29 @@ const HomeAnimation = () => (
 
 
 
-<div className="shout" style={{position:'absolute', top:'0vh',}}>
+<div className="shout" style={{position:'absolute', top:'5vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Knowledge</span>
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'19vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Advertising</span>
 
-  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 6s forwards', animationDelay:'4s'}}>Data</span>
+<span style={{position:'absolute', top:'59vh', textAlign:'center', fontSize:'19vw', animation:'poptop 5s forwards', animationDelay:'4s'}}>Knowledge</span>
 
-  <span style={{position:'absolute', top:'12vh', textAlign:'left', fontSize:'25vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', paddingRight:'6vw', fontSize:'20vw', animation:'poptop 2s forwards', animationDelay:'5s'}}>Data</span>
 
-  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'17vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
+  <span style={{position:'absolute', top:'8vh', textAlign:'left', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'7s'}}>Creative</span>
 
-  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Redefining</span>
-  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Agency</span>
+  <span style={{position:'absolute', top:'38vh', textAlign:'right', paddingRight:'3vw', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'9s'}}>Insight</span>
 
-      
-      {/* <span style={{ fontSize:'24vw',}}>Cute</span>
-      <span>Delightful</span>
-      <span>Emotional</span> */}
+  <span style={{position:'absolute', top:'28vh', textAlign:'left', fontSize:'17vw', paddingRight:'6vw', animation:'poptop 4s forwards', animationDelay:'12s'}}>Research</span>
+
+  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'poptop 4s forwards', animationDelay:'16s'}}>Redefining</span>
+  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'16s'}}>Agency</span>
+
+  <div style={{position:'absolute', top:'10vh', textAlign:'center', display:'flex', justifyContent:'center',alignContent:'center', alignItems:'center', fontSize:'25vw', width:'100%'}}>
+    {/* <Image filename="ad2inc-logo-round.png" alt="Ad2 Logo" style={{}} /> */}
+  
+  <img className="logo" src="../img/ad2logo-script.svg" alt="Ad2Inc Logo" style={{position:'', height:'600px', animation:'poptop 14s forwards', animationDelay:'18s', opacity:'0', margin:'0 auto'}} />
+</div>
+
     </div>
 
 
@@ -352,22 +352,8 @@ const HomeAnimation = () => (
   <div className="outerpanel" style={{borderLeft:'none'}}>
     
   {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
-<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
-      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
-      
-          <div className="contentpanel" style={{}}>
-          
-          
-          <strong style={{}}>Concept / Creative / Design</strong><br />
-          <p style={{ }}>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience. </p>
-        
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, perfectly capturing the interest of the client’s market.</p>
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/">View Our Work </Link></h1>
-      
 
-
-        </div>
-    </div>
+      
     <BgImage filename="homebanner-pb.jpg" />
  </div>
 

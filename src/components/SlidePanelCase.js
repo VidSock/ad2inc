@@ -6,6 +6,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Image from './Image'
+import BgImage from './BgImage'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -13,10 +14,10 @@ import styled from "styled-components"
 // import { FiZoomIn } from 'react-icons/fi'
 
 // import Contact from '../../components/Contact-inc'
-import Img1 from './Img1'
-import Img2 from './Img2'
-import Img3 from './Img3'
-import Img4 from './Img4'
+// import Img1 from './Img1'
+// import Img2 from './Img2'
+// import Img3 from './Img3'
+// import Img4 from './Img4'
 const CustomBox = styled.div`
 
 // caras
@@ -220,7 +221,8 @@ const SlidePanelCase = () => (
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
         </div></div>
-        <Img1 />
+        {/* <Img1 /> */}
+        <BgImage filename="Market-Photo.jpg" />
     </div>
 
 
@@ -235,7 +237,7 @@ const SlidePanelCase = () => (
           <Link className="button2" to="/case-studies/casestudy-pediatric-center/">The Pediatrics Center<br /> View the case study</Link>
         </h1>
         </div></div>
-        <Img2 />
+        <BgImage filename="Market-Photo.jpg" />
     </div>
 
 
@@ -249,7 +251,7 @@ const SlidePanelCase = () => (
         <Link className="button2" to="/case-studies/casestudy-gccfcu/">Gulf Coast Community FCU<br /> View the case study</Link>
         </h1>
         </div></div>
-        <Img3 />
+        <BgImage filename="Market-Photo.jpg" />
     </div>
 
 
@@ -263,7 +265,7 @@ const SlidePanelCase = () => (
         <Link className="button2" to="/case-studies/casestudy-jcedf/">Jackson Co. Economic <br />Development Foundation<br /> View the case study</Link>
         </h1>
         </div></div>
-        <Img4 />
+        <BgImage filename="Market-Photo.jpg" />
     </div>
    
     

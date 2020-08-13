@@ -66,117 +66,9 @@ const CustomBox = styled.div`
 }
 
 
-.slidepanel > div:hover{
-  flex-shrink:0
-}
-
-.slidepanel div img, .slidepanel div .gatsby-image-wrapper {
-  width:100%;
-  height:100vh ;
-  object-fit: cover;
-  position:fixed;
-  z-index:-1;
-  padding:0;
-  margin:0;
-  border:0px solid yellow;
-  // background-position:bottom bottom;
-  // object-position: 100% 100%;
-
-}
-// .slidepanel div  div  img{border:3px solid yellow;}
-.slidepanel div .gatsby-image-wrapper *{
-  border:3px solid yellow; width:100% !important;
-  // position:fixed;
-}
 
 
-// .slidepanel div:hover::before { 
-//   content: "Before -"; 
-//   background-color: green; 
-//   position:absolute;
-//   z-index:1;
-//   width:200px;
-//   margin:0 auto;
-// } 
 
-.slidepanel a{
-  z-index:0;
-  align-items: center;
-  justify-content: center;
-  // border:1px solid white !important; 
-  animation: fadeIn;
-}
-
-
-.slidepanel div:hover a, .slidepanel div:hover .contentpanel{
-  display:none;
-  }
-  .slidepanel div a, .slidepanel div .contentpanel{
-  display:none;
-  }
-
-  .slidepanel div .headline {display:none; opacity:1;}
-  .slidepanel div:hover .headline{display:none;}
-
-
-  .outerpanel{}
-  
-  .innerpanel{
-    display:flex;
-    // alignItems:center;
-    // justifyContent:center;
-    width:100%;
-    height:auto;
-    position:absolute;
-    // top:25vh;
-    z-index:0;
-    margin:15vh 0 0 0;
-    padding:0 0 0 0;
-    display:none
-  }
-
- .contentpanel{
-     display:none;
-     border:1px solid #333;
-    border-radius:6px;
-     margin:0 auto;
-     padding:2rem 1rem;
-     text-decoration:none;
-    text-align:left;
-    text-shadow: 1px 2px 1px black;
-     font-weight:400;
-     color:#FFFFFF;
-    cursor:default;
-    background: rgba(0,0,0,0.50);
-     transition: all 0.15s;
-    fontSize:100%;
-    opacity:0;
-    overflow-y:auto;
-    backdrop-filter: blur(10px);
-    width:90%;
-    height:84vh;
-    animation:fade 2s forwards;
-    }
-
-  
-
-    // .contentpanel > *{opacity:0; animation:fade 3s forwards;}
-
-    .headline{
-      padding:1em;
-     margin:0 auto;
-    box-shadow: 0px 1px 6px 1px black;
-    text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,.7);
-    filter: brightness(120%);
-    font-size:100%;
-    font-weight:0 !important; 
-    position:absolute;
-    bottom:15vh;
-    color:#fff;
-    width:100%;
-    transition: all .6s ease-out;
-    }
 
 .button2{
    display:inline-block;
@@ -217,7 +109,7 @@ const CustomBox = styled.div`
 }
 
 
- .gatsby-image-wrapper{position: initial !important;}
+//  .gatsby-image-wrapper{position: initial !important;}
 
 
 
@@ -321,12 +213,12 @@ const IndexPage = () => (
      <Layout>
      <CustomBox>
 
-
+     
 <HomeAnimation />
 
 
 
-     <section className="outer section homecontent" style={{background:'', marginTop:'-15px', marginBottom:'0 !important',}}>
+     <section className="outer section content" style={{background:'', marginTop:'-15px', marginBottom:'0 !important',}}>
       <div className="container" style={{padding: '100px 2rem 2ren 2rem', margin:'0 !important', maxWidth:'1000px'}}>
   
   
@@ -350,18 +242,16 @@ why they want to choose you.</blockquote>
   <p style={{textAlign:'center', fontSize:'120%', background:'#333', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
   
 
+
   </div>
-    
-
-   <Contact />
-
-<br />
-
-
 
 </section>
 
-
+<div className="container">
+<div className="content" style={{padding:'0 8%', maxWidth:'1000px', margin:'auto'}}>
+<Contact className="container contactform" />
+</div>
+</div>
   </CustomBox>
   </Layout>
 

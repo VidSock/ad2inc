@@ -28,8 +28,8 @@ const BackgroundSection = ({ className }) => (
           backgroundColor={`transparent`}
         >
           
-        
-        <Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link>
+     
+        {/* <Link className="button2" to="/case-studies/casestudy-pavandbroome/">Pav &amp; Broome<br /> View the case study</Link> */}
  
 
 

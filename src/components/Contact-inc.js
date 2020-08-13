@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
       
         <section className="section np">
           <div className="container innerpanel" style={{padding: '0',}}>
-            <div className="content" style={{padding: '0 0 15px 0', marginBottom:'0'}}>
+            <div className="content" style={{padding: '0 0 15px 0'}}>
 
               
 
@@ -77,7 +77,7 @@ export default class Contact extends React.Component {
                 id="contact-inc-form"
               >
 
-<h2 className="" style={{textAlign:'center', fontSize:'150%', paddingTop:'.6rem'}}>
+<h2 className="" style={{textAlign:'center', fontSize:'150%', padding:'0 0 1rem 0'}}>
 Schedule your free consultation today
 </h2>
 

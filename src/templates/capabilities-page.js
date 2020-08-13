@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Contact from '../components/Contact-inc'
 
 export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -32,6 +32,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
        </ScrollAnimation>
        
     </section>
+     
   )
 }
 
@@ -51,6 +52,7 @@ const CapabilitiesPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
       />
+      <Contact className="container contactform" />
     </Layout>
   )
 }
