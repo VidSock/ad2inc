@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
 
               
 
-              {/* <form
+              <form
                 name="menu-contact"
                 method="post"
                 action="/contact/success/"
@@ -162,7 +162,7 @@ export default class Contact extends React.Component {
                 
                 
                 
-              </form> */}
+              </form>
               
             </div>
           </div>

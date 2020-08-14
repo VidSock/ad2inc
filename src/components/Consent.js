@@ -9,7 +9,7 @@ const Consent = () => (
 
 
 <CookieConsent
-	debug={true}
+	debug={false}
 	location="bottom"
 	style={{ background: "#222", zIndex:'1', padding:'0% 3% 0% 3%', opacity:'.8', overflow:'hidden' }}
 	enableDeclineButton={false}
@@ -18,7 +18,7 @@ const Consent = () => (
     
     buttonText="Accept"
     buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 10px auto', top:'10px',  position:'relative', zIndex:'2'}}
-
+delay={5}
     expires={30}
     cookieName="Ad2inc.net-site-pref-cookie"
 >

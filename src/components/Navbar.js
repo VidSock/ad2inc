@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
  
   
 
-<input className="menu-btn" name="menu-btn" type="checkbox" id="menu-btn" />
+<input className="menu-btn" name="menu-btn" type="checkbox" id="menu-btn" aria-label="Open Mobile Menu" />
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
             <ul id="menu" className="menu">

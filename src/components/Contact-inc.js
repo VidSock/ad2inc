@@ -59,7 +59,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       
-        <section className="section np">
+        <section className="section">
           <div className="container innerpanel" style={{padding: '0',}}>
             <div className="content" style={{padding: '0 0 15px 0'}}>
 
@@ -77,8 +77,8 @@ export default class Contact extends React.Component {
                 id="contact-inc-form"
               >
 
-<h2 className="" style={{textAlign:'center', fontSize:'150%', padding:'0 0 1rem 0'}}>
-Schedule your free consultation today
+<h2 className="" style={{textAlign:'center', fontSize:'180%',}}>
+Contact Us
 </h2>
 
                
@@ -87,9 +87,9 @@ Schedule your free consultation today
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
-                    <input id="bot-field" name="bot-field" onChange={this.handleChange} />
+                    <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Bottom" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="contact" />
                 </div>
 
                 <div className="form" id="form">
@@ -98,7 +98,7 @@ Schedule your free consultation today
                     <input
                       className="input"
                       type={'text'}
-                      // name={'name'}
+                      name={'name'}
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
@@ -108,26 +108,26 @@ Schedule your free consultation today
                     <input
                       className="input"
                       type={'email'}
-                      // name={'email'}
+                      name={'email'}
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
                       placeholder="your@email.com"
                     />
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
+                    <label htmlFor="attachment1" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
+                    <label htmlFor="attachment1" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
                     <input
                         className="file-input hidden"
                         type="file"
-                        id="attachment"
-                        // name="attachment"
+                        id="attachment1"
+                        name="attachment1"
                         onChange={this.handleAttachment}
                       />
                       </label>
                       
-<label className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select file</label></div>
+<label className="upload" htmlFor="attachment1" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select file</label></div>
                 </div>
 
                 <div className="field half right">
@@ -136,7 +136,7 @@ Schedule your free consultation today
                   </label>
                     <textarea
                       className="textarea"
-                      // name={'message'}
+                      name={'message'}
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}

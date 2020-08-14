@@ -1,8 +1,8 @@
 import React from 'react'
-import LayoutNoc from '../../components/Layout-noc'
+import Layout from '../../components/Layout'
 
 export default () => (
-  <LayoutNoc>
+  <Layout>
     <section className="section">
       <div className="container">
         <div className="content" style={{padding: '2rem', height: '80vh'}}>
@@ -11,5 +11,5 @@ export default () => (
         </div>
       </div>
     </section>
-  </LayoutNoc>
+  </Layout>
 )
