@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
 
               
 
-              <form
+              {/* <form
                 name="menu-contact"
                 method="post"
                 action="/contact/success/"
@@ -77,7 +77,7 @@ export default class Contact extends React.Component {
                 id="popcontact-form"
               >
                 <h3 id="contact" name="contact" style={{padding: '.5rem 0', textAlign: 'center', fontSize: '150%',}}>Contact Us<br /><span style={{fontSize: '80%', display: 'none',}}>Please fill out the form below:</span></h3>
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+      
                 
                 <div hidden>
                   <label>
@@ -93,7 +93,7 @@ export default class Contact extends React.Component {
                     <input
                       className="input"
                       type={'text'}
-                      // name={'name1'}
+                      name={'name1'}
                       onChange={this.handleChange}
                       id={'name1'}
                       required={true}
@@ -104,7 +104,7 @@ export default class Contact extends React.Component {
                     <input
                       className="input"
                       type={'email'}
-                      // name={'email1'}
+                      name={'email1'}
                       onChange={this.handleChange}
                       id={'email1'}
                       required={true}
@@ -119,7 +119,7 @@ export default class Contact extends React.Component {
                         className="file-input hidden"
                         type="file"
                         id="attachment1"
-                        // name="attachment1"
+                        name="attachment1"
                         onChange={this.handleAttachment}
                         title="file attachment"
                       />
@@ -134,7 +134,7 @@ export default class Contact extends React.Component {
                   </label>
                     <textarea
                       className="textarea"
-                      // name={'message1'}
+                      name={'message1'}
                       onChange={this.handleChange}
                       id={'message1'}
                       required={true}
@@ -162,7 +162,7 @@ export default class Contact extends React.Component {
                 
                 
                 
-              </form>
+              </form> */}
               
             </div>
           </div>

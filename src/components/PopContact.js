@@ -153,7 +153,7 @@ const PopupContact = () => (
 
 <CustomBox>
 <div className="modal-container">
-  <input id="modal-toggle" name="modal-toggle" type="checkbox" />
+  {/* <input id="modal-toggle" type="checkbox" /> */}
   
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   <div className="modal-content">
