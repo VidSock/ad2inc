@@ -14,7 +14,7 @@ import styled from "styled-components"
 import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
-import BgImage from './BgImage'
+import BgImage from './BgImage-tr'
 
 
 const CustomBox = styled.div`
