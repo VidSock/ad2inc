@@ -147,7 +147,7 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent1'}><input title="Agree to terms" type="checkbox"  id={'consent1'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent1'}><input title="Agree to terms" type="checkbox"  name={'consent1'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 

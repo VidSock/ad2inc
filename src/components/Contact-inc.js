@@ -98,7 +98,7 @@ Schedule your free consultation today
                     <input
                       className="input"
                       type={'text'}
-                      name={'name'}
+                      // name={'name'}
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
@@ -108,7 +108,7 @@ Schedule your free consultation today
                     <input
                       className="input"
                       type={'email'}
-                      name={'email'}
+                      // name={'email'}
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
@@ -122,7 +122,7 @@ Schedule your free consultation today
                         className="file-input hidden"
                         type="file"
                         id="attachment"
-                        name="attachment"
+                        // name="attachment"
                         onChange={this.handleAttachment}
                       />
                       </label>
@@ -136,7 +136,7 @@ Schedule your free consultation today
                   </label>
                     <textarea
                       className="textarea"
-                      name={'message'}
+                      // name={'message'}
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
