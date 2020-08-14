@@ -58,17 +58,15 @@ export default class Contact extends React.Component {
     return (
       
         <section className="section">
-          <div className="container innerpanel" style={{padding: '0 1rem', backgroundImage:'', opacity:'1'}}>
-            <div className="content" style={{padding: '0 0 15px 0', 
-    
-          }}>
-            
+          <div className="container innerpanel" style={{padding: '0 1rem',}}>
+            <div className="content" style={{padding: '0 0 15px 0'}}>
+
               
 
               
 
               <form
-                name="menu-contact"
+                name="request-quote"
                 method="post"
                 action="/contact/success/"
                 data-netlify="true"
@@ -77,69 +75,65 @@ export default class Contact extends React.Component {
                 id="popcontact-form"
               >
                 <h3 id="contact" name="contact" style={{padding: '.5rem 0', textAlign: 'center', fontSize: '150%',}}>Contact Us<br /><span style={{fontSize: '80%', display: 'none',}}>Please fill out the form below:</span></h3>
-      
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label title="Upload" htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Contact - Menu" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Ad2 Menu Contact" />
                 </div>
 
                 <div className="form">
                 <div className="field half left">
-                <label title="Your Name" htmlFor="name1" style={{padding: '0', margin: '0',}}>Your name:</label>
+                <label htmlFor="name" style={{padding: '0', margin: '0',}}>Your name:</label>
                     <input
                       className="input"
                       type={'text'}
-                      name={'name1'}
+                      name={'name'}
                       onChange={this.handleChange}
-                      id={'name1'}
+                      id={'name'}
                       required={true}
                       placeholder="Name"
-                      title="Your Name"
                     />
-                <label title="Your Email" htmlFor="email1" style={{padding: '0', margin: '0',}}>Your email:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
                       className="input"
                       type={'email'}
-                      name={'email1'}
+                      name={'email'}
                       onChange={this.handleChange}
-                      id={'email1'}
+                      id={'email'}
                       required={true}
                       placeholder="your@email.com"
-                      title="Your Email"
                     />
-                    <label title="Upload File" htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
-                    <label title="Zip preferred" htmlFor="attachment1" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
                     <input
                         className="file-input hidden"
                         type="file"
-                        id="attachment1"
-                        name="attachment1"
+                        id="attachment"
+                        name="attachment"
                         onChange={this.handleAttachment}
-                        title="file attachment"
                       />
                       </label>
                       
-<label title="upload" className="upload" htmlFor="attachment1" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
+<label className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
                 </div>
 
                 <div className="field half right">
-<label title="Your Message" className="label" htmlFor={'message1'} style={{padding: '0', margin: '0',}}>
+<label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
                     Your message
                   </label>
                     <textarea
                       className="textarea"
-                      name={'message1'}
+                      name={'message'}
                       onChange={this.handleChange}
-                      id={'message1'}
+                      id={'message'}
                       required={true}
                       placeholder="Message"
-                      title="Type Your Message Here"
                     />
                     
 
@@ -147,11 +141,11 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label title="Agree" htmlFor={'consent1'}><input title="Agree to terms" type="checkbox"  name={'consent1'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} value={'given'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 
-                <input id="submit" title="Submit" type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
+                <input type="submit" value="Send Message" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', width:'90%', float:'left',}} />
                 <FaEnvelope style={{position: 'relative', top: '5px', right: '-5px', color: '#fff', fontSize: '120%',}} />
                 
                 </div>

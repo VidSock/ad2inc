@@ -78,7 +78,7 @@ export default class Contact extends React.Component {
               >
 
 <h2 className="" style={{textAlign:'center', fontSize:'180%',}}>
-Contact Us
+Schedule your free consultation today:
 </h2>
 
                
@@ -89,7 +89,7 @@ Contact Us
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
-                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="contact" />
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="Ad2 Page Contact" />
                 </div>
 
                 <div className="form" id="form">
@@ -148,7 +148,7 @@ Contact Us
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" value={'given'} id="consent" name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
+                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" value={'given'} name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email.</label></div>
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Contact from '../components/Contact-inc'
+import Contact from '../components/Contact'
 import { FaTimesCircle } from 'react-icons/fa'
 /* eslint-disable */
 const CustomBox = styled.div`
@@ -153,11 +153,11 @@ const PopupContact = () => (
 
 <CustomBox>
 <div className="modal-container">
-  <input id="modal-toggle" type="checkbox" title="Open Contact" aria-label="Contact Pop Up" />
+  <input id="modal-toggle" type="checkbox" />
   
-  <label className="modal-backdrop" htmlFor="modal-toggle" aria-label="Open Contact Pop Up"></label>
+  <label className="modal-backdrop" htmlFor="modal-toggle" ></label>
   <div className="modal-content">
-    <label className="modal-close" htmlFor="modal-toggle" aria-label="Close Contact Pop Up"><FaTimesCircle /></label>
+    <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
     <Contact />
     
  

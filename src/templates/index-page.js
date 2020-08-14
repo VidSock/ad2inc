@@ -2,7 +2,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
-// import Contact from '../components/Contact-inc'
+import Contact from '../components/Contact-inc'
 // import Image from '../components/Image'
 // import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'
@@ -251,7 +251,7 @@ why they want to choose you.</blockquote>
 
 <div className="container">
 <div className="content" style={{width:'90vw', padding:'0 0', maxWidth:'1000px', margin:'auto'}}>
-{/* <Contact className="container contactform" /> */}
+<Contact className="container contactform" />
 </div>
 </div>
   </CustomBox>
