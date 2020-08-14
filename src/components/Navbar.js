@@ -25,7 +25,7 @@ const Navbar = class extends React.Component {
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     
-    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200', animation: 'rollIn 1s',}} />
+    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200px', animation: 'rollIn 1s',}} />
     {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
 
    </Link>
@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
             
             
             <li>
-              <Link className="navbar-item" to="/whatwedo">
+              <Link className="navbar-item" to="/whatwedo/">
                 What We Do
               </Link>
               </li>
@@ -52,7 +52,7 @@ const Navbar = class extends React.Component {
             
             
             <li>
-              <Link id="portfolio" className="navbar-item" to="/portfolio">
+              <Link id="portfolio" className="navbar-item" to="/portfolio/">
                Work
               </Link>
               </li>
@@ -73,7 +73,7 @@ const Navbar = class extends React.Component {
               
               
                <li>
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/about/">
                 About
               </Link>
               </li>

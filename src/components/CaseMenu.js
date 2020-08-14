@@ -64,7 +64,7 @@ const CaseMenu = () => (
 
 <ul id="galmenu" className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item interest"><Link to="/case-study/pavandbroome" className="galgrad" title="Pav &amp; Broome Fine Jewelry Gulfport">Pav &amp; Broome Fine Jewelry</Link></li>
+      <li className="galmenu-item interest"><Link to="/case-study/pavandbroome/" className="galgrad" title="Pav &amp; Broome Fine Jewelry Gulfport">Pav &amp; Broome Fine Jewelry</Link></li>
       
       <li className="galmenu-item interest"><Link to="/case-study/pediatric-center/" className="galgrad" title="The Pediatric Center Gulfport">The Pediatric Center at Garden Park</Link></li>
       

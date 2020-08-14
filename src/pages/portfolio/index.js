@@ -169,7 +169,7 @@ const CaseStudyIndex = () => (
   {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
-        <h1 style={{fontSize:'100%',}}><Link className="button2" to="/portfolio/identity">View Identity</Link></h1>
+        <h1 style={{fontSize:'100%',}}><Link className="button2" to="/portfolio/identity/">View Identity</Link></h1>
         </div></div>
         <BgImage filename="portfolio-identity.png" />
     </div>
@@ -179,7 +179,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos">View Logos</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/logos/">View Logos</Link></h1>
 
     </div>
   </div>
@@ -192,7 +192,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print">View Print</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/print/">View Print</Link></h1>
 
     </div>
   </div>
@@ -205,7 +205,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web">View Web</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/web/">View Web</Link></h1>
 
     </div>
   </div>
@@ -218,7 +218,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv">View Media</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/tv/">View Media</Link></h1>
 
     </div>
   </div>
@@ -230,7 +230,7 @@ const CaseStudyIndex = () => (
       <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio">View Radio</Link></h1>
+        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/portfolio/radio/">View Radio</Link></h1>
 
     </div>
   </div>
