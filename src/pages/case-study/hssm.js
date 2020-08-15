@@ -21,6 +21,13 @@ const CustomBox = styled.div`
 //   background: #da071c ;
 // }
 
+
+
+@media (max-width: 48rem) {
+div.mobile-txt{max-width:90% !important;}
+  }
+
+
 `
 const CaseStudy4 = graphql`
   query CaseStudy4 {
@@ -56,13 +63,13 @@ const CaseStudy_4 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'50vw', position:'absolute', padding:'120px 0 0 3rem', zIndex:'1' }}>
-     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:''}}>
+  <div style={{maxWidth:'', position:'absolute', padding:'120px 0 0 3rem', zIndex:'1' }}>
+     <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />Humane Society of South Mississippi</h1>
      </ScrollAnimation>
   <div className="normal mobile-txt" style={{color: '', maxWidth:'48vw', height:'100vh', margin: '1rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
-  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+  <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500} offset={100}>
   <h3>Objective:</h3>
   <p>Ad2 was contracted by the Humane Society of South Mississippi (HSSM) out of sheer
 desperation. None of the previous directors had looked beyond caring for the animals to

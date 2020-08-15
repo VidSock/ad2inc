@@ -20,7 +20,9 @@ const CustomBox = styled.div`
 // #casestudies {
 //   background: #da071c ;
 // }
-
+@media (max-width: 48rem) {
+  div.mobile-txt{max-width:90% !important;}
+    }
 `
 const CaseStudy2 = graphql`
   query CaseStudy2 {
@@ -56,13 +58,13 @@ const CaseStudy_2 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'50vw', position:'absolute', padding:'130px 0 0 3rem', zIndex:'1' }}>
-     <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={0} style={{color:''}}>
+  <div style={{maxWidth:'', position:'absolute', padding:'130px 0 0 3rem', zIndex:'1' }}>
+     <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />The Pediatric Center at Garden Park Medical Center </h1>
      </ScrollAnimation>
   <div className="normal mobile-txt" style={{color: '', maxWidth:'48vw', height:'100vh', margin: '1rem 0', lineHeight:'1.6rem', border: '0px solid red',}}>
-  <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={100} offset={100}>
+  <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500} offset={100}>
   <h3>Objective:</h3>
   <p>Several pediatricians staffed at The Pediatric Center at Garden Park Medical Center left the Center to open their own clinics, taking many of their patients with them. Ad2 was hired to introduce the new pediatricians and replenish the customer base.</p>
 <br /><a href="https://gardenparkdoctors.com">https://gardenparkdoctors.com</a>

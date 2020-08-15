@@ -3,9 +3,9 @@ import React from 'react'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
-import { Link } from 'gatsby'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import Image from './Image'
+// import { Link } from 'gatsby'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Image from './Image'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 import { IoMdFingerPrint } from 'react-icons/io'
@@ -13,8 +13,11 @@ import { IoMdFingerPrint } from 'react-icons/io'
 // import { RiArrowDownCircleLine } from 'react-icons/ri'
 // import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
-// import Contact from '../../components/Contact-inc'
-import BgImage from './BgImage-ll'
+import Contact from './ContactPanel'
+import BgImageLL from './BgImage-ll'
+import BgImageTR from './BgImage-tr'
+import BgImage from './BgImage'
+
 
 // import Img1 from './Img1'
 // import Img2 from './Img2'
@@ -64,7 +67,7 @@ const CustomBox = styled.div`
   flex-shrink:0
 }
 
-.slidepanel div img, .slidepanel div .gatsby-image-wrapper {
+.slidepanel div img{
   width:100%;
   height:100vh ;
   object-fit: cover;
@@ -232,7 +235,7 @@ height:100%;
 // .slidepanel > div:last-child{display:; width:50%}
 // .slidepanel > div:nth-last-of-type(-n+2){width:50%}
 
- .gatsby-image-wrapper{position: initial !important;}
+//  .gatsby-image-wrapper{position: initial !important;}
 
 
 
@@ -324,7 +327,7 @@ height:100%;
 
 `
 
-const CaseStudyPanels = () => (
+const AboutPanels = () => (
 
     <CustomBox style={{}}>
 
@@ -336,125 +339,133 @@ const CaseStudyPanels = () => (
 
 
 
-
   <div className="slidepanel">
   
+
   <div className="outerpanel" style={{borderLeft:'none'}}>
-    
-  {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
-<span className="headline">Case 1 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Who We Are <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
-      
           <div className="contentpanel" style={{}}>
           
-          
-          <strong style={{fontSize:'130%'}}>Pav &amp; Broome Fine Jewelry</strong><br />
-          <p style={{ }}>How we helped the oldest jewlery store on the coast and rebuilt their image after Katrina. We continued to advance their marketing trends ever since. Need Copy Here. </p>
+          <strong style={{fontSize:'130%'}}>Who is Ad2?</strong><br />
+          <p style={{ }}>Well, we're awesome to start. We're also passionate, knowledgable and well versed in our craft. </p>
 
-  
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
-        
-      
-
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1> */}
 
         </div>
     </div>
-    {/* <Img1 /> */}
-    <BgImage filename="case-study-pnb1.jpg" />
-    {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImageTR filename="aboutpic.jpg" />
  </div>
 
 
 
   <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
-  {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
- <span className="headline">Case 2 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+ <span className="headline">Our Locations <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'25%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
  <div className="innerpanel" style={{}}>
-
-     
-
           <div className="contentpanel" style={{}}>
           
+          <strong style={{fontSize:'130%'}}>Serving the South</strong><br />
+          <p style={{ }}>We now have two conveniently located offices to better serve your needs. Please call one of our offices today for more information and a free consultation.</p>
+        <div style={{display:'flex', width:'100%'}}>
+
+
+
+
+
+
+       {/* <div style={{border:'2px solid white', borderRadius:'80%', padding:'2rem', height:'250px', justifyContent:'center', alignContent:'center', display:'flex', flexShrink:''}}>
+          Ad2, Inc.
+          P.O. Box 969<br />
+          Gautier, MS 39553-0969<br />
+          Ph: (228) 822-9890<br />
+          Fax: (228) 522-1800
+      </div> */}
+
+
+
+
+<div style={{width:'50%',  padding:'0', order:'2 !important', overflow:'hidden',  zIndex:'0', marginLeft:'1rem'}}>    
+
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}>
+  
+  <Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
+
+<div className="txtshadow" style={{position:'absolute', left:'0', top:'25%', color:'#ddd', textAlign:'center', width:'100%',}}>Ad2, Inc.<br />
+          P.O. Box 969<br />
+          Gautier, MS 39553-0969<br />
+          Ph: (228) 822-9890<br />
+          Fax: (228) 522-1800
           
+          </div>
+</div>
+</div>
 
-          <strong style={{fontSize:'130%'}}>The Pediatrics Center</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget, egestas viverra dolor. Sed lobortis justo quis mi porttitor ultricies. Quisque turpis est, elementum ac interdum at.</p>
-        
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
 
-       
+
+      {/* <div style={{width:'50%',  padding:'0', order:'2 !important', overflow:'hidden',  zIndex:'0',}}>    
+
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}>
+  
+  <BgImage alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
+
+<div className="txtshadow" style={{position:'absolute', left:'0', top:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Ad2, Inc.<br />
+          P.O. Box 969<br />
+          Gautier, MS 39553-0969<br />
+          Ph: (228) 822-9890<br />
+          Fax: (228) 522-1800</div>
+</div>
+</div> */}
+
+
+
+
+      <div style={{width:'50%',  padding:'0', order:'2 !important', overflow:'hidden',  zIndex:'0', marginLeft:'1rem'}}>    
+
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}>
+  
+  <Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
+
+<div className="txtshadow" style={{position:'absolute', left:'0', top:'20%', color:'#ddd', textAlign:'center', width:'100%',}}>Ad2, Inc.<br />
+          P.O. Box 336<br />
+          Mandeville, LA 70470<br />
+          Ph: (504) 908-2721<br />
+          Fax: (985) 778-0163</div>
+</div>
+</div>
+
+
+      <div>
+          
+      </div>
+ </div>
+
+          {/* <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p> */}
+
         {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1> */}
-
-
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
-
 
         </div>
     </div>
-    <BgImage filename="case-study-pediatric-center1.jpg" />
-    {/* <Img2 /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="about-locations.png" />
  </div>
 
  
 
 
  <div className="outerpanel" style={{borderLeft:''}}>
-  {/* <img src="https://source.unsplash.com/random/1200x12003" alt="rando" /> */}
-<span className="headline">Case 3 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+<span className="headline">Get In Touch <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
 <div className="innerpanel" style={{}}>
-      
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{fontSize:'130%'}}>Humane Society of South Mississippi</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget.</p>
-        
-        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
-        
-        
-
-
-         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/hssm/">Humane Society of South Mississippi<br /> View the case study</Link></h1>
-
-
+          <div className="contentpanel" style={{padding:'12vh 0 0 0'}}>
+  
+<Contact />
 
         </div>
     </div>
-    <BgImage filename="case-study-hssm.png" />
-    {/* <Img3 /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="oldphone.jpg" />
  </div>
 
 
 
- <div className="outerpanel" style={{borderRight:'none'}}>
-
-  {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
-<span className="headline">Case 4 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
-      
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{fontSize:'130%'}}>Jackson County Economic Development Foundation</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
-        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
-       
-      
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
-
-        </div>
-    </div>
-    
-    <BgImage filename="case-study-jcedf1.jpg" />
-    {/* <Img4 /> */}
-    {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
-    {/* <BackgroundImg /> */}
- </div>
+ 
 
 
 
@@ -477,4 +488,4 @@ const CaseStudyPanels = () => (
   
   )
   
-  export default CaseStudyPanels
+  export default AboutPanels
