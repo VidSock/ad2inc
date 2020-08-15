@@ -38,7 +38,7 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   // width:100vw;
-  height:100vh;
+  height:90vh;
   // height: calc(100vh - 88px);
   overflow:hidden;
 }
@@ -328,7 +328,7 @@ const CustomBox = styled.div`
 
 `
 
-const slidePanelHome1 = () => (
+const PortfolioPanels = () => (
 
     <CustomBox style={{}}>
 
@@ -353,134 +353,93 @@ const slidePanelHome1 = () => (
 
 
   <div className="slidepanel">
+
+
+
   
   <div className="outerpanel" style={{borderLeft:'none'}}>
-    
-  {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
-<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Identity <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
-      
           <div className="contentpanel" style={{}}>
           
-          
-          <strong style={{fontSize:'130%'}}>Concept / Creative / Design</strong><br />
+          <strong style={{fontSize:'130%'}}>Identity</strong><br />
           <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
 
-          <p>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience.</p>
-        
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">View Identity </Link></h1>
       
-
-
         </div>
     </div>
-    {/* <Img1 /> */}
-    <BgImage filename="homebanner-pb.jpg" />
-    {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="portfolio-identity.png" />
  </div>
 
 
 
-  <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
-  {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
- <span className="headline">Marketing <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
- <div className="innerpanel" style={{}}>
-
-     
-
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+<span className="headline">Logos <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
-          
+          <strong style={{fontSize:'130%'}}>Logos</strong><br />
+          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
 
-          <strong style={{fontSize:'130%'}}>Marketing</strong><br />
-          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available. We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear!</p>
-        
-        <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
-       
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1>
-
-
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/about">More About Us </Link></h1> */}
-
-
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/logos/">View Logos </Link></h1>
+      
         </div>
     </div>
-    <BgImage filename="Market-Photo.jpg" />
-    {/* <Img2 /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="portfolio-logos.png" />
  </div>
 
- 
 
 
- <div className="outerpanel" style={{borderLeft:''}}>
-  {/* <img src="https://source.unsplash.com/random/1200x12003" alt="rando" /> */}
-<span className="headline">Consulting <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
-      
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+<span className="headline">Print <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Consulting</strong><br />
-          <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
-        
-        <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
+          <strong style={{fontSize:'130%'}}>Print</strong><br />
+          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
 
-<p>For a more in-depth look at the work we’ve done and the goals that we’ve accomplished while working closely together with our customers, we have provided case studies of some of our clients.</p>
-
-
-         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/case-study">View Case Studies </Link></h1>
-
-
-
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/print/">View Print </Link></h1>
+      
         </div>
     </div>
-    <BgImage filename="case-study-pnb.jpg" />
-    {/* <Img3 /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="portfolio-print.png" />
  </div>
 
 
 
- <div className="outerpanel" style={{borderRight:'none'}}>
-
-  {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
-<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
-      
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+<span className="headline">Web <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Media Buying</strong><br />
-          <p style={{ }}>Ad2, Inc. recognizes that traditional media ain’t so traditional anymore. With the expansion of online and interactive marketing and the introduction of social media and SMS and MMS media, there are a variety of media plans available for one budget and the strategy varies with each customer and that customer’s target market.</p>
-        
-        <p style={{}}>Ad2, Inc. is committed to researching new mediums and avenues to offer innovative ways for you to reach your audience in the most cost effective ways through the use of integrated marketing strategies, incorporating traditional advertising, such as outdoor, television and print with nontraditional, grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
+          <strong style={{fontSize:'130%'}}>Web</strong><br />
+          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
 
-        <p>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
-       
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1> */}
-
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/web/">View Web </Link></h1>
+      
         </div>
     </div>
-    
-    <BgImage filename="photo-1596047795961-69357dee9c3c.jpg" />
-    {/* <Img4 /> */}
-    {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
-    {/* <BackgroundImg /> */}
+    <BgImage filename="portfolio-web.png" />
  </div>
-
-
-
-
-
-
     
 
 
     
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
+          <div className="contentpanel" style={{}}>
+          
+          <strong style={{fontSize:'130%'}}>Media</strong><br />
+          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
+
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/tv/">View Media </Link></h1>
+      
+        </div>
+    </div>
+    <BgImage filename="portfolio-media.png" />
+ </div>
 
     
     
@@ -493,4 +452,4 @@ const slidePanelHome1 = () => (
   
   )
   
-  export default slidePanelHome1
+  export default PortfolioPanels

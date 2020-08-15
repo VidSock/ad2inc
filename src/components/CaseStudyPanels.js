@@ -14,7 +14,7 @@ import { IoMdFingerPrint } from 'react-icons/io'
 // import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
-import BgImage from './BgImage'
+import BgImage from './BgImage-ll'
 
 // import Img1 from './Img1'
 // import Img2 from './Img2'
@@ -38,7 +38,7 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   // width:100vw;
-  height:100vh;
+  height:90vh;
   // height: calc(100vh - 88px);
   overflow:hidden;
 }
@@ -120,12 +120,11 @@ const CustomBox = styled.div`
     // justifyContent:center;
     width:100%;
     // height:auto;
-    height:100%;
     position:absolute;
     // top:25vh;
     z-index:0;
-    // margin:15vh 0 0 0;
-    margin:0;
+    margin:0 0 0 0;
+height:100%;
     padding:0 0 0 0;
   }
 
@@ -134,7 +133,7 @@ const CustomBox = styled.div`
     //  border:1px solid #333;
     // border-radius:6px;
      margin:0 auto;
-    //  padding:2rem 1rem;
+     padding:2rem 1rem;
      text-decoration:none;
     text-align:left;
     text-shadow: 1px 2px 1px black;
@@ -147,13 +146,10 @@ const CustomBox = styled.div`
     opacity:0;
     overflow-y:auto;
     backdrop-filter: blur(10px);
-    // width:90%;
-    // height:84vh;
     width:100%;
+    // height:84vh;
     height:100%;
     animation:fade 1.7s forwards;
-    padding:2rem 2rem;
-    padding-top:15vh;
     }
 
   
@@ -211,27 +207,27 @@ const CustomBox = styled.div`
 }
 
 @media (max-width: 48rem) {
-// .slidepanel > div{width:70%; border:0px solid red;}
-// .slidepanel > div:last-child{display:; width:50%}
-.headline{padding:4px; font-size:70%;}
-.contentpanel{
-  padding:2rem 1rem;
-  padding-top:12vh;
-}
-}
-@media (min-width: 48rem) {
-.contentpanel{
-  padding:2rem 2rem;
-  padding-top:18vh;
-}
-}
-
-@media (min-width: 1024px) {
+  // .slidepanel > div{width:70%; border:0px solid red;}
+  // .slidepanel > div:last-child{display:; width:50%}
+  .headline{padding:4px; font-size:70%;}
   .contentpanel{
-    padding:2rem 3rem;
+    padding:2rem 1rem;
+    padding-top:12vh;
+  }
+  }
+  @media (min-width: 48rem) {
+  .contentpanel{
+    padding:2rem 2rem;
     padding-top:18vh;
   }
   }
+  
+  @media (min-width: 1024px) {
+    .contentpanel{
+      padding:2rem 3rem;
+      padding-top:18vh;
+    }
+    }
 
 // .slidepanel > div:last-child{display:; width:50%}
 // .slidepanel > div:nth-last-of-type(-n+2){width:50%}
@@ -328,7 +324,7 @@ const CustomBox = styled.div`
 
 `
 
-const slidePanelHome1 = () => (
+const CaseStudyPanels = () => (
 
     <CustomBox style={{}}>
 
@@ -347,6 +343,19 @@ const slidePanelHome1 = () => (
 
 <span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Knowledge</span>
 
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', fontSize:'38vw', animation:'poptop 6s forwards', animationDelay:'4s'}}>Data</span>
+
+  <span style={{position:'absolute', top:'12vh', textAlign:'left', fontSize:'25vw', animation:'poptop 8s forwards', animationDelay:'6s'}}>Insight</span>
+
+  <span style={{position:'absolute', top:'32vh', textAlign:'center', fontSize:'17vw', animation:'poptop 8s forwards', animationDelay:'10s'}}>Research</span>
+
+  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Redefining</span>
+  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'tagline 48s forwards', animationDelay:'14s'}}>Agency</span>
+
+      
+      {/* <span style={{ fontSize:'24vw',}}>Cute</span>
+      <span>Delightful</span>
+      <span>Emotional</span> */}
     </div>
 
 
@@ -357,26 +366,25 @@ const slidePanelHome1 = () => (
   <div className="outerpanel" style={{borderLeft:'none'}}>
     
   {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
-<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Case 1 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
           <div className="contentpanel" style={{}}>
           
           
-          <strong style={{fontSize:'130%'}}>Concept / Creative / Design</strong><br />
-          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
+          <strong style={{fontSize:'130%'}}>Pav &amp; Broome Fine Jewelry</strong><br />
+          <p style={{ }}>How we helped the oldest jewlery store on the coast and rebuilt their image after Katrina. We continued to advance their marketing trends ever since. Need Copy Here. </p>
 
-          <p>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience.</p>
+  
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
         
-        <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
       
 
 
         </div>
     </div>
     {/* <Img1 /> */}
-    <BgImage filename="homebanner-pb.jpg" />
+    <BgImage filename="case-study-pnb1.jpg" />
     {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -386,7 +394,7 @@ const slidePanelHome1 = () => (
 
   <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
   {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
- <span className="headline">Marketing <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+ <span className="headline">Case 2 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
  <div className="innerpanel" style={{}}>
 
      
@@ -395,20 +403,21 @@ const slidePanelHome1 = () => (
           
           
 
-          <strong style={{fontSize:'130%'}}>Marketing</strong><br />
-          <p style={{ }}>What can we say, it’s our business! With marketing research and analysis, we come full-circle in marketing your brand. That is not only how we like to begin each process, but we continually check the numbers to ensure the most effective marketing approach available. We test and re-test until the message received is the same as the message conveyed to the appropriate audience through the most effective media-loud and clear!</p>
+          <strong style={{fontSize:'130%'}}>The Pediatrics Center</strong><br />
+          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget, egestas viverra dolor. Sed lobortis justo quis mi porttitor ultricies. Quisque turpis est, elementum ac interdum at.</p>
         
-        <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
+          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
+
        
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1>
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1> */}
 
 
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/about">More About Us </Link></h1> */}
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
 
 
         </div>
     </div>
-    <BgImage filename="Market-Photo.jpg" />
+    <BgImage filename="case-study-pediatric-center1.jpg" />
     {/* <Img2 /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -419,26 +428,26 @@ const slidePanelHome1 = () => (
 
  <div className="outerpanel" style={{borderLeft:''}}>
   {/* <img src="https://source.unsplash.com/random/1200x12003" alt="rando" /> */}
-<span className="headline">Consulting <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+<span className="headline">Case 3 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
 <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Consulting</strong><br />
-          <p style={{ }}>Ad2, Inc. offers consulting services to clients based on each client’s individual needs and goals. </p>
+          <strong style={{fontSize:'130%'}}>Humane Society of South Mississippi</strong><br />
+          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget.</p>
         
-        <p style={{}}>From developing marketing plans and strategies to developing your bottom line, Ad2, Inc. has a plan to grow your brand and your business.</p>
+        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
+        
+        
 
-<p>For a more in-depth look at the work we’ve done and the goals that we’ve accomplished while working closely together with our customers, we have provided case studies of some of our clients.</p>
 
-
-         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/case-study">View Case Studies </Link></h1>
+         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/hssm/">Humane Society of South Mississippi<br /> View the case study</Link></h1>
 
 
 
         </div>
     </div>
-    <BgImage filename="case-study-pnb.jpg" />
+    <BgImage filename="case-study-hssm.png" />
     {/* <Img3 /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -449,24 +458,23 @@ const slidePanelHome1 = () => (
  <div className="outerpanel" style={{borderRight:'none'}}>
 
   {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
-<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+<span className="headline">Case 4 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
 <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Media Buying</strong><br />
-          <p style={{ }}>Ad2, Inc. recognizes that traditional media ain’t so traditional anymore. With the expansion of online and interactive marketing and the introduction of social media and SMS and MMS media, there are a variety of media plans available for one budget and the strategy varies with each customer and that customer’s target market.</p>
+          <strong style={{fontSize:'130%'}}>Jackson County Economic Development Foundation</strong><br />
+          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         
-        <p style={{}}>Ad2, Inc. is committed to researching new mediums and avenues to offer innovative ways for you to reach your audience in the most cost effective ways through the use of integrated marketing strategies, incorporating traditional advertising, such as outdoor, television and print with nontraditional, grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
-
-        <p>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
+        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
        
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1> */}
+      
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
 
         </div>
     </div>
     
-    <BgImage filename="photo-1596047795961-69357dee9c3c.jpg" />
+    <BgImage filename="case-study-jcedf1.jpg" />
     {/* <Img4 /> */}
     {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
     {/* <BackgroundImg /> */}
@@ -493,4 +501,4 @@ const slidePanelHome1 = () => (
   
   )
   
-  export default slidePanelHome1
+  export default CaseStudyPanels

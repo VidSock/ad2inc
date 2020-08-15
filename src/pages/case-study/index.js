@@ -6,8 +6,9 @@ import Layout from '../../components/Layout'
 // import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Image from '../../components/Image'
-import SlidePanelCase from '../../components/SlidePanelCase'
+// import SlidePanelCase from '../../components/SlidePanelCase'
 import styled from "styled-components"
+import CaseStudyPanels from '../../components/CaseStudyPanels'
 // import { MdPlayArrow } from 'react-icons/md'
 // import { IoMdFingerPrint } from 'react-icons/io'
 
@@ -173,7 +174,7 @@ const CaseStudyIndex = () => (
 
   
 
-   <SlidePanelCase />
+   <CaseStudyPanels />
 
       
 
