@@ -38,7 +38,7 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   // width:100vw;
-  height:90vh;
+  height:100vh;
   // height: calc(100vh - 88px);
   overflow:hidden;
 }
@@ -451,14 +451,32 @@ const CaseStudyPanels = () => (
     </div>
     
     <BgImage filename="case-study-jcedf1.jpg" />
-    {/* <Img4 /> */}
-    {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
-    {/* <BackgroundImg /> */}
  </div>
 
 
 
 
+ <div className="outerpanel" style={{borderRight:'none'}}>
+
+  {/* <img src="https://source.unsplash.com/random/1200x12004" alt="rando" /> */}
+<span className="headline">Case 5 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+<div className="innerpanel" style={{}}>
+      
+          <div className="contentpanel" style={{}}>
+          
+          <strong style={{fontSize:'130%'}}>Coast Electric </strong><br />
+          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
+       
+      
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric<br /> View the case study</Link></h1>
+
+        </div>
+    </div>
+    
+    <BgImage filename="case-study-coastepa.jpg" />
+ </div>
 
 
     

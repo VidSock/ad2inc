@@ -41,7 +41,7 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   // width:100vw;
-  height:90vh;
+  height:100vh;
   // height: calc(100vh - 88px);
   overflow:hidden;
 }

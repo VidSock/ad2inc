@@ -71,6 +71,12 @@ const CaseMenu = () => (
       <li className="galmenu-item interest"><Link to="/case-study/hssm/" className="galgrad" title="Humane Society of South Mississippi">Humane Society of South Mississippi</Link></li>
       
       <li className="galmenu-item interest"><Link to="/case-study/jcedf/" className="galgrad" title="Jackson Co. Economic Development Foundation - Gautier">Jackson Co. Eco. Dev. Foundation</Link></li>
+
+
+      <li className="galmenu-item interest"><Link to="/case-study/coastelectric/" className="galgrad" title="Coast Electric Power Association">Coast Electric Power Association</Link></li>
+
+
+
       
 	  {/* <li className="galmenu-item interest"><Link to="/portfolio/print" className="galgrad" title="Print">Print</Link></li>
 	  
