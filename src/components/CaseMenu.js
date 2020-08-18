@@ -75,6 +75,8 @@ const CaseMenu = () => (
 
       <li className="galmenu-item interest"><Link to="/case-study/coastelectric/" className="galgrad" title="Coast Electric Power Association">Coast Electric Power Association</Link></li>
 
+      
+
 
 
       
