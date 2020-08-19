@@ -241,7 +241,7 @@ height:100%;
 
 
 
- .shout{width:100%; height:100vh; display:flex; display:none; flex-direction:column;}
+ .shout{width:100%; height:100vh; display:flex; display:; flex-direction:column;}
 //  .shout span:first-child{}
  .shout span{
     width:100vw;
@@ -336,7 +336,11 @@ const AboutPanels = () => (
 <div className="panel-wrapper" style={{marginTop:'0', overflow:'hidden'}}>
     
 
+<div className="shout" style={{position:'absolute', top:'5vh',}}>
 
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 6s forwards', animationDelay:'1s'}}>About Us</span>
+
+</div>
 
 
   <div className="slidepanel">

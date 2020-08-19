@@ -238,17 +238,11 @@ height:100%;
 
 
 
- .shout{width:100%; height:100vh; display:flex; display:none; flex-direction:column;}
+ .shout{width:100%; height:100vh; display:flex; display:; flex-direction:column;}
 //  .shout span:first-child{}
  .shout span{
     width:100vw;
     height:20vh;
-    //  overflow:hidden;
-    // animation: poptop 12s forwards;
-    // animation-name: poptop;
-    // animation-timing-function: ease-out; 
-    // animation-delay: 3s;
-    // animation-direction: alternate;
     animation-iteration-count: 1;
     animation-fill-mode: none;
     animation-play-state: running; 
@@ -335,7 +329,11 @@ const CaseStudyPanels = () => (
 
 
 
+<div className="shout" style={{position:'absolute', top:'5vh',}}>
 
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 6s forwards', animationDelay:'1s'}}>Case Studies</span>
+
+</div>
 
   <div className="slidepanel">
   
