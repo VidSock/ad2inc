@@ -22,7 +22,7 @@ async function getAllProducts() {
     // create the final array products will be merged into
     var data = [];
     // starting on page 1
-    var pageNum = 1;
+    var pageNum = 16;
     // used to break the loop when we reach the final page
     var moreData = true;
     do {
