@@ -17,7 +17,7 @@ const CustomBox = styled.div`
 
 #portfolio {
 	position:relative;
-background: #da071c ;
+// background: #da071c ;
 
 }
 
@@ -35,9 +35,10 @@ background: #da071c ;
 
 
 @media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+.gatsby-image-wrapper{transform: scale(1);}
 }
-.gatsby-image-wrapper{transform: scale(1.25);}
+.gatsby-image-wrapper{transform: scale(1);}
+
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -51,7 +52,7 @@ background: #da071c ;
 
 const gal3Query = graphql`
   query gal3Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
+    allFile(filter: { relativeDirectory: { eq: "logos" } }) {
       edges {
         node {
           childImageSharp {
@@ -93,7 +94,7 @@ const Gal1Page = () => {
       
  
       
-      <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
+      <div className="container" style={{ padding:'0', margin:'0', zIndex:'0', background:'transparent'}}>
       <Gallery
         photos={data.allFile.edges}
       />

@@ -1,14 +1,18 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 const converter = require('json-2-csv');
 
-exports.handler = async (event) => {
+export async function handler(event, context) {
     // get all the products in format needed for CSV conversion
     const products = await getAllProducts();
 
     // convert the json to a CSV format
     const csv = await convertToCSV(products);
 
-    return csv;
+    return {
+        statusCode: 200,
+        body: csv
+    };
+    
 };
 
 async function convertToCSV(jsonData) {
@@ -68,8 +72,16 @@ async function getProducts(pageNum) {
         method: "Get",
         headers: auth_headers
     };
+    console.log('calling: ' + url)
     // make request to API
-    const response = await fetch(url, options);
+    let response
+    try {
+      response = await fetch(url, options);
+      // handle response
+    } catch (err) {
+        console.log('error occured with fetch: ' + err.message);
+        console.log(err);
+    }
 
     return await response.json();
 }
