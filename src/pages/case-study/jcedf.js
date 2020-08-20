@@ -17,9 +17,9 @@ import Gallery from '../../components/Gallery'
 
 const CustomBox = styled.div`
 
-// #casestudies {
-//   background: #da071c ;
-// }
+#casestudies {
+  background: #da071c ;
+}
 
 @media (max-width: 48rem) {
   div.mobile-txt{max-width:90% !important;}

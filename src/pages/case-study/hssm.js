@@ -17,9 +17,9 @@ import Gallery from '../../components/Gallery'
 
 const CustomBox = styled.div`
 
-// #casestudies {
-//   background: #da071c ;
-// }
+#casestudies {
+  background: #da071c ;
+}
 
 
 

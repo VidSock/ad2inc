@@ -9,7 +9,7 @@ import { FiZoomIn } from 'react-icons/fi'
 
 
 
-import Gallery from '../../components/Gallery'
+import Gallery from '../../components/GalleryFull'
 
 
 import styled from "styled-components"

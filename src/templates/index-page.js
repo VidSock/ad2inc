@@ -249,11 +249,15 @@ why they want to choose you.</blockquote>
 
 </div>
 
-<div className="container">
+{/* <div className="container">
 <div className="content" style={{width:'90vw', padding:'0 0', maxWidth:'1000px', margin:'auto'}}>
 <Contact className="container contactform" />
 </div>
-</div>
+</div> */}
+
+<div className="outer"> <Contact /></div>
+
+
   </CustomBox>
   </Layout>
 

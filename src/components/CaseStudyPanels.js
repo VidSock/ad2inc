@@ -331,7 +331,7 @@ const CaseStudyPanels = () => (
 
 <div className="shout" style={{position:'absolute', top:'5vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 6s forwards', animationDelay:'1s'}}>Case Studies</span>
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 5s forwards', animationDelay:'0s'}}>Case Studies</span>
 
 </div>
 
