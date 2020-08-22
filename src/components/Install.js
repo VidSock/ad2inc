@@ -45,7 +45,7 @@ const Install = () => (
 	style={{ color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'left', justifyContent:'center', margin:'0 auto', top:'60px', maxWidth:'600px', position:'', border:'0px solid red', }}
     className=""
     buttonText="Cancel"
-	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "13px", bottom:'8%', position:'absolute', right:'30%', left:'30%', color:'inherit', }}
+	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "13px", bottom:'8%', position:'absolute', color:'inherit', }}
     expires={1}
     cookieName="Ad2inc.net-install-cookie"
 >
