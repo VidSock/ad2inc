@@ -20,7 +20,16 @@ import BgImage from './BgImage-tr'
 const CustomBox = styled.div`
 
 // caras
-
+// .bgimage-tr{
+//   height: 100vh;
+//   width:100%;
+//   background-color: transparent;
+//   background-size: cover;
+//   background-position: right 10%;
+//   display: flex;
+//   align-items: center;
+//   z-index:-5;
+// }
 
 
 .panel-wrapper{
@@ -200,10 +209,22 @@ const CustomBox = styled.div`
 }
 
 @media (max-width: 48rem) {
-// .slidepanel > div{width:70%; border:0px solid red;}
-// .slidepanel > div:last-child{display:; width:50%}
 .headline{padding:4px; font-size:70%;}
+
+// .bgimage-tr{
+//   height: 100vh;
+//   width:100%;
+//   background-color: transparent;
+//   background-size: cover !important;
+//   background-position: right bottom !important;
+//   display: flex;
+//   align-items: center;
+//   z-index:-5;
+// }
+
 }
+
+
 @media (max-width: 70rem) {
 // .innerpanel{height:80%; top:5vh;}
 
@@ -212,7 +233,7 @@ const CustomBox = styled.div`
 // .slidepanel > div:last-child{display:; width:50%}
 // .slidepanel > div:nth-last-of-type(-n+2){width:50%}
 
-//  .gatsby-image-wrapper{position: initial !important;}
+
 
 
 
@@ -360,7 +381,7 @@ const HomeAnimation = () => (
   {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
 
       
-    <BgImage filename="homebanner-pb.jpg" />
+    <BgImage filename="homebanner-pb.jpg" style={{padding:'40px'}} />
  </div>
 
 

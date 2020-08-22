@@ -20,6 +20,34 @@ $red: #ff0000;
 
 
 
+
+.bgimage-tr{
+  height: 100vh;
+  width:100%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: right top;
+  display: flex;
+  align-items: center;
+  z-index:-5;
+}
+
+@media (max-width: 48rem) {
+  .bgimage-tr{
+    height: 100vh;
+    width:100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: right bottom !important;
+    display: flex;
+    align-items: center;
+    z-index:-5;
+    border:0px solid red !important;
+  }
+  }
+
+
+
 @keyframes fade {
 0%{
       opacity: 0;

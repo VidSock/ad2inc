@@ -36,18 +36,18 @@ const BackgroundImagetr = props => (
   
   
         //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
-        return <BackgroundImage
+        return <BackgroundImage className="bgimage-tr"
         fluid={image.node.childImageSharp.fluid} 
         tag="div"
             style={{
-                height: `100vh`,
-                width: `100%`,
-                backgroundColor: `transparent`,
-                backgroundSize: `cover`,
-                backgroundPosition: `right 10%`,
-                display: `flex`,
-                alignItems: `center`,
-                zIndex:'-5',
+                // height: `100vh`,
+                // width: `100%`,
+                // backgroundColor: `transparent`,
+                // backgroundSize: `cover`,
+                // backgroundPosition: `right bottom`,
+                // display: `flex`,
+                // alignItems: `center`,
+                // zIndex:'-5',
             }}
         />;
 
