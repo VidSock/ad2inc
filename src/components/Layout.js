@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
-import Installer from '../components/Install'
+// import Installer from '../components/Install'
 import PopContact from '../components/PopContact'
 import 'typeface-pt-sans'
 import "../css/index.scss"
@@ -120,17 +120,18 @@ const TemplateWrapper = ({ children }) => {
       {/* <Consent /> */}
       <Navbar />
       <PopContact />
-  <Installer />
+  
       <main>{children}</main>
 
      
     
 
-
+     
 
 
       
-      <Footer />
+      <Footer /> 
+      {/* <Installer /> */}
       </>
     
   )

@@ -8,7 +8,7 @@ import PopContact from './PopContact'
 import 'typeface-pt-sans'
 import "../css/index.scss"
 // import Consent from '../components/Consent'
-
+import Installer from '../components/Install'
 // import splash from '../img/hytron-splash.png'
 
 
@@ -128,7 +128,7 @@ const TemplateWrapper = ({ children }) => {
 </ScrollAnimation> */}
 
 
-
+<Installer />
       
       <Footer />
       </>
