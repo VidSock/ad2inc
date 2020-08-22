@@ -15,6 +15,7 @@ import { IoMdFingerPrint } from 'react-icons/io'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
 import BgImage from './BgImage'
+import BgImageTR from './BgImage-tr'
 
 // import Img1 from './Img1'
 // import Img2 from './Img2'
@@ -370,7 +371,7 @@ const slidePanelHome1 = () => (
         </div>
     </div>
     {/* <Img1 /> */}
-    <BgImage filename="homebanner-pb.jpg" />
+    <BgImageTR filename="homebanner-pb.jpg" />
     {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}

@@ -342,7 +342,7 @@ const HomeAnimation2 = () => (
 
 <div className="shout" style={{position:'absolute', top:'5vh',}}>
 
-<span style={{position:'absolute', bottom:'28vh', textAlign:'left', paddingLeft:'2vw', fontSize:'6vw', opacity:'1', animation:'poptop 3s forwards', animationDelay:'16s'}}>We deliver</span>
+<span style={{position:'absolute', bottom:'40vh', textAlign:'left', paddingLeft:'2vw', fontSize:'6vw', opacity:'1', animation:'poptop 3s forwards', animationDelay:'16s'}}>We grow<br /> business through</span>
 
 <span style={{position:'absolute', bottom:'20vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'1s'}}>Advertising</span>
 
