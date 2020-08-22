@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import PopContact from '../components/PopContact'
 import 'typeface-pt-sans'
 import "../css/index.scss"
-import Consent from '../components/Consent'
+// import Consent from '../components/Consent'
 
 // import splash from '../img/hytron-splash.png'
 
@@ -117,7 +117,7 @@ const TemplateWrapper = ({ children }) => {
     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
       </Helmet>
       
-      <Consent />
+      {/* <Consent /> */}
       <Navbar />
       <PopContact />
   
