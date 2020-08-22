@@ -12,7 +12,7 @@ import Layout from '../components/Layout'
 // import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 // import { MdPlayArrow } from 'react-icons/md'
 // import { FiCornerRightDown } from 'react-icons/fi'
@@ -223,9 +223,9 @@ const IndexPage = () => (
      <div className="container">
 <div className="content" style={{width:'90vw', padding:'2rem 0', maxWidth:'1000px', margin:'auto'}}>
   
-  
+<ScrollAnimation animateIn="zoomInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0}>
   <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
-
+</ScrollAnimation>
 <p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
 
 <p>Ad2 understands the importance of relevant data as the foundation for effective campaigns. Your message must connect your brand with your audience and effectively communicate  the differentiating benefits of your products, values, and services.</p>
@@ -240,9 +240,9 @@ why they want to choose you.</blockquote>
 
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
 
-  
+  <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>
   <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
-  
+  </ScrollAnimation>
 
 
   </div>
@@ -254,9 +254,9 @@ why they want to choose you.</blockquote>
 <Contact className="container contactform" />
 </div>
 </div> */}
-
+  <ScrollAnimation animateIn="pulse" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>
 <div className="outer"> <Contact /></div>
-
+</ScrollAnimation>
 
   </CustomBox>
   </Layout>

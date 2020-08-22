@@ -17,7 +17,7 @@ const CustomBox = styled.div`
 
 #portfolio {
 	position:relative;
-// background: #da071c ;
+background: #da071c ;
 
 }
 

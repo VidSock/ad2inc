@@ -5,8 +5,9 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const ImageWrapper = styled.div`
-  // box-shadow: -1px 3px 6px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 3px 6px 1px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
+
   // border-radius: 2px;
   overflow: hidden;
   cursor: zoom-in;
@@ -14,13 +15,14 @@ const ImageWrapper = styled.div`
     transition: transform 2s;
     // border:1px transparent;
     // border-radius:6px;
+    transform: scale(1);
   }
   :hover {
-    // box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.3);
     // border:1px dashed;
     // border-radius:6px;
     div {
-      // transform: scale(1.05);
+      // transform: scale(.95);
     }
   }
 `
@@ -71,7 +73,7 @@ const KnifeGallery = ({ photos, ...rest }) => {
           photos={images}
           onClick={imageClick}
           renderImage={GatsbyImage}
-          targetRowHeight={350}
+          targetRowHeight={300}
           margin={22}
           {...rest}
         />
