@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare } from 'react-icons/fa'
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 
-
+import Consent from '../components/Consent'
 
 
 
@@ -13,12 +13,17 @@ const Footer = class extends React.Component {
   render() {
     return (
 
+      <>
+      <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={100}>
+      <Consent />
+  </ScrollAnimation>
+
       <footer className="footer">
         <div className="content">
           
 
 
-
+        
  
  
 
@@ -46,7 +51,10 @@ const Footer = class extends React.Component {
 
 <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: ''}}>Copyright &copy; {(new Date().getFullYear())} Ad2Inc.</div>
         </div>
+        
       </footer>
+
+      </>
       
     )
   }

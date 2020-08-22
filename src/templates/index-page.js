@@ -8,7 +8,7 @@ import Contact from '../components/Contact-inc'
 // import logo from '../img/ad2inc-logo-round.svg'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
-import Layout from '../components/Layout'
+import Layout from '../components/LayoutHome'
 // import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
@@ -226,22 +226,28 @@ const IndexPage = () => (
 <ScrollAnimation animateIn="zoomInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0}>
   <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
 </ScrollAnimation>
-<p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
 
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={300}>
+<p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
+</ScrollAnimation>
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
 <p>Ad2 understands the importance of relevant data as the foundation for effective campaigns. Your message must connect your brand with your audience and effectively communicate  the differentiating benefits of your products, values, and services.</p>
-  
-   
+
 <blockquote>Your customers must know who you are,
 
 what you can do for them and
 
 why they want to choose you.</blockquote>
-  
+   </ScrollAnimation>
 
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={500}>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
+</ScrollAnimation>
 
-  <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>
-  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s build your business together.</strong></p>
+  <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
+  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s grow your business together.</strong></p>
   </ScrollAnimation>
 
 

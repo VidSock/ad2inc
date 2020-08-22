@@ -9,7 +9,7 @@ import { FiZoomIn } from 'react-icons/fi'
 
 
 
-import Gallery from '../../components/Gallery'
+import Gallery from '../../components/GalleryFullWeb'
 
 
 import styled from "styled-components"
@@ -36,7 +36,7 @@ background: #da071c ;
 
 
 @media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+.gatsby-image-wrapper{transform: scale(1);}
 }
 
 /*
