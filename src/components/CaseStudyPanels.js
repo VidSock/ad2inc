@@ -377,7 +377,7 @@ const CaseStudyPanels = () => (
           
           
 
-          <strong style={{fontSize:'130%'}}>The Pediatrics Center</strong><br />
+          <strong style={{fontSize:'130%'}}>The Pediatric Center</strong><br />
           <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget, egestas viverra dolor. Sed lobortis justo quis mi porttitor ultricies. Quisque turpis est, elementum ac interdum at.</p>
         
           <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
@@ -386,7 +386,7 @@ const CaseStudyPanels = () => (
         {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1> */}
 
 
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatrics Center<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatric Center<br /> View the case study</Link></h1>
 
 
         </div>
@@ -462,13 +462,13 @@ const CaseStudyPanels = () => (
       
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Coast Electric </strong><br />
+          <strong style={{fontSize:'130%'}}>Coast Electric Power Association</strong><br />
           <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         
         <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
        
       
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric Power Association<br /> View the case study</Link></h1>
 
         </div>
     </div>
