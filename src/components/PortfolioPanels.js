@@ -343,11 +343,11 @@ const PortfolioPanels = () => (
 
 
 
-<div className="shout" style={{position:'absolute', top:'0vh',}}>
+{/* <div className="shout" style={{position:'absolute', top:'0vh',}}>
 
 <span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'18vw', animation:'poptop 4s forwards', animationDelay:'1s'}}>Knowledge</span>
 
-    </div>
+    </div> */}
 
 
 
@@ -358,23 +358,23 @@ const PortfolioPanels = () => (
 
   
   <div className="outerpanel" style={{borderLeft:'none'}}>
-<span className="headline">Identity <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Branding <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop1 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
-          <strong style={{fontSize:'130%'}}>Identity</strong><br />
-          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
-
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">View Identity </Link></h1>
+          <strong style={{fontSize:'130%'}}>Branding</strong><br />
+          <p style={{ }}>Grow your brand! From logos to websites, brand books to digital and print ads, let Ad2 help your brand come to life.</p>
+<br />
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/identity/">View Branding </Link></h1>
       
         </div>
     </div>
-    <BgImage filename="portfolio-identity.png" />
+    <BgImage filename="portfolio-branding.png" />
  </div>
 
 
 
- <div className="outerpanel" style={{borderLeft:'none'}}>
+ {/* <div className="outerpanel" style={{borderLeft:'none'}}>
 <span className="headline">Logos <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
@@ -387,17 +387,17 @@ const PortfolioPanels = () => (
         </div>
     </div>
     <BgImage filename="portfolio-logos.png" />
- </div>
+ </div> */}
 
 
 
  <div className="outerpanel" style={{borderLeft:'none'}}>
-<span className="headline">Print <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Print <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop1 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
           <strong style={{fontSize:'130%'}}>Print</strong><br />
-          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
+          <p style={{ }}>Drive consumer actions and ROI at scale by coupling targeted media with machine learning and AI.</p>
 
         <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/print/">View Print </Link></h1>
       
@@ -409,12 +409,12 @@ const PortfolioPanels = () => (
 
 
  <div className="outerpanel" style={{borderLeft:'none'}}>
-<span className="headline">Web <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Web <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop1 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           
           <strong style={{fontSize:'130%'}}>Web</strong><br />
-          <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
+          <p style={{ }}>Bring your business to life online with beautiful design and masterful web development.</p>
 
         <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio/web/">View Web </Link></h1>
       
@@ -427,7 +427,7 @@ const PortfolioPanels = () => (
 
     
  <div className="outerpanel" style={{borderLeft:'none'}}>
-<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Media <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop1 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
           <div className="contentpanel" style={{}}>
           

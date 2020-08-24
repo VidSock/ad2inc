@@ -3,7 +3,7 @@ import React from 'react'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Image from './Image'
 import styled from "styled-components"
@@ -450,11 +450,9 @@ const slidePanelHome1 = () => (
           <div className="contentpanel" style={{}}>
           
           <strong style={{fontSize:'130%'}}>Media</strong><br />
-          <p style={{ }}>Ad2, Inc. recognizes that traditional media ain’t so traditional anymore. With the expansion of online and interactive marketing and the introduction of social media and SMS and MMS media, there are a variety of media plans available for one budget and the strategy varies with each customer and that customer’s target market.</p>
-        
-        <p style={{}}>Ad2, Inc. is committed to researching new mediums and avenues to offer innovative ways for you to reach your audience in the most cost effective ways through the use of integrated marketing strategies, incorporating traditional advertising, such as outdoor, television and print with nontraditional, grassroots marketing mediums such as social networks, personal networking and Community Action Teams.</p>
+          <p style={{ }}>Ad2, Inc. recognizes that traditional media ain’t so traditional anymore. With the expansion of online and interactive marketing and the introduction of social media, SMS, and MMS media, there are a variety of media plans available for one budget. The media mix and marketing strategy can vary greatly from customer to customer depending on their goals, target market, and marketing message. Depending upon the customer and the strategy varies with each customer and that customer’s target market.</p>
 
-        <p>Our team works closely with the media and focuses on increasing the reach and frequency of your advertising dollar, providing our clients the best CPP available.</p>
+          <p> Ad2, Inc. is committed to researching new mediums and approaches to traditional media to offer innovative ways for you to reach your audience in the most cost effective manner. Our team works closely with the media to increase the reach and frequency of your advertising without increasing the total ad spend, providing our clients the best CPP available.</p>
        
         {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Get Started!</label> </h1> */}
 
