@@ -353,6 +353,16 @@ const AboutPanels = () => (
           
           <strong style={{fontSize:'130%'}}>Who is Ad2?</strong><br />
           <p style={{ }}>Well, we're awesome to start. We're also passionate, knowledgable and well versed in our craft. </p>
+        <p>The Mission:</p>
+        <ul>
+      
+
+<li>To build a strong, all-encompassing brand that will withstand the test of time, reflecting the true image of the company.</li>
+<li>To build relationships with our customers and vendors to produce outstanding results for both.</li>
+<li>To efficiently and effectively position the customers’ brand to a market of relevant receivers.</li>
+<li>To generate support and goodwill through the proper use of public relations and media channels.</li>
+<li>To maximize the customers’ advertising dollars through aggressive negotiation and buying.</li>
+        </ul>
 
         {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1> */}
 
@@ -398,7 +408,7 @@ const AboutPanels = () => (
           P.O. Box 969<br />
           Gautier, MS 39553-0969<br />
           Ph: (228) 822-9890<br />
-          Fax: (228) 522-1800
+
           
           </div>
 </div>
@@ -433,7 +443,7 @@ const AboutPanels = () => (
           P.O. Box 336<br />
           Mandeville, LA 70470<br />
           Ph: (504) 908-2721<br />
-          Fax: (985) 778-0163</div>
+</div>
 </div>
 </div>
 
