@@ -16,6 +16,7 @@ import { IoMdFingerPrint } from 'react-icons/io'
 // import Contact from '../../components/Contact-inc'
 import BgImage from './BgImage'
 import BgImageTR from './BgImage-tr'
+import BgImageLL from './BgImage-ll'
 
 // import Img1 from './Img1'
 // import Img2 from './Img2'
@@ -371,7 +372,7 @@ const slidePanelHome1 = () => (
         </div>
     </div>
     {/* <Img1 /> */}
-    <BgImageTR filename="homebanner-pb.jpg" />
+    <BgImageLL filename="night182.jpg" />
     {/* <img src="./img/homebanner-pb.jpg" alt="rando" /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -403,7 +404,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="Market-Photo.jpg" />
+    <BgImageTR filename="homebanner-pb.jpg" />
     {/* <Img2 /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -433,7 +434,8 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="case-study-pnb.jpg" />
+    <BgImage filename="night153.jpg" />
+
     {/* <Img3 /> */}
     {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
     {/* <BackgroundImg /> */}
@@ -459,7 +461,7 @@ const slidePanelHome1 = () => (
         </div>
     </div>
     
-    <BgImage filename="photo-1596047795961-69357dee9c3c.jpg" />
+    <BgImage filename="case-study-pnb1.jpg" />
     {/* <Img4 /> */}
     {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
     {/* <BackgroundImg /> */}
