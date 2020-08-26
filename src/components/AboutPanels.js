@@ -468,7 +468,7 @@ const AboutPanels = () => (
  <div className="outerpanel" style={{borderLeft:''}}>
 <span className="headline">Get In Touch <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
 <div className="innerpanel" style={{}}>
-          <div className="contentpanel" style={{padding:'12vh 0 0 0'}}>
+          <div className="contentpanel" style={{padding:'12vh 1rem 0 1rem'}}>
   
 <Contact />
 
