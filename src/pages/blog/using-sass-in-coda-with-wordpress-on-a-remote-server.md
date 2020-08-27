@@ -1,9 +1,13 @@
 ---
+meta_description: I’ve been searching for a very long time for a solution to use SASS with Coda.
 templateKey: article-page
-title: Using SASS in Coda with WordPress on a remote server
 slug: coda-sass-wordpress
 date: 2019-12-23T22:45:24.314Z
+description: This is a sample description
+featuredpost: true
+featuredimage: /img/Ad2Grid_Logo.jpg
 cover: /img/night211.jpg
+title: Using SASS in Coda with WordPress on a remote server
 tags:
   - coda
   - sass
@@ -13,7 +17,6 @@ tags:
   - css
   - javascript
 meta_title: Using SASS in Coda with WordPress on a remote server
-meta_description: I’ve been searching for a very long time for a solution to use SASS with Coda.
 ---
 
 I’ve been searching for a very long time for a solution to use SASS with Coda.
