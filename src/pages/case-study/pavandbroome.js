@@ -68,7 +68,7 @@ const CaseStudy_1 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'', position:'absolute', padding:'150px 0 0 3rem', zIndex:'1' }}>
+    <div className="contentStart" style={{maxWidth:'', position:'absolute', zIndex:'1' }}>
 
      <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     

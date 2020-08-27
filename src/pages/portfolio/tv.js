@@ -77,12 +77,10 @@ const Gal1Page = () => {
 	  <CustomBox>
     <Layout>
     
-
+    <div className="contentStart">
 
       
-    <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
-      <h4 style={{display:'', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'5vh', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
-      </div>
+    
 
       <GalleryMenu />
   
@@ -95,18 +93,23 @@ const Gal1Page = () => {
  
       
   <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
+    
+
+
   <Gallery
     photos={data.allFile.edges}
   />
   </div>
 
 
-
+  <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
+      <h4 style={{display:'', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'5vh', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
+      </div>
 
   
    <GalleryMenu />
       
-      
+      </div>
       
     </Layout>
     </CustomBox>  )

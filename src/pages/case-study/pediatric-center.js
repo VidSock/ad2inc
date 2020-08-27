@@ -58,7 +58,7 @@ const CaseStudy_2 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'', position:'absolute', padding:'130px 0 0 3rem', zIndex:'1' }}>
+    <div className="contentStart" style={{maxWidth:'', position:'absolute', zIndex:'1' }}>
      <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />The Pediatric Center at Garden Park Medical Center </h1>
@@ -67,7 +67,7 @@ const CaseStudy_2 = () => {
   <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500} offset={100}>
   <h3>Objective:</h3>
   <p>Several pediatricians staffed at The Pediatric Center at Garden Park Medical Center left the Center to open their own clinics, taking many of their patients with them. Ad2 was hired to introduce the new pediatricians and replenish the customer base.</p>
-<br /><a href="https://gardenparkdoctors.com">https://gardenparkdoctors.com</a>
+<br />
     </ScrollAnimation>
   </div>
   </div>

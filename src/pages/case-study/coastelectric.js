@@ -63,7 +63,7 @@ const CaseStudy_5 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'', position:'absolute', padding:'120px 0 0 3rem', zIndex:'1' }}>
+    <div className="contentStart" style={{maxWidth:'', position:'absolute', zIndex:'1' }}>
      <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />Coast Electric Power Association</h1>
@@ -72,7 +72,7 @@ const CaseStudy_5 = () => {
   <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500} offset={100}>
   <h3>Objective:</h3>
   <p>Coast Electric Power Association was looking to increase attendance at their annual meeting and member engagement through voting, so they decided to do a proxy mailer in conjunction with the annual meeting invitation. Ad2 was contracted to design, print, and mail the proxy mailer while remaining in the confines of the Association’s by-laws.</p>
-<br /><a href="https://coastepa.com">https://coastepa.com</a>
+<br />
     </ScrollAnimation>
   </div>
   </div>

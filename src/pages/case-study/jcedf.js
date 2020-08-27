@@ -60,7 +60,7 @@ const CaseStudy_3 = () => {
 
     <section className="child" style={{padding:'0', height:'', position:'relative'}}>
   
-  <div style={{maxWidth:'', position:'absolute', padding:'150px 0 0 3rem', zIndex:'1' }}>
+    <div className="contentStart" style={{maxWidth:'', position:'absolute', zIndex:'1' }}>
      <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />Jackson County Economic Development Foundation </h1>
@@ -69,7 +69,7 @@ const CaseStudy_3 = () => {
   <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500} offset={100}>
   <h3>Objective:</h3>
   <p>Ask yourself: How many of your marketing or promotional pieces have pulled this kind of response for you? Do your customers and/or prospects save your pieces as keepsakes? </p>
-<br /><a href="https://jcedf.org/">https://jcedf.org/</a>
+<br />
     </ScrollAnimation>
   </div>
   </div>

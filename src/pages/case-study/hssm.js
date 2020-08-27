@@ -61,9 +61,9 @@ const CaseStudy_4 = () => {
 
 <TouchUp />
 
-    <section className="child" style={{padding:'0', height:'', position:'relative'}}>
+    <section className="" style={{padding:'0', height:'', position:''}}>
   
-  <div style={{maxWidth:'', position:'absolute', padding:'120px 0 0 3rem', zIndex:'1' }}>
+  <div className="contentStart" style={{maxWidth:'', position:'absolute', zIndex:'1' }}>
      <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={200} offset={0} style={{color:''}}>
     
      <h1 style={{margin:'0', padding:'', fontSize:'100%', fontWeight:'bold'}}>Client:<br />Humane Society of South Mississippi</h1>
@@ -77,7 +77,8 @@ caring for the long-term success and sustainability of the shelter and its missi
 time, the shelter was located next door to the sewerage treatment plant and associated
 with the horrible smell. The conditions of the shelter itself weren’t much better. Public
 awareness was at an all-time low and public perception was even worse.</p>
-<br /><a href="https://hssm.org/">https://hssm.org/</a>
+<br />
+{/* <a href="https://hssm.org/">https://hssm.org/</a> */}
     </ScrollAnimation>
   </div>
   </div>
