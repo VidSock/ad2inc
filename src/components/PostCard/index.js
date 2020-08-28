@@ -9,14 +9,14 @@ const PostCard = ({ posts }) => {
         .map(({ node: post }) => (
           <div
             className='content'
-            style={{ border: '0px solid #eaecee',  borderRadius:'12px', }}
+            style={{ border: '0px solid #eaecee',  borderRadius:'12px', textAlign:'center', display:'flex' , justifyContent:'center', flexDirection:'column', alignContent:'center'}}
             key={post.id}
           >
-<Link className='has-text-primary' style={{textDecoration:'none',}} to={post.fields.slug}>
-<img src={post.frontmatter.cover} alt={post.frontmatter.title} style={{borderRadius:'12px', marginTop:'1rem',}} />
+<Link className='has-text-primary' style={{textDecoration:'none', textAlign:'center'}} to={post.fields.slug}>
+<img src={post.frontmatter.cover} alt={post.frontmatter.title} style={{borderRadius:'12px', margin:'1rem auto 0 auto',}} />
 </Link>
 
-<div style={{ padding:'4%',}}><h2>{post.frontmatter.title}</h2>
+<div style={{ padding:'4%', textAlign:'left'}}><h2>{post.frontmatter.title}</h2>
 
             <p>
               {post.excerpt}
