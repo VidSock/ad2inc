@@ -353,13 +353,13 @@ const slidePanelHome1 = () => (
   <div className="outerpanel" style={{borderLeft:'none'}}>
     
   {/* <img src="https://source.unsplash.com/random/1200x12002" alt="rando" /> */}
-<span className="headline">Concept <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Creative <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
           <div className="contentpanel" style={{}}>
           
           
-          <strong style={{fontSize:'130%'}}>Concept / Creative / Design</strong><br />
+          <strong style={{fontSize:'130%'}}>Creative / Concept / Design</strong><br />
           <p style={{ }}>We realize that marketing is more than just delivering a clever tag line or designing a pretty ad. But they sure help…</p>
 
           <p>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience.</p>
@@ -466,6 +466,8 @@ const slidePanelHome1 = () => (
     {/* <img src="./img/photo-1596047795961-69357dee9c3c.jpg" alt="rando" /> */}
     {/* <BackgroundImg /> */}
  </div>
+
+
 
 
 
