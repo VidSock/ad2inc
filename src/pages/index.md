@@ -1,19 +1,21 @@
 ---
 templateKey: index-page
-title: Precision Parts
-image: /img/home-banner.jpg
 heading: Award Winning Marketing and Design
-subheading: Dedicated to the ART of marketing
+meta_description: "This is an seo description. "
 subsubheading: Accelerate Your Results
-image2: /img/banner-jcedf.jpg
-i2Heading: We'll Help You
+subheading: Dedicated to the ART of marketing
 i2Subheading: Navigate the social divide
+i3Subheading: Doggity
+image2: /img/banner-jcedf.jpg
+i3Subsubheading: Doggone
+i3Heading: Medical Suppliers
+image3: /img/banner-pnb.jpg
+title: Ad2
+i2Heading: We'll Help You
 i2Subsubheading: Obtain proven results!
 i2Subsubheading2: Fits in your pocket!
-image3: /img/banner-pnb.jpg
-i3Heading: Medical Suppliers
-i3Subheading: Doggity
-i3Subsubheading: Doggone
 i3Subsubheading2: DogPiles
+image: /img/home-banner.jpg
+description: this is a description of ad2 home page
+meta_title: SEO Title goes here
 ---
-
