@@ -26,7 +26,7 @@ const ArticleTemplate = ({
   return (
     <CustomBox>
       
-      <img src={cover} alt={title} style={{borderRadius:'12px', marginTop:'1rem',}} />
+      <img src={cover} alt={title} style={{borderRadius:'12px', margin:'1rem auto 0 auto',}} />
       
       <div style={{padding:'2% 3%',}}>
       <h1 className='title is-size-2 is-bold-light' style={{textDecoration:'none',}}>
