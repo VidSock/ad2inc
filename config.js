@@ -9,7 +9,7 @@ module.exports = {
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.
   disqusShortname: 'toddlambert', // Disqus shortname.
-  userName: 'twilightscapes',
+  userName: 'Ad2',
   userTwitter: 'toddlambert',
   userLocation: 'Gulf Coast, USA',
   userDescription: '',
