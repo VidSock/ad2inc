@@ -1,24 +1,72 @@
-var proxy = require('http-proxy-middleware')
+const config = require('./config')
+
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://twilightscapes.netlify.com',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === 'production'
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    title: 'Ad2Inc | Effective Marketing | Online and Off',
-    siteUrl: `https://ad2inc.netlify.com`,
-    description:
-      'Ad2, Inc. offers creative development and campaign management services, as well as brand consulting and other marketing communications services, such as marketing research, strategic planning, direct and interactive marketing.',
+    title: config.siteTitle,
+    siteUrl: config.siteUrl,
+    rssMetadata: {
+      site_url: config.siteUrl + pathPrefix,
+      feed_url: config.siteUrl + pathPrefix + config.siteRss,
+      title: config.siteTitle,
+      description: config.siteDescription,
+      image_url: `${config.siteUrl + pathPrefix}/icons/icon-512x512.png`,
+      author: config.userName,
+      copyright: config.copyright,
+    },
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-netlify-cache`,
+    'gatsby-background-image',
+    
+    	  {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["UA-49869143-1"],
+      },
+    },
+    
+
+    
+{ 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
+         //ignore: ['index.css'], // Ignore files/folders
+         purgeOnly : ['/index.css', '/animate.compat.css', '/animate.css', '/custom.css', '/noscript.css'], // Purge only these files/folders
+      }
+    },
+    
+
+  
+    
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/img`,
+        path: `${__dirname}/src/img`,
         name: 'uploads',
       },
     },
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -27,66 +75,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sitemap`,
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
     },
-
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `ad2inc.net`,
-        short_name: `Ad2Inc`,
-        start_url: `/`,
-        background_color: `#FFF`,
-        theme_color: `#FAE042`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/icons/manifest-icon-192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/icons/manifest-icon-512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-            purpose: `any maskable`,
-          },
-        ],
-      },
-    },
-
-
-    
-
-
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        TrackingId: '',
-      }
-    },
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
-         //ignore: ['index.css'], // Ignore files/folders
-
-         purgeOnly : ['/index.css', '/animate.compat.css', '/custom.css', '/noscript.css'], // Purge only these 
-      }
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-dark-mode',
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-styled-components`,
-    'gatsby-background-image',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -106,35 +103,134 @@ module.exports = {
               maxWidth: 2048,
             },
           },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: true,
+        htmlTitle: `Twilightscapes Content Manager`,
+      },
+    },
+
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitleAlt,
+        start_url: '/index.html',
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'standalone',
+        icons: [
           {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: 'static',
-            },
+            src: `/icons/icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/icons/icon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
           },
         ],
       },
     },
     `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: 'gatsby-plugin-feed',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        setup (ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark
+          ret.generator = config.siteTitle
+          return ret
+        },
+        query: `
+                {
+                  site {
+                    siteMetadata {
+                      rssMetadata {
+                        site_url
+                        feed_url
+                        title
+                        description
+                        image_url
+                        author
+                        copyright
+                      }
+                    }
+                  }
+                }
+              `,
+        feeds: [
+          {
+            serialize (ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
+              return ctx.query.allMarkdownRemark.edges
+                .filter(
+                  edge => edge.node.frontmatter.templateKey === 'article-page'
+                )
+                .map(edge => ({
+                  categories: edge.node.frontmatter.tags,
+                  date: edge.node.frontmatter.date,
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.excerpt,
+                  author: rssMetadata.author,
+                  url: rssMetadata.site_url + edge.node.fields.slug,
+                  guid: rssMetadata.site_url + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                }))
+            },
+            query: `
+                    {
+                      allMarkdownRemark(
+                        limit: 1000,
+                        sort: { order: DESC, fields: [frontmatter___date] },
+                      ) {
+                        edges {
+                          node {
+                            excerpt(pruneLength: 400)
+                            html
+                            id
+                            fields { slug }
+                            frontmatter {
+                              title
+                              templateKey
+                              cover
+                              date(formatString: "MMMM DD, YYYY")
+                              tags
+                            }
+                          }
+                        }
+                      }
+                    }
+                  `,
+            output: config.siteRss,
+            title: config.siteTitle,
+          },
+        ],
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
-  ],
-  // for avoiding CORS while developing Netlify Functions locally
-  // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  developMiddleware: app => {
-    app.use(
-      '/.netlify/functions/',
-      proxy({
-        target: 'http://localhost:9000',
-        pathRewrite: {
-          '/.netlify/functions/': '',
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `tags`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            tags: node => node.frontmatter.tags,
+            slug: node => node.fields.slug,
+          },
         },
-      })
-    )
-  },
+      },
+    },
+    `gatsby-plugin-netlify`,
+  ],
 }

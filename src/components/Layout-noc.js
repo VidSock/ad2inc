@@ -6,11 +6,14 @@ import { Helmet } from 'react-helmet'
 import 'typeface-pt-sans';
 import "../css/index.scss";
 // import ScrollAnimation from 'react-animate-on-scroll';
-
+import config from '../../config'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
-
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -18,8 +21,8 @@ const TemplateWrapper = ({ children }) => {
     <div>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{config.siteTitle}</title>
+          <meta name='description' content={config.siteDescription} />
         
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />

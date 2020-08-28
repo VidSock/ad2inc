@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 // import Installer from '../components/Install'
 import PopContact from '../components/PopContact'
+import config from '../../config'
 import 'typeface-pt-sans'
 import "../css/index.scss"
 // import Consent from '../components/Consent'
@@ -19,7 +20,7 @@ import { withPrefix } from "gatsby"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
-  // require("smooth-scroll")('a[href*="#"]')
+  require("smooth-scroll")('a[href*="#"]')
 }
 
 
@@ -33,20 +34,20 @@ const TemplateWrapper = ({ children }) => {
 
 
 
-  const { title, description } = useSiteMetadata()
+    const { title, description } = useSiteMetadata()
   return (
-    <><div id="topofpage" name="topofpage"></div>
+    <><div id="topofpage" name="topofpage"> </div>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{config.siteTitle}</title>
+          <meta name='description' content={config.siteDescription} />
 
         
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
+       <meta property="og:image" content={`${withPrefix("/")}/night283.jpg`} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-icon" sizes="180x180" href="/siteimages/apple-splashapple-icon-180.png" />
 <link rel="apple-touch-icon" sizes="167x167" href="/siteimages/apple-splashapple-icon-167.png" />
