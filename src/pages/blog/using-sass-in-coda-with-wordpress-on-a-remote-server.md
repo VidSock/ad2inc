@@ -3,7 +3,7 @@ meta_description: I’ve been searching for a very long time for a solution to u
 templateKey: article-page
 slug: coda-sass-wordpress
 date: 2019-12-23T22:45:24.314Z
-description: This is a sample description
+description: This is a sample description 1
 featuredpost: true
 featuredimage: /img/Ad2Grid_Logo.jpg
 cover: /img/night211.jpg
