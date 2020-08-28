@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: article-page
 slug: qr-code
 tags:
   - qr

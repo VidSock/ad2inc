@@ -1,10 +1,10 @@
 module.exports = {
-  siteTitle: 'Follow Me Into The Night | Unique Photography by Todd Lambert', // Site title.
-  siteTitleAlt: 'Todd Lambert', // Alternative site title for SEO.
+  siteTitle: 'Ad2 - Effective Marketing Online And Offline ', // Site title.
+  siteTitleAlt: 'Ad2', // Alternative site title for SEO.
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://twilightscapes.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://ad2inc.net', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Twilightscapes brings new definitions to the genre of night photography. Experience some of the most remote, desolate locations photographed in the dead of night by world renown night photographer Todd Lambert.', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Effective marketing online and offline. Ad2 specializes in creating high end results for budget-minded local businesses.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.
