@@ -110,83 +110,8 @@ const HomePageTemplate = ({
 <Intro2 />
 
 <div className="outer">
-<ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={true}>
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
-<h2 className="txtshadow-header">Unique Night Photography</h2>
-<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
-<br />
-<Link className="special grad" to="/galleries" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'230px',  padding:'3px 1rem 0 1rem', margin:'0 auto',}}>View Galleries <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><GoTelescope /></span></Link>
 
 
-
-</div>
-</div>
-</ScrollAnimation>
-
-
-
-
-
-
-<ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div id="desc" className="container">
-<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
-
-<div className="stack" style={{width:'60%',}}>
-<h2 className="txtshadow-header">Meet Todd Lambert</h2>
-<p>Todd is a new breed of photographer focusing on remote and mostly "unknown" locations such as graveyards and other abandoned places at night. Todd is an adventurous spirit who lives full-time on the road while traveling across the country.
-</p>
-</div>
-
-<div className="stack" style={{width:'40%', margin:'0 0 0 1rem', fontSize:'70%', }}>
-<Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />Todd Lambert on location
-</div>
-
-</div>
-
-
-<Link className="special grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'250px',  padding:'3px 1.5rem 0 1rem', margin:'0 auto',}}>More About Todd <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><FaRegAddressCard /></span></Link>
-
-
-</div>
-</ScrollAnimation>
-
-
-
-
-
-
-
-<ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
-
-<div className="stack" style={{width:'40%', margin:'0 1rem 0 0', fontSize:'70%', }}>
-<Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />The Twilightscapes Setup: A Subaru Outback with 18-foot Aliner trailer while coming out of Hideout Canyon, UT.
-</div>
-< br />
-<div className="stack" style={{width:'60%',}}>
-<h2 className="txtshadow-header">Always on the hunt</h2>
-<p>Todd scours the Internet, drives countless miles and lives and works in his unique overlanding road trip setup. You see, Todd is a photographer that specializes in photographing vintage cars, abandoned places and other pieces of unique American history.
-</p>
-</div>
-
-</div>
-
-
-<Link className="special grad" to="/gear" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Todds Gear <span style={{fontSize:'120%', position:'relative', right:'-4px', top:'0', color:'#fff',}}><GoGear /></span></Link>
-
-
-</div>
-</ScrollAnimation>
-
-
-
-
-    
        
     <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <div className="container" style={{marginTop:'',}}>
@@ -194,11 +119,11 @@ const HomePageTemplate = ({
 <h2 className="pitch1 txtshadow-header" style={{fontSize:'250%', display:'flex', flexDirection:'column',}}>Like this site?</h2>
 
 <div className="nowrap">
-<p>Todd builds websites as his day job, and he would love to build your dream site, custom for you.</p>
+<p>Let us build your dream site, custom for you.</p>
 
 <p>An ultra-fast website that uses state-of-the-art technology, is super flexible, and modern designed to work great everywhere.</p>
 
-<h3 className="txtshadow" style={{textAlign:'center',}}>Let Todd build your site today!</h3>
+<h3 className="txtshadow" style={{textAlign:'center',}}>Let Ad2 build your site today!</h3>
 </div>
 </div>
 </div>
