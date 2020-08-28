@@ -13,7 +13,7 @@ const NotFoundPage = () => (
           <p>This event had been recorded so that we may fix it for future visits. If you continue to have trouble, we would love for you to contact us with the form below:</p>
           </div>
           
-          
+           
           
         </div>
         {/* CONTACT PANEL  */}
