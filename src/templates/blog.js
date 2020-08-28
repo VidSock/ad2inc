@@ -39,13 +39,13 @@ const CustomBox = styled.div`
 
 @media (max-width: 48rem) {
 
-
-  .intro:before{font-size:150% !important}
-  .content{flex-direction:column !important;}
-  .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
-  .pitch{font-size:250% !important; text-align:center;}
-  .split {display:block !important; width:100% !important; }
-  .split div{max-width:100% !important; with:100% !important; background:tranparent !important;}
+.contentStart{display:block !important;}
+  // .intro:before{font-size:150% !important}
+  // .content{flex-direction:column !important;}
+  // .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
+  // .pitch{font-size:250% !important; text-align:center;}
+  // .split {display:block !important; width:100% !important; }
+  // .split div{max-width:100% !important; with:100% !important; background:tranparent !important;}
   .sidebar{margin:2% 0;}
   .sidebar{max-width:100% !important; width:100% !important; background:tranparent !important;}
   .sidebar .logolink{text-align:center !important;}
@@ -87,6 +87,7 @@ export default class BlogPage extends Component {
 
     return (
       <Layout>
+        <CustomBox>
         <Helmet>
           <title>Blog | Todd Lambert</title>
           {/* Schema.org tags */}
@@ -103,7 +104,7 @@ export default class BlogPage extends Component {
 </div> */}
 
 
-<section className="section intro split contentStart" style={{display:'flex', position:'relative',}}>
+<section className="section intro split contentStart" style={{display:'flex', position:'relative', width:'98%',}}>
         
         
 
@@ -165,7 +166,7 @@ Network
             
 
           
- 
+</CustomBox>
       </Layout>
     )
   }
