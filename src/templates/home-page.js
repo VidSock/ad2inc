@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
-        // description={frontmatter.description}
+        description={frontmatter.description}
         // offerings={frontmatter.offerings}
         // testimonials={frontmatter.testimonials}
       />
@@ -40,7 +40,7 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         heading
-        
+        description
       }
     }
   }
