@@ -103,7 +103,7 @@ export default class BlogPage extends Component {
 </div> */}
 
 
-<section className="section intro split" style={{display:'flex', padding:'0 2%', position:'relative',}}>
+<section className="section intro split contentStart" style={{display:'flex', position:'relative',}}>
         
         
 

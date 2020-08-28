@@ -15,7 +15,7 @@ const TagsPage = ({
   <Layout>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
+      <div className="container content contentStart">
         <div className="columns">
           <div
             className="column is-10 is-offset-1"

@@ -21,7 +21,7 @@ const ArticlePage = ({ data }) => {
           slug={post.fields.slug}
           date={post.frontmatter.date}
         />
-        <div className='container content' style={{paddingTop:'50px',}}>
+        <div className='container content contentStart' style={{}}>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <ArticleTemplate

@@ -79,9 +79,13 @@ const Navbar = class extends React.Component {
               </li>
               
               
+              <li>
+              <Link className="navbar-item" to="/blog/">
+                Blog
+              </Link>
+              </li>
 
               <li>
-             
              <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
               </li>
             </ul>

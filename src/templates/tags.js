@@ -24,7 +24,7 @@ class TagRoute extends Component {
       <Layout>
         <section className='section'>
           <Helmet title={`${tag} | ${title}`} />
-          <div className='container content'>
+          <div className='container content contentStart'>
             <div className='columns'>
               <div
                 className='column is-10 is-offset-1'
