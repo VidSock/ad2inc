@@ -53,8 +53,8 @@ const CustomBox = styled.div`
   height:100%;
   // overflow:hidden;
   transition:all .5s ease;
-  // border-left:1.5px solid ;
-  // border-right:1.5px solid ;
+  border-left:1.5px solid ;
+  border-right:1.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
