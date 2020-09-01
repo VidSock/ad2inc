@@ -53,8 +53,8 @@ const CustomBox = styled.div`
   height:100%;
   // overflow:hidden;
   transition:all .5s ease;
-  border-left:1.5px solid ;
-  border-right:1.5px solid ;
+  border-left:2.5px solid ;
+  border-right:2.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -165,10 +165,11 @@ const CustomBox = styled.div`
     .headline{
       padding:1em;
      margin:0 auto;
-    box-shadow: 0px 1px 6px 1px black;
+    // box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,.7);
-    filter: brightness(120%);
+    // background: rgba(237,27,45,.7);
+    // filter: brightness(120%);
+    background: rgba(0,0,0,.7);
     font-size:100%;
     font-weight:0 !important; 
     position:absolute;
