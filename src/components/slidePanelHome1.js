@@ -425,7 +425,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="case-study-pnb1.jpg" />
+    <BgImage filename="night153.jpg" />
  </div>
 
 
