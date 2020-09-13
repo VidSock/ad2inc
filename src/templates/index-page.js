@@ -2,8 +2,8 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
-// import Contact from '../components/Contact-inc'
-// import Image from '../components/Image'
+import Contact from '../components/Contact-inc'
+import Image from '../components/Image'
 // import { Link } from 'gatsby'
 // import logo from '../img/ad2inc-logo-round.svg'
 // import Intro from '../components/intro-home'
@@ -12,7 +12,7 @@ import Layout from '../components/Layout'
 // import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 // import { MdPlayArrow } from 'react-icons/md'
 // import { FiCornerRightDown } from 'react-icons/fi'
@@ -31,7 +31,10 @@ const CustomBox = styled.div`
 
 
 .outer .container{margin-bottom:0 !important;}
-
+.logolink{display:flex; border:0px solid red; clear:both; height:20vh;}
+.logolink  .gatsby-image-wrapper{width:25%; margin:20px; height:100px;}
+.logolink img{filter: invert(82%) sepia(85%) saturate(0) hue-rotate(138deg) brightness(128%) contrast(60%);}
+.logolink img:hover{filter:none;}
 
 `
 
@@ -48,7 +51,60 @@ const WhatWeDo = () => (
      <CustomBox>
   
   <SlidePanelHome1 />
+<br />
+<div className="logolink">
+<Image filename="PB-logo.png" />
+<Image filename="Coastal-Electric.png" />
+<Image filename="GCCFCU.png" />
+<Image filename="Burnham-Drugs.png" />
+</div>
+
+
+
+  <div className="container" style={{ background:'inherit'}}>
+<div className="content" style={{width:'90vw', padding:'2rem 0', maxWidth:'1000px', margin:'auto',}}>
+  
+
+
+
+
+  
+<ScrollAnimation animateIn="zoomInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0}>
+  <h1 style={{textAlign:'center', fontSize:'200%'}}>We Grow Business!</h1>
+</ScrollAnimation>
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={300}>
+<p>We recognize every business is unique, and we treat each client as the unique partner they are.  We have been creating results-driven marketing for clients across the Southeast for more than 20 years.</p>
+</ScrollAnimation>
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
+<p>Ad2 understands the importance of relevant data as the foundation for effective campaigns. Your message must connect your brand with your audience and effectively communicate  the differentiating benefits of your products, values, and services.</p>
+
+<blockquote>Your customers must know who you are,
+
+what you can do for them and
+
+why they want to choose you.</blockquote>
+   </ScrollAnimation>
+
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={500}>
+  <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
+</ScrollAnimation>
+
+  <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
+  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s grow your business together.</strong></p>
+  </ScrollAnimation>
+
+
+  </div>
+
+</div>
     
+  <ScrollAnimation animateIn="pulse" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>
+<div className="outer"> <Contact /></div>
+</ScrollAnimation>
+<br /><br />
   </CustomBox>
   </Layout>
 
