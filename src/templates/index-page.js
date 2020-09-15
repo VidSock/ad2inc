@@ -52,6 +52,8 @@ const WhatWeDo = () => (
   
   <SlidePanelHome1 />
 <br />
+
+<h2 style={{textAlign:'center', fontSize:'140%'}}>Where You’ve Seen Us</h2>
 <div className="logolink">
 <Image filename="PB-logo.png" />
 <Image filename="Coastal-Electric.png" />
@@ -93,7 +95,7 @@ why they want to choose you.</blockquote>
 </ScrollAnimation>
 
   <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
-  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Let’s grow your business together.</strong></p>
+  <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Wanna know more?</strong></p>
   </ScrollAnimation>
 
 

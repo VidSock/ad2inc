@@ -376,7 +376,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImageTR filename="homebanner-pb.jpg" />
+    <BgImage filename="istockphoto-1140385944-2048x2048.jpg" />
  </div>
 
 
@@ -401,7 +401,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="case-study-pnb1.jpg" />
+    <BgImage filename="istockphoto-1133497978-2048x2048.jpg" />
  </div>
 
  
@@ -425,7 +425,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="night153.jpg" />
+    <BgImageLL filename="istockphoto-1078587340-2048x2048.jpg" />
  </div>
 
 
