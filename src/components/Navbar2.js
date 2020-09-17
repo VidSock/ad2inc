@@ -150,7 +150,7 @@ const Navbar2 = class extends React.Component {
 
 <header className="header" style={{zIndex:'2', position:'fixed'}}>
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    <img className="logoa rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed', maxHeight:'20vh', maxWidth:'18vw', animation: 'rollIn 1s', top:'10px', left:'2vw',}} />
+    <img className="logoa rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed', maxHeight:'20vh', maxWidth:'18vw', animation: '1s', top:'10px', left:'2vw',}} />
     {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
    </Link>
 </header>

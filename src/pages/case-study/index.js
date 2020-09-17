@@ -211,7 +211,7 @@ a.button2{
   content: "";
   display: block;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -327,9 +327,9 @@ const CaseStudyCurtainsIndex = () => (
       
 
 
-  
+      {/* <div style={{background:'#222', display:'block', height:'100%', width:'100%'}}>BOOM</div> */}
 
-<div className="container2 slide-text" style={{}}>
+<div className="container2 slide-text">
 
 
 
@@ -338,7 +338,7 @@ const CaseStudyCurtainsIndex = () => (
 
 
     
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
 
 
 
@@ -364,7 +364,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
 
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
+<Image style={{zIndex:'-1', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
 
 
 
@@ -375,7 +375,7 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
 
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
@@ -388,7 +388,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
+<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
 
 
 
@@ -400,7 +400,7 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
@@ -411,7 +411,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
+<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
 
   </section>
 
@@ -420,7 +420,7 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+  <section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
@@ -431,7 +431,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-cepa.jpg" />
+<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-cepa.jpg" />
 
   </section>
 
@@ -441,7 +441,7 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+  <section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
@@ -453,7 +453,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm1.jpg" />
+<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm1.jpg" />
 
   </section>
 
