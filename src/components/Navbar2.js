@@ -148,19 +148,15 @@ const Navbar2 = class extends React.Component {
     return (
 	    
       <CustomBox>         
-<Headroom style={{ zIndex: '5', }}>
- 
-    <header className="header">
+<Headroom style={{ zIndex: '5', }}></Headroom>
 
-    
+<header className="header" style={{zIndex:'5', position:'fixed'}}>
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    
-    <img className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'300px', animation: 'rollIn 1s',}} />
+    <img className="logoa rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed', maxHeight:'20vh', maxWidth:'18vw', animation: 'rollIn 1s', top:'10px', left:'2vw',}} />
     {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
-
    </Link>
 </header>
-</Headroom>
+
   
  
  
@@ -170,7 +166,6 @@ const Navbar2 = class extends React.Component {
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>
-    
   </label>
 
    <div id="sidebarMenu">
