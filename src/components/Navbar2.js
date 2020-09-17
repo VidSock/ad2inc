@@ -26,7 +26,7 @@ const CustomBox = styled.div`
 #sidebarMenu {
     height: 100%;
     position: fixed;
-    z-index:5;
+    z-index:2;
     right: 0;
     width: 250px;
     // margin-top: 60px;
@@ -35,7 +35,6 @@ const CustomBox = styled.div`
     // background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
       background: rgba(196,22,37,.9);
       border-left:1px solid rgba(255, 255, 255, 0.10);
-
 }
 .sidebarMenuInner{
     margin:60px 0 0 0;
@@ -66,7 +65,6 @@ const CustomBox = styled.div`
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
-
 input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -77,7 +75,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     cursor: pointer;
     position: fixed;
-    z-index: 6;
+    z-index: 3;
     height: 100%;
     width: 100%;
     top: 22px;
@@ -150,7 +148,7 @@ const Navbar2 = class extends React.Component {
       <CustomBox>         
 <Headroom style={{ zIndex: '5', }}></Headroom>
 
-<header className="header" style={{zIndex:'5', position:'fixed'}}>
+<header className="header" style={{zIndex:'2', position:'fixed'}}>
     <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logoa rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed', maxHeight:'20vh', maxWidth:'18vw', animation: 'rollIn 1s', top:'10px', left:'2vw',}} />
     {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
@@ -206,9 +204,11 @@ const Navbar2 = class extends React.Component {
       <li>
       <Link id="portfolio" className="navbar-item" to="/portfolio/">Where You’ve Seen Us <span>Take a look at our stuff</span></Link>
        </li>
+
+
        <li>
               <Link id="casestudies" className="navbar-item" to="/case-study/">
-                How We Do it <span>See case studies</span>
+                How We Do it <span>Go behind the curtains</span>
               </Link>
       </li>
 

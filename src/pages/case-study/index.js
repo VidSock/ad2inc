@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
-// import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar2'
 import { Link } from 'gatsby'
 
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -23,38 +23,7 @@ const CustomBox = styled.div`
 .spacer66{height:66vh; display:block;}
 .spacer99{height:99vh; display:block;}
 .progress{position:absolute; top:80vh; left:100px; border:1px solid yellow; z-index:1;}
-// .slide:nth-child(1) {
-//   -webkit-animation: fade 24s 0s infinite;
-//   z-index:2;
-// }
-// .slide:nth-child(2) {
-//   -webkit-animation: fade 24s 6s infinite;
-//   z-index:1;
-// }
-// .slide:nth-child(3) {
-//   -webkit-animation: fade 0s 0s infinite;
-//   z-index:0;
-// }
-.slider{z-index:-1;}
-//  SLIDE
-#vidpop {
-  display: block;
-  text-align:center;
-}
-label + input[type=checkbox]{
-display:none !important;
-} 
- 
-input[type=checkbox]:checked + label div{
-  transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
-  z-index:1;
-} 
-input[type=checkbox]:checked + label div label{display:block !important; cursor:pointer;}
-#vid-toggle:checked + #vidpop .sub{display:none !important;}
-#vid-open{
-  position:absolute; bottom:0; display:block; width:100%; height:100%;  z-index:1; cursor:pointer;
-  // background:#fff;
-}
+
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -178,8 +147,8 @@ a.button2{
   right: 0;
   width: 70%;
   height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/life-aquatic-cover.jpg");
-  background-size: cover;
+  // background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/life-aquatic-cover.jpg");
+  // background-size: cover;
   opacity: 0.4;
   /* -webkit-filter: blur(2px);
           filter: blur(2px); */
@@ -224,6 +193,7 @@ a.button2{
   left: 100%;
   height: 100%;
   width: 100%;
+  background-color:#ED1B2D;
   background-image: url(${Curtains});
   // background-image: url("../../../../img/curtains.jpg");
   background-size: cover;
@@ -303,12 +273,12 @@ a.button2{
 
 
 
-.slide-container .shout{z-index:5;}
+// .slide-container .shout{z-index:5;}
 
-.slide-container:hover .shout{
-  z-index:-1 !important;
-  transition: all 0.6s ease-in-out
-}
+// .slide-container:hover .shout{
+//   z-index:-1 !important;
+//   transition: all 0.6s ease-in-out
+// }
 
 
 
@@ -321,7 +291,7 @@ a.button2{
 const CaseStudyCurtainsIndex = () => (
   <Layout>
    <CustomBox>
-  {/* <Navbar /> */}
+  <Navbar />
 
   
 <div style={{ display:'flex', alignItems:'center', justifyContent:'center',
@@ -332,7 +302,7 @@ const CaseStudyCurtainsIndex = () => (
   
   <div className="slide-container">
 
-<div className="shout" style={{position:'absolute', top:'5vh', zIndex:'2'}}>
+<div className="shout txtshadow-3d" style={{position:'absolute', top:'5vh', zIndex:'2'}}>
 <span style={{position:'absolute', top:'9vh', left:'2vw', lineHeight:'97%', textAlign:'', fontSize:'5vw', }}>Go Behind The Curtains</span>
 
 
@@ -378,7 +348,7 @@ const CaseStudyCurtainsIndex = () => (
       
 
   
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
+        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1>
       
         
  
@@ -411,7 +381,7 @@ const CaseStudyCurtainsIndex = () => (
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
-      <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatric Center<br /> View the case study</Link></h1>
+      <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatric Center<br /> View the case study</Link></h1>
 
     </div>
   </div>
@@ -434,8 +404,7 @@ const CaseStudyCurtainsIndex = () => (
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-jcedf/
-">Jackson Co. Economic Development<br /> View the case study</Link></h1>
+      <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
         
     </div>
   </div>
@@ -455,18 +424,38 @@ const CaseStudyCurtainsIndex = () => (
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
-        <h1 style={{fontSize:'100%'}}><Link className="button2" to="/case-studies/casestudy-gccfcu/
-">Gulf Coast Community Federal Credit Union<br /> View the case study</Link></h1>
+      <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric Power Association<br /> View the case study</Link></h1>
         
     </div>
   </div>
   
 
   
-<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm.png" />
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-cepa.jpg" />
 
   </section>
-{/* END Panel 3 */}
+
+
+
+
+
+
+
+  <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+      <div style={{ position:'', textAlign:'center'}}>
+      
+
+      <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/hssm/">Humane Society of South Mississippi<br /> View the case study</Link></h1>
+        
+    </div>
+  </div>
+  
+
+  
+<Image style={{zIndex:'0', position:'fixed'}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm1.jpg" />
+
+  </section>
 
 
 
