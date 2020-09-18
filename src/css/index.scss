@@ -796,17 +796,18 @@ background-image: url('../img/menu-bg.png');
   color:#ff0000;
 }
 
-.header .logo {
+/* .header .logo {
   padding: 0 1rem 3px 1.8rem;
   text-decoration: none;
   background:none;
-  height: 100%;
-  max-height: 100px !important;
+
+  max-height: 200px !important;
   position:relative !important;
-  height:100px;
-  margin-top:-20px;
-//   box-shadow: 1px 1px 14px 0 rgba(0,0,0,.1);
-}
+  height:300px;
+  width:150px;
+
+
+} */
 
 
 /* menu */
@@ -911,7 +912,7 @@ filter: brightness(90%);
 
 
 
-header .logo{max-height: 60px; float:left;}
+// header .logo{max-height: 60px; float:left;}
 
 
 /* 48em = 768px */
@@ -958,6 +959,10 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
   bottom:0 !important;
   height:auto !important;
 }
+
+.header .logo{max-width:24vw !important; max-height:22vh !important; top:2vh !important; margin-left:4vw; }
+
+
 // .headroom--pinned {
 //   transform: translateY(-100%);
 //   transition: opacity .25s ease-in-out;
@@ -968,7 +973,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 //   box-shadow: 1px 5px 16px 2px #333;
 // }
 
-.headroom--pinned .header{top:0 !important;}
+// .headroom--pinned .header{top:0 !important;}
 
 // .headroom--unpinned {
 //   transform: translateY(100%);
@@ -978,7 +983,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 
 // .headroom--pinned .header .logo{top:-20px !important;}
-.header .logo{top:0px !important;}
+/* .header .logo{top:0px !important;} */
 
 .header .menu{height:100vh !important;}
 
@@ -1009,6 +1014,8 @@ filter: brightness(90%);
   }
 
 .back-to-top{display: none; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh);}
+
+.header .logo{max-width:24vw !important; max-height:22vh !important; top:2vh !important; margin-left:4vw; }
 
 
 .intro:after, .intro:before{font-size:380%}
@@ -1437,13 +1444,8 @@ div {
   
     // .headroom--unfixed .header{margin-top:10vh !important;}
   
-    .header .logo {
-      height:100%;
-      max-height: 160px !important;
-      height:200px !important;
-      // margin-top:-70px !important;
-    }
-  
+
+.header .logo{max-width:14vw !important; max-height:14vh !important; top:2vh !important; margin-left:4vw; }
   
   
   

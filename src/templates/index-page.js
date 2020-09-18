@@ -38,7 +38,15 @@ const CustomBox = styled.div`
 .logolink img:hover{filter:none;}
 body #logo{display:none !important;}
 
-
+// #velvet{
+//   display:block;
+//   height:100vh;
+//   width:100vw;
+//   position:fixed;
+//   z-index:-1;
+//   top:0;
+//   left:0;
+// }
 
 
 
@@ -98,6 +106,7 @@ why they want to choose you.</blockquote>
    </ScrollAnimation>
 
 
+
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={500}>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
 </ScrollAnimation>
@@ -108,7 +117,7 @@ why they want to choose you.</blockquote>
 
 
   </div>
-
+  
 </div>
     
   <ScrollAnimation animateIn="pulse" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>

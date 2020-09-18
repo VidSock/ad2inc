@@ -345,19 +345,19 @@ const slidePanelHome1 = () => (
 
 <div className="shout" style={{position:'absolute', top:'0vh',}}>
 
-<span style={{position:'absolute', top:'25vh', textAlign:'left', paddingLeft:'4vw', fontSize:'4vw', opacity:'1', animation:'poptop 2.2s forwards', animationDelay:'15s'}}>We grow your<br /> business through</span>
+<span style={{position:'absolute', top:'25vh', textAlign:'left', paddingLeft:'12vw', fontSize:'4vw', opacity:'1', animation:'poptop 2.2s forwards', animationDelay:'15s'}}>We grow your<br /> business through</span>
 
-<span style={{position:'absolute', top:'45vh', textAlign:'left', paddingLeft:'4vw', fontSize:'4vw', opacity:'', animation:'poptop 3s forwards', animationDelay:'16.4s'}}>and of course, LOVE... ˆ)</span>
+<span style={{position:'absolute', top:'45vh', textAlign:'left', paddingLeft:'12vw', fontSize:'4vw', opacity:'', animation:'poptop 3s forwards', animationDelay:'16.4s'}}>and of course, LOVE... ˆ)</span>
 
-<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'1s'}}>Advertising</span>
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'12vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'1s'}}>Advertising</span>
 
-<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'4s'}}>Knowledge</span>
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'12vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'4s'}}>Knowledge</span>
 
-<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'7s'}}>Creative</span>
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'12vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'7s'}}>Creative</span>
 
-<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'10s'}}>Insight</span>
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'12vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'10s'}}>Insight</span>
 
-<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'13s'}}>Research</span>
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'12vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'13s'}}>Research</span>
 
 {/* <span style={{position:'absolute', top:'59vh', textAlign:'center', fontSize:'19vw', animation:'poptop 5s forwards', animationDelay:'4s'}}>Knowledge</span>
 
