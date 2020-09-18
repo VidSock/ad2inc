@@ -129,7 +129,7 @@ const TemplateWrapper = ({ children }) => {
 
      
 
-      <iframe id="velvet" src="./index1.html" width="100%" height="100%"></iframe>
+      <iframe id="velvet" src="https://ad2inc.netlify.app/index1.html" width="100%" height="100%"></iframe>
       
       <Footer /> 
       {/* <Installer /> */}
