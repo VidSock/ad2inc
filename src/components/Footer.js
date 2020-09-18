@@ -13,12 +13,14 @@ const Footer = class extends React.Component {
   render() {
     return (
 
-      <>
+      <> 
       <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={100}>
       <Consent />
   </ScrollAnimation>
 
-      <footer className="footer">
+  <canvas id="canvas"></canvas> 
+  
+      <footer className="footer" style={{position:'relative', bottom:'0', width:'100vw'}}>
         <div className="content">
           
 
@@ -53,6 +55,7 @@ const Footer = class extends React.Component {
         </div>
         
       </footer>
+     
 
       </>
       

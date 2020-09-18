@@ -292,7 +292,7 @@ a.button2{
 const CaseStudyCurtainsIndex = () => (
   <Layout>
     
-<canvas id="canvas"></canvas>
+
    <CustomBox>
   <Navbar />
 
@@ -482,7 +482,7 @@ const CaseStudyCurtainsIndex = () => (
       </div>
       </div>
 
-
+      
 </CustomBox>
   </Layout>
 )

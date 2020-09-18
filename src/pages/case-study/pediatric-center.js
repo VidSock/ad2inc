@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import styled from "styled-components"
 import CaseMenu from '../../components/CaseMenu'
 // import { FiCornerRightDown } from 'react-icons/fi'
-import BgImage from '../../components/BgImage-ll'
+import BgImage from '../../components/BgImage-lr'
 import TouchUp from '../../components/TouchUp'
 
 import Gallery from '../../components/Gallery'

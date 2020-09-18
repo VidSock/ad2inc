@@ -343,11 +343,41 @@ const slidePanelHome1 = () => (
 
 
 
-<div className="shout" style={{position:'absolute', top:'5vh',}}>
+<div className="shout" style={{position:'absolute', top:'0vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 5s forwards', animationDelay:'0s'}}>Excellence</span>
+<span style={{position:'absolute', top:'25vh', textAlign:'left', paddingLeft:'4vw', fontSize:'4vw', opacity:'1', animation:'poptop 2.2s forwards', animationDelay:'15s'}}>We grow your<br /> business through</span>
 
+<span style={{position:'absolute', top:'45vh', textAlign:'left', paddingLeft:'4vw', fontSize:'4vw', opacity:'', animation:'poptop 3s forwards', animationDelay:'16.4s'}}>and of course, LOVE... ˆ)</span>
+
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'1s'}}>Advertising</span>
+
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'4s'}}>Knowledge</span>
+
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'7s'}}>Creative</span>
+
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'10s'}}>Insight</span>
+
+<span style={{position:'absolute', top:'40vh', textAlign:'left', paddingLeft:'8vw', fontSize:'9vw', animation:'poptop 3s forwards', animationDelay:'13s'}}>Research</span>
+
+{/* <span style={{position:'absolute', top:'59vh', textAlign:'center', fontSize:'19vw', animation:'poptop 5s forwards', animationDelay:'4s'}}>Knowledge</span>
+
+  <span style={{position:'absolute', top:'1vh', textAlign:'right', paddingRight:'6vw', fontSize:'20vw', animation:'poptop 2s forwards', animationDelay:'5s'}}>Data</span>
+
+  <span style={{position:'absolute', top:'8vh', textAlign:'left', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'7s'}}>Creative</span>
+
+  <span style={{position:'absolute', top:'38vh', textAlign:'right', paddingRight:'3vw', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'9s'}}>Insight</span>
+
+  <span style={{position:'absolute', top:'28vh', textAlign:'left', fontSize:'17vw', paddingRight:'6vw', animation:'poptop 4s forwards', animationDelay:'12s'}}>Research</span>
+
+  <span style={{position:'absolute', top:'6vh', textAlign:'center', fontSize:'16vw', animation:'poptop 4s forwards', animationDelay:'16s'}}>Redefining</span>
+  <span style={{position:'absolute', top:'22vh', textAlign:'center', fontSize:'25vw', animation:'poptop 4s forwards', animationDelay:'16s'}}>Agency</span> */}
+
+<div style={{position:'absolute', top:'10vh', textAlign:'center', display:'flex', justifyContent:'center',alignContent:'center', alignItems:'center', fontSize:'25vw', width:'100%'}}>
+    {/* <Image filename="ad2inc-logo-round.png" alt="Ad2 Logo" style={{}} /> */}
+  <img className="logo" src="../img/ad2logo-script.svg" alt="Ad2Inc Logo" style={{position:'', height:'600px', animation:'poptop 14s forwards', animationDelay:'18s', opacity:'0', margin:'0 auto'}} />
 </div>
+
+    </div>
 
 
 

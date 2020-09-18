@@ -9,6 +9,7 @@ import Image from '../components/Image'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
+// import Navbar from '../components/Navbar2'
 // import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
@@ -31,10 +32,15 @@ const CustomBox = styled.div`
 
 
 .outer .container{margin-bottom:0 !important;}
-.logolink{display:flex; border:0px solid red; clear:both; height:20vh;}
-.logolink  .gatsby-image-wrapper{width:25%; margin:20px; height:100px;}
+.logolink{display:flex; border:0px solid red; clear:both; height:10vh; margin:2rem;}
+.logolink  .gatsby-image-wrapper{max-width:25%; width:20vw; margin:20px; height:100%;}
 .logolink img{filter: invert(82%) sepia(85%) saturate(0) hue-rotate(138deg) brightness(128%) contrast(60%);}
 .logolink img:hover{filter:none;}
+body #logo{display:none !important;}
+
+
+
+
 
 `
 
@@ -48,10 +54,10 @@ const WhatWeDo = () => (
 
      
      <Layout>
+      
 
-<canvas id="canvas"></canvas>
      <CustomBox>
-  
+
   <SlidePanelHome1 />
 <br />
 
@@ -65,7 +71,7 @@ const WhatWeDo = () => (
 
 
 
-  <div className="container" style={{ background:'inherit'}}>
+  <div className="container" style={{ background:''}}>
 <div className="content" style={{width:'90vw', padding:'2rem 0', maxWidth:'1000px', margin:'auto',}}>
   
 
@@ -96,7 +102,7 @@ why they want to choose you.</blockquote>
   <p>At Ad2, we work with each of our clients to develop and implement strategic marketing tactics to increase market share while improving customer retention through enhanced customer relationships and new customer acquisition strategies.</p>
 </ScrollAnimation>
 
-  <ScrollAnimation animateIn="tada" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={400}>
   <p style={{textAlign:'center', margin:'.6rem 0 0 0', fontSize:'120%', background:'#222', color:'#fff'}}><strong>Wanna know more?</strong></p>
   </ScrollAnimation>
 
@@ -108,7 +114,25 @@ why they want to choose you.</blockquote>
   <ScrollAnimation animateIn="pulse" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={400}>
 <div className="outer"> <Contact /></div>
 </ScrollAnimation>
-<br /><br />
+
+<div className="spacer33"></div>
+
+
+
+<div className="waveWrapper waveAnimation">
+  <div className="waveWrapperInner bgTop">
+  
+    <div className="wave waveTop" style={{backgroundImage:'url(./wave-top.png)' }}></div>
+  </div>
+  <div className="waveWrapperInner bgMiddle">
+    <div className="wave waveMiddle" style={{backgroundImage:'url(./wave-mid.png)' }}></div>
+  </div>
+  <div className="waveWrapperInner bgBottom">
+    <div className="wave waveBottom" style={{backgroundImage:'url(./wave-bot.png)'}}></div>
+  </div>
+</div>
+
+
   </CustomBox>
   </Layout>
 

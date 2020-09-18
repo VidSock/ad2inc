@@ -203,22 +203,92 @@ position:absolute; bottom:10px; right:10px; color:#fff;
 
 
 
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index:-1;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  /* bottom: -1px; */
+  background-image: linear-gradient(to top, #c30910 20%, #030303 80%);
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+animation: move-wave 3s;
+ -webkit-animation: move-wave 3s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
 
 #canvas{
-  position: absolute;
-  display:block;
+  position: relative;
+  /* display:block; */
 	width: 100%;
-  height: 100%;
-
-  background-color:transparent;
+  height: auto;
+  
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
-background-position: bottom center;
+background-position: top right;
+z-index:-1;background-color:transparent !important;
 }
 
 
-
+body.dark .wave{filter: invert(12%) sepia(85%) saturate(0%) hue-rotate(138deg) brightness(17%) contrast(90%);}
 
 
 .react-images__frame img{margin: 0 auto 0 auto !important;}
@@ -422,7 +492,7 @@ opacity: 0;
 body.light .shout span, body.light .shout span{color:#fff !important;}
 body.dark .shout span{color:#333 !important;}
 
-body.light .slidepanel > div{border-color:#fff !important;}
+body.light .slidepanel > div{border-color:#f0eded !important;}
 body.dark .slidepanel > div{border-color:#333 !important;}
 
 
@@ -832,7 +902,7 @@ filter: brightness(90%);
   cursor: default; 
    }
   
- [aria-current].logolink {
+ [aria-current].logolinker {
   background-color: none;
   padding: 0; cursor: default; }
 
@@ -929,7 +999,7 @@ filter: brightness(90%);
 
 	.header {display: flex; justify-content: space-between;}
 	.header ul{display: flex; justify-content: space-around !important;}
-   [aria-current].logolink {
+   [aria-current].logolinker {
    background:none;
   }
  
@@ -1020,6 +1090,7 @@ body.light{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
 
 body.light{
+  background-color:#ccc;
   background-image: url('../img/ad2-bg.jpg');
   background-size: cover;
   background-position: center center ;
@@ -1152,7 +1223,7 @@ body.light .shout span{
 
 
 body.light .homecontent {
-  background-color: #f7f1f3;
+  background-color: #ff0000;
   color: #333333; 
   box-shadow: inherit;
   margin-bottom:0 !important;
@@ -1185,8 +1256,8 @@ body.light .header li a, body.dark .header li a, body.light footer, body.light f
     body.light .header ul li .content a, body.light .content a{color:inherit;}
 
 
-body.light * {
-  border-color: #f0eaea ; }
+/* body.light * {
+  border-color: #f0eaea ; } */
 
 body.dark * {
   border-color: #3e3b3b ; }
