@@ -32,7 +32,7 @@ const CustomBox = styled.div`
 
 
 .outer .container{margin-bottom:0 !important;}
-.logolink{display:flex; border:0px solid red; clear:both; height:10vh; margin:2rem;}
+.logolink{display:flex; border:0px solid red; clear:both; margin:2rem; justify-content:space-between; max-width:1200px; margin:0 auto;}
 .logolink  .gatsby-image-wrapper{max-width:25%; width:20vw; margin:20px; height:100%;}
 .logolink img{filter: invert(82%) sepia(85%) saturate(0) hue-rotate(138deg) brightness(128%) contrast(60%);}
 .logolink img:hover{filter:none;}
