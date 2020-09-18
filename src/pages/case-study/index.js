@@ -3,6 +3,7 @@ import Layout from '../../components/Layout-noc'
 // import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar2'
 import { Link } from 'gatsby'
+// import Helmet from 'react-helmet'
 
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Curtains from '../../img/curtains.jpg'
@@ -31,7 +32,7 @@ const CustomBox = styled.div`
 }
 section {
 	scroll-snap-align: start;
-  border-bottom:10px solid red!important;
+  // border-bottom:20px solid red!important;
   overflow:hidden;
   // height:60vh;
   background:tranparent !important;
@@ -93,7 +94,7 @@ a.button2{
 
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#afafaf));
   background-image: linear-gradient(#fefefe, #afafaf);
-  border:.5vw solid #222;
+  border:.5vw solid #444;
   border-radius:12px;
   display: flex;
   align-items: center;
@@ -107,7 +108,7 @@ a.button2{
   /* position: absolute; */
   /* top: calc(50% - 300px); */
   width: 90vw;
-  height: 80vh;
+  height: 100vh;
   max-height:600px;
   border2px solid black;
   border-radius:12px;
@@ -271,7 +272,7 @@ a.button2{
   box-shadow: inset -10px -10px 40px rgba(0, 0, 0, 0.4);
 }
 
-
+.gatsby-image-wrapper{position:relaticv !important;}
 
 // .slide-container .shout{z-index:5;}
 
@@ -290,6 +291,8 @@ a.button2{
 
 const CaseStudyCurtainsIndex = () => (
   <Layout>
+    
+<canvas id="canvas"></canvas>
    <CustomBox>
   <Navbar />
 
@@ -338,11 +341,11 @@ const CaseStudyCurtainsIndex = () => (
 
 
     
-<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
+<section className="child" style={{position:'relative', height:'100%', overflow:'hidden',animation: 'fade 3s forwards',}}>
 
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
       {/* <strong style={{fontSize:'130%'}}>Pav &amp; Broome Fine Jewelry</strong><br /> */}
       
@@ -364,7 +367,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
 
-<Image style={{zIndex:'-1', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
+<BgImage style={{zIndex:'-1', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Pav &amp; Broome Fine Jewelry" filename="case-study-pnb.jpg" />
 
 
 
@@ -375,10 +378,10 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
+<section className="child" style={{position:'relative', height:'100%', overflow:'hidden',animation: 'fade 3s forwards',}}>
 
 
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
       <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatric Center<br /> View the case study</Link></h1>
@@ -388,7 +391,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
+<BgImage style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="The Pediatrics Center - Gulfport" filename="case-study-pediatric-center.jpg" />
 
 
 
@@ -400,8 +403,8 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<section className="child" style={{position:'relative', height:'100%', overflow:'hidden',animation: 'fade 3s forwards',}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
       <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
@@ -411,7 +414,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
+<BgImage style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Jackson Co. Economic Development" filename="case-study-jcedf.jpg" />
 
   </section>
 
@@ -420,8 +423,8 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+  <section className="child" style={{position:'relative', height:'100%', overflow:'hidden',animation: 'fade 3s forwards',}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
       <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'100%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric Power Association<br /> View the case study</Link></h1>
@@ -431,7 +434,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-cepa.jpg" />
+<BgImage style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-cepa.jpg" />
 
   </section>
 
@@ -441,8 +444,8 @@ const CaseStudyCurtainsIndex = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'60vh', overflow:'hidden',animation: 'fade 3s forwards',}}>
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+  <section className="child" style={{position:'relative', height:'100%', overflow:'hidden',animation: 'fade 3s forwards',}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
 
@@ -453,7 +456,7 @@ const CaseStudyCurtainsIndex = () => (
   
 
   
-<Image style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm1.jpg" />
+<BgImage style={{zIndex:'0', position:'fixed', animation: 'fade 2s forwards',}} className="slider1" alt="Gulf Coast Community Federal Credit Union" filename="case-study-hssm1.jpg" />
 
   </section>
 

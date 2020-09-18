@@ -103,6 +103,7 @@ export default class BlogPage extends Component {
 
     return (
       <Layout>
+        
         <CustomBox>
         <Helmet>
           <title>Blog | Ad2</title>

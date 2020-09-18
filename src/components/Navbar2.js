@@ -11,6 +11,13 @@ import PopContact from './PopContact'
 
 import styled from 'styled-components'
 const CustomBox = styled.div`
+
+
+
+
+}
+
+
 .header1 {
     display: block;
     margin: 0 auto;
@@ -53,7 +60,7 @@ const CustomBox = styled.div`
 .sidebarMenuInner li span{
     display: block;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.70);
 }
 .sidebarMenuInner li a{
     color: #fff;
@@ -148,6 +155,7 @@ const Navbar2 = class extends React.Component {
       <CustomBox>         
 <Headroom style={{ zIndex: '5', }}></Headroom>
 
+
 <header className="header" style={{zIndex:'2', position:'fixed'}}>
     <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logoa rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed', maxHeight:'20vh', maxWidth:'18vw', animation: '1s', top:'10px', left:'2vw',}} />
@@ -189,25 +197,25 @@ const Navbar2 = class extends React.Component {
       {/* <li>Todd Lambert <span>Web Developer</span></li> */}
 
       <li>
-              <Link className="navbar-item" to="/about/">
+              <Link className="navbar-item txtshadow" to="/about/">
                 Who We Are <span>Learn more about us</span>
               </Link>
       </li>
 
       <li>
-              <Link className="navbar-item" to="/services/">
+              <Link className="navbar-item txtshadow" to="/services/">
                 What We Do <span>Everything we offer</span>
               </Link>
       </li>
 
 
       <li>
-      <Link id="portfolio" className="navbar-item" to="/portfolio/">Where You’ve Seen Us <span>Take a look at our stuff</span></Link>
+      <Link id="portfolio" className="navbar-item txtshadow" to="/portfolio/">Where You’ve Seen Us <span>Take a look at our stuff</span></Link>
        </li>
 
 
        <li>
-              <Link id="casestudies" className="navbar-item" to="/case-study/">
+              <Link id="casestudies" className="navbar-item txtshadow" to="/case-study/">
                 How We Do it <span>Go behind the curtains</span>
               </Link>
       </li>
@@ -215,13 +223,13 @@ const Navbar2 = class extends React.Component {
     
 
       <li>
-              <Link className="navbar-item" to="/blog/">
+              <Link className="navbar-item txtshadow" to="/blog/">
                 What We're Up To <span>View our blog</span>
               </Link>
       </li>
 
       <li>
-             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us <span>Get started today!</span></label> 
+             <label className="modal-btn txtshadow" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us <span>Get started today!</span></label> 
       </li>
 
     </ul>

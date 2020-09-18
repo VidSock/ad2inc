@@ -55,8 +55,8 @@ const CustomBox = styled.div`
   // max-height:1000px;
   // overflow:hidden;
   transition:all .5s ease;
-  border-left:2.5px solid ;
-  border-right:2.5px solid ;
+  // border-left:2.5px solid ;
+  // border-right:2.5px solid ;
   border-radius:0px;
   position:relative;
   align-items: center;
@@ -343,11 +343,11 @@ const slidePanelHome1 = () => (
 
 
 
-{/* <div className="shout" style={{position:'absolute', top:'5vh',}}>
+<div className="shout" style={{position:'absolute', top:'5vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 5s forwards', animationDelay:'0s'}}>What We Do</span>
+<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 5s forwards', animationDelay:'0s'}}>Excellence</span>
 
-</div> */}
+</div>
 
 
 
@@ -361,7 +361,7 @@ const slidePanelHome1 = () => (
 
   
   <div className="outerpanel" style={{borderLeft:'none'}}>
-<span className="headline">The Agency <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline shadow-3dp">The Agency <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
       <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>
@@ -386,7 +386,7 @@ const slidePanelHome1 = () => (
 
 
   <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
- <span className="headline">The Work <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+ <span className="headline shadow-3dp">The Work <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
  <div className="innerpanel" style={{}}>
 
           <div className="contentpanel" style={{}}>
@@ -408,7 +408,7 @@ const slidePanelHome1 = () => (
 
 
  <div className="outerpanel" style={{borderLeft:''}}>
-<span className="headline">The Difference <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
+<span className="headline shadow-3dp">The Difference <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
 <div className="innerpanel" style={{}}>
       
           <div className="contentpanel" style={{}}>

@@ -48,6 +48,8 @@ const WhatWeDo = () => (
 
      
      <Layout>
+
+<canvas id="canvas"></canvas>
      <CustomBox>
   
   <SlidePanelHome1 />
