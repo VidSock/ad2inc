@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
 import { IoMdFingerPrint } from 'react-icons/io'
-// import DownArrow from './DownArrow'
+import DownArrow from './DownArrow'
 // import { RiArrowDownCircleLine } from 'react-icons/ri'
 import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
@@ -376,7 +376,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="istockphoto-1140385944-2048x2048.jpg" />
+    {/* <BgImage filename="istockphoto-1140385944-2048x2048.jpg" /> */}
  </div>
 
 
@@ -401,7 +401,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImage filename="istockphoto-1133497978-2048x2048.jpg" />
+    {/* <BgImage filename="istockphoto-1133497978-2048x2048.jpg" /> */}
  </div>
 
  
@@ -425,7 +425,7 @@ const slidePanelHome1 = () => (
 
         </div>
     </div>
-    <BgImageLL filename="istockphoto-1078587340-2048x2048.jpg" />
+    {/* <BgImageLL filename="istockphoto-1078587340-2048x2048.jpg" /> */}
  </div>
 
 
