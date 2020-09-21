@@ -436,7 +436,7 @@ const slidePanelHome1 = () => (
     borderRadius: 7,
     width: 'auto',
     maxWidth:'400px',
-    margin: 'auto',
+    margin: '20px auto',
     border: '1px solid #000',
     boxShadow: '1px 3px 4px black'
   }}
@@ -488,7 +488,7 @@ const slidePanelHome1 = () => (
     borderRadius: 7,
     width: 'auto',
     maxWidth:'400px',
-    margin: 'auto',
+    margin: '20px auto',
     border: '1px solid #000',
     boxShadow: '1px 3px 4px black'
   }}
@@ -542,7 +542,7 @@ const slidePanelHome1 = () => (
     borderRadius: 7,
     width: 'auto',
     maxWidth:'400px',
-    margin: 'auto',
+    margin: '20px auto',
     border: '1px solid #000',
     boxShadow: '1px 3px 4px black'
   }}
