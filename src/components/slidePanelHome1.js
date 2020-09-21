@@ -170,9 +170,9 @@ const CustomBox = styled.div`
      margin:0 auto;
     // box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(237,27,45,.7);
+    // background: rgba(237,27,45,.7);
     // filter: brightness(120%);
-    // background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.7);
     font-size:100%;
     font-weight:0 !important; 
     position:absolute;
@@ -322,6 +322,18 @@ const CustomBox = styled.div`
         100% { opacity: 0; }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     @media (hover: hover) {
       .touchindicator{display: none !important;}
       }
@@ -402,7 +414,35 @@ const slidePanelHome1 = () => (
           <p>At Ad2, Inc., we first focus on the goals of the customer to develop a concept and campaign that will effectively deliver the desired message to the target audience.</p>
         
         <p style={{}}>We then challenge our designers with producing creative that is as innovative as it is effective, capturing the interest of the client’s market and stimulating the desired response.</p>
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1> */}
+
+<h1><Link to="/portfolio"
+  style={{
+    '--color-1': '#333',
+    '--color-2': '#000',
+    background: `
+      linear-gradient(
+        180deg,
+        var(--color-1),
+        var(--color-2) 80%
+      )
+    `,
+    color: 'white',
+    textAlign: 'center',
+    fontSize:'1rem',
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    padding: '14px 0',
+    borderRadius: 7,
+    width: 'auto',
+    maxWidth:'400px',
+    margin: 'auto',
+    border: '1px solid #000',
+    boxShadow: '1px 3px 4px black'
+  }}
+>
+  View Our Work
+</Link></h1>
 
         </div>
     </div>
@@ -426,7 +466,35 @@ const slidePanelHome1 = () => (
         
         <p style={{}}>Our goal is achieving your goals, and our job is not done until the job is done!</p>
 
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1>
+        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/portfolio">View Our Work </Link></h1> */}
+
+        <h1><Link to="/portfolio"
+  style={{
+    '--color-1': '#333',
+    '--color-2': '#000',
+    background: `
+      linear-gradient(
+        180deg,
+        var(--color-1),
+        var(--color-2) 80%
+      )
+    `,
+    color: 'white',
+    textAlign: 'center',
+    fontSize:'1rem',
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    padding: '14px 0',
+    borderRadius: 7,
+    width: 'auto',
+    maxWidth:'400px',
+    margin: 'auto',
+    border: '1px solid #000',
+    boxShadow: '1px 3px 4px black'
+  }}
+>
+  Learn More
+</Link></h1>
 
 
         </div>
@@ -451,7 +519,42 @@ const slidePanelHome1 = () => (
 <p>For a more in-depth look at the work we’ve done and the goals that we’ve accomplished while working closely together with our customers, we have provided case studies of some of our clients.</p>
 
 
-         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/case-study">View Case Studies </Link></h1>
+         {/* <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><Link className="button2" to="/case-study">View Case Studies </Link></h1> */}
+
+
+         <h1><Link to="/case-study"
+  style={{
+    '--color-1': '#333',
+    '--color-2': '#000',
+    background: `
+      linear-gradient(
+        180deg,
+        var(--color-1),
+        var(--color-2) 80%
+      )
+    `,
+    color: 'white',
+    textAlign: 'center',
+    fontSize:'1rem',
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    padding: '14px 0',
+    borderRadius: 7,
+    width: 'auto',
+    maxWidth:'400px',
+    margin: 'auto',
+    border: '1px solid #000',
+    boxShadow: '1px 3px 4px black'
+  }}
+>
+View Case Studies
+</Link></h1>
+
+
+
+
+
+
 
         </div>
     </div>
