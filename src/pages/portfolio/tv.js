@@ -22,7 +22,7 @@ background: #da071c ;
 }
 
 // .intro:before{
-// 	content: "Television";
+// 	content: "Print";
 
 // position:absolute;
 // display: flex;
@@ -34,10 +34,11 @@ background: #da071c ;
 
 
 
+
 @media (hover: hover) {
-.gatsby-image-wrapper{transform: scale(1.25);}
+.gatsby-image-wrapper{transform: scale(1);}
 }
-.gatsby-image-wrapper{transform: scale(1.25);}
+
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -49,8 +50,8 @@ background: #da071c ;
 `
 
 
-const gal5Query = graphql`
-  query gal5Query {
+const gal8Query = graphql`
+  query gal8Query {
     allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
       edges {
         node {
@@ -71,17 +72,17 @@ const gal5Query = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(gal5Query)
+const Gal8Page = () => {
+  const data = useStaticQuery(gal8Query)
   return (
 	  <CustomBox>
     <Layout>
     
-    <div className="contentStart">
+
 
       
-    
-
+    <div className="contentStart">
+      
       <GalleryMenu />
   
 
@@ -92,22 +93,19 @@ const Gal1Page = () => {
       
  
       
-  <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
-    
+      <div className="container" style={{ padding:'0', margin:'0', zIndex:'0'}}>
+      <Gallery
+        photos={data.allFile.edges}
+      />
+      </div>
 
 
-  <Gallery
-    photos={data.allFile.edges}
-  />
-  </div>
-
-
-  <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
+      <div className="zoomer" style={{display:'flex', alignItems:'center', justifyContent:'center', position:'relative', zIndex:'1', marginTop:'85px'}}>
       <h4 style={{display:'', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'5vh', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
       </div>
 
-  
-   <GalleryMenu />
+      
+       <GalleryMenu />
       
       </div>
       
@@ -115,4 +113,4 @@ const Gal1Page = () => {
     </CustomBox>  )
 }
 
-export default Gal1Page
+export default Gal8Page
